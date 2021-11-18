@@ -1,5 +1,6 @@
 
-# Fall 2021 12.715 Environmental Bioinformatics Final Project: Replicating the bioinformatic analysis of a paper
+# Fall 2021 12.715 Environmental Bioinformatics
+# Final Project: Replicating the bioinformatic analysis of a paper
 
 Miraflor Santos, Sun Kim, and Walter Zesk
 
