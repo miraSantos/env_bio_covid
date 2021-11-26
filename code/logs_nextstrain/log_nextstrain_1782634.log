@@ -1,0 +1,344 @@
+/vortexfs1/omics/env-bio/collaboration/env_bio_covid/code
+pn039
+Fri Nov 26 00:05:34 EST 2021
+localrules directive specifies rules that are not present in the Snakefile:
+	download
+	upload
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                                  count    min threads    max threads
+---------------------------------  -------  -------------  -------------
+aa_muts_explicit                         1              1              1
+all                                      1              1              1
+ancestral                                1              1              1
+build_align                              1              8              8
+clades                                   1              1              1
+colors                                   1              1              1
+combine_input_metadata                   1              1              1
+combine_samples                          1              1              1
+combine_sequences_for_subsampling        1              1              1
+diagnostic                               1              1              1
+distances                                1              1              1
+download_diagnostic                      1              1              1
+download_masked                          1              1              1
+download_metadata                        1              1              1
+exclude_file                             2              1              1
+export                                   1              1              1
+filter                                   2              1              1
+finalize                                 1              1              1
+index_sequences                          1              1              1
+mask                                     1              1              1
+recency                                  1              1              1
+refine                                   1              1              1
+rename_subclades                         1              1              1
+subclades                                1              1              1
+subsample                                6              1              1
+tip_frequencies                          1              1              1
+traits                                   1              1              1
+translate                                1              1              1
+tree                                     1              4              4
+total                                   36              1              8
+
+Select jobs to execute...
+
+[Fri Nov 26 00:05:58 2021]
+Job 11: Downloading metadata from s3://nextstrain-ncov-private/metadata.tsv.gz -> data/downloaded_gisaid.tsv
+Reason: Missing output files: data/downloaded_gisaid.tsv
+
+
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+
+[Fri Nov 26 00:05:58 2021]
+Job 10: Downloading aligned & masked FASTA from s3://nextstrain-ncov-private/masked_gisaid.fasta.xz -> results/precomputed-masked_gisaid.fasta
+Reason: Missing output files: results/precomputed-masked_gisaid.fasta
+
+
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+
+[Fri Nov 26 00:05:58 2021]
+Job 13: 
+    Downloading diagnostic files:
+        s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz -> results/precomputed-sequence-diagnostics_gisaid.tsv
+        s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz -> results/precomputed-flagged-sequences_gisaid.tsv
+        s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz -> results/precomputed-to-exclude_gisaid.txt
+    
+Reason: Missing output files: results/precomputed-to-exclude_gisaid.txt
+
+
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+
+[Fri Nov 26 00:05:58 2021]
+Job 15: 
+        Mask bases in alignment results/aligned_ny.fasta
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+Reason: Missing output files: results/masked_ny.fasta
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned_ny.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_ny.fasta 2>&1 | tee logs/mask_ny.txt
+        
+
+[Fri Nov 26 00:05:58 2021]
+Job 18: Scanning aligned sequences results/aligned_ny.fasta for problematic sequences
+Reason: Missing output files: results/to-exclude_ny.txt
+
+
+        python3 scripts/diagnostic.py             --alignment results/aligned_ny.fasta             --metadata data/ny_metadata.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_ny.tsv             --output-diagnostics results/sequence-diagnostics_ny.tsv             --output-exclusion-list results/to-exclude_ny.txt 2>&1 | tee logs/diagnostics_ny.txt
+        
+Traceback (most recent call last):
+  File "scripts/mask-alignment.py", line 5, in <module>
+    import Bio
+ModuleNotFoundError: No module named 'Bio'
+[Fri Nov 26 00:05:58 2021]
+Error in rule mask:
+    jobid: 15
+    output: results/masked_ny.fasta
+    log: logs/mask_ny.txt (check log file(s) for error message)
+    shell:
+        
+        python3 scripts/mask-alignment.py             --alignment results/aligned_ny.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_ny.fasta 2>&1 | tee logs/mask_ny.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Logfile logs/mask_ny.txt:
+Traceback (most recent call last):
+  File "scripts/mask-alignment.py", line 5, in <module>
+    import Bio
+ModuleNotFoundError: No module named 'Bio'
+
+
+Trying to restart job 15.
+Select jobs to execute...
+
+[Fri Nov 26 00:05:58 2021]
+Job 15: 
+        Mask bases in alignment results/aligned_ny.fasta
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+Reason: Missing output files: results/masked_ny.fasta
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned_ny.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_ny.fasta 2>&1 | tee logs/mask_ny.txt
+        
+Traceback (most recent call last):
+  File "scripts/mask-alignment.py", line 5, in <module>
+    import Bio
+ModuleNotFoundError: No module named 'Bio'
+[Fri Nov 26 00:05:58 2021]
+Error in rule mask:
+    jobid: 15
+    output: results/masked_ny.fasta
+    log: logs/mask_ny.txt (check log file(s) for error message)
+    shell:
+        
+        python3 scripts/mask-alignment.py             --alignment results/aligned_ny.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_ny.fasta 2>&1 | tee logs/mask_ny.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Logfile logs/mask_ny.txt:
+Traceback (most recent call last):
+  File "scripts/mask-alignment.py", line 5, in <module>
+    import Bio
+ModuleNotFoundError: No module named 'Bio'
+
+
+Job failed, going on with independent jobs.
+Traceback (most recent call last):
+  File "scripts/diagnostic.py", line 8, in <module>
+    from Bio.SeqIO.FastaIO import SimpleFastaParser
+ModuleNotFoundError: No module named 'Bio'
+[Fri Nov 26 00:06:02 2021]
+Error in rule diagnostic:
+    jobid: 18
+    output: results/sequence-diagnostics_ny.tsv, results/flagged-sequences_ny.tsv, results/to-exclude_ny.txt
+    log: logs/diagnostics_ny.txt (check log file(s) for error message)
+    shell:
+        
+        python3 scripts/diagnostic.py             --alignment results/aligned_ny.fasta             --metadata data/ny_metadata.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_ny.tsv             --output-diagnostics results/sequence-diagnostics_ny.tsv             --output-exclusion-list results/to-exclude_ny.txt 2>&1 | tee logs/diagnostics_ny.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Logfile logs/diagnostics_ny.txt:
+Traceback (most recent call last):
+  File "scripts/diagnostic.py", line 8, in <module>
+    from Bio.SeqIO.FastaIO import SimpleFastaParser
+ModuleNotFoundError: No module named 'Bio'
+
+
+Trying to restart job 18.
+Select jobs to execute...
+
+[Fri Nov 26 00:06:02 2021]
+Job 18: Scanning aligned sequences results/aligned_ny.fasta for problematic sequences
+Reason: Missing output files: results/to-exclude_ny.txt
+
+
+        python3 scripts/diagnostic.py             --alignment results/aligned_ny.fasta             --metadata data/ny_metadata.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_ny.tsv             --output-diagnostics results/sequence-diagnostics_ny.tsv             --output-exclusion-list results/to-exclude_ny.txt 2>&1 | tee logs/diagnostics_ny.txt
+        
+Traceback (most recent call last):
+  File "scripts/diagnostic.py", line 8, in <module>
+    from Bio.SeqIO.FastaIO import SimpleFastaParser
+ModuleNotFoundError: No module named 'Bio'
+[Fri Nov 26 00:06:02 2021]
+Error in rule diagnostic:
+    jobid: 18
+    output: results/sequence-diagnostics_ny.tsv, results/flagged-sequences_ny.tsv, results/to-exclude_ny.txt
+    log: logs/diagnostics_ny.txt (check log file(s) for error message)
+    shell:
+        
+        python3 scripts/diagnostic.py             --alignment results/aligned_ny.fasta             --metadata data/ny_metadata.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_ny.tsv             --output-diagnostics results/sequence-diagnostics_ny.tsv             --output-exclusion-list results/to-exclude_ny.txt 2>&1 | tee logs/diagnostics_ny.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Logfile logs/diagnostics_ny.txt:
+Traceback (most recent call last):
+  File "scripts/diagnostic.py", line 8, in <module>
+    from Bio.SeqIO.FastaIO import SimpleFastaParser
+ModuleNotFoundError: No module named 'Bio'
+
+
+Job failed, going on with independent jobs.
+download failed: s3://nextstrain-ncov-private/metadata.tsv.gz to - Unable to locate credentials
+download failed: s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz to - Unable to locate credentials
+download failed: s3://nextstrain-ncov-private/masked_gisaid.fasta.xz to - Unable to locate credentials
+
+gzip: stdin: unexpected end of file
+[Fri Nov 26 00:06:09 2021]
+Error in rule download_metadata:
+    jobid: 11
+    output: data/downloaded_gisaid.tsv
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job download_metadata since they might be corrupted:
+data/downloaded_gisaid.tsv
+Trying to restart job 11.
+Select jobs to execute...
+
+[Fri Nov 26 00:06:09 2021]
+Job 11: Downloading metadata from s3://nextstrain-ncov-private/metadata.tsv.gz -> data/downloaded_gisaid.tsv
+Reason: Missing output files: data/downloaded_gisaid.tsv
+
+
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+xz: xz: (stdin): File format not recognized(stdin): File format not recognized
+
+[Fri Nov 26 00:06:09 2021]
+Error in rule download_diagnostic:
+[Fri Nov 26 00:06:09 2021]
+    jobid: 13
+Error in rule download_masked:
+    output: results/precomputed-sequence-diagnostics_gisaid.tsv, results/precomputed-flagged-sequences_gisaid.tsv, results/precomputed-to-exclude_gisaid.txt
+    jobid: 10
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    output: results/precomputed-masked_gisaid.fasta
+
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job download_diagnostic since they might be corrupted:
+results/precomputed-to-exclude_gisaid.txt
+Trying to restart job 13.
+Select jobs to execute...
+
+[Fri Nov 26 00:06:09 2021]
+Job 13: 
+    Downloading diagnostic files:
+        s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz -> results/precomputed-sequence-diagnostics_gisaid.tsv
+        s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz -> results/precomputed-flagged-sequences_gisaid.tsv
+        s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz -> results/precomputed-to-exclude_gisaid.txt
+    
+Reason: Missing output files: results/precomputed-to-exclude_gisaid.txt
+
+
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+Removing output files of failed job download_masked since they might be corrupted:
+results/precomputed-masked_gisaid.fasta
+Trying to restart job 10.
+Select jobs to execute...
+
+[Fri Nov 26 00:06:09 2021]
+Job 10: Downloading aligned & masked FASTA from s3://nextstrain-ncov-private/masked_gisaid.fasta.xz -> results/precomputed-masked_gisaid.fasta
+Reason: Missing output files: results/precomputed-masked_gisaid.fasta
+
+
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+download failed: s3://nextstrain-ncov-private/masked_gisaid.fasta.xz to - Unable to locate credentials
+download failed: s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz to - Unable to locate credentials
+download failed: s3://nextstrain-ncov-private/metadata.tsv.gz to - Unable to locate credentials
+xz: (stdin): File format not recognized
+[Fri Nov 26 00:06:17 2021]
+Error in rule download_masked:
+    jobid: 10
+    output: results/precomputed-masked_gisaid.fasta
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job download_masked since they might be corrupted:
+results/precomputed-masked_gisaid.fasta
+xz: (stdin): File format not recognized
+Job failed, going on with independent jobs.
+[Fri Nov 26 00:06:17 2021]
+Error in rule download_diagnostic:
+    jobid: 13
+    output: results/precomputed-sequence-diagnostics_gisaid.tsv, results/precomputed-flagged-sequences_gisaid.tsv, results/precomputed-to-exclude_gisaid.txt
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job download_diagnostic since they might be corrupted:
+results/precomputed-to-exclude_gisaid.txt
+Job failed, going on with independent jobs.
+
+gzip: stdin: unexpected end of file
+[Fri Nov 26 00:06:17 2021]
+Error in rule download_metadata:
+    jobid: 11
+    output: data/downloaded_gisaid.tsv
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job download_metadata since they might be corrupted:
+data/downloaded_gisaid.tsv
+Job failed, going on with independent jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov-ny/.snakemake/log/2021-11-26T000545.661972.snakemake.log
+finished nextstrain
+Fri Nov 26 00:06:17 EST 2021
