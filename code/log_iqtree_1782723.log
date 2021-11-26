@@ -1,3 +1,4 @@
 /vortexfs1/omics/env-bio/collaboration/env_bio_covid/code
 pn039
 Fri Nov 26 01:45:53 EST 2021
+slurmstepd: error: *** JOB 1782723 ON pn039 CANCELLED AT 2021-11-26T03:46:08 DUE TO TIME LIMIT ***
