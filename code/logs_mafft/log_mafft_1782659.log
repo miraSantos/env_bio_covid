@@ -1,0 +1,40 @@
+/vortexfs1/omics/env-bio/collaboration/env_bio_covid/code
+pn039
+Fri Nov 26 00:36:09 EST 2021
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1229: /tmp/mafft.KgOHv2MvDz/infile: No such file or directory
+awk: fatal: cannot open file `/tmp/mafft.KgOHv2MvDz/size' for reading (No such file or directory)
+awk: fatal: cannot open file `/tmp/mafft.KgOHv2MvDz/size' for reading (No such file or directory)
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1233: [: too many arguments
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1238: [: too many arguments
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1243: [: too many arguments
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1248: [: -lt: unary operator expected
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1253: [: -lt: unary operator expected
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1260: [: -lt: unary operator expected
+/vortexfs1/home/msantos/.conda/envs/mafft/bin/mafft: line 1267: [: -lt: unary operator expected
+------------------------------------------------------------------------------
+  MAFFT v7.487 (2021/Jul/25)
+  https://mafft.cbrc.jp/alignment/software/
+  MBE 30:772-780 (2013), NAR 30:3059-3066 (2002)
+------------------------------------------------------------------------------
+High speed:
+  % mafft in > out
+  % mafft --retree 1 in > out (fast)
+
+High accuracy (for <~200 sequences x <~2,000 aa/nt):
+  % mafft --maxiterate 1000 --localpair  in > out (% linsi in > out is also ok)
+  % mafft --maxiterate 1000 --genafpair  in > out (% einsi in > out)
+  % mafft --maxiterate 1000 --globalpair in > out (% ginsi in > out)
+
+If unsure which option to use:
+  % mafft --auto in > out
+
+--op # :         Gap opening penalty, default: 1.53
+--ep # :         Offset (works like gap extension penalty), default: 0.0
+--maxiterate # : Maximum number of iterative refinement, default: 0
+--clustalout :   Output: clustal format, default: fasta
+--reorder :      Outorder: aligned, default: input order
+--quiet :        Do not report progress
+--thread # :     Number of threads (if unsure, --thread -1)
+--dash :         Add structural information (Rozewicki et al, submitted)
+finished mafft
+Fri Nov 26 00:36:10 EST 2021

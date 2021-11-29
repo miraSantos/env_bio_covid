@@ -1,0 +1,73 @@
+use_nextalign: true
+
+custom_rules:
+  - ny_profiles/add_to_builds.smk
+
+# define inputs
+inputs:
+   - ny:
+     metadata: data/gisaid_nyc_metadata.tsv
+     filtered: data/gisaid_nyc_sequences.fasta
+   - name: gisaid
+     metadata: data/hcov_north-america.tsv
+     filtered: data/hcov_north-america.fasta
+
+builds:
+  ny_6m:
+    title: "NY-focused SARS-CoV-2 genomic analysis"
+    location: New York City
+    subsampling_scheme: time-window
+    n_sequences_ny_focus_recent: 100
+    n_sequences_usa_context_recent: 100
+    n_sequences_global_context_recent: 100
+    n_sequences_ny_focus_early: 100
+    n_sequences_usa_context_early: 100
+    n_sequences_global_context_early: 100
+
+# Define subsampling scheme for builds. This scheme should include as much
+# local diversity for a given division as possible and contextual samples from
+# the rest of the USA and the world.
+subsampling:
+  time-window:
+    # Subsampling for a given time window
+    ny-focus-recent:
+      # Evenly sample from earliest_date to latest_date for New York, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_ny_focus_recent}"
+      max_date: --max-date {latest_date}
+      min_date: --min-date {earliest_date}
+      query: --query "(country == 'USA' & location == '{location}' & purpose_of_sequencing != 'S dropout')"
+    usa-context-recent:
+      # Evenly sample from earliest_date to latest_date for USA, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_usa_context_recent}"
+      max_date: --max-date {latest_date}
+      min_date: --min-date {earliest_date}
+      query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+    global-context-recent:
+      # Evenly sample from earliest_date to latest_date for world, targeting n_sequences
+      group_by: "region year month"
+      max_sequences: "{n_sequences_global_context_recent}"
+      max_date: --max-date {latest_date}
+      min_date: --min-date {earliest_date}
+      query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+    ny-focus-early:
+      # Evenly sample up to earliest_date for New York, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_ny_focus_early}"
+      max_date: --max-date {earliest_date}
+      query: --query "(country == 'USA' & location == '{location}' & purpose_of_sequencing != 'S dropout')"
+    usa-context-early:
+      # Evenly sample up to earliest_date for USA, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_usa_context_early}"
+      max_date: --max-date {earliest_date}
+      query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+    global-context-early:
+      # Evenly sample up to earliest_date for world, targeting n_sequences
+      group_by: "region year month"
+      max_sequences: "{n_sequences_global_context_early}"
+      max_date: --max-date {earliest_date}
+      query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+
+skip_travel_history_adjustment: True

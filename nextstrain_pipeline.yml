@@ -1,0 +1,13 @@
+name: nextstrain
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - augur
+  - awscli
+  - nextstrain-cli
+  - snakemake
+  - auspice
+  - nextalign
+prefix: /vortexfs1/home/sun.kim/.conda/envs/nextstrain
