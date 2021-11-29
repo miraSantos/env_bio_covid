@@ -10,5 +10,7 @@ group project folder for 12.715 Environmental Bioinformatics course in Fall 2021
 
 # Original Paper Workflow
 
+![]{}
+
 
 # Our Conceptual Map of Scripts
