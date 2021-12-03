@@ -1,0 +1,1 @@
+tree frequencies written to results/b_lineage/tip-frequencies.json

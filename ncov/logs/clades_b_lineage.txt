@@ -1,0 +1,3 @@
+Validating schema of 'results/b_lineage/aa_muts.json'...
+WARNING in augur.clades: amino acid mutation json does not contain full sequences for the root node.
+clades written to results/b_lineage/clades.json

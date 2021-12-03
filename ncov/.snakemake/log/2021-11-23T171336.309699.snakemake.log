@@ -1,0 +1,227 @@
+Building DAG of jobs...
+Job stats:
+job                                  count    min threads    max threads
+---------------------------------  -------  -------------  -------------
+add_branch_labels                        1              1              1
+adjust_metadata_regions                  1              1              1
+align                                    3              1              1
+all                                      1              1              1
+ancestral                                1              1              1
+build_align                              1              1              1
+calculate_epiweeks                       1              1              1
+clade_files                              1              1              1
+clades                                   1              1              1
+colors                                   1              1              1
+combine_input_metadata                   1              1              1
+combine_samples                          1              1              1
+combine_sequences_for_subsampling        1              1              1
+diagnostic                               3              1              1
+distances                                1              1              1
+emerging_lineages                        1              1              1
+export                                   1              1              1
+filter                                   3              1              1
+finalize                                 1              1              1
+include_hcov19_prefix                    1              1              1
+index_sequences                          1              1              1
+logistic_growth                          1              1              1
+mask                                     1              1              1
+mutational_fitness                       1              1              1
+priority_score                           1              1              1
+proximity_score                          1              1              1
+recency                                  1              1              1
+refine                                   1              1              1
+rename_emerging_lineages                 1              1              1
+sanitize_metadata                        3              1              1
+subsample                                2              1              1
+tip_frequencies                          1              1              1
+traits                                   1              1              1
+translate                                1              1              1
+tree                                     1              1              1
+total                                   44              1              1
+
+
+[Tue Nov 23 17:13:46 2021]
+rule sanitize_metadata:
+    input: data/gisaid_nyc_metadata.tsv
+    output: results/sanitized_metadata_new_york.tsv.xz
+    log: logs/sanitize_metadata_new_york.txt
+    jobid: 13
+    benchmark: benchmarks/sanitize_metadata_new_york.txt
+    wildcards: origin=new_york
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        python3 scripts/sanitize_metadata.py             --metadata data/gisaid_nyc_metadata.tsv             --metadata-id-columns strain name 'Virus name'             --database-id-columns 'Accession ID' gisaid_epi_isl genbank_accession             --parse-location-field Location             --rename-fields 'Virus name=strain' Type=type 'Accession ID=gisaid_epi_isl' 'Collection date=date' 'Additional location information=additional_location_information' 'Sequence length=length' Host=host 'Patient age=patient_age' Gender=sex Clade=GISAID_clade 'Pango lineage=pango_lineage' pangolin_lineage=pango_lineage Lineage=pango_lineage 'Pangolin version=pangolin_version' Variant=variant 'AA Substitutions=aa_substitutions' aaSubstitutions=aa_substitutions 'Submission date=date_submitted' 'Is reference?=is_reference' 'Is complete?=is_complete' 'Is high coverage?=is_high_coverage' 'Is low coverage?=is_low_coverage' N-Content=n_content GC-Content=gc_content             --strip-prefixes hCoV-19/ SARS-CoV-2/                          --output results/sanitized_metadata_new_york.tsv.xz 2>&1 | tee logs/sanitize_metadata_new_york.txt
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 16: 
+        Aligning sequences to defaults/reference_seq.fasta
+            - gaps relative to reference are considered real
+        
+
+
+        python3 scripts/sanitize_sequences.py             --sequences data/hcov_north-america.fasta             --strip-prefixes hCoV-19/ SARS-CoV-2/             --output /dev/stdout 2> logs/sanitize_sequences_north_america.txt             | nextalign             --jobs=1             --reference defaults/reference_seq.fasta             --genemap defaults/annotation.gff             --genes ORF1a,ORF1b,S,ORF3a,E,M,ORF6,ORF7a,ORF7b,ORF8,N,ORF9b             --sequences /dev/stdin             --output-dir results/translations             --output-basename seqs_north_america             --output-fasta results/aligned_north_america.fasta             --output-insertions results/insertions_north_america.tsv > logs/align_north_america.txt 2>&1;
+        xz -2 results/aligned_north_america.fasta;
+        xz -2 results/translations/seqs_north_america*.fasta
+        
+
+[Tue Nov 23 17:13:46 2021]
+rule clade_files:
+    input: defaults/clades.tsv
+    output: results/new_york/clades.tsv
+    jobid: 35
+    benchmark: benchmarks/clade_files_new_york.txt
+    wildcards: build_name=new_york
+    resources: tmpdir=/tmp
+
+
+        cat defaults/clades.tsv > results/new_york/clades.tsv
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 20: 
+        Aligning sequences to defaults/reference_seq.fasta
+            - gaps relative to reference are considered real
+        
+
+
+        python3 scripts/sanitize_sequences.py             --sequences data/wuhan_reference.sequences.fasta             --strip-prefixes hCoV-19/ SARS-CoV-2/             --output /dev/stdout 2> logs/sanitize_sequences_references.txt             | nextalign             --jobs=1             --reference defaults/reference_seq.fasta             --genemap defaults/annotation.gff             --genes ORF1a,ORF1b,S,ORF3a,E,M,ORF6,ORF7a,ORF7b,ORF8,N,ORF9b             --sequences /dev/stdin             --output-dir results/translations             --output-basename seqs_references             --output-fasta results/aligned_references.fasta             --output-insertions results/insertions_references.tsv > logs/align_references.txt 2>&1;
+        xz -2 results/aligned_references.fasta;
+        xz -2 results/translations/seqs_references*.fasta
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 12: 
+        Aligning sequences to defaults/reference_seq.fasta
+            - gaps relative to reference are considered real
+        
+
+
+        python3 scripts/sanitize_sequences.py             --sequences data/gisaid_nyc_sequences.fasta             --strip-prefixes hCoV-19/ SARS-CoV-2/             --output /dev/stdout 2> logs/sanitize_sequences_new_york.txt             | nextalign             --jobs=1             --reference defaults/reference_seq.fasta             --genemap defaults/annotation.gff             --genes ORF1a,ORF1b,S,ORF3a,E,M,ORF6,ORF7a,ORF7b,ORF8,N,ORF9b             --sequences /dev/stdin             --output-dir results/translations             --output-basename seqs_new_york             --output-fasta results/aligned_new_york.fasta             --output-insertions results/insertions_new_york.tsv > logs/align_new_york.txt 2>&1;
+        xz -2 results/aligned_new_york.fasta;
+        xz -2 results/translations/seqs_new_york*.fasta
+        
+
+[Tue Nov 23 17:13:46 2021]
+rule sanitize_metadata:
+    input: data/hcov_north-america.tsv
+    output: results/sanitized_metadata_north_america.tsv.xz
+    log: logs/sanitize_metadata_north_america.txt
+    jobid: 17
+    benchmark: benchmarks/sanitize_metadata_north_america.txt
+    wildcards: origin=north_america
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        python3 scripts/sanitize_metadata.py             --metadata data/hcov_north-america.tsv             --metadata-id-columns strain name 'Virus name'             --database-id-columns 'Accession ID' gisaid_epi_isl genbank_accession             --parse-location-field Location             --rename-fields 'Virus name=strain' Type=type 'Accession ID=gisaid_epi_isl' 'Collection date=date' 'Additional location information=additional_location_information' 'Sequence length=length' Host=host 'Patient age=patient_age' Gender=sex Clade=GISAID_clade 'Pango lineage=pango_lineage' pangolin_lineage=pango_lineage Lineage=pango_lineage 'Pangolin version=pangolin_version' Variant=variant 'AA Substitutions=aa_substitutions' aaSubstitutions=aa_substitutions 'Submission date=date_submitted' 'Is reference?=is_reference' 'Is complete?=is_complete' 'Is high coverage?=is_high_coverage' 'Is low coverage?=is_low_coverage' N-Content=n_content GC-Content=gc_content             --strip-prefixes hCoV-19/ SARS-CoV-2/                          --output results/sanitized_metadata_north_america.tsv.xz 2>&1 | tee logs/sanitize_metadata_north_america.txt
+        
+
+[Tue Nov 23 17:13:46 2021]
+rule sanitize_metadata:
+    input: data/wuhan_reference.metadata.tsv
+    output: results/sanitized_metadata_references.tsv.xz
+    log: logs/sanitize_metadata_references.txt
+    jobid: 21
+    benchmark: benchmarks/sanitize_metadata_references.txt
+    wildcards: origin=references
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        python3 scripts/sanitize_metadata.py             --metadata data/wuhan_reference.metadata.tsv             --metadata-id-columns strain name 'Virus name'             --database-id-columns 'Accession ID' gisaid_epi_isl genbank_accession             --parse-location-field Location             --rename-fields 'Virus name=strain' Type=type 'Accession ID=gisaid_epi_isl' 'Collection date=date' 'Additional location information=additional_location_information' 'Sequence length=length' Host=host 'Patient age=patient_age' Gender=sex Clade=GISAID_clade 'Pango lineage=pango_lineage' pangolin_lineage=pango_lineage Lineage=pango_lineage 'Pangolin version=pangolin_version' Variant=variant 'AA Substitutions=aa_substitutions' aaSubstitutions=aa_substitutions 'Submission date=date_submitted' 'Is reference?=is_reference' 'Is complete?=is_complete' 'Is high coverage?=is_high_coverage' 'Is low coverage?=is_low_coverage' N-Content=n_content GC-Content=gc_content             --strip-prefixes hCoV-19/ SARS-CoV-2/                          --output results/sanitized_metadata_references.tsv.xz 2>&1 | tee logs/sanitize_metadata_references.txt
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 22: Scanning metadata results/sanitized_metadata_references.tsv.xz for problematic sequences. Removing sequences with >20 deviation from the clock and with more than 1.
+
+
+        python3 scripts/diagnostic.py             --metadata results/sanitized_metadata_references.tsv.xz             --clock-filter 20             --rare-mutations 100             --clock-plus-rare 100             --snp-clusters 1             --output-exclusion-list results/to-exclude_references.txt 2>&1 | tee logs/diagnostics_references.txt
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 24: 
+        Combining metadata files results/sanitized_metadata_new_york.tsv.xz results/sanitized_metadata_north_america.tsv.xz results/sanitized_metadata_references.tsv.xz -> results/combined_metadata.tsv.xz and adding columns to represent origin
+        
+
+
+        python3 scripts/combine_metadata.py --metadata results/sanitized_metadata_new_york.tsv.xz results/sanitized_metadata_north_america.tsv.xz results/sanitized_metadata_references.tsv.xz --origins new_york north_america references --output results/combined_metadata.tsv.xz 2>&1 | tee logs/combine_input_metadata.txt
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 14: Scanning metadata results/sanitized_metadata_new_york.tsv.xz for problematic sequences. Removing sequences with >20 deviation from the clock and with more than 1.
+
+
+        python3 scripts/diagnostic.py             --metadata results/sanitized_metadata_new_york.tsv.xz             --clock-filter 20             --rare-mutations 100             --clock-plus-rare 100             --snp-clusters 1             --output-exclusion-list results/to-exclude_new_york.txt 2>&1 | tee logs/diagnostics_new_york.txt
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 18: Scanning metadata results/sanitized_metadata_north_america.tsv.xz for problematic sequences. Removing sequences with >20 deviation from the clock and with more than 1.
+
+
+        python3 scripts/diagnostic.py             --metadata results/sanitized_metadata_north_america.tsv.xz             --clock-filter 20             --rare-mutations 100             --clock-plus-rare 100             --snp-clusters 1             --output-exclusion-list results/to-exclude_north_america.txt 2>&1 | tee logs/diagnostics_north_america.txt
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 11: 
+        Filtering alignment results/aligned_new_york.fasta.xz -> results/filtered_new_york.fasta.xz
+          - excluding strains in defaults/exclude.txt results/to-exclude_new_york.txt
+          - including strains in defaults/include.txt
+          - min length: 27000
+        
+
+
+        augur filter             --sequences results/aligned_new_york.fasta.xz             --metadata results/sanitized_metadata_new_york.tsv.xz             --include defaults/include.txt             --max-date 2021-11-24             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude defaults/exclude.txt results/to-exclude_new_york.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_new_york.fasta 2>&1 | tee logs/filtered_new_york.txt;
+        xz -2 results/filtered_new_york.fasta
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 15: 
+        Filtering alignment results/aligned_north_america.fasta.xz -> results/filtered_north_america.fasta.xz
+          - excluding strains in defaults/exclude.txt results/to-exclude_north_america.txt
+          - including strains in defaults/include.txt
+          - min length: 27000
+        
+
+
+        augur filter             --sequences results/aligned_north_america.fasta.xz             --metadata results/sanitized_metadata_north_america.tsv.xz             --include defaults/include.txt             --max-date 2021-11-24             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude defaults/exclude.txt results/to-exclude_north_america.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_north_america.fasta 2>&1 | tee logs/filtered_north_america.txt;
+        xz -2 results/filtered_north_america.fasta
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 19: 
+        Filtering alignment results/aligned_references.fasta.xz -> results/filtered_references.fasta.xz
+          - excluding strains in defaults/exclude.txt results/to-exclude_references.txt
+          - including strains in defaults/include.txt
+          - min length: 27000
+        
+
+
+        augur filter             --sequences results/aligned_references.fasta.xz             --metadata results/sanitized_metadata_references.tsv.xz             --include defaults/include.txt             --max-date 2021-11-24             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude defaults/exclude.txt results/to-exclude_references.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_references.fasta 2>&1 | tee logs/filtered_references.txt;
+        xz -2 results/filtered_references.fasta
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 10: 
+        Combine and deduplicate aligned & filtered FASTAs from multiple origins in preparation for subsampling.
+        
+
+
+        python3 scripts/sanitize_sequences.py                 --sequences results/filtered_new_york.fasta.xz results/filtered_north_america.fasta.xz results/filtered_references.fasta.xz                 --strip-prefixes hCoV-19/ SARS-CoV-2/                                  --output /dev/stdout                 | xz -c -2 > results/combined_sequences_for_subsampling.fasta.xz
+        
+
+[Tue Nov 23 17:13:46 2021]
+Job 23: 
+        Index sequence composition for faster filtering.
+        
+
+
+        augur index             --sequences results/combined_sequences_for_subsampling.fasta.xz             --output results/combined_sequence_index.tsv.xz 2>&1 | tee logs/index_sequences.txt
+        
+InputFunctionException in line 558 of /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/workflow/snakemake_rules/main_workflow.smk:
+Error:
+  KeyError: 'division'
+Wildcards:
+  build_name=new_york
+  subsample=focal
+Traceback:
+  File "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/workflow/snakemake_rules/main_workflow.smk", line 435, in _get_setting

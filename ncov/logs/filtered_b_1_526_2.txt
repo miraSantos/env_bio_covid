@@ -1,0 +1,4 @@
+Note: You did not provide a sequence index, so Augur will generate one. You can generate your own index ahead of time with `augur index` and pass it with `augur filter --sequence-index`.
+0 strains were dropped during filtering
+	1 strains were added back because they were in defaults/include.txt
+1 strains passed all filters

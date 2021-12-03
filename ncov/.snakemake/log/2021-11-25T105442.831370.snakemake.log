@@ -1,0 +1,49 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                         count    min threads    max threads
+------------------------  -------  -------------  -------------
+add_branch_labels               1              1              1
+all                             1              1              1
+ancestral                       1              1              1
+calculate_epiweeks              1              1              1
+clades                          1              1              1
+distances                       1              1              1
+emerging_lineages               1              1              1
+export                          1              1              1
+finalize                        1              1              1
+include_hcov19_prefix           1              1              1
+logistic_growth                 1              1              1
+mutational_fitness              1              1              1
+refine                          1              1              1
+rename_emerging_lineages        1              1              1
+tip_frequencies                 1              1              1
+traits                          1              1              1
+translate                       1              1              1
+tree                            1              4              4
+total                          18              1              4
+
+Select jobs to execute...
+
+[Thu Nov 25 10:54:49 2021]
+Job 6: Building tree
+
+
+        augur tree             --alignment results/new_york/masked.fasta             --tree-builder-args '-ninit 10 -n 4'             --exclude-sites defaults/sites_ignored_for_tree_topology.txt             --output results/new_york/tree_raw.nwk             --nthreads 4 2>&1 | tee logs/tree_new_york.txt
+        
+Terminating processes on user request, this might take some time.
+[Thu Nov 25 10:59:35 2021]
+Error in rule tree:
+    jobid: 6
+    output: results/new_york/tree_raw.nwk
+    log: logs/tree_new_york.txt (check log file(s) for error message)
+    shell:
+        
+        augur tree             --alignment results/new_york/masked.fasta             --tree-builder-args '-ninit 10 -n 4'             --exclude-sites defaults/sites_ignored_for_tree_topology.txt             --output results/new_york/tree_raw.nwk             --nthreads 4 2>&1 | tee logs/tree_new_york.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/.snakemake/log/2021-11-25T105442.831370.snakemake.log

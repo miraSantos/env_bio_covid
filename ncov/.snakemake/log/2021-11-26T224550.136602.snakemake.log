@@ -1,0 +1,8 @@
+ERROR: Your workflow does not define any input files to start with.
+Update your configuration file (e.g., 'builds.yaml') to define at least one input dataset as follows and try running the workflow again:
+
+  inputs:
+    name: local-data
+    metadata: data/example_metadata.tsv
+    sequences: data/example_sequences.fasta.gz
+

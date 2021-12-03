@@ -1,0 +1,54 @@
+Your config specifies 'skip_travel_history_adjustment=True'. This is now always the case, and thus this parameter can be removed.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                         count    min threads    max threads
+------------------------  -------  -------------  -------------
+add_branch_labels               1              1              1
+all                             1              1              1
+ancestral                       1              1              1
+clades                          1              1              1
+distances                       1              1              1
+emerging_lineages               1              1              1
+export                          1              1              1
+finalize                        1              1              1
+include_hcov19_prefix           1              1              1
+logistic_growth                 1              1              1
+mutational_fitness              1              1              1
+refine                          1              1              1
+rename_emerging_lineages        1              1              1
+tip_frequencies                 1              1              1
+traits                          1              1              1
+translate                       1              1              1
+total                          16              1              1
+
+Select jobs to execute...
+
+[Fri Nov 26 23:55:02 2021]
+Job 5: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+        
+
+
+        augur refine             --tree results/b_lineage/tree_raw.nwk             --alignment results/b_lineage/masked.fasta             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --output-tree results/b_lineage/tree.nwk             --output-node-data results/b_lineage/branch_lengths.json             --root Wuhan/Hu-1/2019             --timetree                          --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent opt             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_b_lineage.txt
+        
+[Fri Nov 26 23:55:36 2021]
+Error in rule refine:
+    jobid: 5
+    output: results/b_lineage/tree.nwk, results/b_lineage/branch_lengths.json
+    log: logs/refine_b_lineage.txt (check log file(s) for error message)
+    shell:
+        
+        augur refine             --tree results/b_lineage/tree_raw.nwk             --alignment results/b_lineage/masked.fasta             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --output-tree results/b_lineage/tree.nwk             --output-node-data results/b_lineage/branch_lengths.json             --root Wuhan/Hu-1/2019             --timetree                          --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent opt             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_b_lineage.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/.snakemake/log/2021-11-26T235455.979799.snakemake.log

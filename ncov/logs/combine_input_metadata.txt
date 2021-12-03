@@ -1,0 +1,4 @@
+Parsed 2 metadata TSVs
+	b_1_526 (results/sanitized_metadata_b_1_526.tsv.xz): 4515 strains x 28 columns
+	b_1_526_2 (results/sanitized_metadata_b_1_526_2.tsv.xz): 1 strains x 28 columns
+Combined metadata: 4516 strains x 30 columns

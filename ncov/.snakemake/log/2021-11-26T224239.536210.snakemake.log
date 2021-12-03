@@ -1,0 +1,4 @@
+WorkflowError:
+Failed to open source file /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/workflow/snakemake_rules/download.smk
+FileNotFoundError: [Errno 2] No such file or directory: '/vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/workflow/snakemake_rules/download.smk'
+  File "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/Snakefile", line 148, in <module>

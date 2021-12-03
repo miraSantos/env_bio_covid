@@ -1,0 +1,10 @@
+Building DAG of jobs...
+InputFunctionException in line 558 of /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/workflow/snakemake_rules/main_workflow.smk:
+Error:
+  AttributeError: 'NoneType' object has no attribute 'get'
+Wildcards:
+  build_name=b_lineage
+  subsample=ancestral_reconstruction-focus
+Traceback:
+  File "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/workflow/snakemake_rules/main_workflow.smk", line 395, in get_priorities
+  File "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/workflow/snakemake_rules/main_workflow.smk", line 381, in _get_subsampling_settings

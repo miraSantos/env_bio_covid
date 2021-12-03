@@ -1,0 +1,6 @@
+Sampling at 312 per group.
+3517 strains were dropped during filtering
+	1 of these were filtered out by the query: "(pango_lineage == 'B.1.526' | pango_lineage == 'B.1.526.1' | pango_lineage == 'B.1.526.2')"
+	1 strains were added back because they were in defaults/include.txt
+	3517 of these were dropped because of subsampling criteria
+999 strains passed all filters

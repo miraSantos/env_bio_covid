@@ -1,0 +1,10 @@
+WorkflowError:
+Error validating config file.
+ValidationError: 'b.1.526' does not match '^(?:[_a-zA-Z-](?!(tip-frequencies)))+$'
+
+Failed validating 'pattern' in schema['properties']['builds']['propertyNames']:
+    OrderedDict([('pattern', '^(?:[_a-zA-Z-](?!(tip-frequencies)))+$')])
+
+On instance['builds']:
+    'b.1.526'
+  File "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/Snakefile", line 38, in <module>
