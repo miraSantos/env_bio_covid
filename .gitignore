@@ -7,3 +7,4 @@
 *.fasta.*
 *.tar.gz
 *.sw*
+.gitignore.s*
