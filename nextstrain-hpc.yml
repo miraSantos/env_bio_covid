@@ -1,0 +1,5 @@
+name: nextstrain
+channels:
+  - defaults
+  - conda-forge
+prefix: /vortexfs1/home/walter.zesk/.conda/envs/nextstrain
