@@ -1,0 +1,6 @@
+strain	collection_date	submission_date	flagging_reason
+USA/NP-3384/2020	XXXX-XX-XX	XXXX-XX-XX	too many Ns (4082>3000)
+USA/CUIMC-NP-3971/2020	2020-12-27	XX	too many Ns (4739>3000)
+USA/CUIMC-NP-3609/2020	2020-12-01	XX	too many Ns (3275>3000)
+USA/CUIMC-NP-3700/2020	2020-12-06	XX	too many Ns (6739>3000)
+USA/CUIMC-NP-4043/2020	2020-12-30	XX	too many Ns (6619>3000)

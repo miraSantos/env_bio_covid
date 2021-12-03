@@ -1,0 +1,288 @@
+localrules directive specifies rules that are not present in the Snakefile:
+	upload
+	download
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                                  count    min threads    max threads
+---------------------------------  -------  -------------  -------------
+aa_muts_explicit                         1              1              1
+align                                    1              8              8
+all                                      1              1              1
+ancestral                                1              1              1
+build_align                              1              8              8
+clade_files                              1              1              1
+clades                                   1              1              1
+colors                                   1              1              1
+combine_input_metadata                   1              1              1
+combine_samples                          1              1              1
+combine_sequences_for_subsampling        1              1              1
+diagnostic                               1              1              1
+distances                                1              1              1
+download_diagnostic                      1              1              1
+download_masked                          1              1              1
+download_metadata                        1              1              1
+exclude_file                             2              1              1
+export                                   1              1              1
+filter                                   2              1              1
+finalize                                 1              1              1
+index_sequences                          1              1              1
+mask                                     1              1              1
+recency                                  1              1              1
+refine                                   1              1              1
+rename_subclades                         1              1              1
+subclades                                1              1              1
+subsample                                6              1              1
+tip_frequencies                          1              1              1
+traits                                   1              1              1
+translate                                1              1              1
+tree                                     1              4              4
+total                                   38              1              8
+
+Select jobs to execute...
+
+[Sun Nov 28 18:58:47 2021]
+Job 16: 
+            Aligning sequences to defaults/reference_seq.fasta
+              - gaps relative to reference are considered real
+            
+Reason: Missing output files: results/aligned_ny.fasta
+
+
+            nextalign                 --jobs=8                 --reference defaults/reference_seq.fasta                 --genemap defaults/annotation.gff                 --genes ORF1a,ORF1b,S,ORF3a,M,N                 --sequences data/ny_sequences.fasta                 --output-dir results/translations                 --output-basename seqs_ny                 --output-fasta results/aligned_ny.fasta                 --output-insertions results/insertions_ny.tsv > logs/align_ny.txt 2>&1
+            
+[Sun Nov 28 18:58:57 2021]
+Finished job 16.
+1 of 38 steps (3%) done
+Select jobs to execute...
+
+[Sun Nov 28 18:58:58 2021]
+Job 11: Downloading metadata from s3://nextstrain-ncov-private/metadata.tsv.gz -> data/downloaded_gisaid.tsv
+Reason: Missing output files: data/downloaded_gisaid.tsv
+
+
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+
+[Sun Nov 28 18:58:59 2021]
+Job 18: Scanning aligned sequences results/aligned_ny.fasta for problematic sequences
+Reason: Missing output files: results/to-exclude_ny.txt; Input files updated by another job: results/aligned_ny.fasta
+
+
+        python3 scripts/diagnostic.py             --alignment results/aligned_ny.fasta             --metadata data/ny_metadata.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_ny.tsv             --output-diagnostics results/sequence-diagnostics_ny.tsv             --output-exclusion-list results/to-exclude_ny.txt 2>&1 | tee logs/diagnostics_ny.txt
+        
+
+[Sun Nov 28 18:58:59 2021]
+Job 10: Downloading aligned & masked FASTA from s3://nextstrain-ncov-private/masked_gisaid.fasta.xz -> results/precomputed-masked_gisaid.fasta
+Reason: Missing output files: results/precomputed-masked_gisaid.fasta
+
+
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+
+[Sun Nov 28 18:59:00 2021]
+Job 13: 
+    Downloading diagnostic files:
+        s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz -> results/precomputed-sequence-diagnostics_gisaid.tsv
+        s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz -> results/precomputed-flagged-sequences_gisaid.tsv
+        s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz -> results/precomputed-to-exclude_gisaid.txt
+    
+Reason: Missing output files: results/precomputed-to-exclude_gisaid.txt
+
+
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+
+[Sun Nov 28 18:59:00 2021]
+rule clade_files:
+    input: defaults/clades.tsv
+    output: results/ny_6m/clades.tsv
+    jobid: 31
+    benchmark: benchmarks/clade_files_ny_6m.txt
+    reason: Missing output files: results/ny_6m/clades.tsv
+    wildcards: build_name=ny_6m
+    resources: tmpdir=/tmp
+
+
+        cat defaults/clades.tsv > results/ny_6m/clades.tsv
+        
+
+[Sun Nov 28 18:59:01 2021]
+Job 15: 
+        Mask bases in alignment results/aligned_ny.fasta
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+Reason: Missing output files: results/masked_ny.fasta; Input files updated by another job: results/aligned_ny.fasta
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned_ny.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_ny.fasta 2>&1 | tee logs/mask_ny.txt
+        
+[Sun Nov 28 18:59:03 2021]
+Finished job 31.
+2 of 38 steps (5%) done
+[Sun Nov 28 18:59:58 2021]
+Finished job 15.
+3 of 38 steps (8%) done
+[Sun Nov 28 19:03:09 2021]
+Finished job 18.
+4 of 38 steps (11%) done
+Select jobs to execute...
+
+[Sun Nov 28 19:03:09 2021]
+rule exclude_file:
+    input: defaults/exclude.txt, results/to-exclude_ny.txt
+    output: results/exclude_ny.txt
+    jobid: 17
+    benchmark: benchmarks/exclude_file_ny.txt
+    reason: Missing output files: results/exclude_ny.txt; Input files updated by another job: results/to-exclude_ny.txt
+    wildcards: origin=_ny
+    resources: tmpdir=/tmp
+
+
+        cat defaults/exclude.txt results/to-exclude_ny.txt > results/exclude_ny.txt
+        
+[Sun Nov 28 19:03:11 2021]
+Finished job 17.
+5 of 38 steps (13%) done
+Select jobs to execute...
+
+[Sun Nov 28 19:03:11 2021]
+Job 14: 
+        Filtering alignment results/masked_ny.fasta -> results/filtered_ny.fasta
+          - excluding strains in results/exclude_ny.txt
+          - including strains in defaults/include.txt
+          - min length: 27000
+        
+Reason: Missing output files: results/filtered_ny.fasta; Input files updated by another job: results/exclude_ny.txt, results/masked_ny.fasta
+
+
+        augur filter             --sequences results/masked_ny.fasta             --metadata data/ny_metadata.tsv             --include defaults/include.txt             --max-date 2021-11-29             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude results/exclude_ny.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_ny.fasta 2>&1 | tee logs/filtered_ny.txt
+        
+[Sun Nov 28 19:03:34 2021]
+[Sun Nov 28 19:03:34 2021]
+[Sun Nov 28 19:03:34 2021]
+Error in rule download_masked:
+Error in rule download_diagnostic:
+Error in rule download_metadata:
+    jobid: 10
+    jobid: 13
+    jobid: 11
+    output: results/precomputed-masked_gisaid.fasta
+    output: results/precomputed-sequence-diagnostics_gisaid.tsv, results/precomputed-flagged-sequences_gisaid.tsv, results/precomputed-to-exclude_gisaid.txt
+    output: data/downloaded_gisaid.tsv
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+
+Removing output files of failed job download_masked since they might be corrupted:
+results/precomputed-masked_gisaid.fasta
+Trying to restart job 10.
+Select jobs to execute...
+
+[Sun Nov 28 19:03:34 2021]
+Job 10: Downloading aligned & masked FASTA from s3://nextstrain-ncov-private/masked_gisaid.fasta.xz -> results/precomputed-masked_gisaid.fasta
+Reason: Missing output files: results/precomputed-masked_gisaid.fasta
+
+
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+Removing output files of failed job download_diagnostic since they might be corrupted:
+results/precomputed-to-exclude_gisaid.txt
+Trying to restart job 13.
+Removing output files of failed job download_metadata since they might be corrupted:
+data/downloaded_gisaid.tsv
+Trying to restart job 11.
+Select jobs to execute...
+
+[Sun Nov 28 19:03:37 2021]
+Job 11: Downloading metadata from s3://nextstrain-ncov-private/metadata.tsv.gz -> data/downloaded_gisaid.tsv
+Reason: Missing output files: data/downloaded_gisaid.tsv
+
+
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+
+[Sun Nov 28 19:03:37 2021]
+Job 13: 
+    Downloading diagnostic files:
+        s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz -> results/precomputed-sequence-diagnostics_gisaid.tsv
+        s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz -> results/precomputed-flagged-sequences_gisaid.tsv
+        s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz -> results/precomputed-to-exclude_gisaid.txt
+    
+Reason: Missing output files: results/precomputed-to-exclude_gisaid.txt
+
+
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+Terminating processes on user request, this might take some time.
+[Sun Nov 28 19:06:17 2021]
+Error in rule filter:
+    jobid: 14
+    output: results/filtered_ny.fasta
+    log: logs/filtered_ny.txt (check log file(s) for error message)
+    shell:
+        
+        augur filter             --sequences results/masked_ny.fasta             --metadata data/ny_metadata.tsv             --include defaults/include.txt             --max-date 2021-11-29             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude results/exclude_ny.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_ny.fasta 2>&1 | tee logs/filtered_ny.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Logfile logs/filtered_ny.txt:
+
+
+[Sun Nov 28 19:06:17 2021]
+[Sun Nov 28 19:06:17 2021]
+[Sun Nov 28 19:06:17 2021]
+Error in rule download_metadata:
+Error in rule download_diagnostic:
+Error in rule download_masked:
+    jobid: 11
+    jobid: 13
+    jobid: 10
+    output: data/downloaded_gisaid.tsv
+    output: results/precomputed-sequence-diagnostics_gisaid.tsv, results/precomputed-flagged-sequences_gisaid.tsv, results/precomputed-to-exclude_gisaid.txt
+    output: results/precomputed-masked_gisaid.fasta
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/metadata.tsv.gz - | gunzip -cq >data/downloaded_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz - | xz -dcq > results/precomputed-to-exclude_gisaid.txt
+        aws s3 cp s3://nextstrain-ncov-private/flagged-sequences_gisaid.tsv.xz - | xz -dcq > results/precomputed-flagged-sequences_gisaid.tsv
+        aws s3 cp s3://nextstrain-ncov-private/sequence-diagnostics_gisaid.tsv.xz - | xz -dcq > results/precomputed-sequence-diagnostics_gisaid.tsv
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        aws s3 cp s3://nextstrain-ncov-private/masked_gisaid.fasta.xz - | xz -dcq > results/precomputed-masked_gisaid.fasta
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+

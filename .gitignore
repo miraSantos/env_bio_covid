@@ -1,6 +1,7 @@
-/ncov-ny
+/ncov-ny/data
 /data
 /ncov/data
+/ncov/results
 *.fasta
 *.tar.gz
 *.sw*

@@ -1,0 +1,2 @@
+[ WARN] Nextalign: Warning: in sequence "USA/CUIMC-NP-4059/2020": When processing gene "S": Unable to align: no seed matches. Note that this gene will not be included in the results of the sequence.
+[ WARN] Nextalign: Warning: in sequence "USA/NP-5079/2021": When processing gene "S": Unable to align: no seed matches. Note that this gene will not be included in the results of the sequence.
