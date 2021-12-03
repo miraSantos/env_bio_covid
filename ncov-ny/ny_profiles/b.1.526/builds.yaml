@@ -1,0 +1,42 @@
+# Defines next align specs
+genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
+use_nextalign: true
+conda_environment: "workflow/envs/nextstrain.yaml"
+
+# Define custom rules
+custom_rules:
+  - ny_profiles/b.1.526/add_to_builds.smk
+
+inputs:
+  - name: gisaid
+    metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
+    filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+
+# Define custom auspice configuration to enable frequencies.
+files:
+  auspice_config: "ny_profiles/b.1.526/auspice_config.json"
+  include: "ny_profiles/b.1.526/include.txt"
+  ordering: "ny_profiles/b.1.526/color_ordering.tsv"
+
+# Define NY builds.
+builds:
+
+  b.1.526:
+    title: "B.1.526-focused SARS-CoV-2 genomic analysis"
+    subsampling_scheme: lineage
+
+subsampling:
+  lineage:
+    # Subsampling for a given time window
+    lineage-focus:
+      # Evenly sample sequences labeled as B.1.526 targeting n_sequences
+      group_by: "year month"
+      max_sequences: "1000"
+      query: --query "(pango_lineage == 'B.1.526' | pango_lineage == 'B.1.526.1' | pango_lineage == 'B.1.526.2')"
+
+skip_travel_history_adjustment: True
+
+traits:
+  b.1.526:
+    sampling_bias_correction: 2.5
+    columns: ["division"]
