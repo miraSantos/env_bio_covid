@@ -1,1 +1,0 @@
-tree frequencies written to results/new_york/tip-frequencies.json

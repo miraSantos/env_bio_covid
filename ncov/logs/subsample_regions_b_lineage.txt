@@ -1,4 +1,0 @@
-3517 strains were dropped during filtering
-	4516 of these were dropped by `--exclude-all`
-	999 strains were added back because they were in results/b_lineage/sample-lineage-focus.txt
-999 strains passed all filters

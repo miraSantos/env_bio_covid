@@ -1,5 +1,0 @@
-33 strains were dropped during filtering
-	5915 of these were dropped by `--exclude-all`
-	2 strains were added back because they were in results/new_york/sample-focal.txt
-	5882 strains were added back because they were in results/new_york/sample-contextual.txt
-5882 strains passed all filters
