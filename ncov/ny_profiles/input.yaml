@@ -1,0 +1,6 @@
+inputs:
+  - name: gisaid
+    metadata: "data/hcov_north-america.tsv"
+  - name: ny
+    metadata: "data/gisaid_nyc_metadata.tsv"
+    sequences: "data/gisaid_nyc_metadata.fasta"
