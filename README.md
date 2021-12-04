@@ -10,12 +10,8 @@
 
 # Original Paper Workflow
 
-![]{}
 
 
 
 
-
-
-
-# Our Conceptual Map of Scripts
+# 
