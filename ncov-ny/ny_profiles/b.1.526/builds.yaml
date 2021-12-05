@@ -9,8 +9,10 @@ custom_rules:
 
 inputs:
   - name: gisaid
-    metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
-    filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+    metadata: "../ncov/data/hcov_north-america.tsv"
+    sequences: "../ncov/data/hcov_north-america.fasta"
+    #metadata: "data/metadata.tsv.gz"
+    #filtered: "data/filtered_gisaid.fasta.xz"
 
 # Define custom auspice configuration to enable frequencies.
 files:
@@ -20,7 +22,6 @@ files:
 
 # Define NY builds.
 builds:
-
   b.1.526:
     title: "B.1.526-focused SARS-CoV-2 genomic analysis"
     subsampling_scheme: lineage

@@ -9,8 +9,8 @@ custom_rules:
 
 inputs:
   - name: gisaid
-    metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
-    filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+    metadata: "data/metadata.tsv.gz"
+    filtered: "data/filtered_gisaid.fasta.xz"
   - ny:
     metadata: "data/ny_metadata.tsv"
     sequences: "data/ny_sequences.fasta"
@@ -56,38 +56,38 @@ subsampling:
       max_sequences: "{n_sequences_ny_focus_recent}"
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
-      query: --query "(country == 'USA' & location == '{location}' & purpose_of_sequencing != 'S dropout')"
+      query: --query "(country == 'USA' & location == '{location}')"
     usa-context-recent:
       # Evenly sample from earliest_date to latest_date for USA, targeting n_sequences
       group_by: "year month"
       max_sequences: "{n_sequences_usa_context_recent}"
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
-      query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+      query: --query "(country == 'USA')"
     global-context-recent:
       # Evenly sample from earliest_date to latest_date for world, targeting n_sequences
       group_by: "region year month"
       max_sequences: "{n_sequences_global_context_recent}"
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
-      query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+      query: --query "(country != 'USA')"
     ny-focus-early:
       # Evenly sample up to earliest_date for New York, targeting n_sequences
       group_by: "year month"
       max_sequences: "{n_sequences_ny_focus_early}"
       max_date: --max-date {earliest_date}
-      query: --query "(country == 'USA' & location == '{location}' & purpose_of_sequencing != 'S dropout')"
+      query: --query "(country == 'USA' & location == '{location}')"
     usa-context-early:
       # Evenly sample up to earliest_date for USA, targeting n_sequences
       group_by: "year month"
       max_sequences: "{n_sequences_usa_context_early}"
       max_date: --max-date {earliest_date}
-      query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+      query: --query "(country == 'USA')"
     global-context-early:
       # Evenly sample up to earliest_date for world, targeting n_sequences
       group_by: "region year month"
       max_sequences: "{n_sequences_global_context_early}"
       max_date: --max-date {earliest_date}
-      query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+      query: --query "(country != 'USA')"
 
 skip_travel_history_adjustment: True

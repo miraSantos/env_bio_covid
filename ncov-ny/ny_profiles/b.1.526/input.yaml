@@ -1,5 +1,12 @@
 
 inputs:
   - name: gisaid
-    metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
-    filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+    #metadata: "s3://nextstrain-data/files/ncov/open/metadata.tsv.gz"
+    #sequences: "s3://nextstrain-data/files/ncov/open/filtered.fasta.xz"
+    #metadata: "data/metadata.tsv.gz"
+    #filtered: "data/filtered_gisaid.fasta.xz"
+    metadata: "../ncov/data/hcov_north-america.tsv"
+    sequences: "../ncov/data/hcov_north-america.fasta"
+  - name: reference
+    metadata: "../ncov/data/wuhan_reference.metadata.tsv"
+    sequences: "../ncov/data/wuhan_reference.sequences.fasta"
