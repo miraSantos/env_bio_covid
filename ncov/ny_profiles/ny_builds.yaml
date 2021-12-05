@@ -5,12 +5,13 @@ custom_rules:
 
 # define inputs
 inputs:
-   - ny:
-     metadata: data/gisaid_nyc_metadata.tsv
-     filtered: data/gisaid_nyc_sequences.fasta
-   - name: gisaid
-     metadata: data/hcov_north-america.tsv
-     filtered: data/hcov_north-america.fasta
+  - name: gisaid
+    metadata: data/hcov_north-america.tsv
+    filtered: data/hcov_north-america.fasta 
+  - ny:
+    metadata: data/gisaid_nyc_metadata.tsv
+    filtered: data/gisaid_nyc_sequences.fasta
+   
 
 builds:
   ny_6m:
@@ -70,4 +71,4 @@ subsampling:
       max_date: --max-date {earliest_date}
       query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
 
-skip_travel_history_adjustment: True
+#skip_travel_history_adjustment: True
