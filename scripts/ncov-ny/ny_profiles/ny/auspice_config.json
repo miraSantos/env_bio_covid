@@ -115,7 +115,7 @@
     "geo_resolution": "location",
     "map_triplicate": false,
     "branch_label": "aa",
-    "transmission_lines": false
+    "transmission_lines": true
   },
   "filters": [
     "recency",

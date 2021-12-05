@@ -2,7 +2,7 @@
 inputs:
   - name: gisaid
     metadata: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/metadata.tsv.gz"
-    filtered: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/filtered_gisaid.fasta.xz"
+    sequences: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/filtered_gisaid.fasta.xz"
    # sequences: "s3://nextstrain-ncov-private/sequences.fasta.gz"
    # Uncomment outputs to start the pipeline at that stage.
    # E.g. if you uncomment `filtered` then the pipeline

@@ -10,7 +10,7 @@ custom_rules:
 inputs:
   - name: gisaid
     metadata: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/metadata.tsv.gz"
-    filtered: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/filtered_gisaid.fasta.xz"
+    sequences: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/filtered_gisaid.fasta.xz"
   - ny:
     metadata: "data/ny_metadata.tsv"
     sequences: "data/ny_sequences.fasta"
