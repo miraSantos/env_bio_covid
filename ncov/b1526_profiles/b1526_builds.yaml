@@ -3,11 +3,11 @@ use_nextalign: true
 
 inputs:
    - name: b_1_526
-     metadata: data/b1526.metadata.tsv
-     sequences: data/b1526.sequences.fasta
+     metadata: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/b.1.526/b1526.metadata.tsv
+     sequences: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/b.1.526/b1526.sequences.fasta
    - name: b_1_526_2
-     metadata: data/wuhan_reference.metadata.tsv
-     sequences: data/wuhan_reference.sequences.fasta
+     metadata: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv
+     sequences: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.sequences.fasta
 
 files:
    auspice_config: "b1526_profiles/auspice_config.json"

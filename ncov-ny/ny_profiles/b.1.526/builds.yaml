@@ -9,8 +9,8 @@ custom_rules:
 
 inputs:
   - name: gisaid
-    metadata: "../ncov/data/hcov_north-america.tsv"
-    sequences: "../ncov/data/hcov_north-america.fasta"
+    metadata: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/hcov_north-america/hcov_north-america.tsv"
+    sequences: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/hcov_north-america/hcov_north-america.fasta"
     #metadata: "data/metadata.tsv.gz"
     #filtered: "data/filtered_gisaid.fasta.xz"
 
