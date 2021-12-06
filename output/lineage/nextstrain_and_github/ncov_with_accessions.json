@@ -1,0 +1,2368 @@
+{
+  "meta": {
+    "build_url": "https://github.com/blab/ncov-ny/",
+    "colorings": [
+      {
+        "key": "clade_membership",
+        "title": "Clade",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "location",
+        "scale": [
+          [
+            "Tippecanoe County",
+            "#E1532B"
+          ],
+          [
+            "New York City",
+            "#DE3926"
+          ]
+        ],
+        "title": "Location",
+        "type": "categorical"
+      },
+      {
+        "key": "division",
+        "scale": [
+          [
+            "Indiana",
+            "#9DBE5A"
+          ],
+          [
+            "Virginia",
+            "#D5B03F"
+          ],
+          [
+            "New York",
+            "#E68B35"
+          ],
+          [
+            "Rhode Island",
+            "#E2562B"
+          ],
+          [
+            "Virgin Islands",
+            "#DD3425"
+          ]
+        ],
+        "title": "State",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4068CF"
+          ],
+          [
+            "Antigua and Barbuda",
+            "#E04D29"
+          ],
+          [
+            "Dominican Republic",
+            "#DE3826"
+          ],
+          [
+            "Mexico",
+            "#DD3425"
+          ],
+          [
+            "USA",
+            "#DC2C24"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "region",
+        "scale": [
+          [
+            "Asia",
+            "#447CCD"
+          ],
+          [
+            "North America",
+            "#E2562B"
+          ]
+        ],
+        "title": "Region",
+        "type": "categorical"
+      },
+      {
+        "key": "subclade_membership",
+        "title": "Emerging clade",
+        "type": "categorical"
+      },
+      {
+        "key": "pango_lineage",
+        "title": "PANGO lineage",
+        "type": "categorical"
+      },
+      {
+        "key": "GISAID_clade",
+        "title": "GISAID Clade",
+        "type": "categorical"
+      },
+      {
+        "key": "S1_mutations",
+        "title": "S1 mutations",
+        "type": "continuous"
+      },
+      {
+        "key": "host",
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "age",
+        "title": "Age",
+        "type": "continuous"
+      },
+      {
+        "key": "sex",
+        "title": "Sex",
+        "type": "categorical"
+      },
+      {
+        "key": "author",
+        "title": "Authors",
+        "type": "categorical"
+      },
+      {
+        "key": "originating_lab",
+        "title": "Originating Lab",
+        "type": "categorical"
+      },
+      {
+        "key": "submitting_lab",
+        "title": "Submitting Lab",
+        "type": "categorical"
+      },
+      {
+        "key": "recency",
+        "scale": [
+          [
+            "Older",
+            "#447CCD"
+          ]
+        ],
+        "title": "Submission Date",
+        "type": "categorical"
+      },
+      {
+        "key": "gisaid_epi_isl",
+        "title": "gisaid_epi_isl",
+        "type": "categorical"
+      },
+      {
+        "key": "genbank_accession",
+        "title": "genbank_accession",
+        "type": "categorical"
+      },
+      {
+        "key": "country_exposure",
+        "title": "Country of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "division_exposure",
+        "title": "Division of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "region_exposure",
+        "title": "Region of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "subclade_membership",
+        "title": "Emerging clade",
+        "type": "categorical"
+      },
+      {
+        "key": "S1_mutations",
+        "title": "S1 mutations",
+        "type": "continuous"
+      },
+      {
+        "key": "recency",
+        "scale": [
+          [
+            "Older",
+            "#447CCD"
+          ]
+        ],
+        "title": "Submission Date",
+        "type": "categorical"
+      }
+    ],
+    "description": "Hi! This is the default description. Edit me in `my_profiles/<build_name>/description.md`, and add this line to your `my_profiles/builds.yaml` file:  \n```\nfiles:  \n\tdescription: my_profiles/<build_name>/description.md\n```\n",
+    "display_defaults": {
+      "branch_label": "aa",
+      "color_by": "clade_membership",
+      "distance_measure": "div",
+      "geo_resolution": "location",
+      "map_triplicate": false,
+      "transmission_lines": false
+    },
+    "filters": [
+      "recency",
+      "clade_membership",
+      "location",
+      "division",
+      "country",
+      "region",
+      "author",
+      "pango_lineage"
+    ],
+    "genome_annotations": {
+      "E": {
+        "end": 26472,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 26245,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "M": {
+        "end": 27191,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 26523,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "N": {
+        "end": 29533,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 28274,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF1a": {
+        "end": 13468,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 266,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF1b": {
+        "end": 21555,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 13468,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF3a": {
+        "end": 26220,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 25393,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF6": {
+        "end": 27387,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27202,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF7a": {
+        "end": 27759,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27394,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF7b": {
+        "end": 27887,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27756,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF8": {
+        "end": 28259,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 27894,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF9b": {
+        "end": 28577,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 28284,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "S": {
+        "end": 25384,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 21563,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "nuc": {
+        "end": 29903,
+        "seqid": "defaults/reference_seq.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "source"
+      }
+    },
+    "geo_resolutions": [
+      {
+        "demes": {
+          "New York City": {
+            "latitude": 40.695065,
+            "longitude": -73.993461
+          },
+          "Tippecanoe County": {
+            "latitude": 40.3916066,
+            "longitude": -86.8879689
+          }
+        },
+        "key": "location"
+      },
+      {
+        "demes": {
+          "Antigua and Barbuda": {
+            "latitude": 17.2234721,
+            "longitude": -61.9554608
+          },
+          "Guanajuato": {
+            "latitude": 20.9876996,
+            "longitude": -101.0
+          },
+          "Indiana": {
+            "latitude": 40.2672,
+            "longitude": -86.1349
+          },
+          "New York": {
+            "latitude": 40.703395,
+            "longitude": -73.904193
+          },
+          "Rhode Island": {
+            "latitude": 41.5801,
+            "longitude": -71.4774
+          },
+          "Santo Domingo": {
+            "latitude": -0.34018899999999996,
+            "longitude": -79.17154939601922
+          },
+          "Virgin Islands": {
+            "latitude": 18.3358,
+            "longitude": -64.8963
+          },
+          "Virginia": {
+            "latitude": 37.926868,
+            "longitude": -78.024902
+          }
+        },
+        "key": "division"
+      },
+      {
+        "demes": {
+          "Antigua and Barbuda": {
+            "latitude": 17.2234721,
+            "longitude": -61.9554608
+          },
+          "China": {
+            "latitude": 33.394333,
+            "longitude": 104.689839
+          },
+          "Dominican Republic": {
+            "latitude": 19.0974031,
+            "longitude": -70.3028026
+          },
+          "Mexico": {
+            "latitude": 19.4325301,
+            "longitude": -99.1332101
+          },
+          "USA": {
+            "latitude": 38.916963,
+            "longitude": -98.891372
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Asia": {
+            "latitude": 30.451098,
+            "longitude": 86.654576
+          },
+          "North America": {
+            "latitude": 28.2367447,
+            "longitude": -97.738017
+          }
+        },
+        "key": "region"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Trevor Bedford",
+        "url": "https://bedford.io"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy",
+      "frequencies"
+    ],
+    "title": "B.1.526-focused SARS-CoV-2 genomic analysis",
+    "updated": "2021-12-04"
+  },
+  "tree": {
+    "branch_attrs": {
+      "labels": {
+        "clade": "19A"
+      },
+      "mutations": {}
+    },
+    "children": [
+      {
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "name": "Wuhan/Hu-1/2019",
+        "node_attrs": {
+          "GISAID_clade": {
+            "value": "L"
+          },
+          "S1_mutations": {
+            "value": 0.0
+          },
+          "author": {
+            "author": "Zhang,Y.-Z., Wu,F., Chen,Y.-M., Pei,Y.-Y., Xu,L., Wang,W., Zhao,S., Yu,B., Hu,Y., Tao,Z.-W., Song,Z.-G., Tian,J.-H., Zhang,Y.-L., Liu,Y., Zheng,J.-J., Dai,F.-H., Wang,Q.-M., She,J.-L. and Zhu,T.-Y.",
+            "value": "Zhang,Y.-Z., Wu,F., Chen,Y.-M., Pei,Y.-Y., Xu,L., Wang,W., Zhao,S., Yu,B., Hu,Y., Tao,Z.-W., Song,Z.-G., Tian,J.-H., Zhang,Y.-L., Liu,Y., Zheng,J.-J., Dai,F.-H., Wang,Q.-M., She,J.-L. and Zhu,T.-Y."
+          },
+          "clade_membership": {
+            "value": "19A"
+          },
+          "country": {
+            "value": "China"
+          },
+          "country_exposure": {
+            "value": "China"
+          },
+          "div": 0,
+          "gisaid_epi_isl": {
+            "value": "EPI_ISL_402125"
+          },
+          "host": {
+            "value": "Human"
+          },
+          "num_date": {
+            "confidence": [
+              2019.9986301369863,
+              2019.9986301369863
+            ],
+            "value": 2019.9986301369863
+          },
+          "originating_lab": {
+            "value": "National Institute for Communicable Disease Control and Prevention (ICDC) Chinese Center for Disease Control and Prevention (China CDC)"
+          },
+          "recency": {
+            "value": "Older"
+          },
+          "region": {
+            "value": "Asia"
+          },
+          "region_exposure": {
+            "value": "Asia"
+          },
+          "subclade_membership": {
+            "value": "19A"
+          },
+          "submitting_lab": {
+            "value": "National Institute for Communicable Disease Control and Prevention (ICDC) Chinese Center for Disease Control and Prevention (China CDC)"
+          },
+          "url": "https://www.gisaid.org/"
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "ORF1a: T265I, L3201P, S3675-, G3676-, F3677-; ORF1b: P314L, Q1011H; ORF3a: P42L, Q57H; ORF8: T11I; S: L5F, T95I, D253G, D614G",
+            "clade": "20C"
+          },
+          "mutations": {
+            "ORF1a": [
+              "T265I",
+              "L3201P",
+              "S3675-",
+              "G3676-",
+              "F3677-"
+            ],
+            "ORF1b": [
+              "P314L",
+              "Q1011H"
+            ],
+            "ORF3a": [
+              "P42L",
+              "Q57H"
+            ],
+            "ORF8": [
+              "T11I"
+            ],
+            "S": [
+              "L5F",
+              "T95I",
+              "D253G",
+              "D614G"
+            ],
+            "nuc": [
+              "C241T",
+              "C1059T",
+              "C3037T",
+              "T9867C",
+              "T11288-",
+              "C11289-",
+              "T11290-",
+              "G11291-",
+              "G11292-",
+              "T11293-",
+              "T11294-",
+              "T11295-",
+              "T11296-",
+              "C14408T",
+              "A16500C",
+              "A20262G",
+              "C21575T",
+              "C21846T",
+              "A22320G",
+              "A23403G",
+              "C25517T",
+              "G25563T",
+              "C27925T",
+              "A28271-"
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "N: P13L, S202R; ORF7a: L116F; ORF9b: P10S; S: S477N, Q957R"
+              },
+              "mutations": {
+                "N": [
+                  "P13L",
+                  "S202R"
+                ],
+                "ORF7a": [
+                  "L116F"
+                ],
+                "ORF9b": [
+                  "P10S"
+                ],
+                "S": [
+                  "S477N",
+                  "Q957R"
+                ],
+                "nuc": [
+                  "G22992A",
+                  "A24432G",
+                  "A25968G",
+                  "C27739T",
+                  "C28311T",
+                  "T28879G"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: K798N"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "K798N"
+                    ],
+                    "nuc": [
+                      "G2659T"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/USA/RI-CDC-LC0051942/2021",
+                "node_attrs": {
+                  "GISAID_clade": {
+                    "value": "GH"
+                  },
+                  "S1_mutations": {
+                    "value": 4.0
+                  },
+                  "age": {
+                    "value": "34"
+                  },
+                  "author": {
+                    "author": "Dakota Howard, Dhwani Batra, Peter W. Cook, Kara Moser, Adrian Paskey, Jason Caravas, Benjamin Rambo-Martin, Shatavia Morrison, Christopher Gulvick, Scott Sammons, Yvette Unoarumhi, Darlene Wagner, Matthew Schmerer, Minoo Agarwal, Eyad Almasri, Debbie Boles, Ayla Burns, Nuthawin Charoensri, Oren Cohen, Susan Countryman, Mary Ann Cristobal, Bobbi Croy, Suzanne Dale, Hrushikesh Deshmukh, Amanda Douglas, Vincent Drouillon, Marcia Eisenberg, Howard Engler, Rama Ghatti, Prashant Gupta, Susan Hicks, Jake Humphrey, Lax Iyer, Manoj Jain, Mohan Kolli, Brian Krueger, Tim Kuphal, Stanley Letovsky, Michael Levandoski, Craig Lukasik, Jonathan Meltzer, Brian Norvell, Mindy Nye, Scott Parker, Christos Petropoulos, John Pruitt, Steven Ragan, Scott Ryan, Mike Sapeta, Jana Schroth, Suresh Babu Selvaraju, Goran Stevovic, Amanda Suchanek, Andrea Throop, Lyndon Tilson, Thomas Urban, Joe Voshell, Kimberly Wagner, Jonathan Williams, Mary Williamson, Qian Zeng, Tricia Zwiefelhofer, Clinton R. Paden, Duncan MacCannell",
+                    "value": "Dakota Howard, Dhwani Batra, Peter W. Cook, Kara Moser, Adrian Paskey, Jason Caravas, Benjamin Rambo-Martin, Shatavia Morrison, Christopher Gulvick, Scott Sammons, Yvette Unoarumhi, Darlene Wagner, Matthew Schmerer, Minoo Agarwal, Eyad Almasri, Debbie Boles, Ayla Burns, Nuthawin Charoensri, Oren Cohen, Susan Countryman, Mary Ann Cristobal, Bobbi Croy, Suzanne Dale, Hrushikesh Deshmukh, Amanda Douglas, Vincent Drouillon, Marcia Eisenberg, Howard Engler, Rama Ghatti, Prashant Gupta, Susan Hicks, Jake Humphrey, Lax Iyer, Manoj Jain, Mohan Kolli, Brian Krueger, Tim Kuphal, Stanley Letovsky, Michael Levandoski, Craig Lukasik, Jonathan Meltzer, Brian Norvell, Mindy Nye, Scott Parker, Christos Petropoulos, John Pruitt, Steven Ragan, Scott Ryan, Mike Sapeta, Jana Schroth, Suresh Babu Selvaraju, Goran Stevovic, Amanda Suchanek, Andrea Throop, Lyndon Tilson, Thomas Urban, Joe Voshell, Kimberly Wagner, Jonathan Williams, Mary Williamson, Qian Zeng, Tricia Zwiefelhofer, Clinton R. Paden, Duncan MacCannell"
+                  },
+                  "clade_membership": {
+                    "value": "20C"
+                  },
+                  "country": {
+                    "value": "USA"
+                  },
+                  "country_exposure": {
+                    "value": "USA"
+                  },
+                  "div": 21,
+                  "division": {
+                    "confidence": {
+                      "Rhode Island": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Rhode Island"
+                  },
+                  "division_exposure": {
+                    "value": "Rhode Island"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_1929428"
+                  },
+                  "host": {
+                    "value": "Human"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2021.2945205479452,
+                      2021.2945205479452
+                    ],
+                    "value": 2021.2945205479452
+                  },
+                  "originating_lab": {
+                    "value": "Laboratory Corporation of America"
+                  },
+                  "pango_lineage": {
+                    "value": "B.1.526"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Male"
+                  },
+                  "subclade_membership": {
+                    "value": "20C"
+                  },
+                  "submitting_lab": {
+                    "value": "Centers for Disease Control and Prevention Division of Viral Diseases, Pathogen Discovery"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: G1946S"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "G1946S"
+                    ],
+                    "nuc": [
+                      "G6101A",
+                      "A7201G",
+                      "C8809T",
+                      "C29738-",
+                      "C29739-",
+                      "A29740-",
+                      "C29741-",
+                      "G29742-",
+                      "C29743-",
+                      "G29744-",
+                      "G29745-",
+                      "A29746-",
+                      "G29747-",
+                      "T29748-",
+                      "A29749-",
+                      "C29750-",
+                      "G29751-",
+                      "A29752-",
+                      "T29753-",
+                      "C29754-",
+                      "G29755-",
+                      "A29756-",
+                      "G29757-",
+                      "T29758-",
+                      "G29759-",
+                      "T29760-"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF1a: K798N; S: A845S, D1260N"
+                      },
+                      "mutations": {
+                        "ORF1a": [
+                          "K798N"
+                        ],
+                        "S": [
+                          "A845S",
+                          "D1260N"
+                        ],
+                        "nuc": [
+                          "G2659T",
+                          "C4540T",
+                          "C8890T",
+                          "C11653T",
+                          "G24095T",
+                          "G25340A"
+                        ]
+                      }
+                    },
+                    "name": "hCoV-19/USA/RI-CDCBI-RIDOH_00766/2021",
+                    "node_attrs": {
+                      "GISAID_clade": {
+                        "value": "GH"
+                      },
+                      "S1_mutations": {
+                        "value": 4.0
+                      },
+                      "author": {
+                        "author": "Siddle,K.J., Azevedo,K., Miller,A., Adams,G., Pearlman,L., Gladden-Young,A., Lagerborg,K., Rudy,M., DeRuff,K., Carter,A., Normandin,E., Bauer,M., Reilly,S., Tomkins-Tinch,C., Loreth,C., Chaluvadi,S., Lemieux,J.E., Birren,B.W., Sabeti,P.C., Huard,R., King,E., Park,D.J., and MacInnis,B.L.",
+                        "value": "Siddle,K.J., Azevedo,K., Miller,A., Adams,G., Pearlman,L., Gladden-Young,A., Lagerborg,K., Rudy,M., DeRuff,K., Carter,A., Normandin,E., Bauer,M., Reilly,S., Tomkins-Tinch,C., Loreth,C., Chaluvadi,S., Lemieux,J.E., Birren,B.W., Sabeti,P.C., Huard,R., King,E., Park,D.J., and MacInnis,B.L."
+                      },
+                      "clade_membership": {
+                        "value": "20C"
+                      },
+                      "country": {
+                        "value": "USA"
+                      },
+                      "country_exposure": {
+                        "value": "USA"
+                      },
+                      "div": 29,
+                      "division": {
+                        "confidence": {
+                          "Rhode Island": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Rhode Island"
+                      },
+                      "division_exposure": {
+                        "value": "Rhode Island"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_1407440"
+                      },
+                      "host": {
+                        "value": "Human"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2021.16301369863,
+                          2021.16301369863
+                        ],
+                        "value": 2021.16301369863
+                      },
+                      "originating_lab": {
+                        "value": "Rhode Island Department of Health"
+                      },
+                      "pango_lineage": {
+                        "value": "B.1.526"
+                      },
+                      "recency": {
+                        "value": "Older"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "value": "North America"
+                      },
+                      "subclade_membership": {
+                        "value": "20C"
+                      },
+                      "submitting_lab": {
+                        "value": "Infectious Disease Program, Broad Institute of Harvard and MIT"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF1a: K1281Q, M1771T, V3057A, F3770V; S: L18F, G446S"
+                      },
+                      "mutations": {
+                        "ORF1a": [
+                          "K1281Q",
+                          "M1771T",
+                          "V3057A",
+                          "F3770V"
+                        ],
+                        "S": [
+                          "L18F",
+                          "G446S"
+                        ],
+                        "nuc": [
+                          "A4106C",
+                          "T5577C",
+                          "T9435C",
+                          "T11573G",
+                          "C12880T",
+                          "T19680G",
+                          "C21614T",
+                          "C21658T",
+                          "G22898A",
+                          "-29738C",
+                          "-29739C",
+                          "-29740A",
+                          "-29741C",
+                          "-29742G",
+                          "-29743C",
+                          "-29744G",
+                          "-29745G",
+                          "-29746A",
+                          "-29747G",
+                          "-29748T",
+                          "-29749A",
+                          "-29750C",
+                          "-29751G",
+                          "-29752A",
+                          "-29753T",
+                          "-29754C",
+                          "-29755G",
+                          "-29756A",
+                          "-29757G",
+                          "-29758T",
+                          "-29759G",
+                          "-29760T"
+                        ]
+                      }
+                    },
+                    "name": "hCoV-19/USA/NY-PRL-2021_0408_00M05/2021",
+                    "node_attrs": {
+                      "GISAID_clade": {
+                        "value": "GH"
+                      },
+                      "S1_mutations": {
+                        "value": 6.0
+                      },
+                      "age": {
+                        "value": "42"
+                      },
+                      "author": {
+                        "author": "Henry Lee, Michael Hammerling, Melissa Hopkins, Cybill del Castillo, Shinyoung Clair Kang, William Ward, Pradeep Bugga, Sol Rey, Dylan Law, Katharine Nelson, Haiping Hao, Jon Laurent",
+                        "value": "Henry Lee, Michael Hammerling, Melissa Hopkins, Cybill del Castillo, Shinyoung Clair Kang, William Ward, Pradeep Bugga, Sol Rey, Dylan Law, Katharine Nelson, Haiping Hao, Jon Laurent"
+                      },
+                      "clade_membership": {
+                        "value": "20C"
+                      },
+                      "country": {
+                        "value": "USA"
+                      },
+                      "country_exposure": {
+                        "value": "USA"
+                      },
+                      "div": 32,
+                      "division": {
+                        "confidence": {
+                          "New York": 0.9999999999999999
+                        },
+                        "entropy": -9.99866855976916e-13,
+                        "value": "New York"
+                      },
+                      "division_exposure": {
+                        "value": "New York"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_1543883"
+                      },
+                      "host": {
+                        "value": "Human"
+                      },
+                      "location": {
+                        "value": "New York City"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2021.2616438356165,
+                          2021.2616438356165
+                        ],
+                        "value": 2021.2616438356165
+                      },
+                      "originating_lab": {
+                        "value": "Pandemic Response Lab - NYC"
+                      },
+                      "pango_lineage": {
+                        "value": "B.1.526"
+                      },
+                      "recency": {
+                        "value": "Older"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "value": "North America"
+                      },
+                      "sex": {
+                        "value": "Male"
+                      },
+                      "subclade_membership": {
+                        "value": "20C"
+                      },
+                      "submitting_lab": {
+                        "value": "Pandemic Response Lab, R&D"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF1a: I2309T; ORF1b: I235M; S: D1184E"
+                      },
+                      "mutations": {
+                        "ORF1a": [
+                          "I2309T"
+                        ],
+                        "ORF1b": [
+                          "I235M"
+                        ],
+                        "S": [
+                          "D1184E"
+                        ],
+                        "nuc": [
+                          "T7191C",
+                          "A14172G",
+                          "C25114A"
+                        ]
+                      }
+                    },
+                    "name": "hCoV-19/DominicanRepublic/Yale-5456/2021",
+                    "node_attrs": {
+                      "GISAID_clade": {
+                        "value": "GH"
+                      },
+                      "S1_mutations": {
+                        "value": 4.0
+                      },
+                      "author": {
+                        "author": "Joseph Fauver, Mallery Breban, Isabel Ott, Tara Alpert, Mary Petrone, Anderson Brito, Chantal Vogels, Annie Watkins, Chaney Kalinich, Jessica Rothman, Kendall Billig, Tobias Koch, Robert Paulino-Ramirez, Alejandaro Vallejo Degaudenzi, Victor Virgilio Calderon, Elisa Contreras, Esperanza Mendoza, Nathan Grubaugh",
+                        "value": "Joseph Fauver, Mallery Breban, Isabel Ott, Tara Alpert, Mary Petrone, Anderson Brito, Chantal Vogels, Annie Watkins, Chaney Kalinich, Jessica Rothman, Kendall Billig, Tobias Koch, Robert Paulino-Ramirez, Alejandaro Vallejo Degaudenzi, Victor Virgilio Calderon, Elisa Contreras, Esperanza Mendoza, Nathan Grubaugh"
+                      },
+                      "clade_membership": {
+                        "value": "20C"
+                      },
+                      "country": {
+                        "value": "Dominican Republic"
+                      },
+                      "country_exposure": {
+                        "value": "Dominican Republic"
+                      },
+                      "div": 26,
+                      "division": {
+                        "confidence": {
+                          "Santo Domingo": 0.9999999999999999
+                        },
+                        "entropy": -9.99866855976916e-13,
+                        "value": "Santo Domingo"
+                      },
+                      "division_exposure": {
+                        "value": "Santo Domingo"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_2776169"
+                      },
+                      "host": {
+                        "value": "Human"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2021.182191780822,
+                          2021.182191780822
+                        ],
+                        "value": 2021.182191780822
+                      },
+                      "originating_lab": {
+                        "value": "Instituto de Medicina Tropical & Salud Global (IMTSAG)"
+                      },
+                      "pango_lineage": {
+                        "value": "B.1.526"
+                      },
+                      "recency": {
+                        "value": "Older"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "value": "North America"
+                      },
+                      "subclade_membership": {
+                        "value": "20C"
+                      },
+                      "submitting_lab": {
+                        "value": "Grubaugh Lab - Yale School of Public Health"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000001",
+                "node_attrs": {
+                  "S1_mutations": {
+                    "value": 4.0
+                  },
+                  "clade_membership": {
+                    "value": "20C"
+                  },
+                  "div": 23,
+                  "division": {
+                    "confidence": {
+                      "": 0.041862815254996605,
+                      "New York": 0.2271684794786909,
+                      "Rhode Island": 0.3407404614638063,
+                      "Santo Domingo": 0.21785700157906546
+                    },
+                    "entropy": 1.7482831526908849,
+                    "value": "Rhode Island"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2021.0587635733573,
+                      2021.1542835046707
+                    ],
+                    "value": 2021.0659064651795
+                  },
+                  "subclade_membership": {
+                    "value": "20C"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000002",
+            "node_attrs": {
+              "S1_mutations": {
+                "value": 4.0
+              },
+              "clade_membership": {
+                "value": "20C"
+              },
+              "div": 20,
+              "division": {
+                "confidence": {
+                  "": 0.07687843724557851,
+                  "New York": 0.12307946512758476,
+                  "Rhode Island": 0.3862400985378374,
+                  "Santo Domingo": 0.1291139440639026
+                },
+                "entropy": 1.9021551222123985,
+                "value": "Rhode Island"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.9101562311187,
+                  2021.11155353915
+                ],
+                "value": 2021.0266942615726
+              },
+              "subclade_membership": {
+                "value": "20C"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "N: P199L, M234I; S: A701V"
+              },
+              "mutations": {
+                "N": [
+                  "P199L",
+                  "M234I"
+                ],
+                "S": [
+                  "A701V"
+                ],
+                "nuc": [
+                  "C23664T",
+                  "C28869T",
+                  "G28975A"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: G1946S, V2130A; ORF1b: P2531S; S: N603S"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "G1946S",
+                      "V2130A"
+                    ],
+                    "ORF1b": [
+                      "P2531S"
+                    ],
+                    "S": [
+                      "N603S"
+                    ],
+                    "nuc": [
+                      "C988T",
+                      "G6101A",
+                      "T6654C",
+                      "A7201G",
+                      "C10450T",
+                      "C21058T",
+                      "A23370G"
+                    ]
+                  }
+                },
+                "name": "hCoV-19/DominicanRepublic/Yale-5447/2021",
+                "node_attrs": {
+                  "GISAID_clade": {
+                    "value": "GH"
+                  },
+                  "S1_mutations": {
+                    "value": 4.0
+                  },
+                  "author": {
+                    "author": "Joseph Fauver, Mallery Breban, Isabel Ott, Tara Alpert, Mary Petrone, Anderson Brito, Chantal Vogels, Annie Watkins, Chaney Kalinich, Jessica Rothman, Kendall Billig, Tobias Koch, Robert Paulino-Ramirez, Alejandaro Vallejo Degaudenzi, Victor Virgilio Calderon, Elisa Contreras, Esperanza Mendoza, Nathan Grubaugh",
+                    "value": "Joseph Fauver, Mallery Breban, Isabel Ott, Tara Alpert, Mary Petrone, Anderson Brito, Chantal Vogels, Annie Watkins, Chaney Kalinich, Jessica Rothman, Kendall Billig, Tobias Koch, Robert Paulino-Ramirez, Alejandaro Vallejo Degaudenzi, Victor Virgilio Calderon, Elisa Contreras, Esperanza Mendoza, Nathan Grubaugh"
+                  },
+                  "clade_membership": {
+                    "value": "20C"
+                  },
+                  "country": {
+                    "value": "Dominican Republic"
+                  },
+                  "country_exposure": {
+                    "value": "Dominican Republic"
+                  },
+                  "div": 24,
+                  "division": {
+                    "confidence": {
+                      "Santo Domingo": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "Santo Domingo"
+                  },
+                  "division_exposure": {
+                    "value": "Santo Domingo"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_2776162"
+                  },
+                  "host": {
+                    "value": "Human"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2021.1739726027397,
+                      2021.1739726027397
+                    ],
+                    "value": 2021.1739726027397
+                  },
+                  "originating_lab": {
+                    "value": "Instituto de Medicina Tropical & Salud Global (IMTSAG)"
+                  },
+                  "pango_lineage": {
+                    "value": "B.1.526"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "value": "North America"
+                  },
+                  "subclade_membership": {
+                    "value": "20C"
+                  },
+                  "submitting_lab": {
+                    "value": "Grubaugh Lab - Yale School of Public Health"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF1a: P3504S; ORF9b: T83I; S: S477N"
+                      },
+                      "mutations": {
+                        "ORF1a": [
+                          "P3504S"
+                        ],
+                        "ORF9b": [
+                          "T83I"
+                        ],
+                        "S": [
+                          "S477N"
+                        ],
+                        "nuc": [
+                          "C140T",
+                          "C4456T",
+                          "C4777T",
+                          "C10775T",
+                          "T20592C",
+                          "G22992A",
+                          "C23731T",
+                          "C28531T"
+                        ]
+                      }
+                    },
+                    "name": "hCoV-19/USA/VA-DCLS-4913/2021",
+                    "node_attrs": {
+                      "GISAID_clade": {
+                        "value": "GH"
+                      },
+                      "S1_mutations": {
+                        "value": 4.0
+                      },
+                      "author": {
+                        "author": "Virginia DCLS",
+                        "value": "Virginia DCLS"
+                      },
+                      "clade_membership": {
+                        "value": "20C"
+                      },
+                      "country": {
+                        "value": "USA"
+                      },
+                      "country_exposure": {
+                        "value": "USA"
+                      },
+                      "div": 25,
+                      "division": {
+                        "confidence": {
+                          "Virginia": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "Virginia"
+                      },
+                      "division_exposure": {
+                        "value": "Virginia"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_2229413"
+                      },
+                      "host": {
+                        "value": "Human"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2021.3301369863013,
+                          2021.3301369863013
+                        ],
+                        "value": 2021.3301369863013
+                      },
+                      "originating_lab": {
+                        "value": "Virginia Division of Consolidated Laboratory Services"
+                      },
+                      "pango_lineage": {
+                        "value": "B.1.526"
+                      },
+                      "recency": {
+                        "value": "Older"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "value": "North America"
+                      },
+                      "subclade_membership": {
+                        "value": "20C"
+                      },
+                      "submitting_lab": {
+                        "value": "Virginia Division of Consolidated Laboratory Services"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "S: E484K"
+                      },
+                      "mutations": {
+                        "S": [
+                          "E484K"
+                        ],
+                        "nuc": [
+                          "G23012A"
+                        ]
+                      }
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "ORF1a: G493S, A1306S, T2836I, T3749I; ORF1b: V1840I"
+                          },
+                          "mutations": {
+                            "ORF1a": [
+                              "G493S",
+                              "A1306S",
+                              "T2836I",
+                              "T3749I"
+                            ],
+                            "ORF1b": [
+                              "V1840I"
+                            ],
+                            "nuc": [
+                              "G1742A",
+                              "C3589T",
+                              "G4181T",
+                              "C8772T",
+                              "C11511T",
+                              "T15403C",
+                              "G18985A",
+                              "T24979C",
+                              "A26579G"
+                            ]
+                          }
+                        },
+                        "name": "hCoV-19/Mexico/GUA-IBT_IMSS_1839/2021",
+                        "node_attrs": {
+                          "GISAID_clade": {
+                            "value": "GH"
+                          },
+                          "S1_mutations": {
+                            "value": 4.0
+                          },
+                          "age": {
+                            "value": "41"
+                          },
+                          "author": {
+                            "author": "Consorcio Mexicano de Vigilancia Gen\u00f3mica (CoViGen-Mex). Authors (in alphabetical order): Julio Elias Alvarado-Yaah, Carlos F. Arias, Santiago \u00c1vila-R\u00edos, Eduardo Becerril-Vargas, V\u00edctor Hugo Borja-Aburto, Celia Boukadida, Crist\u00f3bal Ch\u00e1idez-Quir\u00f3z, Juan Bautista Chale-Dzul, Ricardo Ciria Merce, Andreu Comas-Garc\u00eda, C\u00e9lida Duque Molina, Julissa Enciso-Ibarra, Jos\u00e9 Antonio Enciso-Moreno, Gloria Elena Espinosa-Ayala, Fernando Fontove-Herrera, Daniel Fregoso-Rueda, Victor Eduardo Garc\u00eda-Arias, Alejandra Garc\u00eda-Gasca, Bruno G\u00f3mez-Gil, Jean Pierre Gonz\u00e1lez, Irvin Gonz\u00e1lez-L\u00f3pez, Concepci\u00f3n Grajales-Mu\u00f1iz, Ricardo Grande, Rosa Mar\u00eda Guti\u00e9rrez Rios, Jes\u00fas Hern\u00e1ndez, Alejandra Hern\u00e1ndez-Ter\u00e1n, Alfredo Herrera-Estrella, Carla Iv\u00f3n Herrera-Najera, Pavel Isa, Ver\u00f3nica Mata-Haro, Daniel Lira Morales, Susana Lopez, Antonio Loza Rom\u00e1n, Brenda Irasema Maldonado-Meza, Bernardo Mart\u00ednez-Miguel, Jos\u00e9 Arturo Mart\u00ednez-Orozco, C\u00e9lida Mart\u00ednez- Rodr\u00edguez, Margarita Mat\u00edas-Florentino, Fidencio Mej\u00eda-Nepomuceno, Mar\u00eda Guadalupe de Jes\u00fas Mireles-Rivera, Gloria Mar\u00eda Molina-Salinas, Hector Montoya-Fuentes, , Mario M\u00fajica-S\u00e1nchez, Jos\u00e9 Esteban Mu\u00f1oz-Medina, Jos\u00e9 de Jes\u00fas Nu\u00f1ez-Contreras, Alicia Oca\u00f1a-Mondrag\u00f3n, Luis Alberto Ochoa-Carrera, Hector Esteban Paz-Ju\u00e1rez, Marissa Perez-Garcia, Francisco Pulido, Helen Haydee Fernanda Ram\u00edrez-Plascencia, Jorge Salas-Hern\u00e1ndez, Angel Gustavo Salas-Lais, Alejandro S\u00e1nchez-Flores, Clara Esperanza Santacruz-Tinoco, Mar\u00eda Guadalupe Santiago-Mauricio, Selene Z\u00e1rate, Nelly S\u00e9lem-Mojica, Blanca Taboada, Gloria Vazquez, Joel Armando V\u00e1zquez-P\u00e9rez.",
+                            "value": "Consorcio Mexicano de Vigilancia Gen\u00f3mica (CoViGen-Mex). Authors (in alphabetical order): Julio Elias Alvarado-Yaah, Carlos F. Arias, Santiago \u00c1vila-R\u00edos, Eduardo Becerril-Vargas, V\u00edctor Hugo Borja-Aburto, Celia Boukadida, Crist\u00f3bal Ch\u00e1idez-Quir\u00f3z, Juan Bautista Chale-Dzul, Ricardo Ciria Merce, Andreu Comas-Garc\u00eda, C\u00e9lida Duque Molina, Julissa Enciso-Ibarra, Jos\u00e9 Antonio Enciso-Moreno, Gloria Elena Espinosa-Ayala, Fernando Fontove-Herrera, Daniel Fregoso-Rueda, Victor Eduardo Garc\u00eda-Arias, Alejandra Garc\u00eda-Gasca, Bruno G\u00f3mez-Gil, Jean Pierre Gonz\u00e1lez, Irvin Gonz\u00e1lez-L\u00f3pez, Concepci\u00f3n Grajales-Mu\u00f1iz, Ricardo Grande, Rosa Mar\u00eda Guti\u00e9rrez Rios, Jes\u00fas Hern\u00e1ndez, Alejandra Hern\u00e1ndez-Ter\u00e1n, Alfredo Herrera-Estrella, Carla Iv\u00f3n Herrera-Najera, Pavel Isa, Ver\u00f3nica Mata-Haro, Daniel Lira Morales, Susana Lopez, Antonio Loza Rom\u00e1n, Brenda Irasema Maldonado-Meza, Bernardo Mart\u00ednez-Miguel, Jos\u00e9 Arturo Mart\u00ednez-Orozco, C\u00e9lida Mart\u00ednez- Rodr\u00edguez, Margarita Mat\u00edas-Florentino, Fidencio Mej\u00eda-Nepomuceno, Mar\u00eda Guadalupe de Jes\u00fas Mireles-Rivera, Gloria Mar\u00eda Molina-Salinas, Hector Montoya-Fuentes, , Mario M\u00fajica-S\u00e1nchez, Jos\u00e9 Esteban Mu\u00f1oz-Medina, Jos\u00e9 de Jes\u00fas Nu\u00f1ez-Contreras, Alicia Oca\u00f1a-Mondrag\u00f3n, Luis Alberto Ochoa-Carrera, Hector Esteban Paz-Ju\u00e1rez, Marissa Perez-Garcia, Francisco Pulido, Helen Haydee Fernanda Ram\u00edrez-Plascencia, Jorge Salas-Hern\u00e1ndez, Angel Gustavo Salas-Lais, Alejandro S\u00e1nchez-Flores, Clara Esperanza Santacruz-Tinoco, Mar\u00eda Guadalupe Santiago-Mauricio, Selene Z\u00e1rate, Nelly S\u00e9lem-Mojica, Blanca Taboada, Gloria Vazquez, Joel Armando V\u00e1zquez-P\u00e9rez."
+                          },
+                          "clade_membership": {
+                            "value": "20C"
+                          },
+                          "country": {
+                            "value": "Mexico"
+                          },
+                          "country_exposure": {
+                            "value": "Mexico"
+                          },
+                          "div": 27,
+                          "division": {
+                            "confidence": {
+                              "Guanajuato": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Guanajuato"
+                          },
+                          "division_exposure": {
+                            "value": "Guanajuato"
+                          },
+                          "gisaid_epi_isl": {
+                            "value": "EPI_ISL_2801713"
+                          },
+                          "host": {
+                            "value": "Human"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2021.4150684931508,
+                              2021.4150684931508
+                            ],
+                            "value": 2021.4150684931508
+                          },
+                          "originating_lab": {
+                            "value": "Centro de Investigaci\u00f3n Biom\u00e9dica de Occidente (CIBO)"
+                          },
+                          "pango_lineage": {
+                            "value": "B.1.526"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "North America"
+                          },
+                          "region_exposure": {
+                            "value": "North America"
+                          },
+                          "sex": {
+                            "value": "Female"
+                          },
+                          "subclade_membership": {
+                            "value": "20C"
+                          },
+                          "submitting_lab": {
+                            "value": "Instituto de Biotecnolog\u00eda de la UNAM"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "ORF1a: R1628C; ORF1b: H590Y; S: A27V"
+                          },
+                          "mutations": {
+                            "ORF1a": [
+                              "R1628C"
+                            ],
+                            "ORF1b": [
+                              "H590Y"
+                            ],
+                            "S": [
+                              "A27V"
+                            ],
+                            "nuc": [
+                              "C5147T",
+                              "C15235T",
+                              "C17766T",
+                              "C18657T",
+                              "C20178T",
+                              "C21642T",
+                              "A24424G"
+                            ]
+                          }
+                        },
+                        "name": "hCoV-19/USA/VI-Yale-6060/2021",
+                        "node_attrs": {
+                          "GISAID_clade": {
+                            "value": "GH"
+                          },
+                          "S1_mutations": {
+                            "value": 5.0
+                          },
+                          "author": {
+                            "author": "Joseph Fauver, Mallery Breban, Isabel Ott, Tara Alpert, Mary Petrone, Anderson Brito, Chantal Vogels, Annie Watkins, Chaney Kalinich, Jessica Rothman, Kendall Billig, Tobias Koch, Jendai Richards, TaLesa Aderohunmu, Esther Ellis, Marlon Lawrence, Brett Ellis, Nathan Grubaugh",
+                            "value": "Joseph Fauver, Mallery Breban, Isabel Ott, Tara Alpert, Mary Petrone, Anderson Brito, Chantal Vogels, Annie Watkins, Chaney Kalinich, Jessica Rothman, Kendall Billig, Tobias Koch, Jendai Richards, TaLesa Aderohunmu, Esther Ellis, Marlon Lawrence, Brett Ellis, Nathan Grubaugh"
+                          },
+                          "clade_membership": {
+                            "value": "20C"
+                          },
+                          "country": {
+                            "value": "USA"
+                          },
+                          "country_exposure": {
+                            "value": "USA"
+                          },
+                          "div": 25,
+                          "division": {
+                            "confidence": {
+                              "Virgin Islands": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "Virgin Islands"
+                          },
+                          "division_exposure": {
+                            "value": "Virgin Islands"
+                          },
+                          "gisaid_epi_isl": {
+                            "value": "EPI_ISL_3045956"
+                          },
+                          "host": {
+                            "value": "Human"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2021.2287671232878,
+                              2021.2287671232878
+                            ],
+                            "value": 2021.2287671232878
+                          },
+                          "originating_lab": {
+                            "value": "VIDOH (Virgin Islands Department of Health)"
+                          },
+                          "pango_lineage": {
+                            "value": "B.1.526"
+                          },
+                          "recency": {
+                            "value": "Older"
+                          },
+                          "region": {
+                            "value": "North America"
+                          },
+                          "region_exposure": {
+                            "value": "North America"
+                          },
+                          "subclade_membership": {
+                            "value": "20C"
+                          },
+                          "submitting_lab": {
+                            "value": "Grubaugh Lab - Yale School of Public Health"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "ORF1b: A520T; S: K1073N"
+                                  },
+                                  "mutations": {
+                                    "ORF1b": [
+                                      "A520T"
+                                    ],
+                                    "S": [
+                                      "K1073N"
+                                    ],
+                                    "nuc": [
+                                      "G15025A",
+                                      "A20598G",
+                                      "G24781T"
+                                    ]
+                                  }
+                                },
+                                "name": "hCoV-19/USA/VA-CDC-LC0062497/2021",
+                                "node_attrs": {
+                                  "GISAID_clade": {
+                                    "value": "GH"
+                                  },
+                                  "S1_mutations": {
+                                    "value": 4.0
+                                  },
+                                  "age": {
+                                    "value": "27"
+                                  },
+                                  "author": {
+                                    "author": "Dakota Howard, Dhwani Batra, Peter W. Cook, Kara Moser, Adrian Paskey, Jason Caravas, Benjamin Rambo-Martin, Shatavia Morrison, Christopher Gulvick, Scott Sammons, Yvette Unoarumhi, Darlene Wagner, Matthew Schmerer, Minoo Agarwal, Eyad Almasri, Debbie Boles, Ayla Burns, Nuthawin Charoensri, Oren Cohen, Susan Countryman, Mary Ann Cristobal, Bobbi Croy, Suzanne Dale, Hrushikesh Deshmukh, Amanda Douglas, Vincent Drouillon, Marcia Eisenberg, Howard Engler, Rama Ghatti, Prashant Gupta, Susan Hicks, Jake Humphrey, Lax Iyer, Lisa Pfefferle, Manoj Jain, Matthew Robinson, Mohan Kolli, Brian Krueger, Tim Kuphal, Stanley Letovsky, Michael Levandoski, Craig Lukasik, Jonathan Meltzer, Brian Norvell, Mindy Nye, Scott Parker, Christos Petropoulos, John Pruitt, Steven Ragan, Scott Ryan, Mike Sapeta, Jana Schroth, Suresh Babu Selvaraju, Goran Stevovic, Amanda Suchanek, Andrea Throop, Lyndon Tilson, Thomas Urban, Joe Voshell, Kimberly Wagner, Jonathan Williams, Mary Williamson, Qian Zeng, Tricia Zwiefelhofer, Clinton R. Paden, Duncan MacCannell",
+                                    "value": "Dakota Howard, Dhwani Batra, Peter W. Cook, Kara Moser, Adrian Paskey, Jason Caravas, Benjamin Rambo-Martin, Shatavia Morrison, Christopher Gulvick, Scott Sammons, Yvette Unoarumhi, Darlene Wagner, Matthew Schmerer, Minoo Agarwal, Eyad Almasri, Debbie Boles, Ayla Burns, Nuthawin Charoensri, Oren Cohen, Susan Countryman, Mary Ann Cristobal, Bobbi Croy, Suzanne Dale, Hrushikesh Deshmukh, Amanda Douglas, Vincent Drouillon, Marcia Eisenberg, Howard Engler, Rama Ghatti, Prashant Gupta, Susan Hicks, Jake Humphrey, Lax Iyer, Lisa Pfefferle, Manoj Jain, Matthew Robinson, Mohan Kolli, Brian Krueger, Tim Kuphal, Stanley Letovsky, Michael Levandoski, Craig Lukasik, Jonathan Meltzer, Brian Norvell, Mindy Nye, Scott Parker, Christos Petropoulos, John Pruitt, Steven Ragan, Scott Ryan, Mike Sapeta, Jana Schroth, Suresh Babu Selvaraju, Goran Stevovic, Amanda Suchanek, Andrea Throop, Lyndon Tilson, Thomas Urban, Joe Voshell, Kimberly Wagner, Jonathan Williams, Mary Williamson, Qian Zeng, Tricia Zwiefelhofer, Clinton R. Paden, Duncan MacCannell"
+                                  },
+                                  "clade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "country": {
+                                    "value": "USA"
+                                  },
+                                  "country_exposure": {
+                                    "value": "USA"
+                                  },
+                                  "div": 21,
+                                  "division": {
+                                    "confidence": {
+                                      "Virginia": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Virginia"
+                                  },
+                                  "division_exposure": {
+                                    "value": "Virginia"
+                                  },
+                                  "gisaid_epi_isl": {
+                                    "value": "EPI_ISL_2399121"
+                                  },
+                                  "host": {
+                                    "value": "Human"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2021.3794520547945,
+                                      2021.3794520547945
+                                    ],
+                                    "value": 2021.3794520547945
+                                  },
+                                  "originating_lab": {
+                                    "value": "Laboratory Corporation of America"
+                                  },
+                                  "pango_lineage": {
+                                    "value": "B.1.526"
+                                  },
+                                  "recency": {
+                                    "value": "Older"
+                                  },
+                                  "region": {
+                                    "value": "North America"
+                                  },
+                                  "region_exposure": {
+                                    "value": "North America"
+                                  },
+                                  "sex": {
+                                    "value": "Female"
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "submitting_lab": {
+                                    "value": "Centers for Disease Control and Prevention Division of Viral Diseases, Pathogen Discovery"
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "N: P20L; ORF1a: T2977I; ORF9b: P17S; S: T1117I"
+                                  },
+                                  "mutations": {
+                                    "N": [
+                                      "P20L"
+                                    ],
+                                    "ORF1a": [
+                                      "T2977I"
+                                    ],
+                                    "ORF9b": [
+                                      "P17S"
+                                    ],
+                                    "S": [
+                                      "T1117I"
+                                    ],
+                                    "nuc": [
+                                      "C7639T",
+                                      "C9195T",
+                                      "C24912T",
+                                      "C28332T"
+                                    ]
+                                  }
+                                },
+                                "name": "hCoV-19/USA/VA-DCLS-5736/2021",
+                                "node_attrs": {
+                                  "GISAID_clade": {
+                                    "value": "GH"
+                                  },
+                                  "S1_mutations": {
+                                    "value": 4.0
+                                  },
+                                  "author": {
+                                    "author": "Virginia Division of Consolidated Laboratory Services",
+                                    "value": "Virginia Division of Consolidated Laboratory Services"
+                                  },
+                                  "clade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "country": {
+                                    "value": "USA"
+                                  },
+                                  "country_exposure": {
+                                    "value": "USA"
+                                  },
+                                  "div": 22,
+                                  "division": {
+                                    "confidence": {
+                                      "Virginia": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Virginia"
+                                  },
+                                  "division_exposure": {
+                                    "value": "Virginia"
+                                  },
+                                  "gisaid_epi_isl": {
+                                    "value": "EPI_ISL_2982641"
+                                  },
+                                  "host": {
+                                    "value": "Human"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2021.4890410958903,
+                                      2021.4890410958903
+                                    ],
+                                    "value": 2021.4890410958903
+                                  },
+                                  "originating_lab": {
+                                    "value": "Virginia Division of Consolidated Laboratory Services"
+                                  },
+                                  "pango_lineage": {
+                                    "value": "B.1.526"
+                                  },
+                                  "recency": {
+                                    "value": "Older"
+                                  },
+                                  "region": {
+                                    "value": "North America"
+                                  },
+                                  "region_exposure": {
+                                    "value": "North America"
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "submitting_lab": {
+                                    "value": "Virginia Division of Consolidated Laboratory Services"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000008",
+                            "node_attrs": {
+                              "S1_mutations": {
+                                "value": 4.0
+                              },
+                              "clade_membership": {
+                                "value": "20C"
+                              },
+                              "div": 18,
+                              "division": {
+                                "confidence": {
+                                  "Guanajuato": 0.047239066605076305,
+                                  "Rhode Island": 0.04390451040641635,
+                                  "Virgin Islands": 0.047239066605076305,
+                                  "Virginia": 0.6732511066140752
+                                },
+                                "entropy": 1.3088464748873,
+                                "value": "Virginia"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2021.0621920001308,
+                                  2021.2487472336927
+                                ],
+                                "value": 2021.1670854345105
+                              },
+                              "subclade_membership": {
+                                "value": "20C"
+                              }
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C15720T"
+                                ]
+                              }
+                            },
+                            "children": [
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "N: A376S; ORF3a: P104L, S253F; S: T572I"
+                                  },
+                                  "mutations": {
+                                    "N": [
+                                      "A376S"
+                                    ],
+                                    "ORF3a": [
+                                      "P104L",
+                                      "S253F"
+                                    ],
+                                    "S": [
+                                      "T572I"
+                                    ],
+                                    "nuc": [
+                                      "T10792C",
+                                      "A14121G",
+                                      "T21895C",
+                                      "C23277T",
+                                      "C25703T",
+                                      "C26150T",
+                                      "G29399T"
+                                    ]
+                                  }
+                                },
+                                "name": "hCoV-19/USA/RI-CDCBI-RIDOH_10111/2021",
+                                "node_attrs": {
+                                  "GISAID_clade": {
+                                    "value": "GH"
+                                  },
+                                  "S1_mutations": {
+                                    "value": 5.0
+                                  },
+                                  "author": {
+                                    "author": "Siddle,K.J., Azevedo,K., Miller,A., Adams,G., Pearlman,L., Gladden-Young,A., Lagerborg,K., Rudy,M., DeRuff,K., Carter,A., Normandin,E., Bauer,M., Reilly,S., Tomkins-Tinch,C., Loreth,C., Chaluvadi,S., Lemieux,J.E., Birren,B.W., Sabeti,P.C., Huard,R., King,E., Park,D.J., and MacInnis,B.L.",
+                                    "value": "Siddle,K.J., Azevedo,K., Miller,A., Adams,G., Pearlman,L., Gladden-Young,A., Lagerborg,K., Rudy,M., DeRuff,K., Carter,A., Normandin,E., Bauer,M., Reilly,S., Tomkins-Tinch,C., Loreth,C., Chaluvadi,S., Lemieux,J.E., Birren,B.W., Sabeti,P.C., Huard,R., King,E., Park,D.J., and MacInnis,B.L."
+                                  },
+                                  "clade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "country": {
+                                    "value": "USA"
+                                  },
+                                  "country_exposure": {
+                                    "value": "USA"
+                                  },
+                                  "div": 26,
+                                  "division": {
+                                    "confidence": {
+                                      "Rhode Island": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "Rhode Island"
+                                  },
+                                  "division_exposure": {
+                                    "value": "Rhode Island"
+                                  },
+                                  "gisaid_epi_isl": {
+                                    "value": "EPI_ISL_2362386"
+                                  },
+                                  "host": {
+                                    "value": "Human"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2021.354794520548,
+                                      2021.354794520548
+                                    ],
+                                    "value": 2021.354794520548
+                                  },
+                                  "originating_lab": {
+                                    "value": "Rhode Island Department of Health"
+                                  },
+                                  "pango_lineage": {
+                                    "value": "B.1.526"
+                                  },
+                                  "recency": {
+                                    "value": "Older"
+                                  },
+                                  "region": {
+                                    "value": "North America"
+                                  },
+                                  "region_exposure": {
+                                    "value": "North America"
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "submitting_lab": {
+                                    "value": "Infectious Disease Program, Broad Institute of Harvard and MIT"
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "labels": {
+                                    "aa": "S: K417N"
+                                  },
+                                  "mutations": {
+                                    "S": [
+                                      "K417N"
+                                    ],
+                                    "nuc": [
+                                      "A19014G",
+                                      "G22813T"
+                                    ]
+                                  }
+                                },
+                                "name": "hCoV-19/USA/NY-NYULH1362/2021",
+                                "node_attrs": {
+                                  "GISAID_clade": {
+                                    "value": "GH"
+                                  },
+                                  "S1_mutations": {
+                                    "value": 5.0
+                                  },
+                                  "author": {
+                                    "author": "Adriana Heguy, Dacia Dimartino, Emily Guzman, Christian Marier, Peter Meyn, Sitharam Ramaswami, Gael Westby, Paul Zappile, Yutong Zhang, Paolo Cotzia, Guiqing Wang",
+                                    "value": "Adriana Heguy, Dacia Dimartino, Emily Guzman, Christian Marier, Peter Meyn, Sitharam Ramaswami, Gael Westby, Paul Zappile, Yutong Zhang, Paolo Cotzia, Guiqing Wang"
+                                  },
+                                  "clade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "country": {
+                                    "value": "USA"
+                                  },
+                                  "country_exposure": {
+                                    "value": "USA"
+                                  },
+                                  "div": 21,
+                                  "division": {
+                                    "confidence": {
+                                      "New York": 1.0
+                                    },
+                                    "entropy": -1.000088900581841e-12,
+                                    "value": "New York"
+                                  },
+                                  "division_exposure": {
+                                    "value": "New York"
+                                  },
+                                  "gisaid_epi_isl": {
+                                    "value": "EPI_ISL_1789994"
+                                  },
+                                  "host": {
+                                    "value": "Human"
+                                  },
+                                  "location": {
+                                    "value": "Queens County"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2021.2972602739726,
+                                      2021.2972602739726
+                                    ],
+                                    "value": 2021.2972602739726
+                                  },
+                                  "originating_lab": {
+                                    "value": "NYU Langone Health"
+                                  },
+                                  "pango_lineage": {
+                                    "value": "B.1.526"
+                                  },
+                                  "recency": {
+                                    "value": "Older"
+                                  },
+                                  "region": {
+                                    "value": "North America"
+                                  },
+                                  "region_exposure": {
+                                    "value": "North America"
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "submitting_lab": {
+                                    "value": "Departments of Pathology and Medicine, New York University School of Medicine"
+                                  }
+                                }
+                              },
+                              {
+                                "branch_attrs": {
+                                  "mutations": {
+                                    "nuc": [
+                                      "A143G"
+                                    ]
+                                  }
+                                },
+                                "children": [
+                                  {
+                                    "branch_attrs": {
+                                      "labels": {
+                                        "aa": "N: P383L; ORF1a: V627F, T4174I; S: T22I, K835E"
+                                      },
+                                      "mutations": {
+                                        "N": [
+                                          "P383L"
+                                        ],
+                                        "ORF1a": [
+                                          "V627F",
+                                          "T4174I"
+                                        ],
+                                        "S": [
+                                          "T22I",
+                                          "K835E"
+                                        ],
+                                        "nuc": [
+                                          "G2144T",
+                                          "C6286T",
+                                          "C12786T",
+                                          "C21627T",
+                                          "A24065G",
+                                          "C29421T"
+                                        ]
+                                      }
+                                    },
+                                    "name": "hCoV-19/USA/IN-PU-LH000171082/2021",
+                                    "node_attrs": {
+                                      "GISAID_clade": {
+                                        "value": "GH"
+                                      },
+                                      "S1_mutations": {
+                                        "value": 5.0
+                                      },
+                                      "author": {
+                                        "author": "Jack Dorman, Ilinca I Ciubotariu, Nicole M Perry, Jobin J Kattoor, Lev Gorenstein, Abebe A Fola, G Kenitra Hendrix, Rebecca P Wilkes, Giovanna Carpi",
+                                        "value": "Jack Dorman, Ilinca I Ciubotariu, Nicole M Perry, Jobin J Kattoor, Lev Gorenstein, Abebe A Fola, G Kenitra Hendrix, Rebecca P Wilkes, Giovanna Carpi"
+                                      },
+                                      "clade_membership": {
+                                        "value": "20C"
+                                      },
+                                      "country": {
+                                        "value": "USA"
+                                      },
+                                      "country_exposure": {
+                                        "value": "USA"
+                                      },
+                                      "div": 26,
+                                      "division": {
+                                        "confidence": {
+                                          "Indiana": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "Indiana"
+                                      },
+                                      "division_exposure": {
+                                        "value": "Indiana"
+                                      },
+                                      "gisaid_epi_isl": {
+                                        "value": "EPI_ISL_2304403"
+                                      },
+                                      "host": {
+                                        "value": "Human"
+                                      },
+                                      "location": {
+                                        "value": "Tippecanoe County"
+                                      },
+                                      "num_date": {
+                                        "confidence": [
+                                          2021.2972602739726,
+                                          2021.2972602739726
+                                        ],
+                                        "value": 2021.2972602739726
+                                      },
+                                      "originating_lab": {
+                                        "value": "Indiana Animal Disease Diagnostic Laboratory"
+                                      },
+                                      "pango_lineage": {
+                                        "value": "B.1.526"
+                                      },
+                                      "recency": {
+                                        "value": "Older"
+                                      },
+                                      "region": {
+                                        "value": "North America"
+                                      },
+                                      "region_exposure": {
+                                        "value": "North America"
+                                      },
+                                      "subclade_membership": {
+                                        "value": "20C"
+                                      },
+                                      "submitting_lab": {
+                                        "value": "Carpi Laboratory - Purdue University"
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "branch_attrs": {
+                                      "mutations": {
+                                        "nuc": [
+                                          "C337T",
+                                          "C5392T",
+                                          "C28720T"
+                                        ]
+                                      }
+                                    },
+                                    "name": "hCoV-19/AntiguaandBarbuda/74112/2021",
+                                    "node_attrs": {
+                                      "GISAID_clade": {
+                                        "value": "GH"
+                                      },
+                                      "S1_mutations": {
+                                        "value": 4.0
+                                      },
+                                      "author": {
+                                        "author": "Nikita S. D. Sahadeo, Arianne Brown-Jordan, Sarah Hill, Vernie Ramkissoon, Anushka Ramjag, Rhonda Sealey-Thomas, Avery Hinds, Risha Singh, SueMin Nathaniel, Nuno Faria, Oliver Pybus, Gabriel Escobar, Christine V. F. Carrington",
+                                        "value": "Nikita S. D. Sahadeo, Arianne Brown-Jordan, Sarah Hill, Vernie Ramkissoon, Anushka Ramjag, Rhonda Sealey-Thomas, Avery Hinds, Risha Singh, SueMin Nathaniel, Nuno Faria, Oliver Pybus, Gabriel Escobar, Christine V. F. Carrington"
+                                      },
+                                      "clade_membership": {
+                                        "value": "20C"
+                                      },
+                                      "country": {
+                                        "value": "Antigua and Barbuda"
+                                      },
+                                      "country_exposure": {
+                                        "value": "Antigua and Barbuda"
+                                      },
+                                      "div": 23,
+                                      "division": {
+                                        "confidence": {
+                                          "Antigua and Barbuda": 1.0
+                                        },
+                                        "entropy": -1.000088900581841e-12,
+                                        "value": "Antigua and Barbuda"
+                                      },
+                                      "division_exposure": {
+                                        "value": "Antigua and Barbuda"
+                                      },
+                                      "gisaid_epi_isl": {
+                                        "value": "EPI_ISL_2716569"
+                                      },
+                                      "host": {
+                                        "value": "Human"
+                                      },
+                                      "num_date": {
+                                        "confidence": [
+                                          2021.335616438356,
+                                          2021.335616438356
+                                        ],
+                                        "value": 2021.335616438356
+                                      },
+                                      "originating_lab": {
+                                        "value": "The Caribbean Public Health Agency"
+                                      },
+                                      "pango_lineage": {
+                                        "value": "B.1.526"
+                                      },
+                                      "recency": {
+                                        "value": "Older"
+                                      },
+                                      "region": {
+                                        "value": "North America"
+                                      },
+                                      "region_exposure": {
+                                        "value": "North America"
+                                      },
+                                      "subclade_membership": {
+                                        "value": "20C"
+                                      },
+                                      "submitting_lab": {
+                                        "value": "Carrington Lab, Department of Preclinical Sciences, Faculty of Medical Sciences, The University of the West Indies, St Augustine Campus"
+                                      }
+                                    }
+                                  }
+                                ],
+                                "name": "NODE_0000012",
+                                "node_attrs": {
+                                  "S1_mutations": {
+                                    "value": 4.0
+                                  },
+                                  "clade_membership": {
+                                    "value": "20C"
+                                  },
+                                  "div": 20,
+                                  "division": {
+                                    "confidence": {
+                                      "Antigua and Barbuda": 0.2736834155367538,
+                                      "Indiana": 0.2736834155367537,
+                                      "New York": 0.09209992642341258,
+                                      "Rhode Island": 0.09079063786402582
+                                    },
+                                    "entropy": 1.9337922971728772,
+                                    "value": "Antigua and Barbuda"
+                                  },
+                                  "num_date": {
+                                    "confidence": [
+                                      2021.120785088882,
+                                      2021.2260139397572
+                                    ],
+                                    "value": 2021.1712136830004
+                                  },
+                                  "subclade_membership": {
+                                    "value": "20C"
+                                  }
+                                }
+                              }
+                            ],
+                            "name": "NODE_0000010",
+                            "node_attrs": {
+                              "S1_mutations": {
+                                "value": 4.0
+                              },
+                              "clade_membership": {
+                                "value": "20C"
+                              },
+                              "div": 19,
+                              "division": {
+                                "confidence": {
+                                  "Antigua and Barbuda": 0.08390814125014263,
+                                  "Indiana": 0.08390814125014265,
+                                  "New York": 0.2711003029150417,
+                                  "Rhode Island": 0.2587315465677334
+                                },
+                                "entropy": 1.9645702014042123,
+                                "value": "New York"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2021.0770394217204,
+                                  2021.1884173127992
+                                ],
+                                "value": 2021.161275886078
+                              },
+                              "subclade_membership": {
+                                "value": "20C"
+                              }
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000007",
+                        "node_attrs": {
+                          "S1_mutations": {
+                            "value": 4.0
+                          },
+                          "clade_membership": {
+                            "value": "20C"
+                          },
+                          "div": 18,
+                          "division": {
+                            "confidence": {
+                              "Guanajuato": 0.11913249716912426,
+                              "New York": 0.11593817992312348,
+                              "Virgin Islands": 0.11913249716912432,
+                              "Virginia": 0.23446591363969174
+                            },
+                            "entropy": 2.1165078212708774,
+                            "value": "Virginia"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2021.0327385771018,
+                              2021.177998294874
+                            ],
+                            "value": 2021.1174587286373
+                          },
+                          "subclade_membership": {
+                            "value": "20C"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000006",
+                    "node_attrs": {
+                      "S1_mutations": {
+                        "value": 4.0
+                      },
+                      "clade_membership": {
+                        "value": "20C"
+                      },
+                      "div": 18,
+                      "division": {
+                        "confidence": {
+                          "Guanajuato": 0.2637690890394309,
+                          "Rhode Island": 0.062296875751988466,
+                          "Virgin Islands": 0.2637690890394311,
+                          "Virginia": 0.14132810488628536
+                        },
+                        "entropy": 1.93683735286338,
+                        "value": "Virgin Islands"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2021.0256905414628,
+                          2021.1306425061453
+                        ],
+                        "value": 2021.109604729516
+                      },
+                      "subclade_membership": {
+                        "value": "20C"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "S1_mutations": {
+                    "value": 3.0
+                  },
+                  "clade_membership": {
+                    "value": "20C"
+                  },
+                  "div": 17,
+                  "division": {
+                    "confidence": {
+                      "Guanajuato": 0.114494657676609,
+                      "Santo Domingo": 0.11387032977606734,
+                      "Virgin Islands": 0.11449465767660905,
+                      "Virginia": 0.3184159119445937
+                    },
+                    "entropy": 2.017840454990955,
+                    "value": "Virginia"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.6748482701078,
+                      2021.1138861896807
+                    ],
+                    "value": 2021.0627834963602
+                  },
+                  "subclade_membership": {
+                    "value": "20C"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "S1_mutations": {
+                "value": 3.0
+              },
+              "clade_membership": {
+                "value": "20C"
+              },
+              "div": 17,
+              "division": {
+                "confidence": {
+                  "": 0.09021923936127894,
+                  "Rhode Island": 0.10436402794243557,
+                  "Santo Domingo": 0.3172119848453027,
+                  "Virginia": 0.12460659863907887
+                },
+                "entropy": 2.027890893208143,
+                "value": "Santo Domingo"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.6504069765774,
+                  2021.0842492393015
+                ],
+                "value": 2021.0622748202065
+              },
+              "subclade_membership": {
+                "value": "20C"
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000003",
+        "node_attrs": {
+          "S1_mutations": {
+            "value": 3.0
+          },
+          "clade_membership": {
+            "value": "20C"
+          },
+          "div": 14,
+          "division": {
+            "confidence": {
+              "": 0.1554119063169561,
+              "New York": 0.10522574377896914,
+              "Rhode Island": 0.16585274468532044,
+              "Santo Domingo": 0.16248192080028143
+            },
+            "entropy": 2.144887300984399,
+            "value": "Rhode Island"
+          },
+          "num_date": {
+            "confidence": [
+              2020.493579625465,
+              2020.9701291024687
+            ],
+            "value": 2020.8241579328644
+          },
+          "subclade_membership": {
+            "value": "20C"
+          }
+        }
+      }
+    ],
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "S1_mutations": {
+        "value": 0.0
+      },
+      "clade_membership": {
+        "value": "19A"
+      },
+      "div": 0,
+      "num_date": {
+        "confidence": [
+          2019.9245357391612,
+          2019.9986301369863
+        ],
+        "value": 2019.9986301369863
+      },
+      "subclade_membership": {
+        "value": "19A"
+      }
+    }
+  },
+  "version": "v2"
+}

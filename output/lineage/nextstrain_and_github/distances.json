@@ -1,0 +1,99 @@
+{
+  "generated_by": {
+    "program": "augur",
+    "version": "13.0.3"
+  },
+  "nodes": {
+    "NODE_0000000": {
+      "S1_mutations": 0.0
+    },
+    "NODE_0000001": {
+      "S1_mutations": 4.0
+    },
+    "NODE_0000002": {
+      "S1_mutations": 4.0
+    },
+    "NODE_0000003": {
+      "S1_mutations": 3.0
+    },
+    "NODE_0000004": {
+      "S1_mutations": 3.0
+    },
+    "NODE_0000005": {
+      "S1_mutations": 3.0
+    },
+    "NODE_0000006": {
+      "S1_mutations": 4.0
+    },
+    "NODE_0000007": {
+      "S1_mutations": 4.0
+    },
+    "NODE_0000008": {
+      "S1_mutations": 4.0
+    },
+    "NODE_0000010": {
+      "S1_mutations": 4.0
+    },
+    "NODE_0000012": {
+      "S1_mutations": 4.0
+    },
+    "Wuhan/Hu-1/2019": {
+      "S1_mutations": 0.0
+    },
+    "hCoV-19/AntiguaandBarbuda/74112/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/DominicanRepublic/Yale-5447/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/DominicanRepublic/Yale-5456/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/Mexico/GUA-IBT_IMSS_1839/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/USA/IN-PU-LH000171082/2021": {
+      "S1_mutations": 5.0
+    },
+    "hCoV-19/USA/NY-NYULH1362/2021": {
+      "S1_mutations": 5.0
+    },
+    "hCoV-19/USA/NY-PRL-2021_0408_00M05/2021": {
+      "S1_mutations": 6.0
+    },
+    "hCoV-19/USA/RI-CDC-LC0051942/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/USA/RI-CDCBI-RIDOH_00766/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/USA/RI-CDCBI-RIDOH_10111/2021": {
+      "S1_mutations": 5.0
+    },
+    "hCoV-19/USA/VA-CDC-LC0062497/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/USA/VA-DCLS-4913/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/USA/VA-DCLS-5736/2021": {
+      "S1_mutations": 4.0
+    },
+    "hCoV-19/USA/VI-Yale-6060/2021": {
+      "S1_mutations": 5.0
+    }
+  },
+  "params": {
+    "attribute": [
+      "S1_mutations"
+    ],
+    "compare_to": [
+      "root"
+    ],
+    "earliest_date": null,
+    "latest_date": null,
+    "map_name": [
+      "S1"
+    ]
+  }
+}

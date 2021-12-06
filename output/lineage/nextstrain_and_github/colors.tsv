@@ -1,0 +1,449 @@
+location	Rishon-Letsion	#5E1D9D
+location	Halhul	#5B1D9F
+location	Tulkarem	#581DA2
+location	Dasman	#561EA4
+location	Kuwait City	#531EA7
+location	Nizwa	#501EA9
+location	Warangal	#4E1FAB
+location	Mancherial	#4D21AD
+location	Ahmedabad	#4C23AF
+location	Kathmandu	#4B25B0
+location	Noakhali	#4A27B2
+location	Comilla	#4929B4
+location	Dhaka	#482BB6
+location	Wuhan	#472DB8
+location	Qingdao	#462FBA
+location	Hangzhou	#4531BB
+location	Hanoi	#4432BD
+location	Hong Kong	#4334BF
+location	South Jakarta	#4236C1
+location	Bogor	#4138C3
+location	Kupang	#403AC4
+location	Taoyuan	#403DC5
+location	Taipei	#403FC6
+location	Uijeongbu	#4041C7
+location	Waitemata	#3F44C8
+location	Counties Manukau	#3F46C9
+location	Capital and Coast	#3F49C9
+location	Sydney	#3F4BCA
+location	Bobo Dioulasso	#3F4DCB
+location	Accra	#3F50CC
+location	Lome	#3F52CD
+location	Malabo	#3F55CD
+location	Palapye	#3E57CE
+location	Cape Town Metro	#3E59CF
+location	Tygerberg	#3E5CD0
+location	Nelson Mandela Bay	#3F5ED0
+location	Amathole	#3F60D0
+location	uMkhanyakude	#3F62CF
+location	Maputo City	#4065CF
+location	Agualva	#4067CF
+location	Limerick City	#4169CF
+location	Vigo	#416BCE
+location	Bizkaia	#416DCE
+location	Alicante	#4270CE
+location	Valencia ES	#4272CE
+location	L'Hospitalet de Llobregat	#4274CE
+location	Barcelona	#4376CD
+location	Fort-de-France	#4378CD
+location	Brest	#447BCD
+location	Vannes	#447DCC
+location	Noyal Chatillon sur Seiche	#457ECB
+location	Le Mans	#4680CA
+location	Puteaux	#4682C9
+location	Toulouse	#4784C8
+location	Clermont-Ferrand	#4885C7
+location	Marseille	#4887C6
+location	Bruxelles	#4989C4
+location	Hemiksem	#4A8BC3
+location	Aartselaar	#4A8CC2
+location	Merksem	#4B8EC1
+location	Duffel	#4C90C0
+location	Koningshooikt	#4D92BF
+location	Zichem	#4D93BE
+location	Diest	#4E95BD
+location	Ham	#4F96BB
+location	Munich	#5098B9
+location	Autonomous Province of Trento	#5199B8
+location	Rome	#529AB6
+location	Grieskirchen	#539BB5
+location	Bad Vöslau	#549DB3
+location	Eisenstadt-Umgebung	#559EB1
+location	Mladá Boleslav	#569FB0
+location	Brno	#57A0AE
+location	Gdansk	#58A2AC
+location	Kraków	#58A3AB
+location	Kraljevo	#59A4A9
+location	Cacak	#5AA5A7
+location	Pancevo	#5BA7A6
+location	Kikinda	#5CA8A4
+location	Struga	#5EA8A2
+location	Ohrid	#5FA9A0
+location	Bitola	#60AA9E
+location	Prilep	#61AB9C
+location	Kumanovo	#63AC9B
+location	Shtip	#64AC99
+location	Strumica	#65AD97
+location	Iasi	#66AE95
+location	Uzda	#67AF93
+location	Simpheropol	#69B091
+location	Crimea	#6AB08F
+location	Moscow	#6BB18E
+location	Krasnodar	#6CB28C
+location	Ufa	#6EB38A
+location	Hurlingham	#6FB388
+location	Santa Fe AR	#70B486
+location	Esperanza	#72B485
+location	Punta Arenas	#73B583
+location	Pudahuel	#75B581
+location	Providencia	#76B67F
+location	Vitacura	#78B67E
+location	Antofagasta	#79B77C
+location	Manaus	#7BB77A
+location	Curitiba	#7CB878
+location	Aparecida de Goiania	#7EB877
+location	Rio de Janeiro	#7FB975
+location	General Villamil Playas	#81B973
+location	Guayaquil	#82BA71
+location	Santo Domingo de los Colorados	#84BA70
+location	Quito	#85BA6E
+location	Pasto	#87BB6D
+location	Cali	#89BB6B
+location	Envigado	#8ABB6A
+location	Medellin	#8CBB68
+location	Valledupar	#8EBC67
+location	Juan Demóstenes Arosemena	#8FBC66
+location	Chilibre	#91BC64
+location	Santa Ana PA	#93BC63
+location	Omar Torrijos	#94BD61
+location	Pedregal	#96BD60
+location	Don Bosco	#98BD5E
+location	Pacora	#99BD5D
+location	Aligandí	#9BBE5B
+location	Bagaces	#9DBE5A
+location	Liberia	#9EBE59
+location	Puntarenas	#A0BE58
+location	Garabito	#A2BE57
+location	Corredores	#A4BE56
+location	San Rafael de Alajuela	#A5BE55
+location	Alajuela	#A7BE54
+location	Quesada	#A9BD53
+location	Guatuso	#AABD52
+location	Santo Domingo CR	#ACBD51
+location	Heredia	#AEBD50
+location	San Rafael Heredia	#B0BD4F
+location	Barva	#B1BD4E
+location	San Jose	#B3BD4D
+location	Aserri	#B5BD4C
+location	Tarrazu	#B6BD4B
+location	Desamparados	#B8BC4B
+location	Moravia	#B9BC4A
+location	San Ramon CR	#BBBC49
+location	El Tejar	#BCBB49
+location	Occidental	#BEBB48
+location	Oreamuno	#C0BB47
+location	Jimenez	#C1BA47
+location	Guapiles	#C3BA46
+location	Pococi	#C4B945
+location	Siquirres	#C6B945
+location	Limon	#C8B944
+location	Tijuana	#C9B843
+location	Mexicali	#CBB842
+location	Mazatlan	#CCB742
+location	Gomez Palacios	#CDB642
+location	Kauai County	#CEB541
+location	Honolulu County	#D0B441
+location	Maui County	#D1B340
+location	Hawaii County	#D2B340
+location	Interior Alaska	#D3B23F
+location	Jackson County OR	#D4B13F
+location	Marion County OR	#D6B03F
+location	Multnomah County	#D7AF3E
+location	Clackamas County	#D8AE3E
+location	Umatilla County	#D9AD3D
+location	Grays Harbor County	#DAAC3D
+location	Cowlitz County	#DCAB3D
+location	Snohomish County	#DDAA3C
+location	King County	#DDA93C
+location	Yakima County	#DEA73B
+location	San Francisco County	#DFA63B
+location	Alameda County	#DFA43B
+location	Los Angeles County	#E0A23A
+location	San Diego County	#E1A13A
+location	Washoe County	#E19F3A
+location	Ada County	#E29E39
+location	Maricopa County	#E39C39
+location	Coconino County	#E39B39
+location	Lewis and Clark County	#E49938
+location	Lancaster County NE	#E59838
+location	Bexar County	#E59638
+location	Dallas County TX	#E69437
+location	Houston	#E69237
+location	Bowie County	#E69036
+location	Fillmore County	#E68E36
+location	Fayette County IA	#E68B35
+location	Johnson County IA	#E68935
+location	Allamakee County	#E68735
+location	Caddo Parish	#E68434
+location	Bienville Parish	#E68234
+location	Rapides Parish	#E68033
+location	Eau Claire County	#E67E33
+location	La Crosse County	#E67B32
+location	Adams County WI	#E67932
+location	Rock County	#E67732
+location	Outagamie County	#E67531
+location	Brown County WI	#E67231
+location	Milwaukee County	#E66F30
+location	Perry County IL	#E56C30
+location	St. Clair County IL	#E5692F
+location	Cass County IL	#E4672E
+location	Vermilion County	#E4642E
+location	Lake County IL	#E3612D
+location	Autauga County	#E35E2D
+location	Jefferson County AL	#E25B2C
+location	Madison County AL	#E2582C
+location	Marion County IN	#E2562B
+location	Tippecanoe County	#E1532B
+location	Elkhart County	#E1502A
+location	Columbus OH	#E04D29
+location	Richland County SC	#E04A29
+location	Allegheny County	#DF4728
+location	New Castle County	#DF4528
+location	Passaic County	#DF4227
+location	Ontario County	#DE3F27
+location	Oneida County NY	#DE3C26
+location	New York City	#DE3926
+location	Rockland County	#DD3625
+location	Fairfield County CT	#DD3325
+location	New Haven County	#DD3124
+location	Norfolk County	#DC2E24
+location	Toronto	#DC2B23
+location	Montérégie	#DB2823
+
+division	Hawaii	#5E1D9D
+division	Alaska	#531EA7
+division	Grand Princess	#4C24AF
+division	Oregon	#482BB6
+division	Washington	#4433BE
+division	California	#403BC5
+division	Nevada	#3F45C8
+division	Idaho	#3F4FCB
+division	Utah	#3E58CF
+division	Arizona	#3F62D0
+division	Montana	#416BCF
+division	Wyoming	#4274CE
+division	New Mexico	#447DCC
+division	Colorado	#4784C8
+division	North Dakota	#4A8BC3
+division	South Dakota	#4D92BF
+division	Nebraska	#5098B9
+division	Texas	#549DB2
+division	Kansas	#58A2AC
+division	Oklahoma	#5CA7A5
+division	Minnesota	#61AA9D
+division	Iowa	#66AE96
+division	Louisiana	#6BB18E
+division	Arkansas	#70B487
+division	Missouri	#76B680
+division	Mississippi	#7CB879
+division	Wisconsin	#82BA71
+division	Illinois	#89BB6B
+division	Alabama	#8FBC65
+division	Tennessee	#96BD60
+division	Indiana	#9DBE5A
+division	Kentucky	#A4BE56
+division	Michigan	#ABBD52
+division	Georgia	#B2BD4D
+division	Ohio	#B9BC4A
+division	Florida	#BFBB47
+division	South Carolina	#C5B945
+division	West Virginia	#CCB742
+division	North Carolina	#D1B440
+division	Virginia	#D5B03F
+division	Pennsylvania	#DAAC3D
+division	Washington DC	#DEA73B
+division	Maryland	#E1A13A
+division	Delaware	#E39A39
+division	New Jersey	#E69437
+division	New York	#E68B35
+division	Connecticut	#E68134
+division	Vermont	#E67832
+division	Massachusetts	#E56E30
+division	New Hampshire	#E3622D
+division	Rhode Island	#E2562B
+division	Maine	#E04B29
+division	Puerto Rico	#DE3F27
+division	Virgin Islands	#DD3425
+division	Northern Mariana Islands	#DB2823
+
+country	Israel	#5E1D9D
+country	Palestine	#5A1DA0
+country	Lebanon	#561EA4
+country	Jordan	#521EA7
+country	Georgia	#4F1FAA
+country	Iraq	#4D22AD
+country	Armenia	#4C24B0
+country	Saudi Arabia	#4A27B2
+country	Kuwait	#492AB5
+country	Bahrain	#472CB7
+country	Qatar	#462FBA
+country	Iran	#4432BD
+country	United Arab Emirates	#4334BF
+country	Oman	#4137C2
+country	Uzbekistan	#403AC4
+country	Afghanistan	#403DC5
+country	Kazakhstan	#4041C7
+country	Pakistan	#3F44C8
+country	Maldives	#3F48C9
+country	India	#3F4BCA
+country	Sri Lanka	#3F4ECB
+country	Nepal	#3F52CD
+country	Bangladesh	#3F55CE
+country	Myanmar	#3E58CF
+country	Thailand	#3E5CD0
+country	Malaysia	#3F5FD0
+country	Mongolia	#3F62CF
+country	Singapore	#4065CF
+country	China	#4068CF
+country	Cambodia	#416CCE
+country	Vietnam	#426FCE
+country	Hong Kong	#4272CE
+country	Indonesia	#4375CD
+country	Brunei	#4378CD
+country	Taiwan	#447BCD
+country	Philippines	#457ECB
+country	Timor-Leste	#4680CA
+country	South Korea	#4783C8
+country	Japan	#4885C7
+country	New Zealand	#4988C5
+country	Australia	#4A8AC4
+country	Papua New Guinea	#4B8DC2
+country	Gambia	#4C8FC0
+country	Senegal	#4D92BF
+country	Sierra Leone	#4E94BD
+country	Guinea	#4F96BB
+country	Liberia	#5098B9
+country	Côte d'Ivoire	#519AB7
+country	Morocco	#539CB4
+country	Mali	#549DB2
+country	Burkina Faso	#569FB0
+country	Ghana	#57A1AD
+country	Togo	#58A3AB
+country	Benin	#5AA4A9
+country	Algeria	#5BA6A6
+country	Nigeria	#5DA8A4
+country	Tunisia	#5EA9A1
+country	Niger	#60AA9E
+country	Equatorial Guinea	#62AB9C
+country	Gabon	#63AC99
+country	Cameroon	#65AD97
+country	Republic of the Congo	#67AF94
+country	Namibia	#69B091
+country	Democratic Republic of the Congo	#6AB18F
+country	Botswana	#6CB28C
+country	South Africa	#6EB389
+country	Zambia	#70B487
+country	Zimbabwe	#72B484
+country	Rwanda	#74B582
+country	Egypt	#76B67F
+country	Eswatini	#78B77D
+country	Uganda	#7AB77A
+country	Mozambique	#7DB878
+country	Kenya	#7FB975
+country	Ethiopia	#81B973
+country	Madagascar	#83BA71
+country	Somalia	#85BA6E
+country	Mauritius	#88BB6C
+country	Iceland	#8ABB6A
+country	Portugal	#8CBB68
+country	Ireland	#8FBC66
+country	Spain	#91BC64
+country	United Kingdom	#93BD62
+country	Andorra	#96BD60
+country	France	#98BD5E
+country	Belgium	#9ABE5C
+country	Netherlands	#9DBE5A
+country	Luxembourg	#9FBE59
+country	Monaco	#A2BE57
+country	Switzerland	#A4BE56
+country	Norway	#A7BE54
+country	Denmark	#A9BD53
+country	Liechtenstein	#ABBD51
+country	Germany	#AEBD50
+country	Italy	#B0BD4E
+country	Malta	#B3BD4D
+country	Slovenia	#B5BD4C
+country	Sweden	#B7BD4B
+country	Austria	#B9BC4A
+country	Croatia	#BCBB49
+country	Czech Republic	#BEBB48
+country	Bosnia and Herzegovina	#C0BA47
+country	Poland	#C2BA46
+country	Slovakia	#C5B945
+country	Montenegro	#C7B944
+country	Albania	#C9B843
+country	Hungary	#CBB742
+country	Serbia	#CDB642
+country	Kosovo	#CFB541
+country	North Macedonia	#D0B440
+country	Greece	#D2B240
+country	Lithuania	#D4B13F
+country	Romania	#D6B03F
+country	Bulgaria	#D7AF3E
+country	Latvia	#D9AD3D
+country	Estonia	#DBAC3D
+country	Finland	#DCAB3C
+country	Belarus	#DDA93C
+country	Moldova	#DEA63B
+country	Ukraine	#DFA43B
+country	Cyprus	#E0A23A
+country	Turkey	#E1A03A
+country	Azerbaijan	#E29E39
+country	Russia	#E39B39
+country	Argentina	#E49938
+country	Uruguay	#E59738
+country	Chile	#E69537
+country	Bolivia	#E69237
+country	Brazil	#E68E36
+country	Peru	#E68B35
+country	Ecuador	#E68835
+country	Colombia	#E68534
+country	Suriname	#E68134
+country	Venezuela	#E67E33
+country	Trinidad and Tobago	#E67B32
+country	Curacao	#E67832
+country	Aruba	#E67531
+country	Panama	#E67130
+country	Costa Rica	#E56D30
+country	Saint Vincent and the Grenadines	#E5692F
+country	Barbados	#E4652E
+country	El Salvador	#E3612D
+country	Saint Lucia	#E35D2C
+country	Guatemala	#E2592C
+country	Guadeloupe	#E1552B
+country	Belize	#E1512A
+country	Antigua and Barbuda	#E04D29
+country	Saint Barthélemy	#E04829
+country	Sint Maarten	#DF4428
+country	Saint Martin	#DF4027
+country	Jamaica	#DE3C26
+country	Dominican Republic	#DE3826
+country	Mexico	#DD3425
+country	Bermuda	#DD3024
+country	USA	#DC2C24
+country	Canada	#DB2823
+
+recency	Older	#447CCD
+recency	One month ago	#5EA9A1
+recency	One week ago	#8ABB6A
+recency	3-7 days ago	#BEBB48
+recency	1-2 days ago	#E29E39
+recency	New	#E2562B
+
+region	Asia	#447CCD
+region	Oceania	#5EA9A1
+region	Africa	#8ABB6A
+region	Europe	#BEBB48
+region	South America	#E29E39
+region	North America	#E2562B
+

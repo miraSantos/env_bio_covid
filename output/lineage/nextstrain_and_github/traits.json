@@ -1,0 +1,352 @@
+{
+  "generated_by": {
+    "program": "augur",
+    "version": "13.0.3"
+  },
+  "models": {
+    "division": {
+      "alphabet": [
+        "",
+        "Antigua and Barbuda",
+        "Guanajuato",
+        "Indiana",
+        "New York",
+        "Rhode Island",
+        "Santo Domingo",
+        "Virgin Islands",
+        "Virginia",
+        "?"
+      ],
+      "equilibrium_probabilities": [
+        0.11934395940195337,
+        0.10809478513168837,
+        0.10805374716541755,
+        0.10809478513168791,
+        0.11190008639586996,
+        0.11458327186336371,
+        0.11112470924639035,
+        0.10805374716541752,
+        0.11075090849821129
+      ],
+      "rate": 1178.1400195366462,
+      "transition_matrix": [
+        [
+          0.0,
+          1.0225240190419964,
+          1.0323362488506838,
+          1.0225240190419984,
+          1.044605813609499,
+          1.151121761068426,
+          1.1355509604794596,
+          1.0323362488506838,
+          1.0887309847167257
+        ],
+        [
+          1.0225240190419964,
+          0.0,
+          0.9972383089102267,
+          1.3256311763959658,
+          1.0683019627081058,
+          1.1009425579089276,
+          1.0164988856363006,
+          0.9972383089102267,
+          1.0433420022524562
+        ],
+        [
+          1.0323362488506838,
+          0.9972383089102267,
+          0.0,
+          0.9972383089102284,
+          1.0191028526904384,
+          1.0571857798042203,
+          1.0449443471633466,
+          1.2300306769189502,
+          1.287553031436667
+        ],
+        [
+          1.0225240190419984,
+          1.3256311763959658,
+          0.9972383089102284,
+          0.0,
+          1.068301962708107,
+          1.1009425579089291,
+          1.0164988856363026,
+          0.9972383089102286,
+          1.0433420022524573
+        ],
+        [
+          1.044605813609499,
+          1.0683019627081058,
+          1.0191028526904384,
+          1.068301962708107,
+          0.0,
+          1.8043089442012648,
+          1.1888615261754192,
+          1.0191028526904387,
+          1.1126346648425307
+        ],
+        [
+          1.151121761068426,
+          1.1009425579089276,
+          1.0571857798042203,
+          1.1009425579089291,
+          1.8043089442012648,
+          0.0,
+          1.6418524606682108,
+          1.0571857798042203,
+          1.1620491261537953
+        ],
+        [
+          1.1355509604794596,
+          1.0164988856363006,
+          1.0449443471633466,
+          1.0164988856363026,
+          1.1888615261754192,
+          1.6418524606682108,
+          0.0,
+          1.0449443471633466,
+          1.2024814922770444
+        ],
+        [
+          1.0323362488506838,
+          0.9972383089102267,
+          1.2300306769189502,
+          0.9972383089102286,
+          1.0191028526904387,
+          1.0571857798042203,
+          1.0449443471633466,
+          0.0,
+          1.2875530314366668
+        ],
+        [
+          1.0887309847167257,
+          1.0433420022524562,
+          1.287553031436667,
+          1.0433420022524573,
+          1.1126346648425307,
+          1.1620491261537953,
+          1.2024814922770444,
+          1.2875530314366668,
+          0.0
+        ]
+      ]
+    }
+  },
+  "nodes": {
+    "NODE_0000000": {
+      "division": "",
+      "division_confidence": {
+        "": 0.3556477951443752,
+        "New York": 0.08209644805324481,
+        "Rhode Island": 0.09764463175203757,
+        "Santo Domingo": 0.09579689496729303
+      },
+      "division_entropy": 1.9859085840361195
+    },
+    "NODE_0000001": {
+      "division": "Rhode Island",
+      "division_confidence": {
+        "": 0.041862815254996605,
+        "New York": 0.2271684794786909,
+        "Rhode Island": 0.3407404614638063,
+        "Santo Domingo": 0.21785700157906546
+      },
+      "division_entropy": 1.7482831526908849
+    },
+    "NODE_0000002": {
+      "division": "Rhode Island",
+      "division_confidence": {
+        "": 0.07687843724557851,
+        "New York": 0.12307946512758476,
+        "Rhode Island": 0.3862400985378374,
+        "Santo Domingo": 0.1291139440639026
+      },
+      "division_entropy": 1.9021551222123985
+    },
+    "NODE_0000003": {
+      "division": "Rhode Island",
+      "division_confidence": {
+        "": 0.1554119063169561,
+        "New York": 0.10522574377896914,
+        "Rhode Island": 0.16585274468532044,
+        "Santo Domingo": 0.16248192080028143
+      },
+      "division_entropy": 2.144887300984399
+    },
+    "NODE_0000004": {
+      "division": "Santo Domingo",
+      "division_confidence": {
+        "": 0.09021923936127894,
+        "Rhode Island": 0.10436402794243557,
+        "Santo Domingo": 0.3172119848453027,
+        "Virginia": 0.12460659863907887
+      },
+      "division_entropy": 2.027890893208143
+    },
+    "NODE_0000005": {
+      "division": "Virginia",
+      "division_confidence": {
+        "Guanajuato": 0.114494657676609,
+        "Santo Domingo": 0.11387032977606734,
+        "Virgin Islands": 0.11449465767660905,
+        "Virginia": 0.3184159119445937
+      },
+      "division_entropy": 2.017840454990955
+    },
+    "NODE_0000006": {
+      "division": "Virgin Islands",
+      "division_confidence": {
+        "Guanajuato": 0.2637690890394309,
+        "Rhode Island": 0.062296875751988466,
+        "Virgin Islands": 0.2637690890394311,
+        "Virginia": 0.14132810488628536
+      },
+      "division_entropy": 1.93683735286338
+    },
+    "NODE_0000007": {
+      "division": "Virginia",
+      "division_confidence": {
+        "Guanajuato": 0.11913249716912426,
+        "New York": 0.11593817992312348,
+        "Virgin Islands": 0.11913249716912432,
+        "Virginia": 0.23446591363969174
+      },
+      "division_entropy": 2.1165078212708774
+    },
+    "NODE_0000008": {
+      "division": "Virginia",
+      "division_confidence": {
+        "Guanajuato": 0.047239066605076305,
+        "Rhode Island": 0.04390451040641635,
+        "Virgin Islands": 0.047239066605076305,
+        "Virginia": 0.6732511066140752
+      },
+      "division_entropy": 1.3088464748873
+    },
+    "NODE_0000010": {
+      "division": "New York",
+      "division_confidence": {
+        "Antigua and Barbuda": 0.08390814125014263,
+        "Indiana": 0.08390814125014265,
+        "New York": 0.2711003029150417,
+        "Rhode Island": 0.2587315465677334
+      },
+      "division_entropy": 1.9645702014042123
+    },
+    "NODE_0000012": {
+      "division": "Antigua and Barbuda",
+      "division_confidence": {
+        "Antigua and Barbuda": 0.2736834155367538,
+        "Indiana": 0.2736834155367537,
+        "New York": 0.09209992642341258,
+        "Rhode Island": 0.09079063786402582
+      },
+      "division_entropy": 1.9337922971728772
+    },
+    "Wuhan/Hu-1/2019": {
+      "division": "",
+      "division_confidence": {
+        "": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/AntiguaandBarbuda/74112/2021": {
+      "division": "Antigua and Barbuda",
+      "division_confidence": {
+        "Antigua and Barbuda": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/DominicanRepublic/Yale-5447/2021": {
+      "division": "Santo Domingo",
+      "division_confidence": {
+        "Santo Domingo": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/DominicanRepublic/Yale-5456/2021": {
+      "division": "Santo Domingo",
+      "division_confidence": {
+        "Santo Domingo": 0.9999999999999999
+      },
+      "division_entropy": -9.99866855976916e-13
+    },
+    "hCoV-19/Mexico/GUA-IBT_IMSS_1839/2021": {
+      "division": "Guanajuato",
+      "division_confidence": {
+        "Guanajuato": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/IN-PU-LH000171082/2021": {
+      "division": "Indiana",
+      "division_confidence": {
+        "Indiana": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/NY-NYULH1362/2021": {
+      "division": "New York",
+      "division_confidence": {
+        "New York": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/NY-PRL-2021_0408_00M05/2021": {
+      "division": "New York",
+      "division_confidence": {
+        "New York": 0.9999999999999999
+      },
+      "division_entropy": -9.99866855976916e-13
+    },
+    "hCoV-19/USA/RI-CDC-LC0051942/2021": {
+      "division": "Rhode Island",
+      "division_confidence": {
+        "Rhode Island": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/RI-CDCBI-RIDOH_00766/2021": {
+      "division": "Rhode Island",
+      "division_confidence": {
+        "Rhode Island": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/RI-CDCBI-RIDOH_10111/2021": {
+      "division": "Rhode Island",
+      "division_confidence": {
+        "Rhode Island": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/VA-CDC-LC0062497/2021": {
+      "division": "Virginia",
+      "division_confidence": {
+        "Virginia": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/VA-DCLS-4913/2021": {
+      "division": "Virginia",
+      "division_confidence": {
+        "Virginia": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/VA-DCLS-5736/2021": {
+      "division": "Virginia",
+      "division_confidence": {
+        "Virginia": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    },
+    "hCoV-19/USA/VI-Yale-6060/2021": {
+      "division": "Virgin Islands",
+      "division_confidence": {
+        "Virgin Islands": 1.0
+      },
+      "division_entropy": -1.000088900581841e-12
+    }
+  }
+}

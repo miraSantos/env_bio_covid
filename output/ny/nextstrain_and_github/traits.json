@@ -1,0 +1,2092 @@
+{
+  "generated_by": {
+    "program": "augur",
+    "version": "13.0.3"
+  },
+  "models": {
+    "country": {
+      "alphabet": [
+        "China",
+        "USA",
+        "?"
+      ],
+      "equilibrium_probabilities": [
+        0.4364201889348862,
+        0.5635798110651138
+      ],
+      "rate": 9.67212097259191,
+      "transition_matrix": [
+        [
+          0.0,
+          2.0328706431495305
+        ],
+        [
+          2.0328706431495305,
+          0.0
+        ]
+      ]
+    }
+  },
+  "nodes": {
+    "NODE_0000000": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267976936
+      },
+      "country_entropy": 1.5824219015929314e-05
+    },
+    "NODE_0000001": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386439947
+      },
+      "country_entropy": 1.566132761205887e-05
+    },
+    "NODE_0000002": {
+      "country": "China",
+      "country_confidence": {
+        "China": 0.5021498666625389,
+        "USA": 0.4978501333374612
+      },
+      "country_entropy": 0.6931379366761288
+    },
+    "NODE_0000003": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989266655029
+      },
+      "country_entropy": 1.5826035948590293e-05
+    },
+    "NODE_0000004": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998926668358
+      },
+      "country_entropy": 1.582599670646292e-05
+    },
+    "NODE_0000005": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989150849952
+      },
+      "country_entropy": 1.598514476074705e-05
+    },
+    "NODE_0000006": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385161178
+      },
+      "country_entropy": 1.5663086672577026e-05
+    },
+    "NODE_0000007": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385161178
+      },
+      "country_entropy": 1.5663086672577026e-05
+    },
+    "NODE_0000008": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267952388
+      },
+      "country_entropy": 1.582425275482234e-05
+    },
+    "NODE_0000009": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386439678
+      },
+      "country_entropy": 1.5661327980776745e-05
+    },
+    "NODE_0000010": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385123214
+      },
+      "country_entropy": 1.566313889854962e-05
+    },
+    "NODE_0000011": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999882539223
+      },
+      "country_entropy": 2.2622447705522944e-07
+    },
+    "NODE_0000012": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989148235224
+      },
+      "country_entropy": 1.5988735797746652e-05
+    },
+    "NODE_0000013": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998914952837
+      },
+      "country_entropy": 1.598695981288319e-05
+    },
+    "NODE_0000014": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385175454
+      },
+      "country_entropy": 1.5663067034571296e-05
+    },
+    "NODE_0000016": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267976778
+      },
+      "country_entropy": 1.5824219231407943e-05
+    },
+    "NODE_0000019": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387723298
+      },
+      "country_entropy": 1.565956223003254e-05
+    },
+    "NODE_0000020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387747311
+      },
+      "country_entropy": 1.565952919699615e-05
+    },
+    "NODE_0000021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999882539651
+      },
+      "country_entropy": 2.262236978679023e-07
+    },
+    "NODE_0000022": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387747416
+      },
+      "country_entropy": 1.56595290550157e-05
+    },
+    "NODE_0000023": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999997800257
+      },
+      "country_entropy": 5.1096562772755804e-09
+    },
+    "NODE_0000024": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989270591739
+      },
+      "country_entropy": 1.58206249708486e-05
+    },
+    "NODE_0000025": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386468495
+      },
+      "country_entropy": 1.566128834164753e-05
+    },
+    "NODE_0000026": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386439702
+      },
+      "country_entropy": 1.5661327949099627e-05
+    },
+    "NODE_0000027": {
+      "country": "USA",
+      "country_confidence": {
+        "China": 0.005543936598322191,
+        "USA": 0.9944560634016779
+      },
+      "country_entropy": 0.03432957083970185
+    },
+    "NODE_0000028": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454535
+      },
+      "country_entropy": 1.566130754242326e-05
+    },
+    "NODE_0000029": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999146651
+      },
+      "country_entropy": 2.0617831024935546e-09
+    },
+    "NODE_0000030": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999377504099255
+      },
+      "country_entropy": 0.0006650950039977079
+    },
+    "NODE_0000031": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998938514675
+      },
+      "country_entropy": 1.5663106520384116e-05
+    },
+    "NODE_0000032": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999883836113
+      },
+      "country_entropy": 2.2385567378579378e-07
+    },
+    "NODE_0000033": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269313274
+      },
+      "country_entropy": 1.5822382226195988e-05
+    },
+    "NODE_0000034": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385147809
+      },
+      "country_entropy": 1.5663105064877702e-05
+    },
+    "NODE_0000038": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998938514675
+      },
+      "country_entropy": 1.5663106520384116e-05
+    },
+    "NODE_0000039": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999881214359
+      },
+      "country_entropy": 2.286429024478668e-07
+    },
+    "NODE_0000040": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386436544
+      },
+      "country_entropy": 1.5661332293538885e-05
+    },
+    "NODE_0000041": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387733264
+      },
+      "country_entropy": 1.565954852217839e-05
+    },
+    "NODE_0000042": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989383878892
+      },
+      "country_entropy": 1.5664850559751155e-05
+    },
+    "NODE_0000043": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269280973
+      },
+      "country_entropy": 1.582242662447984e-05
+    },
+    "NODE_0000044": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454183
+      },
+      "country_entropy": 1.5661308027470228e-05
+    },
+    "NODE_0000045": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454183
+      },
+      "country_entropy": 1.5661308027470228e-05
+    },
+    "NODE_0000046": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989152157551
+      },
+      "country_entropy": 1.5983348894041905e-05
+    },
+    "NODE_0000048": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386425112
+      },
+      "country_entropy": 1.566134801879542e-05
+    },
+    "NODE_0000049": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999998656053
+      },
+      "country_entropy": 3.1872217334212783e-09
+    },
+    "NODE_0000050": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385175454
+      },
+      "country_entropy": 1.5663067034571296e-05
+    },
+    "NODE_0000051": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387732743
+      },
+      "country_entropy": 1.5659549236941714e-05
+    },
+    "NODE_0000052": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387747416
+      },
+      "country_entropy": 1.56595290550157e-05
+    },
+    "NODE_0000053": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989148234576
+      },
+      "country_entropy": 1.5988736686119923e-05
+    },
+    "NODE_0000055": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387732743
+      },
+      "country_entropy": 1.5659549236941714e-05
+    },
+    "NODE_0000057": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269313114
+      },
+      "country_entropy": 1.5822382448581253e-05
+    },
+    "NODE_0000060": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999985022
+      },
+      "country_entropy": 4.0514393906566054e-11
+    },
+    "NODE_0000061": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999982707330499
+      },
+      "country_entropy": 2.4672853918015494e-05
+    },
+    "NODE_0000064": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385132309
+      },
+      "country_entropy": 1.5663126387625516e-05
+    },
+    "NODE_0000067": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999882539489
+      },
+      "country_entropy": 2.2622399383325064e-07
+    },
+    "NODE_0000068": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989383820829
+      },
+      "country_entropy": 1.5664930429850347e-05
+    },
+    "NODE_0000069": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989146883435
+      },
+      "country_entropy": 1.599059230504625e-05
+    },
+    "NODE_0000070": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267962022
+      },
+      "country_entropy": 1.5824239513206126e-05
+    },
+    "NODE_0000071": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989146854846
+      },
+      "country_entropy": 1.5990631567291714e-05
+    },
+    "NODE_0000072": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989266668822
+      },
+      "country_entropy": 1.5826016990925357e-05
+    },
+    "NODE_0000073": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269284091
+      },
+      "country_entropy": 1.5822422340731146e-05
+    },
+    "NODE_0000074": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454218
+      },
+      "country_entropy": 1.5661307980625738e-05
+    },
+    "NODE_0000075": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989148205498
+      },
+      "country_entropy": 1.5988776623121136e-05
+    },
+    "NODE_0000076": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.99999893864399
+      },
+      "country_entropy": 1.5661327676691195e-05
+    },
+    "NODE_0000077": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267987771
+      },
+      "country_entropy": 1.5824204121875516e-05
+    },
+    "NODE_0000078": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999881214148
+      },
+      "country_entropy": 2.2864328771872982e-07
+    },
+    "NODE_0000079": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267976614
+      },
+      "country_entropy": 1.5824219457172398e-05
+    },
+    "NODE_0000080": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386439943
+      },
+      "country_entropy": 1.5661327616972733e-05
+    },
+    "NODE_0000083": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269298648
+      },
+      "country_entropy": 1.5822402331899765e-05
+    },
+    "NODE_0000084": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454374
+      },
+      "country_entropy": 1.5661307764529513e-05
+    },
+    "NODE_0000085": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999837
+      },
+      "country_entropy": -5.342284324027367e-13
+    },
+    "NODE_0000086": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386439783
+      },
+      "country_entropy": 1.5661327836172253e-05
+    },
+    "NODE_0000088": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503609805
+      },
+      "country_entropy": 1.5500084283128976e-05
+    },
+    "NODE_0000091": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503609805
+      },
+      "country_entropy": 1.5500084283128976e-05
+    },
+    "NODE_0000092": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999998670884
+      },
+      "country_entropy": 3.1535015585802386e-09
+    },
+    "NODE_0000093": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386440105
+      },
+      "country_entropy": 1.5661327393015474e-05
+    },
+    "NODE_0000094": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385157462
+      },
+      "country_entropy": 1.566309178642235e-05
+    },
+    "NODE_0000095": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989270591845
+      },
+      "country_entropy": 1.582062482451509e-05
+    },
+    "NODE_0000096": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385147062
+      },
+      "country_entropy": 1.566310608951626e-05
+    },
+    "NODE_0000097": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386468494
+      },
+      "country_entropy": 1.5661288340274798e-05
+    },
+    "NODE_0000098": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386439945
+      },
+      "country_entropy": 1.5661327615553292e-05
+    },
+    "NODE_0000101": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503595403
+      },
+      "country_entropy": 1.5500104110209546e-05
+    },
+    "NODE_0000102": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387732907
+      },
+      "country_entropy": 1.5659549011702142e-05
+    },
+    "NODE_0000103": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387747418
+      },
+      "country_entropy": 1.5659529052513926e-05
+    },
+    "NODE_0000106": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999998700063
+      },
+      "country_entropy": 3.0871139822303015e-09
+    },
+    "NODE_0000107": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.99999892679767
+      },
+      "country_entropy": 1.5824219339045038e-05
+    },
+    "NODE_0000108": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503595723
+      },
+      "country_entropy": 1.5500103671524487e-05
+    },
+    "NODE_0000109": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989149557069
+      },
+      "country_entropy": 1.5986920398677093e-05
+    },
+    "NODE_0000110": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999882553803
+      },
+      "country_entropy": 2.2619785562125166e-07
+    },
+    "NODE_0000111": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267991529
+      },
+      "country_entropy": 1.5824198953861157e-05
+    },
+    "NODE_0000112": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989502327661
+      },
+      "country_entropy": 1.5501849410659088e-05
+    },
+    "NODE_0000113": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267976568
+      },
+      "country_entropy": 1.5824219520812e-05
+    },
+    "NODE_0000114": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989149542113
+      },
+      "country_entropy": 1.5986940938711552e-05
+    },
+    "NODE_0000115": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385146899
+      },
+      "country_entropy": 1.5663106314118312e-05
+    },
+    "NODE_0000116": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989266651231
+      },
+      "country_entropy": 1.582604116803077e-05
+    },
+    "NODE_0000117": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386425473
+      },
+      "country_entropy": 1.5661347522106386e-05
+    },
+    "NODE_0000118": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999879902947
+      },
+      "country_entropy": 2.3103531554245383e-07
+    },
+    "NODE_0000120": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386422069
+      },
+      "country_entropy": 1.5661352204051336e-05
+    },
+    "NODE_0000121": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387733106
+      },
+      "country_entropy": 1.5659548739520684e-05
+    },
+    "NODE_0000122": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998950229872
+      },
+      "country_entropy": 1.5501889254215e-05
+    },
+    "NODE_0000123": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385114593
+      },
+      "country_entropy": 1.566315075350183e-05
+    },
+    "NODE_0000124": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.998111703225336e-13
+    },
+    "NODE_0000125": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385146425
+      },
+      "country_entropy": 1.5663106967806383e-05
+    },
+    "NODE_0000126": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503609805
+      },
+      "country_entropy": 1.5500084283128976e-05
+    },
+    "NODE_0000130": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989387718795
+      },
+      "country_entropy": 1.5659568424701453e-05
+    },
+    "NODE_0000131": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503609805
+      },
+      "country_entropy": 1.5500084283128976e-05
+    },
+    "NODE_0000132": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989502313351
+      },
+      "country_entropy": 1.550186911132237e-05
+    },
+    "NODE_0000133": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503609805
+      },
+      "country_entropy": 1.5500084283128976e-05
+    },
+    "NODE_0000134": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999879917574
+      },
+      "country_entropy": 2.3100863890554364e-07
+    },
+    "NODE_0000135": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989502298879
+      },
+      "country_entropy": 1.5501889034343047e-05
+    },
+    "NODE_0000137": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385111354
+      },
+      "country_entropy": 1.5663155210987196e-05
+    },
+    "NODE_0000138": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269299004
+      },
+      "country_entropy": 1.5822401841775572e-05
+    },
+    "NODE_0000139": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999881243082
+      },
+      "country_entropy": 2.2859048406504503e-07
+    },
+    "NODE_0000140": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998938645438
+      },
+      "country_entropy": 1.5661307756716827e-05
+    },
+    "NODE_0000141": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989149513453
+      },
+      "country_entropy": 1.5986980300834552e-05
+    },
+    "NODE_0000142": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999985288
+      },
+      "country_entropy": 3.9788877661924244e-11
+    },
+    "NODE_0000143": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989146898351
+      },
+      "country_entropy": 1.59905718176599e-05
+    },
+    "NODE_0000144": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989266654712
+      },
+      "country_entropy": 1.5826036384822188e-05
+    },
+    "NODE_0000145": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267990892
+      },
+      "country_entropy": 1.5824199831953586e-05
+    },
+    "NODE_0000146": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269298681
+      },
+      "country_entropy": 1.5822402284640118e-05
+    },
+    "NODE_0000147": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454378
+      },
+      "country_entropy": 1.5661307761425114e-05
+    },
+    "NODE_0000148": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989266654712
+      },
+      "country_entropy": 1.5826036384822188e-05
+    },
+    "NODE_0000150": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989269298681
+      },
+      "country_entropy": 1.5822402284640118e-05
+    },
+    "NODE_0000151": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989385146587
+      },
+      "country_entropy": 1.5663106744459096e-05
+    },
+    "NODE_0000152": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454378
+      },
+      "country_entropy": 1.5661307761425114e-05
+    },
+    "NODE_0000154": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989267990892
+      },
+      "country_entropy": 1.5824199831953586e-05
+    },
+    "NODE_0000158": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989503609753
+      },
+      "country_entropy": 1.5500084354015717e-05
+    },
+    "NODE_0000159": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998926929884
+      },
+      "country_entropy": 1.582240206740213e-05
+    },
+    "NODE_0000160": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999989386454378
+      },
+      "country_entropy": 1.566130775922479e-05
+    },
+    "NODE_0000161": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.999998926802008
+      },
+      "country_entropy": 1.5824159715190458e-05
+    },
+    "USA/CUIMC-NP-3345/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3381/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3410/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3455/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3469/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3472/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3477/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3478/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3510/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3521/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3522/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3524/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3528/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3532/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3560/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3565/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3570/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3573/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3609/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3616/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3617/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3629/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3632/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3634/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3657/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3661/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3670/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3671/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3672/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3676/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3678/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3687/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3700/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3704/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3707/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3748/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3752/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3756/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3796/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3804/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3807/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3810/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3814/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3815/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3816/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3970/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3971/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3972/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3974/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3988/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3990/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-3991/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3992/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3994/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-3995/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4001/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4002/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4003/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4004/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4010/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4011/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4013/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4015/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4016/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4019/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4020/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4021/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4025/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4027/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4030/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4032/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4033/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4036/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4037/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4040/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4043/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4059/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4061/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4062/2020": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4066/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4069/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4070/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4071/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4072/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4074/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4079/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4080/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4081/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4086/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4093/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-4212/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4256/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4489/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4563/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4741/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4852/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-4947/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5006/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5028/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5080/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5210/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5211/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5213/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5214/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5215/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5216/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5218/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5220/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5222/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5223/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5225/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5226/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5227/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5232/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5233/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5239/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5247/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5250/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5254/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5256/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5261/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5264/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5265/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5269/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5270/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5272/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5273/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5276/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5277/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5283/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5284/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5285/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5286/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5290/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5293/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5296/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5298/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5300/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5352/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5359/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5379/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5385/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5388/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5391/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5415/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5426/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5441/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5442/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5443/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5445/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5452/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5479/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5483/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5511/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5521/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5552/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5555/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5658/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5662/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5667/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5670/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5671/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5677/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 0.9999999999999999
+      },
+      "country_entropy": -9.99866855976916e-13
+    },
+    "USA/CUIMC-NP-5678/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "USA/CUIMC-NP-5683/2021": {
+      "country": "USA",
+      "country_confidence": {
+        "USA": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    },
+    "Wuhan/Hu-1/2019": {
+      "country": "China",
+      "country_confidence": {
+        "China": 1.0
+      },
+      "country_entropy": -1.000088900581841e-12
+    }
+  }
+}
