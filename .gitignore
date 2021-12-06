@@ -1,6 +1,3 @@
-*.fasta
-*.fasta.*
-*.tar.gz
 *.sw*
 .gitignore.s*
 /output/ny/nextstrain_and_github/recency.json
