@@ -15,7 +15,7 @@
 
 In the `scripts` directory, there are two Nextstrain workflows: `ncov` and `ncov-ny`. `ncov` is the official Nextstrain workflow for analyzing SARS-CoV-2 data. We cloned the ncov repository to our machine as recommended in the documentation. We will use `ncov` as our Nextstrain pipeline. 
 
-The second repository `ncov-ny` is a copy of `ncov` used and specified by the authors of the paper. You can find the original repository from the Bedford lab [here] (https://github.com/blab/ncov-ny). We will use `ncov-ny` to refer to in our project as "using both Github repo and Nextstrain" because this is the official GitHub repository associated with the paper, and utilizes the Nextstrain pipeline.
+The second repository `ncov-ny` is a copy of `ncov` used and specified by the authors of the paper. You can find the original repository from the Bedford lab [here](https://github.com/blab/ncov-ny). We will use `ncov-ny` to refer to in our project as "using both Github repo and Nextstrain" because this is the official GitHub repository associated with the paper, and utilizes the Nextstrain pipeline.
 
 ## Running `ncov`
 
