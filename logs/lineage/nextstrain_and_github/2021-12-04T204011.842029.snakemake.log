@@ -1,0 +1,518 @@
+localrules directive specifies rules that are not present in the Snakefile:
+	upload
+	download
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                                  count    min threads    max threads
+---------------------------------  -------  -------------  -------------
+aa_muts_explicit                         1              1              1
+align                                    2              8              8
+all                                      1              1              1
+ancestral                                1              1              1
+build_align                              1              8              8
+clade_files                              1              1              1
+clades                                   1              1              1
+colors                                   1              1              1
+combine_input_metadata                   1              1              1
+combine_samples                          1              1              1
+combine_sequences_for_subsampling        1              1              1
+diagnostic                               2              1              1
+distances                                1              1              1
+exclude_file                             2              1              1
+export                                   1              1              1
+filter                                   2              1              1
+finalize                                 1              1              1
+index_sequences                          1              1              1
+mask                                     2              1              1
+recency                                  1              1              1
+refine                                   1              1              1
+rename_subclades                         1              1              1
+subclades                                1              1              1
+subsample                                1              1              1
+tip_frequencies                          1              1              1
+traits                                   1              1              1
+translate                                1              1              1
+tree                                     1              4              4
+total                                   33              1              8
+
+Select jobs to execute...
+
+[Sat Dec  4 20:40:20 2021]
+Job 11: 
+            Aligning sequences to defaults/reference_seq.fasta
+              - gaps relative to reference are considered real
+            
+Reason: Forced execution
+
+
+            nextalign                 --jobs=8                 --reference defaults/reference_seq.fasta                 --genemap defaults/annotation.gff                 --genes ORF1a,ORF1b,S,ORF3a,M,N                 --sequences ../ncov/data/hcov_north-america.fasta                 --output-dir results/translations                 --output-basename seqs_gisaid                 --output-fasta results/aligned_gisaid.fasta                 --output-insertions results/insertions_gisaid.tsv > logs/align_gisaid.txt 2>&1
+            
+[Sat Dec  4 20:40:35 2021]
+Finished job 11.
+1 of 33 steps (3%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:40:36 2021]
+Job 16: 
+            Aligning sequences to defaults/reference_seq.fasta
+              - gaps relative to reference are considered real
+            
+Reason: Forced execution
+
+
+            nextalign                 --jobs=8                 --reference defaults/reference_seq.fasta                 --genemap defaults/annotation.gff                 --genes ORF1a,ORF1b,S,ORF3a,M,N                 --sequences ../ncov/data/wuhan_reference.sequences.fasta                 --output-dir results/translations                 --output-basename seqs_reference                 --output-fasta results/aligned_reference.fasta                 --output-insertions results/insertions_reference.tsv > logs/align_reference.txt 2>&1
+            
+[Sat Dec  4 20:40:36 2021]
+Finished job 16.
+2 of 33 steps (6%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:40:36 2021]
+Job 19: 
+        Combining metadata files ../ncov/data/hcov_north-america.tsv ../ncov/data/wuhan_reference.metadata.tsv -> results/combined_metadata.tsv and adding columns to represent origin
+        
+Reason: Forced execution
+
+
+        python3 scripts/combine_metadata.py --metadata ../ncov/data/hcov_north-america.tsv ../ncov/data/wuhan_reference.metadata.tsv --origins gisaid reference --output results/combined_metadata.tsv 2>&1 | tee logs/combine_input_metadata.txt
+        
+
+[Sat Dec  4 20:40:36 2021]
+rule clade_files:
+    input: defaults/clades.tsv
+    output: results/b.1.526/clades.tsv
+    jobid: 26
+    benchmark: benchmarks/clade_files_b.1.526.txt
+    reason: Forced execution
+    wildcards: build_name=b.1.526
+    resources: tmpdir=/tmp
+
+
+        cat defaults/clades.tsv > results/b.1.526/clades.tsv
+        
+
+[Sat Dec  4 20:40:36 2021]
+Job 10: 
+        Mask bases in alignment results/aligned_gisaid.fasta
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+Reason: Forced execution
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned_gisaid.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_gisaid.fasta 2>&1 | tee logs/mask_gisaid.txt
+        
+
+[Sat Dec  4 20:40:36 2021]
+Job 13: Scanning aligned sequences results/aligned_gisaid.fasta for problematic sequences
+Reason: Forced execution
+
+
+        python3 scripts/diagnostic.py             --alignment results/aligned_gisaid.fasta             --metadata ../ncov/data/hcov_north-america.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_gisaid.tsv             --output-diagnostics results/sequence-diagnostics_gisaid.tsv             --output-exclusion-list results/to-exclude_gisaid.txt 2>&1 | tee logs/diagnostics_gisaid.txt
+        
+
+[Sat Dec  4 20:40:36 2021]
+Job 15: 
+        Mask bases in alignment results/aligned_reference.fasta
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+Reason: Forced execution
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned_reference.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_reference.fasta 2>&1 | tee logs/mask_reference.txt
+        
+
+[Sat Dec  4 20:40:36 2021]
+Job 18: Scanning aligned sequences results/aligned_reference.fasta for problematic sequences
+Reason: Forced execution
+
+
+        python3 scripts/diagnostic.py             --alignment results/aligned_reference.fasta             --metadata ../ncov/data/wuhan_reference.metadata.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_reference.tsv             --output-diagnostics results/sequence-diagnostics_reference.tsv             --output-exclusion-list results/to-exclude_reference.txt 2>&1 | tee logs/diagnostics_reference.txt
+        
+[Sat Dec  4 20:40:36 2021]
+Finished job 26.
+3 of 33 steps (9%) done
+[Sat Dec  4 20:40:39 2021]
+Finished job 15.
+4 of 33 steps (12%) done
+[Sat Dec  4 20:40:41 2021]
+Finished job 10.
+5 of 33 steps (15%) done
+[Sat Dec  4 20:40:50 2021]
+Finished job 18.
+6 of 33 steps (18%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:40:50 2021]
+rule exclude_file:
+    input: defaults/exclude.txt, results/to-exclude_reference.txt
+    output: results/exclude_reference.txt
+    jobid: 17
+    benchmark: benchmarks/exclude_file_reference.txt
+    reason: Forced execution
+    wildcards: origin=_reference
+    resources: tmpdir=/tmp
+
+
+        cat defaults/exclude.txt results/to-exclude_reference.txt > results/exclude_reference.txt
+        
+[Sat Dec  4 20:40:50 2021]
+Finished job 17.
+7 of 33 steps (21%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:40:50 2021]
+Job 14: 
+        Filtering alignment results/masked_reference.fasta -> results/filtered_reference.fasta
+          - excluding strains in results/exclude_reference.txt
+          - including strains in ny_profiles/b.1.526/include.txt
+          - min length: 27000
+        
+Reason: Forced execution
+
+
+        augur filter             --sequences results/masked_reference.fasta             --metadata ../ncov/data/wuhan_reference.metadata.tsv             --include ny_profiles/b.1.526/include.txt             --max-date 2021-12-05             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude results/exclude_reference.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_reference.fasta 2>&1 | tee logs/filtered_reference.txt
+        
+[Sat Dec  4 20:40:50 2021]
+Finished job 19.
+8 of 33 steps (24%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:40:50 2021]
+Job 27: Use metadata on submission date to construct submission recency field
+Reason: Forced execution
+
+
+        python3 scripts/construct-recency-from-submission-date.py             --metadata results/combined_metadata.tsv             --output results/b.1.526/recency.json 2>&1 | tee logs/recency_b.1.526.txt
+        
+
+[Sat Dec  4 20:40:50 2021]
+Job 31: Constructing colors file
+Reason: Forced execution
+
+
+        python3 scripts/assign-colors.py             --ordering ny_profiles/b.1.526/color_ordering.tsv             --color-schemes defaults/color_schemes.tsv             --output results/b.1.526/colors.tsv             --metadata results/combined_metadata.tsv 2>&1 | tee logs/colors_b.1.526.txt
+        
+[Sat Dec  4 20:40:54 2021]
+Finished job 13.
+9 of 33 steps (27%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:40:54 2021]
+rule exclude_file:
+    input: defaults/exclude.txt, results/to-exclude_gisaid.txt
+    output: results/exclude_gisaid.txt
+    jobid: 12
+    benchmark: benchmarks/exclude_file_gisaid.txt
+    reason: Forced execution
+    wildcards: origin=_gisaid
+    resources: tmpdir=/tmp
+
+
+        cat defaults/exclude.txt results/to-exclude_gisaid.txt > results/exclude_gisaid.txt
+        
+[Sat Dec  4 20:40:54 2021]
+Finished job 12.
+10 of 33 steps (30%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:40:54 2021]
+Job 9: 
+        Filtering alignment results/masked_gisaid.fasta -> results/filtered_gisaid.fasta
+          - excluding strains in results/exclude_gisaid.txt
+          - including strains in ny_profiles/b.1.526/include.txt
+          - min length: 27000
+        
+Reason: Forced execution
+
+
+        augur filter             --sequences results/masked_gisaid.fasta             --metadata ../ncov/data/hcov_north-america.tsv             --include ny_profiles/b.1.526/include.txt             --max-date 2021-12-05             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude results/exclude_gisaid.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_gisaid.fasta 2>&1 | tee logs/filtered_gisaid.txt
+        
+[Sat Dec  4 20:40:56 2021]
+Finished job 31.
+11 of 33 steps (33%) done
+[Sat Dec  4 20:41:03 2021]
+Finished job 14.
+12 of 33 steps (36%) done
+[Sat Dec  4 20:41:03 2021]
+Finished job 27.
+13 of 33 steps (39%) done
+[Sat Dec  4 20:41:06 2021]
+Finished job 9.
+14 of 33 steps (42%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:41:06 2021]
+Job 8: 
+        Combine and deduplicate aligned & filtered FASTAs from multiple origins in preparation for subsampling.
+        
+Reason: Forced execution
+
+
+        python3 scripts/combine-and-dedup-fastas.py --input results/filtered_gisaid.fasta results/filtered_reference.fasta --output results/combined_sequences_for_subsampling.fasta
+        
+[Sat Dec  4 20:41:11 2021]
+Finished job 8.
+15 of 33 steps (45%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:41:11 2021]
+Job 20: 
+        Index sequence composition for faster filtering.
+        
+Reason: Forced execution
+
+
+        augur index             --sequences results/combined_sequences_for_subsampling.fasta             --output results/combined_sequence_index.tsv
+        
+[Sat Dec  4 20:41:24 2021]
+Finished job 20.
+16 of 33 steps (48%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:41:24 2021]
+Job 7: 
+        Subsample all sequences by 'lineage-focus' scheme for build 'b.1.526' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 1000
+         - min-date: 
+         - max-date: 
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(pango_lineage == 'B.1.526' | pango_lineage == 'B.1.526.1' | pango_lineage == 'B.1.526.2')"
+         - priority: 
+        
+Reason: Forced execution
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta             --metadata results/combined_metadata.tsv             --sequence-index results/combined_sequence_index.tsv             --include ny_profiles/b.1.526/include.txt             --exclude defaults/exclude.txt                                                                 --query "(pango_lineage == 'B.1.526' | pango_lineage == 'B.1.526.1' | pango_lineage == 'B.1.526.2')"                                       --group-by year month                          --subsample-max-sequences 1000                          --output results/b.1.526/sample-lineage-focus.fasta 2>&1 | tee logs/subsample_b.1.526_lineage-focus.txt
+        
+[Sat Dec  4 20:41:38 2021]
+Finished job 7.
+17 of 33 steps (52%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:41:38 2021]
+Job 6: 
+        Combine and deduplicate FASTAs
+        
+Reason: Forced execution
+
+
+        python3 scripts/combine-and-dedup-fastas.py             --input results/b.1.526/sample-lineage-focus.fasta             --output results/b.1.526/subsampled_sequences.fasta 2>&1 | tee logs/subsample_regions_b.1.526.txt
+        
+[Sat Dec  4 20:41:41 2021]
+Finished job 6.
+18 of 33 steps (55%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:41:41 2021]
+Job 5: 
+            Aligning sequences to defaults/reference_seq.fasta
+              - gaps relative to reference are considered real
+            
+Reason: Forced execution
+
+
+            nextalign                 --jobs=8                 --reference defaults/reference_seq.fasta                 --genemap defaults/annotation.gff                 --genes ORF1a,ORF1b,S,ORF3a,M,N                 --sequences results/b.1.526/subsampled_sequences.fasta                 --output-dir results/b.1.526/translations                 --output-basename aligned                 --output-fasta results/b.1.526/aligned.fasta                 --output-insertions results/b.1.526/insertions.tsv > logs/align_b.1.526.txt 2>&1
+            
+[Sat Dec  4 20:41:41 2021]
+Finished job 5.
+19 of 33 steps (58%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:41:41 2021]
+Job 4: Building tree
+Reason: Forced execution
+
+
+        augur tree             --alignment results/b.1.526/aligned.fasta             --tree-builder-args '-ninit 10 -n 4'             --output results/b.1.526/tree_raw.nwk             --nthreads 4 2>&1 | tee logs/tree_b.1.526.txt
+        
+[Sat Dec  4 20:41:53 2021]
+Finished job 4.
+20 of 33 steps (61%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:41:53 2021]
+Job 3: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+Reason: Forced execution
+
+
+        augur refine             --tree results/b.1.526/tree_raw.nwk             --alignment results/b.1.526/aligned.fasta             --metadata results/combined_metadata.tsv             --output-tree results/b.1.526/tree.nwk             --output-node-data results/b.1.526/branch_lengths.json             --root Wuhan/Hu-1/2019             --timetree                          --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_b.1.526.txt
+        
+[Sat Dec  4 20:42:15 2021]
+Finished job 3.
+21 of 33 steps (64%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:42:15 2021]
+Job 21: 
+        Reconstructing ancestral sequences and mutations
+          - inferring ambiguous mutations
+        
+Reason: Forced execution
+
+
+        augur ancestral             --tree results/b.1.526/tree.nwk             --alignment results/b.1.526/aligned.fasta             --output-node-data results/b.1.526/nt_muts.json             --inference joint             --infer-ambiguous 2>&1 | tee logs/ancestral_b.1.526.txt
+        
+
+[Sat Dec  4 20:42:15 2021]
+Job 28: 
+        Inferring ancestral traits for ['division']
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+Reason: Forced execution
+
+
+        augur traits             --tree results/b.1.526/tree.nwk             --metadata results/combined_metadata.tsv             --output results/b.1.526/traits.json             --columns division             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_b.1.526.txt
+        
+
+[Sat Dec  4 20:42:15 2021]
+Job 29: Translating amino acid sequences
+Reason: Forced execution
+
+
+        python3 scripts/explicit_translation.py             --tree results/b.1.526/tree.nwk             --translations results/b.1.526/translations/aligned.gene.ORF1a.fasta results/b.1.526/translations/aligned.gene.ORF1b.fasta results/b.1.526/translations/aligned.gene.S.fasta results/b.1.526/translations/aligned.gene.ORF3a.fasta results/b.1.526/translations/aligned.gene.M.fasta results/b.1.526/translations/aligned.gene.N.fasta             --genes ORF1a ORF1b S ORF3a M N             --output results/b.1.526/aa_muts_explicit.json 2>&1 | tee logs/aamuts_b.1.526.txt
+        
+
+[Sat Dec  4 20:42:15 2021]
+Job 32: Estimating censored KDE frequencies for tips
+Reason: Forced execution
+
+
+        augur frequencies             --method kde             --metadata results/combined_metadata.tsv             --tree results/b.1.526/tree.nwk             --min-date 2020.0             --max-date 2021.9246575342465             --pivot-interval 1             --pivot-interval-units weeks             --narrow-bandwidth 0.05             --proportion-wide 0.0             --output results/b.1.526/tip-frequencies.json 2>&1 | tee logs/tip_frequencies_b.1.526.txt
+        
+[Sat Dec  4 20:42:23 2021]
+Finished job 29.
+22 of 33 steps (67%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:42:23 2021]
+rule distances:
+    input: results/b.1.526/tree.nwk, results/b.1.526/translations/aligned.gene.S_withInternalNodes.fasta, defaults/distance_maps/S1.json
+    output: results/b.1.526/distances.json
+    jobid: 30
+    reason: Forced execution
+    wildcards: build_name=b.1.526
+    resources: tmpdir=/tmp
+
+
+            augur distance                 --tree results/b.1.526/tree.nwk                 --alignment results/b.1.526/translations/aligned.gene.S_withInternalNodes.fasta                 --gene-names S                 --compare-to root                 --attribute-name S1_mutations                 --map defaults/distance_maps/S1.json                 --output results/b.1.526/distances.json
+            
+[Sat Dec  4 20:42:25 2021]
+Finished job 32.
+23 of 33 steps (70%) done
+[Sat Dec  4 20:42:25 2021]
+Finished job 28.
+24 of 33 steps (73%) done
+[Sat Dec  4 20:42:25 2021]
+Finished job 21.
+25 of 33 steps (76%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:42:25 2021]
+Job 22: Translating amino acid sequences
+Reason: Forced execution
+
+
+        augur translate             --tree results/b.1.526/tree.nwk             --ancestral-sequences results/b.1.526/nt_muts.json             --reference-sequence defaults/reference_seq.gb             --output-node-data results/b.1.526/aa_muts.json 2>&1 | tee logs/translate_b.1.526.txt
+        
+[Sat Dec  4 20:42:35 2021]
+Finished job 30.
+26 of 33 steps (79%) done
+[Sat Dec  4 20:42:35 2021]
+Finished job 22.
+27 of 33 steps (82%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:42:35 2021]
+Job 24: Adding internal clade labels
+Reason: Forced execution
+
+
+        cat defaults/clades.tsv defaults/subclades.tsv > results/b.1.526/temp_subclades.tsv &&         augur clades --tree results/b.1.526/tree.nwk             --mutations results/b.1.526/nt_muts.json results/b.1.526/aa_muts.json             --clades results/b.1.526/temp_subclades.tsv             --output-node-data results/b.1.526/temp_subclades.json 2>&1 | tee logs/subclades_b.1.526.txt
+        
+
+[Sat Dec  4 20:42:36 2021]
+Job 25: Adding internal clade labels
+Reason: Forced execution
+
+
+        augur clades --tree results/b.1.526/tree.nwk             --mutations results/b.1.526/nt_muts.json results/b.1.526/aa_muts.json             --clades results/b.1.526/clades.tsv             --output-node-data results/b.1.526/clades.json 2>&1 | tee logs/clades_b.1.526.txt
+        
+[Sat Dec  4 20:42:49 2021]
+Finished job 25.
+28 of 33 steps (85%) done
+[Sat Dec  4 20:42:49 2021]
+Finished job 24.
+29 of 33 steps (88%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:42:49 2021]
+rule rename_subclades:
+    input: results/b.1.526/temp_subclades.json
+    output: results/b.1.526/subclades.json
+    jobid: 23
+    benchmark: benchmarks/rename_subclades_b.1.526.txt
+    reason: Forced execution
+    wildcards: build_name=b.1.526
+    resources: tmpdir=/tmp
+
+[Sat Dec  4 20:42:59 2021]
+Finished job 23.
+30 of 33 steps (91%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:42:59 2021]
+Job 2: Exporting data files for for auspice
+Reason: Forced execution
+
+
+        augur export v2             --tree results/b.1.526/tree.nwk             --metadata results/combined_metadata.tsv             --node-data results/b.1.526/branch_lengths.json results/b.1.526/nt_muts.json results/b.1.526/aa_muts.json results/b.1.526/subclades.json results/b.1.526/clades.json results/b.1.526/recency.json results/b.1.526/traits.json results/b.1.526/aa_muts_explicit.json results/b.1.526/distances.json             --auspice-config ny_profiles/b.1.526/auspice_config.json             --include-root-sequence             --colors results/b.1.526/colors.tsv             --lat-longs defaults/lat_longs.tsv             --title 'B.1.526-focused SARS-CoV-2 genomic analysis'             --description defaults/description.md             --output results/b.1.526/ncov_with_accessions.json 2>&1 | tee logs/export_b.1.526.txt
+        
+[Sat Dec  4 20:43:13 2021]
+Finished job 2.
+31 of 33 steps (94%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:43:13 2021]
+Job 1: Remove extraneous colorings for main build and move frequencies
+Reason: Forced execution
+
+
+        python3 scripts/fix-colorings.py             --input results/b.1.526/ncov_with_accessions.json             --output auspice/ncov_b.1.526.json 2>&1 | tee logs/fix_colorings_b.1.526.txt &&
+        cp results/b.1.526/tip-frequencies.json auspice/ncov_b.1.526_tip-frequencies.json &&
+        cp results/b.1.526/ncov_with_accessions_root-sequence.json auspice/ncov_b.1.526_root-sequence.json
+        
+[Sat Dec  4 20:43:14 2021]
+Finished job 1.
+32 of 33 steps (97%) done
+Select jobs to execute...
+
+[Sat Dec  4 20:43:14 2021]
+localrule all:
+    input: auspice/ncov_b.1.526.json, auspice/ncov_b.1.526_tip-frequencies.json
+    jobid: 0
+    reason: Forced execution
+    resources: tmpdir=/tmp
+
+[Sat Dec  4 20:43:14 2021]
+Finished job 0.
+33 of 33 steps (100%) done
+Complete log: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov-ny/.snakemake/log/2021-12-04T204011.842029.snakemake.log
