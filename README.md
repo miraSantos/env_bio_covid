@@ -30,12 +30,6 @@ ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
 
 ## Running `ncov-ny`
 
-1. Go into `scripts/ncov` directory.
-2. Run `nextstrain view auspice/ --port 8889`, or another port number.
-3. Connect your local port to port opened on the Poseidon cluster by running:
-```
-ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
-```
-4. Go into a browser of your choice and type `http://localhost:8889` or `http://127.0.0.1:8889`
-5. Select the auspice visualization you want to explore.
+1. Go into `scripts/ncov-ny` directory.
+The remaining steps are identical to running the `ncov` pipeline above.
 
