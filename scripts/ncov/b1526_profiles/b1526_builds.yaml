@@ -1,0 +1,31 @@
+genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
+use_nextalign: true
+
+inputs:
+   - name: b_1_526
+     metadata: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/b.1.526/b1526.metadata.tsv
+     sequences: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/b.1.526/b1526.sequences.fasta
+   - name: b_1_526_2
+     metadata: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv
+     sequences: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.sequences.fasta
+
+files:
+   auspice_config: "b1526_profiles/auspice_config.json"
+
+builds:
+   b_lineage:
+      subsampling_scheme: lineage
+
+subsampling:
+   lineage:
+      lineage-focus:
+         group_by: "year month"
+         max_sequences: 1000
+         query: --query "(pango_lineage == 'B.1.526' | pango_lineage == 'B.1.526.1' | pango_lineage == 'B.1.526.2')"
+
+skip_travel_history_adjustment: True
+
+traits:
+   b_lineage:
+      sampling_bias_correction: 2.5
+      columns: ["division"]

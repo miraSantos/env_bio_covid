@@ -1,0 +1,3505 @@
+{
+  "alignment": "results/ny_6m/aligned.fasta",
+  "clock": {
+    "intercept": -1.6161222880138402,
+    "rate": 0.0008,
+    "rtt_Tmrca": 2020.1528600173
+  },
+  "generated_by": {
+    "program": "augur",
+    "version": "13.0.3"
+  },
+  "input_tree": "results/ny_6m/tree_raw.nwk",
+  "nodes": {
+    "NODE_0000000": {
+      "branch_length": 7,
+      "clock_length": 0.00015477237981066573,
+      "date": "2020-10-23",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.7624284134313,
+        2020.8457148255466
+      ],
+      "numdate": 2020.811406612188
+    },
+    "NODE_0000001": {
+      "branch_length": 2,
+      "clock_length": 3.6120611889091424e-05,
+      "date": "2020-11-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.8321067630648,
+        2020.8565573770493
+      ],
+      "numdate": 2020.8565573770493
+    },
+    "NODE_0000002": {
+      "branch_length": 0,
+      "clock_length": 0.001,
+      "date": "2019-12-30",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.9449060400157,
+        2019.9986301369863
+      ],
+      "numdate": 2019.9952590219941
+    },
+    "NODE_0000003": {
+      "branch_length": 5,
+      "clock_length": 0.0001405343300338594,
+      "date": "2020-10-17",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.73251547487,
+        2020.8400816446624
+      ],
+      "numdate": 2020.793609049967
+    },
+    "NODE_0000004": {
+      "branch_length": 2,
+      "clock_length": 5.017173911247056e-05,
+      "date": "2020-11-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.8157362909228,
+        2020.9079734459265
+      ],
+      "numdate": 2020.8563237238575
+    },
+    "NODE_0000005": {
+      "branch_length": 0,
+      "clock_length": 1.0586577065269305e-05,
+      "date": "2020-11-14",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8272315224997,
+        2020.911037502669
+      ],
+      "numdate": 2020.869556945189
+    },
+    "NODE_0000006": {
+      "branch_length": 1,
+      "clock_length": 3.0373897823314055e-05,
+      "date": "2020-11-28",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.8523879568113,
+        2020.9248247808546
+      ],
+      "numdate": 2020.9075243174682
+    },
+    "NODE_0000007": {
+      "branch_length": 2,
+      "clock_length": 9.670417062477687e-05,
+      "date": "2020-12-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9526156387965,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847
+    },
+    "NODE_0000008": {
+      "branch_length": 1,
+      "clock_length": 2.303921215959814e-05,
+      "date": "2020-08-11",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.5560496237536,
+        2020.6504805269979
+      ],
+      "numdate": 2020.610188447429
+    },
+    "NODE_0000009": {
+      "branch_length": 10,
+      "clock_length": 0.00019430985116512128,
+      "date": "2020-11-08",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2020.7824098098538,
+        2020.8835947152206
+      ],
+      "numdate": 2020.8530757613853
+    },
+    "NODE_0000010": {
+      "branch_length": 0,
+      "clock_length": 5.937903371522682e-06,
+      "date": "2020-08-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4735374657448,
+        2020.6238617922593
+      ],
+      "numdate": 2020.5895695491668
+    },
+    "NODE_0000011": {
+      "branch_length": 10,
+      "clock_length": 0.00019914283259813152,
+      "date": "2020-10-30",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2020.7729487051395,
+        2020.87596987306
+      ],
+      "numdate": 2020.8303179729771
+    },
+    "NODE_0000012": {
+      "branch_length": 0,
+      "clock_length": 1.6343160050266486e-05,
+      "date": "2020-08-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.473451749961,
+        2020.6283512380248
+      ],
+      "numdate": 2020.6099984992297
+    },
+    "NODE_0000013": {
+      "branch_length": 0,
+      "clock_length": 4.716845223690612e-06,
+      "date": "2020-08-13",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4816014679407,
+        2020.6589223400927
+      ],
+      "numdate": 2020.6158945557593
+    },
+    "NODE_0000014": {
+      "branch_length": 1,
+      "clock_length": 2.980693711756232e-05,
+      "date": "2020-11-25",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.858247177713,
+        2020.9193989071039
+      ],
+      "numdate": 2020.8999137406993
+    },
+    "NODE_0000016": {
+      "branch_length": 0,
+      "clock_length": 3.872269203112743e-06,
+      "date": "2020-08-13",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.476897131398,
+        2020.6490590884869
+      ],
+      "numdate": 2020.6148388357335
+    },
+    "NODE_0000019": {
+      "branch_length": 5,
+      "clock_length": 0.00011081302071593664,
+      "date": "2020-09-20",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.5325740247754,
+        2020.810377108996
+      ],
+      "numdate": 2020.7199057081243
+    },
+    "NODE_0000020": {
+      "branch_length": 11,
+      "clock_length": 0.00019641110684338414,
+      "date": "2020-12-19",
+      "mutation_length": 11,
+      "num_date_confidence": [
+        2020.8546947684208,
+        2020.9901805795791
+      ],
+      "numdate": 2020.9654195916787
+    },
+    "NODE_0000021": {
+      "branch_length": 8,
+      "clock_length": 0.00025290116034647713,
+      "date": "2020-11-28",
+      "mutation_length": 8,
+      "num_date_confidence": [
+        2020.8387472306624,
+        2020.9199365322877
+      ],
+      "numdate": 2020.9076807126505
+    },
+    "NODE_0000022": {
+      "branch_length": 0,
+      "clock_length": 2.019868648721248e-05,
+      "date": "2020-11-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8012017080282,
+        2020.917053977453
+      ],
+      "numdate": 2020.8810431118316
+    },
+    "NODE_0000023": {
+      "branch_length": 2,
+      "clock_length": 4.17081423774062e-05,
+      "date": "2020-07-31",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.4899961968847,
+        2020.6358863265461
+      ],
+      "numdate": 2020.5813894322296
+    },
+    "NODE_0000024": {
+      "branch_length": 2,
+      "clock_length": 7.88634952824266e-05,
+      "date": "2020-09-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.5406444573498,
+        2020.7685296616908
+      ],
+      "numdate": 2020.6901336313204
+    },
+    "NODE_0000025": {
+      "branch_length": 3,
+      "clock_length": 0.00011227987508238444,
+      "date": "2020-10-30",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.7240129277454,
+        2020.8707845331148
+      ],
+      "numdate": 2020.8304834751734
+    },
+    "NODE_0000026": {
+      "branch_length": 0,
+      "clock_length": 2.075117160716788e-05,
+      "date": "2020-10-23",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.7180652761856,
+        2020.8825972183733
+      ],
+      "numdate": 2020.8113808083356
+    },
+    "NODE_0000027": {
+      "branch_length": 4,
+      "clock_length": 0.0004288864199006009,
+      "date": "2020-07-13",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.2671237998484,
+        2020.5815680594349
+      ],
+      "numdate": 2020.53136704687
+    },
+    "NODE_0000028": {
+      "branch_length": 0,
+      "clock_length": 2.231875654375604e-05,
+      "date": "2020-12-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9536986350013,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072
+    },
+    "NODE_0000029": {
+      "branch_length": 3,
+      "clock_length": 4.062409846609981e-05,
+      "date": "2020-08-01",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.4707267149236,
+        2020.6178484548811
+      ],
+      "numdate": 2020.5821471699523
+    },
+    "NODE_0000030": {
+      "branch_length": 0,
+      "clock_length": -1.6902340896790026e-06,
+      "date": "2020-07-12",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.3036942941023,
+        2020.62262911813
+      ],
+      "numdate": 2020.5292542542577
+    },
+    "NODE_0000031": {
+      "branch_length": 13,
+      "clock_length": 0.000374499254690985,
+      "date": "2021-01-31",
+      "mutation_length": 13,
+      "num_date_confidence": [
+        2021.0067811662352,
+        2021.1111297889354
+      ],
+      "numdate": 2021.084018624123
+    },
+    "NODE_0000032": {
+      "branch_length": 11,
+      "clock_length": 0.00021661900663459991,
+      "date": "2020-11-08",
+      "mutation_length": 11,
+      "num_date_confidence": [
+        2020.7951409777606,
+        2020.8720598760115
+      ],
+      "numdate": 2020.8529209282458
+    },
+    "NODE_0000033": {
+      "branch_length": 0,
+      "clock_length": 5.3784790572626974e-05,
+      "date": "2020-12-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.847698791382,
+        2020.9818837243522
+      ],
+      "numdate": 2020.9652709532274
+    },
+    "NODE_0000034": {
+      "branch_length": 0,
+      "clock_length": 8.131863990339756e-06,
+      "date": "2020-08-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4984676722568,
+        2020.6557308432107
+      ],
+      "numdate": 2020.5915542622174
+    },
+    "NODE_0000038": {
+      "branch_length": 2,
+      "clock_length": 5.934703368910203e-05,
+      "date": "2020-09-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.5453591419364,
+        2020.7633007323225
+      ],
+      "numdate": 2020.6900783478707
+    },
+    "NODE_0000039": {
+      "branch_length": 20,
+      "clock_length": 0.0002606770566176529,
+      "date": "2020-11-28",
+      "mutation_length": 20,
+      "num_date_confidence": [
+        2020.8376010773995,
+        2021.0462921036826
+      ],
+      "numdate": 2020.9079934907245
+    },
+    "NODE_0000040": {
+      "branch_length": 3,
+      "clock_length": 6.687068453521195e-05,
+      "date": "2020-12-28",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.9276222464,
+        2021.103262276397
+      ],
+      "numdate": 2020.9915818463935
+    },
+    "NODE_0000041": {
+      "branch_length": 1,
+      "clock_length": 3.9886284812696475e-05,
+      "date": "2021-01-16",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9572285911613,
+        2021.113698630137
+      ],
+      "numdate": 2021.0414397024094
+    },
+    "NODE_0000042": {
+      "branch_length": 0,
+      "clock_length": 8.013141242572616e-06,
+      "date": "2020-11-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.7912717640293,
+        2020.8987581959575
+      ],
+      "numdate": 2020.8403343995303
+    },
+    "NODE_0000043": {
+      "branch_length": 1,
+      "clock_length": 1.962347413756078e-05,
+      "date": "2020-12-07",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.8685011922823,
+        2021.0550392157575
+      ],
+      "numdate": 2020.9325228333964
+    },
+    "NODE_0000044": {
+      "branch_length": 2,
+      "clock_length": 4.8047836220773896e-05,
+      "date": "2020-12-29",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9702676765228,
+        2021.113698630137
+      ],
+      "numdate": 2020.9925826286724
+    },
+    "NODE_0000045": {
+      "branch_length": 7,
+      "clock_length": 0.00013994903897406573,
+      "date": "2021-02-09",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2021.0644102015651,
+        2021.1215864423204
+      ],
+      "numdate": 2021.107459132114
+    },
+    "NODE_0000046": {
+      "branch_length": 0,
+      "clock_length": 1.7856535817531416e-05,
+      "date": "2020-11-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8004648360218,
+        2020.903590893167
+      ],
+      "numdate": 2020.8626550693023
+    },
+    "NODE_0000048": {
+      "branch_length": 6,
+      "clock_length": 0.00011309725570121047,
+      "date": "2020-10-03",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.679356809006,
+        2020.8407357992876
+      ],
+      "numdate": 2020.7562104053602
+    },
+    "NODE_0000049": {
+      "branch_length": 1,
+      "clock_length": 2.3385150773188755e-05,
+      "date": "2020-10-14",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.7160028394467,
+        2020.8589640837506
+      ],
+      "numdate": 2020.7854418438267
+    },
+    "NODE_0000050": {
+      "branch_length": 0,
+      "clock_length": 3.581549050823464e-05,
+      "date": "2020-11-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8227911871231,
+        2020.9084699453551
+      ],
+      "numdate": 2020.9074244324377
+    },
+    "NODE_0000051": {
+      "branch_length": 1,
+      "clock_length": 2.1340382750113297e-05,
+      "date": "2020-10-24",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.7479594508188,
+        2020.8791867737214
+      ],
+      "numdate": 2020.8121173222642
+    },
+    "NODE_0000052": {
+      "branch_length": 2,
+      "clock_length": 4.136285585637793e-05,
+      "date": "2020-11-12",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.8056505841298,
+        2020.900979530728
+      ],
+      "numdate": 2020.8638208920847
+    },
+    "NODE_0000053": {
+      "branch_length": 0,
+      "clock_length": 6.202151996477978e-06,
+      "date": "2020-08-14",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.55960160156,
+        2020.6637424966605
+      ],
+      "numdate": 2020.6179411374246
+    },
+    "NODE_0000055": {
+      "branch_length": 2,
+      "clock_length": 5.6282327916684096e-05,
+      "date": "2020-11-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.79211833357,
+        2020.9055034084697
+      ],
+      "numdate": 2020.8557947537224
+    },
+    "NODE_0000057": {
+      "branch_length": 2,
+      "clock_length": 6.932732534092846e-05,
+      "date": "2020-11-24",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.8167295072021,
+        2020.9481968356438
+      ],
+      "numdate": 2020.8980399650118
+    },
+    "NODE_0000060": {
+      "branch_length": 2,
+      "clock_length": 3.4978011547986704e-05,
+      "date": "2020-08-01",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.4915035468882,
+        2020.62936763274
+      ],
+      "numdate": 2020.5822935181063
+    },
+    "NODE_0000061": {
+      "branch_length": 0,
+      "clock_length": 7.453399530954908e-06,
+      "date": "2020-07-16",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.335810669603,
+        2020.6238578647724
+      ],
+      "numdate": 2020.5385710036714
+    },
+    "NODE_0000064": {
+      "branch_length": 2,
+      "clock_length": 7.485044531289301e-05,
+      "date": "2020-09-16",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.5476566517705,
+        2020.874265933313
+      ],
+      "numdate": 2020.7094371151786
+    },
+    "NODE_0000067": {
+      "branch_length": 2,
+      "clock_length": 3.09658851381173e-05,
+      "date": "2020-08-19",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.594731755573,
+        2020.8655438789813
+      ],
+      "numdate": 2020.6317310718016
+    },
+    "NODE_0000068": {
+      "branch_length": 0,
+      "clock_length": 8.584157818041904e-06,
+      "date": "2020-08-05",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4930176209168,
+        2020.7877175847948
+      ],
+      "numdate": 2020.5930237153789
+    },
+    "NODE_0000069": {
+      "branch_length": 5,
+      "clock_length": 0.00011660437774149268,
+      "date": "2020-10-04",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.6360736158902,
+        2020.868259920203
+      ],
+      "numdate": 2020.7572130306942
+    },
+    "NODE_0000070": {
+      "branch_length": 8,
+      "clock_length": 0.00025318847955413187,
+      "date": "2021-01-27",
+      "mutation_length": 8,
+      "num_date_confidence": [
+        2021.0066321900704,
+        2021.0900756550047
+      ],
+      "numdate": 2021.073698630137
+    },
+    "NODE_0000071": {
+      "branch_length": 0,
+      "clock_length": 1.4747074510742262e-05,
+      "date": "2020-08-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4785849648376,
+        2020.7771606980511
+      ],
+      "numdate": 2020.6114575585175
+    },
+    "NODE_0000072": {
+      "branch_length": 2,
+      "clock_length": 4.283670538195248e-05,
+      "date": "2020-10-23",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.7468926433994,
+        2020.8856044383579
+      ],
+      "numdate": 2020.8107589124218
+    },
+    "NODE_0000073": {
+      "branch_length": 2,
+      "clock_length": 3.961037696439051e-05,
+      "date": "2020-11-10",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.8240902119305,
+        2020.8913763645237
+      ],
+      "numdate": 2020.860271883627
+    },
+    "NODE_0000074": {
+      "branch_length": 1,
+      "clock_length": 2.160185170739775e-05,
+      "date": "2020-11-20",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.8581614113775,
+        2020.9002732240438
+      ],
+      "numdate": 2020.8872741982614
+    },
+    "NODE_0000075": {
+      "branch_length": 0,
+      "clock_length": 3.5332000161128387e-06,
+      "date": "2020-08-13",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.479538344209,
+        2020.8230845926894
+      ],
+      "numdate": 2020.6158740585374
+    },
+    "NODE_0000076": {
+      "branch_length": 1,
+      "clock_length": 2.0224470919093978e-05,
+      "date": "2020-08-10",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.4951530017036,
+        2020.6479368261541
+      ],
+      "numdate": 2020.6075741067552
+    },
+    "NODE_0000077": {
+      "branch_length": 1,
+      "clock_length": 7.053862984438388e-06,
+      "date": "2020-08-13",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.5123022370115,
+        2020.6802048251031
+      ],
+      "numdate": 2020.6163914354859
+    },
+    "NODE_0000078": {
+      "branch_length": 10,
+      "clock_length": 0.00015814949666575877,
+      "date": "2020-10-24",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2020.7413217423898,
+        2020.8532089733726
+      ],
+      "numdate": 2020.814078306318
+    },
+    "NODE_0000079": {
+      "branch_length": 0,
+      "clock_length": 2.1624143597962983e-05,
+      "date": "2020-08-23",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.5571901964288,
+        2020.8444895835817
+      ],
+      "numdate": 2020.642904238035
+    },
+    "NODE_0000080": {
+      "branch_length": 0,
+      "clock_length": 0.00015338073374019626,
+      "date": "2020-11-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4364481584457,
+        2020.9296880225645
+      ],
+      "numdate": 2020.8346301552103
+    },
+    "NODE_0000083": {
+      "branch_length": 2,
+      "clock_length": 5.78482339061014e-05,
+      "date": "2020-09-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.4925589291604,
+        2020.8100789039029
+      ],
+      "numdate": 2020.6887017278684
+    },
+    "NODE_0000084": {
+      "branch_length": 1,
+      "clock_length": 1.6471872039753015e-05,
+      "date": "2020-09-16",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.4985984740804,
+        2020.8303480541842
+      ],
+      "numdate": 2020.7092915679182
+    },
+    "NODE_0000085": {
+      "branch_length": 2,
+      "clock_length": 3.8153829135814665e-05,
+      "date": "2020-10-04",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.505545440689,
+        2020.8331301765597
+      ],
+      "numdate": 2020.756983854338
+    },
+    "NODE_0000086": {
+      "branch_length": 0,
+      "clock_length": 1.341255378259896e-05,
+      "date": "2021-02-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0475292961544,
+        2021.113698630137
+      ],
+      "numdate": 2021.0904643223653
+    },
+    "NODE_0000088": {
+      "branch_length": 10,
+      "clock_length": 0.00018877784131043072,
+      "date": "2020-12-29",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2020.9643151726873,
+        2020.9959016393443
+      ],
+      "numdate": 2020.992956155976
+    },
+    "NODE_0000091": {
+      "branch_length": 5,
+      "clock_length": 0.00012774624986306262,
+      "date": "2020-12-01",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.862059621597,
+        2020.9166666666667
+      ],
+      "numdate": 2020.9166666666667
+    },
+    "NODE_0000092": {
+      "branch_length": 2,
+      "clock_length": 2.5178255268781965e-05,
+      "date": "2020-10-15",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.5067147784744,
+        2020.8628090902826
+      ],
+      "numdate": 2020.788456673424
+    },
+    "NODE_0000093": {
+      "branch_length": 3,
+      "clock_length": 6.380576896909218e-05,
+      "date": "2020-12-08",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.8050438418045,
+        2020.985083997818
+      ],
+      "numdate": 2020.9348412522545
+    },
+    "NODE_0000094": {
+      "branch_length": 0,
+      "clock_length": 1.834897891804998e-05,
+      "date": "2020-11-02",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.7946426615968,
+        2020.879985536456
+      ],
+      "numdate": 2020.8370145299657
+    },
+    "NODE_0000095": {
+      "branch_length": 0,
+      "clock_length": 1.9020968303036837e-05,
+      "date": "2020-11-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8210077079843,
+        2020.889232342515
+      ],
+      "numdate": 2020.8607907403443
+    },
+    "NODE_0000096": {
+      "branch_length": 8,
+      "clock_length": 0.0002200436052369047,
+      "date": "2021-02-10",
+      "mutation_length": 8,
+      "num_date_confidence": [
+        2021.078563483477,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1111730742775
+    },
+    "NODE_0000097": {
+      "branch_length": 0,
+      "clock_length": 2.2863466742386413e-05,
+      "date": "2020-11-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.829048723706,
+        2020.8920765027322
+      ],
+      "numdate": 2020.8893700737724
+    },
+    "NODE_0000098": {
+      "branch_length": 6,
+      "clock_length": 0.00016657466078718165,
+      "date": "2021-01-05",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.9784368583025,
+        2021.0150684931507
+      ],
+      "numdate": 2021.0116973781585
+    },
+    "NODE_0000101": {
+      "branch_length": 8,
+      "clock_length": 0.00012005433339207,
+      "date": "2020-12-09",
+      "mutation_length": 8,
+      "num_date_confidence": [
+        2020.9097872304797,
+        2020.938524590164
+      ],
+      "numdate": 2020.938524590164
+    },
+    "NODE_0000102": {
+      "branch_length": 1,
+      "clock_length": 1.81415817975671e-05,
+      "date": "2020-10-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.5324992504447,
+        2020.8779300809042
+      ],
+      "numdate": 2020.8111336506709
+    },
+    "NODE_0000103": {
+      "branch_length": 3,
+      "clock_length": 5.6077326766473226e-05,
+      "date": "2020-11-18",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.7170572126868,
+        2020.9399292493451
+      ],
+      "numdate": 2020.881230309129
+    },
+    "NODE_0000106": {
+      "branch_length": 1,
+      "clock_length": 2.2213238856050267e-05,
+      "date": "2020-08-11",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.5588145581323,
+        2020.643762437008
+      ],
+      "numdate": 2020.6100600666764
+    },
+    "NODE_0000107": {
+      "branch_length": 0,
+      "clock_length": 1.2017903000468796e-05,
+      "date": "2020-10-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4848924977148,
+        2020.8952117189856
+      ],
+      "numdate": 2020.8034790521745
+    },
+    "NODE_0000108": {
+      "branch_length": 3,
+      "clock_length": 0.00011491479583983959,
+      "date": "2020-10-02",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.6177811174325,
+        2020.838837562118
+      ],
+      "numdate": 2020.7537035614762
+    },
+    "NODE_0000109": {
+      "branch_length": 0,
+      "clock_length": 2.6111612445614725e-05,
+      "date": "2020-11-02",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4827101542935,
+        2020.8964061079816
+      ],
+      "numdate": 2020.8361185677315
+    },
+    "NODE_0000110": {
+      "branch_length": 12,
+      "clock_length": 0.0002053331693500492,
+      "date": "2020-11-13",
+      "mutation_length": 12,
+      "num_date_confidence": [
+        2020.8201290906015,
+        2020.9435165024145
+      ],
+      "numdate": 2020.866726528364
+    },
+    "NODE_0000111": {
+      "branch_length": 0,
+      "clock_length": 1.5172378649371877e-05,
+      "date": "2020-11-08",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.4829803018438,
+        2020.9068392253791
+      ],
+      "numdate": 2020.8550840410433
+    },
+    "NODE_0000112": {
+      "branch_length": 4,
+      "clock_length": 9.273826006320142e-05,
+      "date": "2020-12-25",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.945482237636,
+        2020.99043715847
+      ],
+      "numdate": 2020.982649353443
+    },
+    "NODE_0000113": {
+      "branch_length": 2,
+      "clock_length": 2.193927361531043e-05,
+      "date": "2020-08-11",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.5436753768981,
+        2020.6839011581346
+      ],
+      "numdate": 2020.6097176101255
+    },
+    "NODE_0000114": {
+      "branch_length": 11,
+      "clock_length": 0.0002010671773271782,
+      "date": "2020-11-11",
+      "mutation_length": 11,
+      "num_date_confidence": [
+        2020.7986303109776,
+        2020.9410817839284
+      ],
+      "numdate": 2020.8610515817845
+    },
+    "NODE_0000115": {
+      "branch_length": 4,
+      "clock_length": 0.00015659012006025977,
+      "date": "2021-01-21",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.919145087222,
+        2021.0867731057506
+      ],
+      "numdate": 2021.0567892318597
+    },
+    "NODE_0000116": {
+      "branch_length": 3,
+      "clock_length": 6.0349359346265974e-05,
+      "date": "2020-12-08",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.8865546516033,
+        2020.9837965699749
+      ],
+      "numdate": 2020.9364882809673
+    },
+    "NODE_0000117": {
+      "branch_length": 1,
+      "clock_length": 3.1125618414107694e-05,
+      "date": "2020-12-22",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9393227615117,
+        2020.9877049180327
+      ],
+      "numdate": 2020.975395303985
+    },
+    "NODE_0000118": {
+      "branch_length": 1,
+      "clock_length": 4.184219039306768e-05,
+      "date": "2020-12-27",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.94306586112,
+        2021.0375963275424
+      ],
+      "numdate": 2020.9887910189586
+    },
+    "NODE_0000120": {
+      "branch_length": 0,
+      "clock_length": 1.8100948886084567e-06,
+      "date": "2020-12-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9777278289193,
+        2021.1246575342466
+      ],
+      "numdate": 2020.9910536375694
+    },
+    "NODE_0000121": {
+      "branch_length": 0,
+      "clock_length": 6.590223180022784e-05,
+      "date": "2021-01-27",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9669662261351,
+        2021.127397260274
+      ],
+      "numdate": 2021.0734314273197
+    },
+    "NODE_0000122": {
+      "branch_length": 3,
+      "clock_length": 9.722919694879581e-05,
+      "date": "2021-02-10",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.069476887476,
+        2021.113698630137
+      ],
+      "numdate": 2021.1103275151447
+    },
+    "NODE_0000123": {
+      "branch_length": 5,
+      "clock_length": 9.901339775238225e-05,
+      "date": "2020-09-25",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.6166659344933,
+        2020.8408827922701
+      ],
+      "numdate": 2020.733484357316
+    },
+    "NODE_0000124": {
+      "branch_length": 9,
+      "clock_length": 0.00020628861804916046,
+      "date": "2020-12-28",
+      "mutation_length": 9,
+      "num_date_confidence": [
+        2020.976595920306,
+        2020.996588917608
+      ],
+      "numdate": 2020.9913451298776
+    },
+    "NODE_0000125": {
+      "branch_length": 0,
+      "clock_length": 8.172560489421452e-06,
+      "date": "2020-12-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8453628699267,
+        2021.0122892429956
+      ],
+      "numdate": 2020.917854421828
+    },
+    "NODE_0000126": {
+      "branch_length": 0,
+      "clock_length": 7.949729219585344e-05,
+      "date": "2021-02-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9046317983027,
+        2021.1111925901587
+      ],
+      "numdate": 2021.0907167451223
+    },
+    "NODE_0000130": {
+      "branch_length": 0,
+      "clock_length": 6.098781622609938e-05,
+      "date": "2020-12-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9506915169704,
+        2021.0150684931507
+      ],
+      "numdate": 2020.991470688205
+    },
+    "NODE_0000131": {
+      "branch_length": 2,
+      "clock_length": 6.546484456980992e-05,
+      "date": "2021-01-27",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.0283655271112,
+        2021.0848318251105
+      ],
+      "numdate": 2021.0731761855898
+    },
+    "NODE_0000132": {
+      "branch_length": 0,
+      "clock_length": 1.9967724594510878e-05,
+      "date": "2020-12-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8982697315912,
+        2021.012363797093
+      ],
+      "numdate": 2020.9919722610525
+    },
+    "NODE_0000133": {
+      "branch_length": 2,
+      "clock_length": 8.026512954111844e-05,
+      "date": "2021-02-03",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.0539800732167,
+        2021.1246575342466
+      ],
+      "numdate": 2021.091676541804
+    },
+    "NODE_0000134": {
+      "branch_length": 4,
+      "clock_length": 8.116672372598943e-05,
+      "date": "2020-11-01",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.736293387227,
+        2020.94930747577
+      ],
+      "numdate": 2020.8349427619735
+    },
+    "NODE_0000135": {
+      "branch_length": 6,
+      "clock_length": 0.00012616040298875472,
+      "date": "2020-12-29",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.9573925924813,
+        2021.113698630137
+      ],
+      "numdate": 2020.9926432657094
+    },
+    "NODE_0000137": {
+      "branch_length": 4,
+      "clock_length": 6.423452475910827e-05,
+      "date": "2020-11-30",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.841142077956,
+        2020.9826349128107
+      ],
+      "numdate": 2020.9152359179225
+    },
+    "NODE_0000138": {
+      "branch_length": 0,
+      "clock_length": 1.6198467809580607e-05,
+      "date": "2021-01-05",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9438482207163,
+        2021.0539610497908
+      ],
+      "numdate": 2021.012097708143
+    },
+    "NODE_0000139": {
+      "branch_length": 2,
+      "clock_length": 4.14213499095327e-05,
+      "date": "2020-12-19",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.8794716177968,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9670126053093
+    },
+    "NODE_0000140": {
+      "branch_length": 0,
+      "clock_length": 3.525334033485834e-05,
+      "date": "2021-01-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0109211326894,
+        2021.0561643835617
+      ],
+      "numdate": 2021.0561643835617
+    },
+    "NODE_0000141": {
+      "branch_length": 0,
+      "clock_length": 4.2650280308528755e-05,
+      "date": "2020-12-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9111552580348,
+        2021.004798043542
+      ],
+      "numdate": 2020.9711672722137
+    },
+    "NODE_0000142": {
+      "branch_length": 1,
+      "clock_length": 5.815676739421888e-05,
+      "date": "2020-11-28",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.8085335592605,
+        2021.0114325871102
+      ],
+      "numdate": 2020.9076387212162
+    },
+    "NODE_0000143": {
+      "branch_length": 0,
+      "clock_length": 1.1877705832069206e-05,
+      "date": "2020-12-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9417650815162,
+        2021.0439100615
+      ],
+      "numdate": 2020.9860144045037
+    },
+    "NODE_0000144": {
+      "branch_length": 0,
+      "clock_length": 5.388748136400754e-06,
+      "date": "2020-12-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9552244380545,
+        2021.0455454287053
+      ],
+      "numdate": 2020.9927503396743
+    },
+    "NODE_0000145": {
+      "branch_length": 0,
+      "clock_length": 4.415589264409811e-05,
+      "date": "2021-01-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0052831837988,
+        2021.0479452054794
+      ],
+      "numdate": 2021.0479452054794
+    },
+    "NODE_0000146": {
+      "branch_length": 0,
+      "clock_length": 2.0602739725989437e-05,
+      "date": "2021-01-27",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0324529989184,
+        2021.1065382164415
+      ],
+      "numdate": 2021.073698630137
+    },
+    "NODE_0000147": {
+      "branch_length": 0,
+      "clock_length": 2.7609987065903242e-05,
+      "date": "2021-02-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0624344264947,
+        2021.113698630137
+      ],
+      "numdate": 2021.1082111139692
+    },
+    "NODE_0000148": {
+      "branch_length": 0,
+      "clock_length": 4.868393935235772e-06,
+      "date": "2020-12-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9630520926594,
+        2021.0918056773912
+      ],
+      "numdate": 2020.9920998969228
+    },
+    "NODE_0000150": {
+      "branch_length": 0,
+      "clock_length": 1.4846894614513545e-05,
+      "date": "2021-01-27",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.96261488608,
+        2021.1072648827467
+      ],
+      "numdate": 2021.073698630137
+    },
+    "NODE_0000151": {
+      "branch_length": 1,
+      "clock_length": 6.142234661256807e-05,
+      "date": "2021-01-18",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9893283936844,
+        2021.0479452054794
+      ],
+      "numdate": 2021.0479452054794
+    },
+    "NODE_0000152": {
+      "branch_length": 0,
+      "clock_length": 1.6496956423249693e-05,
+      "date": "2021-02-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0514369822463,
+        2021.113698630137
+      ],
+      "numdate": 2021.094319825666
+    },
+    "NODE_0000154": {
+      "branch_length": 1,
+      "clock_length": 5.0432091956738984e-05,
+      "date": "2021-01-21",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9621265239095,
+        2021.093777546653
+      ],
+      "numdate": 2021.0551400118688
+    },
+    "NODE_0000158": {
+      "branch_length": 4,
+      "clock_length": 0.00013266440142822692,
+      "date": "2021-01-27",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.916571480184,
+        2021.096286939178
+      ],
+      "numdate": 2021.0734692230017
+    },
+    "NODE_0000159": {
+      "branch_length": 1,
+      "clock_length": 2.245315607624749e-05,
+      "date": "2020-12-08",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.874657256885,
+        2021.0130390042566
+      ],
+      "numdate": 2020.9357051663117
+    },
+    "NODE_0000160": {
+      "branch_length": 1,
+      "clock_length": 9.686835550966083e-05,
+      "date": "2021-01-21",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9234171716275,
+        2021.1053220331692
+      ],
+      "numdate": 2021.0567906106987
+    },
+    "NODE_0000161": {
+      "branch_length": 1,
+      "clock_length": 4.491556565567147e-05,
+      "date": "2020-12-29",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.948676117325,
+        2021.0199136342092
+      ],
+      "numdate": 2020.991849623381
+    },
+    "USA/CUIMC-NP-3345/2020": {
+      "branch_length": 2,
+      "clock_length": 4.598707696631401e-05,
+      "date": "2020-11-07",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.8510928961748,
+        2020.8510928961748
+      ],
+      "numdate": 2020.8510928961748,
+      "raw_date": "2020-11-07"
+    },
+    "USA/CUIMC-NP-3381/2020": {
+      "branch_length": 10,
+      "clock_length": 0.00021359026230593798,
+      "date": "2020-11-09",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2020.8565573770493,
+        2020.8565573770493
+      ],
+      "numdate": 2020.8565573770493,
+      "raw_date": "2020-11-09"
+    },
+    "USA/CUIMC-NP-3410/2020": {
+      "branch_length": 1,
+      "clock_length": 4.486378128789508e-05,
+      "date": "2020-11-13",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.8674863387978,
+        2020.8674863387978
+      ],
+      "numdate": 2020.8674863387978,
+      "raw_date": "2020-11-13"
+    },
+    "USA/CUIMC-NP-3455/2020": {
+      "branch_length": 1,
+      "clock_length": 2.258129019035095e-05,
+      "date": "2020-11-18",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.8811475409836,
+        2020.8811475409836
+      ],
+      "numdate": 2020.8811475409836,
+      "raw_date": "2020-11-18"
+    },
+    "USA/CUIMC-NP-3469/2020": {
+      "branch_length": 12,
+      "clock_length": 0.00024138608917465183,
+      "date": "2020-11-19",
+      "mutation_length": 12,
+      "num_date_confidence": [
+        2020.8838797814208,
+        2020.8838797814208
+      ],
+      "numdate": 2020.8838797814208,
+      "raw_date": "2020-11-19"
+    },
+    "USA/CUIMC-NP-3472/2020": {
+      "branch_length": 0,
+      "clock_length": 2.165143167827464e-06,
+      "date": "2020-11-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8920765027322,
+        2020.8920765027322
+      ],
+      "numdate": 2020.8920765027322,
+      "raw_date": "2020-11-22"
+    },
+    "USA/CUIMC-NP-3477/2020": {
+      "branch_length": 6,
+      "clock_length": 0.00015941273153947185,
+      "date": "2020-11-21",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.889344262295,
+        2020.889344262295
+      ],
+      "numdate": 2020.889344262295,
+      "raw_date": "2020-11-21"
+    },
+    "USA/CUIMC-NP-3478/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00010588832636568941,
+      "date": "2020-11-21",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.889344262295,
+        2020.889344262295
+      ],
+      "numdate": 2020.889344262295,
+      "raw_date": "2020-11-21"
+    },
+    "USA/CUIMC-NP-3510/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-11-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.8565573770493,
+        2020.8565573770493
+      ],
+      "numdate": 2020.8565573770493,
+      "raw_date": "2020-11-09"
+    },
+    "USA/CUIMC-NP-3521/2020": {
+      "branch_length": 0,
+      "clock_length": 8.364103340445647e-07,
+      "date": "2020-11-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9084699453551,
+        2020.9084699453551
+      ],
+      "numdate": 2020.9084699453551,
+      "raw_date": "2020-11-28"
+    },
+    "USA/CUIMC-NP-3522/2020": {
+      "branch_length": 3,
+      "clock_length": 3.571924261634978e-05,
+      "date": "2020-11-28",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.9084699453551,
+        2020.9084699453551
+      ],
+      "numdate": 2020.9084699453551,
+      "raw_date": "2020-11-28"
+    },
+    "USA/CUIMC-NP-3524/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00015085138978457812,
+      "date": "2020-11-28",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.9084699453551,
+        2020.9084699453551
+      ],
+      "numdate": 2020.9084699453551,
+      "raw_date": "2020-11-28"
+    },
+    "USA/CUIMC-NP-3528/2020": {
+      "branch_length": 2,
+      "clock_length": 3.7881836638439434e-05,
+      "date": "2020-11-25",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9002732240438,
+        2020.9002732240438
+      ],
+      "numdate": 2020.9002732240438,
+      "raw_date": "2020-11-25"
+    },
+    "USA/CUIMC-NP-3532/2020": {
+      "branch_length": 5,
+      "clock_length": 0.0001238131071030895,
+      "date": "2020-11-28",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.9084699453551,
+        2020.9084699453551
+      ],
+      "numdate": 2020.9084699453551,
+      "raw_date": "2020-11-28"
+    },
+    "USA/CUIMC-NP-3560/2020": {
+      "branch_length": 1,
+      "clock_length": 1.0399220625858965e-05,
+      "date": "2020-11-25",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9002732240438,
+        2020.9002732240438
+      ],
+      "numdate": 2020.9002732240438,
+      "raw_date": "2020-11-25"
+    },
+    "USA/CUIMC-NP-3565/2020": {
+      "branch_length": 5,
+      "clock_length": 0.00010060827357254198,
+      "date": "2020-11-29",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.9112021857923,
+        2020.9112021857923
+      ],
+      "numdate": 2020.9112021857923,
+      "raw_date": "2020-11-29"
+    },
+    "USA/CUIMC-NP-3570/2020": {
+      "branch_length": 3,
+      "clock_length": 4.431534717579534e-05,
+      "date": "2020-11-28",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.9084699453551,
+        2020.9084699453551
+      ],
+      "numdate": 2020.9084699453551,
+      "raw_date": "2020-11-28"
+    },
+    "USA/CUIMC-NP-3573/2020": {
+      "branch_length": 2,
+      "clock_length": 5.716433231163823e-05,
+      "date": "2020-11-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9084699453551,
+        2020.9084699453551
+      ],
+      "numdate": 2020.9084699453551,
+      "raw_date": "2020-11-28"
+    },
+    "USA/CUIMC-NP-3609/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00016578364119047406,
+      "date": "2020-12-01",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.9166666666667,
+        2020.9166666666667
+      ],
+      "numdate": 2020.9166666666667,
+      "raw_date": "2020-12-01"
+    },
+    "USA/CUIMC-NP-3616/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-12-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9166666666667,
+        2020.9166666666667
+      ],
+      "numdate": 2020.9166666666667,
+      "raw_date": "2020-12-01"
+    },
+    "USA/CUIMC-NP-3617/2020": {
+      "branch_length": 6,
+      "clock_length": 6.907895495166796e-05,
+      "date": "2020-12-01",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.9166666666667,
+        2020.9166666666667
+      ],
+      "numdate": 2020.9166666666667,
+      "raw_date": "2020-12-01"
+    },
+    "USA/CUIMC-NP-3629/2020": {
+      "branch_length": 3,
+      "clock_length": 5.536817543622878e-05,
+      "date": "2020-12-03",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.922131147541,
+        2020.922131147541
+      ],
+      "numdate": 2020.922131147541,
+      "raw_date": "2020-12-03"
+    },
+    "USA/CUIMC-NP-3632/2020": {
+      "branch_length": 6,
+      "clock_length": 8.644227297837476e-05,
+      "date": "2020-12-03",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.922131147541,
+        2020.922131147541
+      ],
+      "numdate": 2020.922131147541,
+      "raw_date": "2020-12-03"
+    },
+    "USA/CUIMC-NP-3634/2020": {
+      "branch_length": 5,
+      "clock_length": 7.113234554434955e-05,
+      "date": "2020-12-02",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.9193989071039,
+        2020.9193989071039
+      ],
+      "numdate": 2020.9193989071039,
+      "raw_date": "2020-12-02"
+    },
+    "USA/CUIMC-NP-3657/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00019215539002553775,
+      "date": "2020-12-06",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.9303278688524,
+        2020.9303278688524
+      ],
+      "numdate": 2020.9303278688524,
+      "raw_date": "2020-12-06"
+    },
+    "USA/CUIMC-NP-3661/2020": {
+      "branch_length": 11,
+      "clock_length": 0.0002562142417407184,
+      "date": "2020-12-06",
+      "mutation_length": 11,
+      "num_date_confidence": [
+        2020.9303278688524,
+        2020.9303278688524
+      ],
+      "numdate": 2020.9303278688524,
+      "raw_date": "2020-12-06"
+    },
+    "USA/CUIMC-NP-3670/2020": {
+      "branch_length": 1,
+      "clock_length": 1.3746140262085394e-05,
+      "date": "2020-12-04",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9248633879781,
+        2020.9248633879781
+      ],
+      "numdate": 2020.9248633879781,
+      "raw_date": "2020-12-04"
+    },
+    "USA/CUIMC-NP-3671/2020": {
+      "branch_length": 8,
+      "clock_length": 0.00013430362691216541,
+      "date": "2020-12-04",
+      "mutation_length": 8,
+      "num_date_confidence": [
+        2020.9248633879781,
+        2020.9248633879781
+      ],
+      "numdate": 2020.9248633879781,
+      "raw_date": "2020-12-04"
+    },
+    "USA/CUIMC-NP-3672/2020": {
+      "branch_length": 10,
+      "clock_length": 0.00022556731995450688,
+      "date": "2020-12-04",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2020.9248633879781,
+        2020.9248633879781
+      ],
+      "numdate": 2020.9248633879781,
+      "raw_date": "2020-12-04"
+    },
+    "USA/CUIMC-NP-3676/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00023450585294120766,
+      "date": "2020-12-04",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.9248633879781,
+        2020.9248633879781
+      ],
+      "numdate": 2020.9248633879781,
+      "raw_date": "2020-12-04"
+    },
+    "USA/CUIMC-NP-3678/2020": {
+      "branch_length": 11,
+      "clock_length": 0.00024801964179562775,
+      "date": "2020-12-04",
+      "mutation_length": 11,
+      "num_date_confidence": [
+        2020.9248633879781,
+        2020.9248633879781
+      ],
+      "numdate": 2020.9248633879781,
+      "raw_date": "2020-12-04"
+    },
+    "USA/CUIMC-NP-3687/2020": {
+      "branch_length": 1,
+      "clock_length": 1.5588133123702465e-05,
+      "date": "2020-12-02",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9193989071039,
+        2020.9193989071039
+      ],
+      "numdate": 2020.9193989071039,
+      "raw_date": "2020-12-02"
+    },
+    "USA/CUIMC-NP-3700/2020": {
+      "branch_length": 4,
+      "clock_length": 0.0001392939707938191,
+      "date": "2020-12-06",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.9303278688524,
+        2020.9303278688524
+      ],
+      "numdate": 2020.9303278688524,
+      "raw_date": "2020-12-06"
+    },
+    "USA/CUIMC-NP-3704/2020": {
+      "branch_length": 1,
+      "clock_length": 2.8702887222089983e-05,
+      "date": "2020-12-08",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9357923497269,
+        2020.9357923497269
+      ],
+      "numdate": 2020.9357923497269,
+      "raw_date": "2020-12-08"
+    },
+    "USA/CUIMC-NP-3707/2020": {
+      "branch_length": 10,
+      "clock_length": 0.00024324902234019324,
+      "date": "2020-12-08",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2020.9357923497269,
+        2020.9357923497269
+      ],
+      "numdate": 2020.9357923497269,
+      "raw_date": "2020-12-08"
+    },
+    "USA/CUIMC-NP-3748/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-12-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.938524590164,
+        2020.938524590164
+      ],
+      "numdate": 2020.938524590164,
+      "raw_date": "2020-12-09"
+    },
+    "USA/CUIMC-NP-3752/2020": {
+      "branch_length": 2,
+      "clock_length": 4.59851826660185e-05,
+      "date": "2020-12-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.938524590164,
+        2020.938524590164
+      ],
+      "numdate": 2020.938524590164,
+      "raw_date": "2020-12-09"
+    },
+    "USA/CUIMC-NP-3756/2020": {
+      "branch_length": 3,
+      "clock_length": 2.48002181565994e-05,
+      "date": "2020-12-09",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.938524590164,
+        2020.938524590164
+      ],
+      "numdate": 2020.938524590164,
+      "raw_date": "2020-12-09"
+    },
+    "USA/CUIMC-NP-3796/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00024762060703959507,
+      "date": "2020-12-10",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.941256830601,
+        2020.941256830601
+      ],
+      "numdate": 2020.941256830601,
+      "raw_date": "2020-12-10"
+    },
+    "USA/CUIMC-NP-3804/2020": {
+      "branch_length": 3,
+      "clock_length": 0.00010439833454352495,
+      "date": "2020-12-10",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.941256830601,
+        2020.941256830601
+      ],
+      "numdate": 2020.941256830601,
+      "raw_date": "2020-12-10"
+    },
+    "USA/CUIMC-NP-3807/2020": {
+      "branch_length": 5,
+      "clock_length": 0.00010549739901920361,
+      "date": "2020-12-11",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.9439890710382,
+        2020.9439890710382
+      ],
+      "numdate": 2020.9439890710382,
+      "raw_date": "2020-12-11"
+    },
+    "USA/CUIMC-NP-3810/2020": {
+      "branch_length": 0,
+      "clock_length": 2.185792349700859e-06,
+      "date": "2020-12-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.941256830601,
+        2020.941256830601
+      ],
+      "numdate": 2020.941256830601,
+      "raw_date": "2020-12-10"
+    },
+    "USA/CUIMC-NP-3814/2020": {
+      "branch_length": 1,
+      "clock_length": 6.775956284145641e-05,
+      "date": "2020-12-10",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.941256830601,
+        2020.941256830601
+      ],
+      "numdate": 2020.941256830601,
+      "raw_date": "2020-12-10"
+    },
+    "USA/CUIMC-NP-3815/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00010174281942646314,
+      "date": "2020-12-10",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.941256830601,
+        2020.941256830601
+      ],
+      "numdate": 2020.941256830601,
+      "raw_date": "2020-12-10"
+    },
+    "USA/CUIMC-NP-3816/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00010628433629390473,
+      "date": "2020-12-11",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.9439890710382,
+        2020.9439890710382
+      ],
+      "numdate": 2020.9439890710382,
+      "raw_date": "2020-12-11"
+    },
+    "USA/CUIMC-NP-3970/2020": {
+      "branch_length": 4,
+      "clock_length": 9.678271173493445e-05,
+      "date": "2020-12-27",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.9877049180327,
+        2020.9877049180327
+      ],
+      "numdate": 2020.9877049180327,
+      "raw_date": "2020-12-27"
+    },
+    "USA/CUIMC-NP-3971/2020": {
+      "branch_length": 1,
+      "clock_length": 9.84769123817163e-06,
+      "date": "2020-12-27",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9877049180327,
+        2020.9877049180327
+      ],
+      "numdate": 2020.9877049180327,
+      "raw_date": "2020-12-27"
+    },
+    "USA/CUIMC-NP-3972/2020": {
+      "branch_length": 1,
+      "clock_length": 1.7947171844172284e-05,
+      "date": "2020-12-27",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9877049180327,
+        2020.9877049180327
+      ],
+      "numdate": 2020.9877049180327,
+      "raw_date": "2020-12-27"
+    },
+    "USA/CUIMC-NP-3974/2020": {
+      "branch_length": 2,
+      "clock_length": 8.034457581701634e-05,
+      "date": "2020-12-27",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9877049180327,
+        2020.9877049180327
+      ],
+      "numdate": 2020.9877049180327,
+      "raw_date": "2020-12-27"
+    },
+    "USA/CUIMC-NP-3988/2020": {
+      "branch_length": 1,
+      "clock_length": 0.00036149292383890353,
+      "date": "2020-12-28",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.99043715847,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847,
+      "raw_date": "2020-12-28"
+    },
+    "USA/CUIMC-NP-3990/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00010988911766773282,
+      "date": "2020-12-28",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.99043715847,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847,
+      "raw_date": "2020-12-28"
+    },
+    "USA/CUIMC-NP-3991/2020": {
+      "branch_length": 4,
+      "clock_length": 7.391775476668215e-05,
+      "date": "2020-12-28",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.99043715847,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847,
+      "raw_date": "2020-12-28"
+    },
+    "USA/CUIMC-NP-3992/2020": {
+      "branch_length": 2,
+      "clock_length": 8.970102966058277e-05,
+      "date": "2020-12-29",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-3994/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-12-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-3995/2020": {
+      "branch_length": 3,
+      "clock_length": 0.00010590292685023974,
+      "date": "2020-12-29",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-4001/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00012445379185114993,
+      "date": "2020-12-30",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.9959016393443,
+        2020.9959016393443
+      ],
+      "numdate": 2020.9959016393443,
+      "raw_date": "2020-12-30"
+    },
+    "USA/CUIMC-NP-4002/2020": {
+      "branch_length": 3,
+      "clock_length": 8.522525245755429e-05,
+      "date": "2020-12-30",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.9959016393443,
+        2020.9959016393443
+      ],
+      "numdate": 2020.9959016393443,
+      "raw_date": "2020-12-30"
+    },
+    "USA/CUIMC-NP-4003/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00016595597273633524,
+      "date": "2020-12-30",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.9959016393443,
+        2020.9959016393443
+      ],
+      "numdate": 2020.9959016393443,
+      "raw_date": "2020-12-30"
+    },
+    "USA/CUIMC-NP-4004/2020": {
+      "branch_length": 2,
+      "clock_length": 2.4385638132533283e-05,
+      "date": "2020-12-30",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9959016393443,
+        2020.9959016393443
+      ],
+      "numdate": 2020.9959016393443,
+      "raw_date": "2020-12-30"
+    },
+    "USA/CUIMC-NP-4010/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-12-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-4011/2020": {
+      "branch_length": 1,
+      "clock_length": 8.416036371316788e-06,
+      "date": "2020-12-29",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-4013/2020": {
+      "branch_length": 0,
+      "clock_length": 2.3563866946864874e-06,
+      "date": "2020-12-30",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.9959016393443,
+        2020.9959016393443
+      ],
+      "numdate": 2020.9959016393443,
+      "raw_date": "2020-12-30"
+    },
+    "USA/CUIMC-NP-4015/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-12-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.99043715847,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847,
+      "raw_date": "2020-12-28"
+    },
+    "USA/CUIMC-NP-4016/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-12-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.99043715847,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847,
+      "raw_date": "2020-12-28"
+    },
+    "USA/CUIMC-NP-4019/2020": {
+      "branch_length": 2,
+      "clock_length": 9.392285652199588e-05,
+      "date": "2020-12-31",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.9986338797814,
+        2020.9986338797814
+      ],
+      "numdate": 2020.9986338797814,
+      "raw_date": "2020-12-31"
+    },
+    "USA/CUIMC-NP-4020/2021": {
+      "branch_length": 1,
+      "clock_length": 7.726821725824494e-05,
+      "date": "2021-01-02",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.004109589041,
+        2021.004109589041
+      ],
+      "numdate": 2021.004109589041,
+      "raw_date": "2021-01-02"
+    },
+    "USA/CUIMC-NP-4021/2021": {
+      "branch_length": 5,
+      "clock_length": 0.00013903329285110285,
+      "date": "2021-01-02",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2021.004109589041,
+        2021.004109589041
+      ],
+      "numdate": 2021.004109589041,
+      "raw_date": "2021-01-02"
+    },
+    "USA/CUIMC-NP-4025/2020": {
+      "branch_length": 17,
+      "clock_length": 0.0003331893678631824,
+      "date": "2020-12-31",
+      "mutation_length": 17,
+      "num_date_confidence": [
+        2020.9986338797814,
+        2020.9986338797814
+      ],
+      "numdate": 2020.9986338797814,
+      "raw_date": "2020-12-31"
+    },
+    "USA/CUIMC-NP-4027/2021": {
+      "branch_length": 3,
+      "clock_length": 5.5414669429167964e-05,
+      "date": "2021-01-02",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.004109589041,
+        2021.004109589041
+      ],
+      "numdate": 2021.004109589041,
+      "raw_date": "2021-01-02"
+    },
+    "USA/CUIMC-NP-4030/2021": {
+      "branch_length": 1,
+      "clock_length": 1.021156733084581e-05,
+      "date": "2021-01-02",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.004109589041,
+        2021.004109589041
+      ],
+      "numdate": 2021.004109589041,
+      "raw_date": "2021-01-02"
+    },
+    "USA/CUIMC-NP-4032/2020": {
+      "branch_length": 7,
+      "clock_length": 9.392285652199588e-05,
+      "date": "2020-12-31",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.9986338797814,
+        2020.9986338797814
+      ],
+      "numdate": 2020.9986338797814,
+      "raw_date": "2020-12-31"
+    },
+    "USA/CUIMC-NP-4033/2020": {
+      "branch_length": 1,
+      "clock_length": 7.276253370473815e-05,
+      "date": "2020-12-31",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9986338797814,
+        2020.9986338797814
+      ],
+      "numdate": 2020.9986338797814,
+      "raw_date": "2020-12-31"
+    },
+    "USA/CUIMC-NP-4036/2020": {
+      "branch_length": 3,
+      "clock_length": 6.839094900533622e-05,
+      "date": "2020-12-29",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-4037/2020": {
+      "branch_length": 1,
+      "clock_length": 0.00010947654003974703,
+      "date": "2020-12-29",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-4040/2020": {
+      "branch_length": 0,
+      "clock_length": 6.230244021615929e-06,
+      "date": "2020-12-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.99043715847,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847,
+      "raw_date": "2020-12-28"
+    },
+    "USA/CUIMC-NP-4043/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00014761666480701244,
+      "date": "2020-12-30",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.9959016393443,
+        2020.9959016393443
+      ],
+      "numdate": 2020.9959016393443,
+      "raw_date": "2020-12-30"
+    },
+    "USA/CUIMC-NP-4059/2020": {
+      "branch_length": 3,
+      "clock_length": 2.0925434878294596e-05,
+      "date": "2020-12-29",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-4061/2020": {
+      "branch_length": 7,
+      "clock_length": 0.00022698582698282767,
+      "date": "2020-12-29",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.9931693989072,
+        2020.9931693989072
+      ],
+      "numdate": 2020.9931693989072,
+      "raw_date": "2020-12-29"
+    },
+    "USA/CUIMC-NP-4062/2020": {
+      "branch_length": 2,
+      "clock_length": 0.00012796294663730144,
+      "date": "2020-12-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.99043715847,
+        2020.99043715847
+      ],
+      "numdate": 2020.99043715847,
+      "raw_date": "2020-12-28"
+    },
+    "USA/CUIMC-NP-4066/2021": {
+      "branch_length": 14,
+      "clock_length": 0.0003440281992135386,
+      "date": "2021-01-05",
+      "mutation_length": 14,
+      "num_date_confidence": [
+        2021.0123287671233,
+        2021.0123287671233
+      ],
+      "numdate": 2021.0123287671233,
+      "raw_date": "2021-01-05"
+    },
+    "USA/CUIMC-NP-4069/2021": {
+      "branch_length": 10,
+      "clock_length": 0.0002599921162240055,
+      "date": "2021-01-06",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2021.0150684931507,
+        2021.0150684931507
+      ],
+      "numdate": 2021.0150684931507,
+      "raw_date": "2021-01-06"
+    },
+    "USA/CUIMC-NP-4070/2021": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2021-01-06",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0150684931507,
+        2021.0150684931507
+      ],
+      "numdate": 2021.0150684931507,
+      "raw_date": "2021-01-06"
+    },
+    "USA/CUIMC-NP-4071/2021": {
+      "branch_length": 0,
+      "clock_length": 1.887824395653472e-05,
+      "date": "2021-01-06",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0150684931507,
+        2021.0150684931507
+      ],
+      "numdate": 2021.0150684931507,
+      "raw_date": "2021-01-06"
+    },
+    "USA/CUIMC-NP-4072/2021": {
+      "branch_length": 0,
+      "clock_length": 0.0002446215401860377,
+      "date": "2021-01-06",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0150684931507,
+        2021.0150684931507
+      ],
+      "numdate": 2021.0150684931507,
+      "raw_date": "2021-01-06"
+    },
+    "USA/CUIMC-NP-4074/2021": {
+      "branch_length": 1,
+      "clock_length": 2.0668766500476425e-05,
+      "date": "2021-01-07",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.017808219178,
+        2021.017808219178
+      ],
+      "numdate": 2021.017808219178,
+      "raw_date": "2021-01-07"
+    },
+    "USA/CUIMC-NP-4079/2021": {
+      "branch_length": 0,
+      "clock_length": 0.0002589016314039048,
+      "date": "2021-01-05",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0123287671233,
+        2021.0123287671233
+      ],
+      "numdate": 2021.0123287671233,
+      "raw_date": "2021-01-05"
+    },
+    "USA/CUIMC-NP-4080/2021": {
+      "branch_length": 0,
+      "clock_length": 0.00014215888953048234,
+      "date": "2021-01-05",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0123287671233,
+        2021.0123287671233
+      ],
+      "numdate": 2021.0123287671233,
+      "raw_date": "2021-01-05"
+    },
+    "USA/CUIMC-NP-4081/2021": {
+      "branch_length": 8,
+      "clock_length": 0.00012522721072071616,
+      "date": "2021-01-05",
+      "mutation_length": 8,
+      "num_date_confidence": [
+        2021.0123287671233,
+        2021.0123287671233
+      ],
+      "numdate": 2021.0123287671233,
+      "raw_date": "2021-01-05"
+    },
+    "USA/CUIMC-NP-4086/2021": {
+      "branch_length": 7,
+      "clock_length": 0.00021128372616142053,
+      "date": "2021-01-07",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2021.017808219178,
+        2021.017808219178
+      ],
+      "numdate": 2021.017808219178,
+      "raw_date": "2021-01-07"
+    },
+    "USA/CUIMC-NP-4093/2021": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2021-01-06",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0150684931507,
+        2021.0150684931507
+      ],
+      "numdate": 2021.0150684931507,
+      "raw_date": "2021-01-06"
+    },
+    "USA/CUIMC-NP-4212/2021": {
+      "branch_length": 2,
+      "clock_length": 2.5150438281262236e-05,
+      "date": "2021-01-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.0232876712328,
+        2021.0232876712328
+      ],
+      "numdate": 2021.0232876712328,
+      "raw_date": "2021-01-09"
+    },
+    "USA/CUIMC-NP-4256/2021": {
+      "branch_length": 10,
+      "clock_length": 0.00021742661515983448,
+      "date": "2021-01-11",
+      "mutation_length": 10,
+      "num_date_confidence": [
+        2021.0287671232877,
+        2021.0287671232877
+      ],
+      "numdate": 2021.0287671232877,
+      "raw_date": "2021-01-11"
+    },
+    "USA/CUIMC-NP-4489/2021": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2021-01-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0479452054794,
+        2021.0479452054794
+      ],
+      "numdate": 2021.0479452054794,
+      "raw_date": "2021-01-18"
+    },
+    "USA/CUIMC-NP-4563/2021": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2021-01-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0561643835617,
+        2021.0561643835617
+      ],
+      "numdate": 2021.0561643835617,
+      "raw_date": "2021-01-21"
+    },
+    "USA/CUIMC-NP-4741/2021": {
+      "branch_length": 3,
+      "clock_length": 0.00010786162576674647,
+      "date": "2021-01-16",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.0424657534247,
+        2021.0424657534247
+      ],
+      "numdate": 2021.0424657534247,
+      "raw_date": "2021-01-16"
+    },
+    "USA/CUIMC-NP-4852/2021": {
+      "branch_length": 2,
+      "clock_length": 6.938964952267501e-05,
+      "date": "2021-01-29",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.0780821917808,
+        2021.0780821917808
+      ],
+      "numdate": 2021.0780821917808,
+      "raw_date": "2021-01-29"
+    },
+    "USA/CUIMC-NP-4947/2021": {
+      "branch_length": 1,
+      "clock_length": 1.446575342473088e-05,
+      "date": "2021-02-03",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.0917808219178,
+        2021.0917808219178
+      ],
+      "numdate": 2021.0917808219178,
+      "raw_date": "2021-02-03"
+    },
+    "USA/CUIMC-NP-5006/2021": {
+      "branch_length": 6,
+      "clock_length": 0.00014009132420087552,
+      "date": "2021-02-03",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2021.0917808219178,
+        2021.0917808219178
+      ],
+      "numdate": 2021.0917808219178,
+      "raw_date": "2021-02-03"
+    },
+    "USA/CUIMC-NP-5028/2021": {
+      "branch_length": 0,
+      "clock_length": 1.4883709062476526e-05,
+      "date": "2021-02-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0917808219178,
+        2021.0917808219178
+      ],
+      "numdate": 2021.0917808219178,
+      "raw_date": "2021-02-03"
+    },
+    "USA/CUIMC-NP-5080/2021": {
+      "branch_length": 19,
+      "clock_length": 0.0003875683850149752,
+      "date": "2021-02-04",
+      "mutation_length": 19,
+      "num_date_confidence": [
+        2021.0945205479452,
+        2021.0945205479452
+      ],
+      "numdate": 2021.0945205479452,
+      "raw_date": "2021-02-04"
+    },
+    "USA/CUIMC-NP-5210/2021": {
+      "branch_length": 4,
+      "clock_length": 0.0001041981349305883,
+      "date": "2021-02-05",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.0972602739726,
+        2021.0972602739726
+      ],
+      "numdate": 2021.0972602739726,
+      "raw_date": "2021-02-05"
+    },
+    "USA/CUIMC-NP-5211/2021": {
+      "branch_length": 4,
+      "clock_length": 0.00018455972468839593,
+      "date": "2021-02-04",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.0945205479452,
+        2021.0945205479452
+      ],
+      "numdate": 2021.0945205479452,
+      "raw_date": "2021-02-04"
+    },
+    "USA/CUIMC-NP-5213/2021": {
+      "branch_length": 4,
+      "clock_length": 0.00016063579651570215,
+      "date": "2021-02-09",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.1082191780822,
+        2021.1082191780822
+      ],
+      "numdate": 2021.1082191780822,
+      "raw_date": "2021-02-09"
+    },
+    "USA/CUIMC-NP-5214/2021": {
+      "branch_length": 1,
+      "clock_length": 8.128073759500816e-05,
+      "date": "2021-02-11",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5215/2021": {
+      "branch_length": 0,
+      "clock_length": 1.5503043576750326e-05,
+      "date": "2021-02-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5216/2021": {
+      "branch_length": 1,
+      "clock_length": 9.684429154197189e-05,
+      "date": "2021-02-11",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5218/2021": {
+      "branch_length": 1,
+      "clock_length": 9.675863237008757e-05,
+      "date": "2021-02-11",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5220/2021": {
+      "branch_length": 2,
+      "clock_length": 9.788280020755558e-05,
+      "date": "2021-02-11",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5222/2021": {
+      "branch_length": 0,
+      "clock_length": 1.8385508011702144e-05,
+      "date": "2021-02-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5223/2021": {
+      "branch_length": 0,
+      "clock_length": 4.390012934096777e-06,
+      "date": "2021-02-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5225/2021": {
+      "branch_length": 4,
+      "clock_length": 0.00014308590230587774,
+      "date": "2021-02-11",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5226/2021": {
+      "branch_length": 3,
+      "clock_length": 9.689280117158394e-05,
+      "date": "2021-02-11",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5227/2021": {
+      "branch_length": 0,
+      "clock_length": 1.858744621740106e-05,
+      "date": "2021-02-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5232/2021": {
+      "branch_length": 1,
+      "clock_length": 9.299753362380296e-05,
+      "date": "2021-02-09",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1082191780822,
+        2021.1082191780822
+      ],
+      "numdate": 2021.1082191780822,
+      "raw_date": "2021-02-09"
+    },
+    "USA/CUIMC-NP-5233/2021": {
+      "branch_length": 4,
+      "clock_length": 9.569101938566968e-05,
+      "date": "2021-02-10",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.1109589041096,
+        2021.1109589041096
+      ],
+      "numdate": 2021.1109589041096,
+      "raw_date": "2021-02-10"
+    },
+    "USA/CUIMC-NP-5239/2021": {
+      "branch_length": 14,
+      "clock_length": 0.00039832427623965705,
+      "date": "2021-02-08",
+      "mutation_length": 14,
+      "num_date_confidence": [
+        2021.1054794520549,
+        2021.1054794520549
+      ],
+      "numdate": 2021.1054794520549,
+      "raw_date": "2021-02-08"
+    },
+    "USA/CUIMC-NP-5247/2021": {
+      "branch_length": 3,
+      "clock_length": 9.569101938566968e-05,
+      "date": "2021-02-10",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.1109589041096,
+        2021.1109589041096
+      ],
+      "numdate": 2021.1109589041096,
+      "raw_date": "2021-02-10"
+    },
+    "USA/CUIMC-NP-5250/2021": {
+      "branch_length": 1,
+      "clock_length": 0.00010216591518947269,
+      "date": "2021-02-13",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1191780821919,
+        2021.1191780821919
+      ],
+      "numdate": 2021.1191780821919,
+      "raw_date": "2021-02-13"
+    },
+    "USA/CUIMC-NP-5254/2021": {
+      "branch_length": 7,
+      "clock_length": 0.00021127523291892365,
+      "date": "2021-02-13",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2021.1191780821919,
+        2021.1191780821919
+      ],
+      "numdate": 2021.1191780821919,
+      "raw_date": "2021-02-13"
+    },
+    "USA/CUIMC-NP-5256/2021": {
+      "branch_length": 3,
+      "clock_length": 0.00011862323076662336,
+      "date": "2021-02-11",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5261/2021": {
+      "branch_length": 0,
+      "clock_length": 1.0787567975162728e-05,
+      "date": "2021-02-15",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5264/2021": {
+      "branch_length": 1,
+      "clock_length": 2.6384793954162787e-05,
+      "date": "2021-02-15",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5265/2021": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2021-02-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5269/2021": {
+      "branch_length": 5,
+      "clock_length": 9.90360723638579e-05,
+      "date": "2021-02-12",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2021.1164383561643,
+        2021.1164383561643
+      ],
+      "numdate": 2021.1164383561643,
+      "raw_date": "2021-02-12"
+    },
+    "USA/CUIMC-NP-5270/2021": {
+      "branch_length": 11,
+      "clock_length": 0.00023202190322907813,
+      "date": "2021-02-15",
+      "mutation_length": 11,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5272/2021": {
+      "branch_length": 5,
+      "clock_length": 0.00016703970795839374,
+      "date": "2021-02-12",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2021.1164383561643,
+        2021.1164383561643
+      ],
+      "numdate": 2021.1164383561643,
+      "raw_date": "2021-02-12"
+    },
+    "USA/CUIMC-NP-5273/2021": {
+      "branch_length": 4,
+      "clock_length": 4.9911080265614065e-05,
+      "date": "2021-02-13",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.1191780821919,
+        2021.1191780821919
+      ],
+      "numdate": 2021.1191780821919,
+      "raw_date": "2021-02-13"
+    },
+    "USA/CUIMC-NP-5276/2021": {
+      "branch_length": 1,
+      "clock_length": 4.076712328772566e-05,
+      "date": "2021-02-15",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5277/2021": {
+      "branch_length": 4,
+      "clock_length": 5.7807142182010195e-05,
+      "date": "2021-02-11",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.113698630137,
+        2021.113698630137
+      ],
+      "numdate": 2021.113698630137,
+      "raw_date": "2021-02-11"
+    },
+    "USA/CUIMC-NP-5283/2021": {
+      "branch_length": 1,
+      "clock_length": 0.00010688311734170363,
+      "date": "2021-02-15",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5284/2021": {
+      "branch_length": 0,
+      "clock_length": 1.0787567975162728e-05,
+      "date": "2021-02-15",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5285/2021": {
+      "branch_length": 1,
+      "clock_length": 5.9998923003896205e-05,
+      "date": "2021-02-12",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1164383561643,
+        2021.1164383561643
+      ],
+      "numdate": 2021.1164383561643,
+      "raw_date": "2021-02-12"
+    },
+    "USA/CUIMC-NP-5286/2021": {
+      "branch_length": 5,
+      "clock_length": 0.00010211786976447245,
+      "date": "2021-02-12",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2021.1164383561643,
+        2021.1164383561643
+      ],
+      "numdate": 2021.1164383561643,
+      "raw_date": "2021-02-12"
+    },
+    "USA/CUIMC-NP-5290/2021": {
+      "branch_length": 6,
+      "clock_length": 0.000204153023884149,
+      "date": "2021-02-14",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2021.1219178082192,
+        2021.1219178082192
+      ],
+      "numdate": 2021.1219178082192,
+      "raw_date": "2021-02-14"
+    },
+    "USA/CUIMC-NP-5293/2021": {
+      "branch_length": 1,
+      "clock_length": 2.2078386042590067e-05,
+      "date": "2021-02-14",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1219178082192,
+        2021.1219178082192
+      ],
+      "numdate": 2021.1219178082192,
+      "raw_date": "2021-02-14"
+    },
+    "USA/CUIMC-NP-5296/2021": {
+      "branch_length": 2,
+      "clock_length": 2.9991744886394907e-05,
+      "date": "2021-02-10",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.1109589041096,
+        2021.1109589041096
+      ],
+      "numdate": 2021.1109589041096,
+      "raw_date": "2021-02-10"
+    },
+    "USA/CUIMC-NP-5298/2021": {
+      "branch_length": 3,
+      "clock_length": 0.00016237233070803272,
+      "date": "2021-02-10",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.1109589041096,
+        2021.1109589041096
+      ],
+      "numdate": 2021.1109589041096,
+      "raw_date": "2021-02-10"
+    },
+    "USA/CUIMC-NP-5300/2021": {
+      "branch_length": 4,
+      "clock_length": 0.000200549616385903,
+      "date": "2021-02-10",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.1109589041096,
+        2021.1109589041096
+      ],
+      "numdate": 2021.1109589041096,
+      "raw_date": "2021-02-10"
+    },
+    "USA/CUIMC-NP-5352/2021": {
+      "branch_length": 2,
+      "clock_length": 4.317266636336169e-05,
+      "date": "2021-02-16",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.127397260274,
+        2021.127397260274
+      ],
+      "numdate": 2021.127397260274,
+      "raw_date": "2021-02-16"
+    },
+    "USA/CUIMC-NP-5359/2021": {
+      "branch_length": 2,
+      "clock_length": 0.00010604610985897819,
+      "date": "2021-02-15",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5379/2021": {
+      "branch_length": 1,
+      "clock_length": 4.5334210639778254e-05,
+      "date": "2021-02-17",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1301369863013,
+        2021.1301369863013
+      ],
+      "numdate": 2021.1301369863013,
+      "raw_date": "2021-02-17"
+    },
+    "USA/CUIMC-NP-5385/2021": {
+      "branch_length": 2,
+      "clock_length": 0.00011004348610308139,
+      "date": "2021-02-17",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.1301369863013,
+        2021.1301369863013
+      ],
+      "numdate": 2021.1301369863013,
+      "raw_date": "2021-02-17"
+    },
+    "USA/CUIMC-NP-5388/2021": {
+      "branch_length": 3,
+      "clock_length": 0.00011084411192620412,
+      "date": "2021-02-17",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2021.1301369863013,
+        2021.1301369863013
+      ],
+      "numdate": 2021.1301369863013,
+      "raw_date": "2021-02-17"
+    },
+    "USA/CUIMC-NP-5391/2021": {
+      "branch_length": 4,
+      "clock_length": 5.999757954601101e-05,
+      "date": "2021-02-17",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.1301369863013,
+        2021.1301369863013
+      ],
+      "numdate": 2021.1301369863013,
+      "raw_date": "2021-02-17"
+    },
+    "USA/CUIMC-NP-5415/2021": {
+      "branch_length": 1,
+      "clock_length": 6.525244294793649e-05,
+      "date": "2021-02-20",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1383561643836,
+        2021.1383561643836
+      ],
+      "numdate": 2021.1383561643836,
+      "raw_date": "2021-02-20"
+    },
+    "USA/CUIMC-NP-5426/2021": {
+      "branch_length": 4,
+      "clock_length": 0.00015010002418142858,
+      "date": "2021-02-08",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2021.1054794520549,
+        2021.1054794520549
+      ],
+      "numdate": 2021.1054794520549,
+      "raw_date": "2021-02-08"
+    },
+    "USA/CUIMC-NP-5441/2021": {
+      "branch_length": 2,
+      "clock_length": 5.429353883832505e-05,
+      "date": "2021-02-15",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5442/2021": {
+      "branch_length": 1,
+      "clock_length": 2.51627886832408e-05,
+      "date": "2021-02-14",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1219178082192,
+        2021.1219178082192
+      ],
+      "numdate": 2021.1219178082192,
+      "raw_date": "2021-02-14"
+    },
+    "USA/CUIMC-NP-5443/2021": {
+      "branch_length": 1,
+      "clock_length": 1.3758721706017755e-05,
+      "date": "2021-02-15",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5445/2021": {
+      "branch_length": 0,
+      "clock_length": 1.3758721706017755e-05,
+      "date": "2021-02-15",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.1246575342466,
+        2021.1246575342466
+      ],
+      "numdate": 2021.1246575342466,
+      "raw_date": "2021-02-15"
+    },
+    "USA/CUIMC-NP-5452/2021": {
+      "branch_length": 2,
+      "clock_length": 3.4702908920718266e-05,
+      "date": "2021-02-16",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.127397260274,
+        2021.127397260274
+      ],
+      "numdate": 2021.127397260274,
+      "raw_date": "2021-02-16"
+    },
+    "USA/CUIMC-NP-5479/2021": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2021-01-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.0479452054794,
+        2021.0479452054794
+      ],
+      "numdate": 2021.0479452054794,
+      "raw_date": "2021-01-18"
+    },
+    "USA/CUIMC-NP-5483/2021": {
+      "branch_length": 1,
+      "clock_length": 3.9086470564672e-05,
+      "date": "2021-02-18",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1328767123289,
+        2021.1328767123289
+      ],
+      "numdate": 2021.1328767123289,
+      "raw_date": "2021-02-18"
+    },
+    "USA/CUIMC-NP-5511/2021": {
+      "branch_length": 1,
+      "clock_length": 7.01369863012587e-05,
+      "date": "2021-02-22",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1438356164383,
+        2021.1438356164383
+      ],
+      "numdate": 2021.1438356164383,
+      "raw_date": "2021-02-22"
+    },
+    "USA/CUIMC-NP-5521/2021": {
+      "branch_length": 2,
+      "clock_length": 5.3917808219223e-05,
+      "date": "2021-02-21",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.141095890411,
+        2021.141095890411
+      ],
+      "numdate": 2021.141095890411,
+      "raw_date": "2021-02-21"
+    },
+    "USA/CUIMC-NP-5552/2021": {
+      "branch_length": 1,
+      "clock_length": 1.0500147418704723e-05,
+      "date": "2021-02-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.0863013698631,
+        2021.0863013698631
+      ],
+      "numdate": 2021.0863013698631,
+      "raw_date": "2021-02-01"
+    },
+    "USA/CUIMC-NP-5555/2021": {
+      "branch_length": 1,
+      "clock_length": 3.069138279709156e-05,
+      "date": "2021-02-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1465753424657,
+        2021.1465753424657
+      ],
+      "numdate": 2021.1465753424657,
+      "raw_date": "2021-02-23"
+    },
+    "USA/CUIMC-NP-5658/2021": {
+      "branch_length": 1,
+      "clock_length": 3.9957165966396954e-05,
+      "date": "2021-02-28",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.1602739726027,
+        2021.1602739726027
+      ],
+      "numdate": 2021.1602739726027,
+      "raw_date": "2021-02-28"
+    },
+    "USA/CUIMC-NP-5662/2021": {
+      "branch_length": 0,
+      "clock_length": 5.487794463904347e-05,
+      "date": "2021-02-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.1602739726027,
+        2021.1602739726027
+      ],
+      "numdate": 2021.1602739726027,
+      "raw_date": "2021-02-28"
+    },
+    "USA/CUIMC-NP-5667/2021": {
+      "branch_length": 1,
+      "clock_length": 0.00015009471571603866,
+      "date": "2021-03-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2021.16301369863,
+        2021.16301369863
+      ],
+      "numdate": 2021.16301369863,
+      "raw_date": "2021-03-01"
+    },
+    "USA/CUIMC-NP-5670/2021": {
+      "branch_length": 2,
+      "clock_length": 9.205479452048168e-05,
+      "date": "2021-03-01",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.16301369863,
+        2021.16301369863
+      ],
+      "numdate": 2021.16301369863,
+      "raw_date": "2021-03-01"
+    },
+    "USA/CUIMC-NP-5671/2021": {
+      "branch_length": 2,
+      "clock_length": 5.564578198430847e-05,
+      "date": "2021-02-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.1602739726027,
+        2021.1602739726027
+      ],
+      "numdate": 2021.1602739726027,
+      "raw_date": "2021-02-28"
+    },
+    "USA/CUIMC-NP-5677/2021": {
+      "branch_length": 0,
+      "clock_length": 8.278779259426666e-05,
+      "date": "2021-02-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2021.1602739726027,
+        2021.1602739726027
+      ],
+      "numdate": 2021.1602739726027,
+      "raw_date": "2021-02-28"
+    },
+    "USA/CUIMC-NP-5678/2021": {
+      "branch_length": 2,
+      "clock_length": 6.947403622635647e-05,
+      "date": "2021-02-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.1602739726027,
+        2021.1602739726027
+      ],
+      "numdate": 2021.1602739726027,
+      "raw_date": "2021-02-28"
+    },
+    "USA/CUIMC-NP-5683/2021": {
+      "branch_length": 2,
+      "clock_length": 0.00012508713001383918,
+      "date": "2021-02-24",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2021.1493150684933,
+        2021.1493150684933
+      ],
+      "numdate": 2021.1493150684933,
+      "raw_date": "2021-02-24"
+    },
+    "Wuhan/Hu-1/2019": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2019-12-31",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.9986301369863,
+        2019.9986301369863
+      ],
+      "numdate": 2019.9986301369863,
+      "raw_date": "2019-12-31"
+    }
+  },
+  "skyline": [
+    [
+      2019.9952590219941,
+      2020.0567197944486,
+      2020.1181805669032,
+      2020.1796413393577,
+      2020.241102111812,
+      2020.3025628842668,
+      2020.3640236567212,
+      2020.4254844291756,
+      2020.4869452016303,
+      2020.5484059740847,
+      2020.6098667465394,
+      2020.6713275189938,
+      2020.7327882914483,
+      2020.794249063903,
+      2020.8557098363574,
+      2020.9171706088118,
+      2020.9786313812665,
+      2021.040092153721,
+      2021.1015529261756,
+      2021.16301369863
+    ],
+    [
+      1.856148373394694,
+      2.6099400902580854,
+      2.964157850713111,
+      3.3145090858373116,
+      3.6793250007563234,
+      4.151510110770636,
+      4.508076827749583,
+      4.8742297184318275,
+      5.581441288811095,
+      11.221902594574006,
+      48.45648094161085,
+      160.29482083452373,
+      176.39648404765484,
+      204.12017803991802,
+      220.662575066411,
+      364.85586767530293,
+      209.97854187483708,
+      167.47348164535248,
+      197.11849018239246,
+      129.0435612822899
+    ],
+    [
+      4.740145777704787,
+      5.301379043836729,
+      6.0116529449951255,
+      6.722205533788727,
+      7.462094156378899,
+      8.419739852109132,
+      9.142898152770494,
+      9.850263586033257,
+      10.657067116097972,
+      19.81926434986822,
+      77.91730720449691,
+      282.84343943939757,
+      304.9159658985484,
+      327.4019930029869,
+      337.08582289770663,
+      546.0143699530418,
+      327.85514895863855,
+      268.52044229799753,
+      316.2944522473789,
+      351.78927725696354
+    ],
+    [
+      12.105164821925946,
+      10.76830072511438,
+      12.192323402201431,
+      13.633405752781146,
+      15.13398495300576,
+      17.076200535625134,
+      18.54284871929817,
+      19.906261772485607,
+      20.34834259471517,
+      35.00326580627111,
+      125.2898816427779,
+      499.0829448974808,
+      527.0725590807533,
+      525.1419337943418,
+      514.9348590916549,
+      817.1218242830461,
+      511.9046819687059,
+      430.5351941306174,
+      507.5230661005016,
+      959.0226305228385
+    ]
+  ]
+}

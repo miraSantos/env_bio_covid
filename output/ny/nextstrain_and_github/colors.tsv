@@ -1,0 +1,897 @@
+location	Ramallah	#5E1D9D
+location	Salfit	#5D1D9E
+location	Qalqilya	#5B1D9F
+location	Tulkarem	#5A1DA0
+location	Gilgit	#581DA2
+location	Mumbai	#571EA3
+location	Kodinar	#561EA4
+location	Sutrapada	#541EA5
+location	Veraval	#531EA7
+location	Talala	#511EA8
+location	Mahuva	#501EA9
+location	Bardoli	#4F1FAA
+location	Surat	#4E20AB
+location	Mandvi	#4E21AC
+location	Adajan	#4D21AD
+location	Kamrej	#4D22AE
+location	Choryasi	#4C23AF
+location	Olpad	#4C24B0
+location	Junagadh	#4B25B1
+location	Mangrol	#4B26B1
+location	Ghogha	#4A27B2
+location	Bharuch	#4A28B3
+location	Jetpur	#4929B4
+location	Gondal	#492AB5
+location	Kalyanpur	#482BB6
+location	Botad	#472CB7
+location	Khambhaliya	#472DB8
+location	Bodeli	#462EB9
+location	Rajkot	#462FBA
+location	Vadodara	#4530BB
+location	Dhandhuka	#4531BC
+location	Jamnagar	#4432BD
+location	Chuda	#4433BE
+location	Anand	#4334BE
+location	Savli	#4335BF
+location	Nadiad	#4236C0
+location	Dholka	#4237C1
+location	Kheda	#4137C2
+location	Godhra	#4138C3
+location	Mahemdavad	#4039C4
+location	Limkheda	#403BC5
+location	Dahod	#403CC5
+location	Savali	#403DC5
+location	Daskroi	#403EC6
+location	Kapadvanj	#403FC6
+location	Ahmedabad	#4041C7
+location	Dahegam	#4042C7
+location	Diu	#3F43C7
+location	Gandhinagar	#3F44C8
+location	Bayad	#3F45C8
+location	Kalol	#3F47C9
+location	Bhuj	#3F48C9
+location	Kadi	#3F49CA
+location	Dhansura	#3F4ACA
+location	Talod	#3F4BCA
+location	Prantij	#3F4DCB
+location	Modasa	#3F4ECB
+location	Himatnagar	#3F4FCC
+location	Mehsana	#3F50CC
+location	Patan	#3F51CC
+location	Siddhpur	#3F53CD
+location	Fatepura	#3F54CD
+location	Khedbrahma	#3F55CE
+location	Palanpur	#3F56CE
+location	Dhanera	#3E57CE
+location	Cox's Bazar	#3E59CF
+location	Noakhali	#3E5ACF
+location	Rangamati	#3E5BD0
+location	Lakshmipur	#3E5CD0
+location	Chandpur	#3E5DD0
+location	Brahmanbaria	#3F5FD0
+location	Jashore	#3F60D0
+location	Jhenaidah	#3F61D0
+location	Faridpur	#3F62CF
+location	Tangail	#3F63CF
+location	Narayanganj	#4064CF
+location	Habiganj	#4065CF
+location	Chengdu	#4066CF
+location	Huaihua	#4067CF
+location	Shaoyang	#4069CF
+location	Wuhan	#416ACF
+location	Guangzhou	#416BCF
+location	Shenzhen	#416CCE
+location	Fuyang	#416DCE
+location	Changzhou	#416ECE
+location	Hangzhou	#426FCE
+location	Hong Kong	#4270CE
+location	Waitemata	#4271CE
+location	Counties Manukau	#4273CE
+location	Hutt Valley	#4274CE
+location	Melbourne	#4375CD
+location	Rota	#4376CD
+location	Donostia-San Sebastian	#4377CD
+location	Valencia ES	#4378CD
+location	London	#4379CD
+location	Limoges	#447ACD
+location	Nootdorp	#447BCD
+location	Rotterdam	#447CCC
+location	Hardinxveld Giessendam	#447DCC
+location	Haarlem	#457ECB
+location	Diemen	#457FCB
+location	Naarden	#4580CA
+location	Houten	#4681CA
+location	Eindhoven	#4682C9
+location	Helmond	#4683C9
+location	Milheeze	#4783C8
+location	Oisterwijk	#4784C7
+location	Tilburg	#4885C7
+location	Berlicum	#4886C6
+location	Oss	#4887C6
+location	Nieuwendijk	#4988C5
+location	Andel	#4989C5
+location	Blaricum	#498AC4
+location	Zeewolde	#4A8AC4
+location	Coevorden	#4A8BC3
+location	Dalen	#4A8CC2
+location	Heinsberg	#4B8DC2
+location	Duesseldorf	#4B8EC1
+location	Cologne	#4B8FC1
+location	Frankfurt	#4C90C0
+location	Nuoro	#4C91C0
+location	Milan	#4C92BF
+location	Siena	#4D92BE
+location	Palermo	#4D93BE
+location	Bari	#4E94BD
+location	Brindisi	#4E95BD
+location	Lecce	#4E96BC
+location	Mondsee	#4F96BB
+location	Zell Am Moos	#4F97BA
+location	Fornach	#5098BA
+location	Vöcklamarkt	#5098B9
+location	St. Georgen Im Attergau	#5199B8
+location	Frankenburg Am Hausruck	#5199B7
+location	Attersee	#529AB6
+location	Weyregg Am Attersee	#529BB5
+location	Schörfling Am Attersee	#539BB5
+location	Timelkam	#539CB4
+location	Bad Goisern	#549DB3
+location	Bad Ischl	#549DB2
+location	Vöcklabruck	#559EB1
+location	Regau	#559EB0
+location	Neukirchen	#569FB0
+location	Attnang-Puchheim	#56A0AF
+location	Altmünster	#57A0AE
+location	Schwanenstadt	#57A1AD
+location	Ohlsdorf	#58A2AC
+location	Gmunden	#58A2AB
+location	Laakirchen	#58A3AB
+location	Graz	#59A3AA
+location	Novi Pazar	#59A4A9
+location	Kraljevo	#5AA5A8
+location	Uzice	#5AA5A7
+location	Sremska Mitrovica	#5BA6A6
+location	Pancevo	#5BA7A6
+location	Vrsac	#5CA7A5
+location	Zrenjanin	#5CA8A4
+location	Backa Palanka	#5DA8A3
+location	Srbobran	#5EA8A2
+location	Novi Sad	#5EA9A1
+location	Titel	#5FA9A0
+location	Backa Topola	#60AA9F
+location	Subotica	#60AA9E
+location	Strpce	#61AA9D
+location	Lipljan	#61AB9C
+location	Gracanica	#62AB9B
+location	Manaus	#63AC9A
+location	Chiclayo	#63AC9A
+location	Tijuana	#64AC99
+location	Mexicali	#64AD98
+location	San Luis Rio Colorado	#65AD97
+location	Hermosillo	#66AE96
+location	Mazatlan	#66AE95
+location	Honolulu County	#67AF94
+location	Southwest Alaska	#68AF93
+location	Northern Alaska	#68AF92
+location	Interior Alaska	#69B091
+location	Anchorage	#69B090
+location	Southeast Alaska	#6AB18F
+location	Coos County	#6BB18E
+location	Clatsop County	#6BB18D
+location	Josephine County	#6CB28C
+location	Polk County OR	#6CB28C
+location	Yamhill County	#6DB38B
+location	Douglas County OR	#6EB38A
+location	Columbia County OR	#6EB389
+location	Washington County OR	#6FB488
+location	Lane County OR	#70B487
+location	Jackson County OR	#71B486
+location	Marion County OR	#71B485
+location	Multnomah County	#72B584
+location	Clackamas County	#73B583
+location	Klamath County	#74B583
+location	Hood River County	#74B582
+location	Jefferson County OR	#75B581
+location	Wasco County	#76B680
+location	Deschutes County	#77B67F
+location	Umatilla County	#77B67E
+location	Union County OR	#78B67D
+location	Grays Harbor County	#79B77C
+location	Clallam County	#7AB77C
+location	Jefferson County WA	#7AB77B
+location	Mason County WA	#7BB77A
+location	Thurston County	#7CB879
+location	Island County	#7DB878
+location	Cowlitz County	#7DB877
+location	Kitsap County	#7EB876
+location	Clark County WA	#7FB975
+location	Lewis County WA	#80B974
+location	Pierce County WA	#80B974
+location	Snohomish County	#81B973
+location	King County	#82BA72
+location	Skagit County	#82BA71
+location	Whatcom County	#83BA70
+location	Kittitas County	#84BA6F
+location	Yakima County	#85BA6F
+location	Chelan County	#86BB6E
+location	Douglas County WA	#87BB6D
+location	Grant County WA	#87BB6C
+location	Franklin County WA	#88BB6C
+location	Walla Walla County	#89BB6B
+location	Adams County WA	#8ABB6A
+location	Lincoln County WA	#8BBB6A
+location	Stevens County	#8CBB69
+location	Spokane County	#8CBC68
+location	Asotin County	#8DBC67
+location	Humboldt County	#8EBC67
+location	Sonoma County	#8FBC66
+location	Marin County	#90BC65
+location	San Francisco County	#91BC64
+location	Yolo County	#91BC64
+location	Contra Costa County	#92BC63
+location	Alameda County	#93BD62
+location	Santa Clara County	#94BD62
+location	Sacramento County	#95BD61
+location	San Joaquin County	#96BD60
+location	Monterey County CA	#96BD5F
+location	Placer County	#97BD5F
+location	San Luis Obispo County	#98BD5E
+location	Tuolumne County	#99BD5D
+location	Santa Barbara County	#9ABD5C
+location	Fresno County	#9BBE5C
+location	Madera County	#9CBE5B
+location	Ventura County	#9CBE5B
+location	Tulare County	#9DBE5A
+location	Kern County	#9EBE5A
+location	Los Angeles County	#9FBE59
+location	Orange County CA	#A0BE58
+location	Riverside County	#A1BE58
+location	San Diego County	#A2BE57
+location	San Bernardino County	#A2BE57
+location	Clark County NV	#A3BE56
+location	Douglas County NV	#A4BE56
+location	Ada County	#A5BE55
+location	Madison County ID	#A6BE55
+location	Mohave County	#A7BE54
+location	Yavapai County	#A8BE54
+location	Maricopa County	#A8BD53
+location	Coconino County	#A9BD53
+location	Pima County	#AABD52
+location	Pinal County	#ABBD52
+location	Gila County	#ACBD51
+location	Navajo County	#ADBD51
+location	Graham County	#AEBD50
+location	Apache County	#AFBD50
+location	Ravalli County	#AFBD4F
+location	Denver County	#B0BD4E
+location	Minnehaha County	#B1BD4E
+location	Lancaster County NE	#B2BD4D
+location	Taylor County TX	#B3BD4D
+location	Bexar County	#B4BD4C
+location	Williamson County TX	#B4BD4C
+location	Tarrant County	#B5BD4C
+location	Brazos County	#B6BD4B
+location	Wharton County	#B7BD4B
+location	Brazoria County	#B8BC4B
+location	Houston	#B8BC4A
+location	Harris County	#B9BC4A
+location	Galveston County	#BABC4A
+location	Houston County MN	#BBBC49
+location	Stearns County	#BCBB49
+location	Fayette County IA	#BCBB49
+location	Dubuque County	#BDBB48
+location	Jackson County IA	#BEBB48
+location	Caddo Parish	#BFBB48
+location	Claiborne Parish	#C0BB47
+location	Lincoln Parish	#C0BA47
+location	Rapides Parish	#C1BA47
+location	Avoyelles Parish	#C2BA46
+location	Morehouse Parish	#C3BA46
+location	Iberville Parish	#C4BA46
+location	East Baton Rouge Parish	#C4B945
+location	Assumption Parish	#C5B945
+location	East Feliciana Parish	#C6B945
+location	Ascension Parish	#C7B944
+location	Livingston Parish	#C8B944
+location	Jefferson Parish	#C8B843
+location	New Orleans	#C9B843
+location	St Tammany Parish	#CAB843
+location	St Bernard Parish	#CBB842
+location	Saint Louis County	#CBB742
+location	St. Louis MO	#CCB742
+location	Trempealeau County	#CDB642
+location	Eau Claire County	#CDB642
+location	Chippewa County WI	#CEB641
+location	Bayfield County	#CEB541
+location	La Crosse County	#CFB541
+location	Vernon County	#D0B441
+location	Jackson County WI	#D0B441
+location	Grant County WI	#D1B340
+location	Monroe County WI	#D1B340
+location	Richland County WI	#D2B240
+location	Iowa County WI	#D3B240
+location	Juneau County	#D3B23F
+location	Sauk County	#D4B13F
+location	Marathon County	#D4B13F
+location	Adams County WI	#D5B03F
+location	Lincoln County WI	#D6B03F
+location	Green County	#D6AF3E
+location	Verona WI	#D7AF3E
+location	Portage County	#D8AE3E
+location	Oregon WI	#D8AE3E
+location	Columbia County WI	#D9AE3E
+location	Waushara County	#D9AD3D
+location	Rock County	#DAAD3D
+location	Jefferson County WI	#DBAC3D
+location	Dodge County	#DBAC3D
+location	Winnebago County WI	#DCAB3C
+location	Walworth County	#DCAB3C
+location	Fond Du Lac County	#DDAA3C
+location	Outagamie County	#DDA93C
+location	Waukesha County	#DDA83C
+location	Washington County WI	#DEA83C
+location	Brown County WI	#DEA73B
+location	Milwaukee County	#DEA63B
+location	Sheboygan County	#DFA53B
+location	Ozaukee County	#DFA43B
+location	Manitowoc County	#DFA43B
+location	Racine County	#E0A33A
+location	Door County	#E0A23A
+location	Rock Island County	#E0A13A
+location	Dupage County	#E1A13A
+location	Dekalb County IL	#E1A03A
+location	Ogle County IL	#E19F3A
+location	Winnebago County IL	#E29E39
+location	McHenry County	#E29D39
+location	Lake County IL	#E29D39
+location	Jo Daviess County	#E39C39
+location	Baldwin County	#E39B39
+location	Mobile County	#E39A39
+location	Geneva County	#E49A38
+location	Houston County AL	#E49938
+location	Covington County	#E49838
+location	Dale County	#E59738
+location	Conecuh County	#E59638
+location	Monroe County AL	#E59637
+location	Crenshaw County	#E69537
+location	Pike County AL	#E69437
+location	Barbour County	#E69337
+location	Wilcox County	#E69237
+location	Montgomery County AL	#E69036
+location	Dallas County AL	#E68F36
+location	Autauga County	#E68E36
+location	Lee County AL	#E68D36
+location	Perry County AL	#E68C36
+location	Chilton County	#E68B35
+location	Tallapoosa County	#E68A35
+location	Coosa County	#E68835
+location	Bibb County	#E68735
+location	Shelby County AL	#E68634
+location	Randolph County AL	#E68534
+location	Tuscaloosa County	#E68434
+location	Pickens County AL	#E68334
+location	Talladega County	#E68234
+location	Jefferson County AL	#E68033
+location	Cleburne County	#E67F33
+location	St. Clair County AL	#E67E33
+location	Fayette County AL	#E67D33
+location	Calhoun County AL	#E67C33
+location	Etowah County	#E67B32
+location	Marion County AL	#E67A32
+location	Cullman County	#E67832
+location	Marshall County AL	#E67732
+location	Morgan County AL	#E67631
+location	Dekalb County AL	#E67531
+location	Colbert County	#E67431
+location	Jackson County AL	#E67231
+location	Madison County AL	#E67130
+location	Limestone County AL	#E67030
+location	Lauderdale County	#E56E30
+location	Shelby County TN	#E56D30
+location	Mccracken County	#E56B2F
+location	Franklin County OH	#E56A2F
+location	Columbus OH	#E4682F
+location	Cuyahoga County	#E4672E
+location	Alachua County	#E4662E
+location	Miami-Dade County	#E4642E
+location	Broward County	#E4632E
+location	Palm Beach County	#E3612D
+location	Pickens County SC	#E3602D
+location	Greenville County	#E35F2D
+location	Spartanburg County	#E35D2D
+location	Hampton County	#E35C2C
+location	Fairfield County SC	#E25A2C
+location	Columbia SC	#E2592C
+location	Richland County SC	#E2572B
+location	Lancaster County SC	#E2562B
+location	Colleton County	#E1552B
+location	Darlington County	#E1532B
+location	Charleston County	#E1522A
+location	Williamsburg County	#E1502A
+location	Georgetown County	#E14F2A
+location	Allegheny County	#E04D29
+location	Delaware County PA	#E04C29
+location	Montgomery County PA	#E04B29
+location	Philadelphia County	#E04929
+location	District of Columbia County	#E04828
+location	Montgomery County MD	#DF4628
+location	New Castle County	#DF4528
+location	Ocean County	#DF4328
+location	Monmouth County	#DF4227
+location	Middlesex County NJ	#DF4027
+location	Essex County NJ	#DE3F27
+location	Morris County NJ	#DE3E27
+location	Bergen County	#DE3C26
+location	Tompkins County	#DE3B26
+location	Onondaga County	#DE3926
+location	Broome County	#DD3826
+location	Orange County NY	#DD3625
+location	New York City	#DD3525
+location	Rockland County	#DD3425
+location	New York County	#DD3225
+location	Kings County NY	#DD3124
+location	Saratoga County	#DC2F24
+location	Westchester County	#DC2E24
+location	Putnam County NY	#DC2C24
+location	Fairfield County CT	#DC2B23
+location	Middlesex County MA	#DC2923
+location	Norfolk County	#DB2823
+
+division	Israel	#5E1D9D
+division	Bethlehem	#5C1D9E
+division	Jericho	#5A1DA0
+division	Ramallah and al-Bireh Governorate	#591DA1
+division	West Bank	#571EA3
+division	Nablus	#551EA5
+division	Jenin	#531EA6
+division	Lebanon	#511EA8
+division	Irbid	#501EA9
+division	Amman	#4F1FAA
+division	Jordan	#4E20AC
+division	Iraq	#4D21AD
+division	Erbil	#4D23AE
+division	Armenia	#4C24AF
+division	Jeddah	#4B25B0
+division	Madinah	#4B26B1
+division	Makkah	#4A27B3
+division	Saudi Arabia	#4929B4
+division	Riyadh	#492AB5
+division	Bahrain	#482BB6
+division	Iran	#472CB7
+division	Kazakhstan	#472DB8
+division	Karachi	#462FBA
+division	Pakistan	#4530BB
+division	Punjab PK	#4531BC
+division	Rawalpindi	#4432BD
+division	Khyber Pakhtunkhwa	#4333BE
+division	Gilgit Baltistan	#4335BF
+division	Kerala	#4236C1
+division	Telangana	#4137C2
+division	Maharashtra	#4138C3
+division	India	#403AC4
+division	Gujarat	#403BC5
+division	Madhya Pradesh	#403DC5
+division	Uttar Pradesh	#403EC6
+division	Delhi	#4040C6
+division	Sri Lanka	#4041C7
+division	Nepal	#3F43C7
+division	Chattogram	#3F44C8
+division	Barishal	#3F46C8
+division	Khulna	#3F47C9
+division	Dhaka	#3F49C9
+division	Rajshahi	#3F4ACA
+division	Bangladesh	#3F4CCA
+division	Mymensingh	#3F4DCB
+division	Sylhet	#3F4FCC
+division	Rangpur	#3F50CC
+division	Myanmar	#3F52CD
+division	Bangkok	#3F53CD
+division	Thailand	#3F55CE
+division	Pahang	#3F56CE
+division	Malaysia	#3E58CF
+division	Singapore	#3E59CF
+division	Yunnan	#3E5BD0
+division	Sichuan	#3E5DD0
+division	China	#3F5ED0
+division	Hunan	#3F5FD0
+division	Hubei	#3F61D0
+division	Guangdong	#3F62CF
+division	Beijing	#4064CF
+division	Anhui	#4065CF
+division	Jiangsu	#4066CF
+division	Zhejiang	#4068CF
+division	Shanghai	#4169CF
+division	Phnom Penh	#416BCF
+division	Cambodia	#416CCE
+division	Hong Kong	#416DCE
+division	Indonesia	#426FCE
+division	Taiwan	#4270CE
+division	Philippines	#4272CE
+division	Calabarzon	#4273CE
+division	Manila	#4374CD
+division	Central Luzon	#4376CD
+division	Timor-Leste	#4377CD
+division	South Korea	#4379CD
+division	Seoul	#437ACD
+division	Kochi	#447BCD
+division	Osaka	#447DCC
+division	Kansai	#457ECC
+division	Ishikawa	#457FCB
+division	Kanto	#4580CA
+division	Kanagawa	#4681C9
+division	Saitama	#4682C9
+division	Japan	#4783C8
+division	Tokyo	#4784C7
+division	Chiba	#4886C7
+division	Hokkaido	#4887C6
+division	South Canterbury	#4988C5
+division	Canterbury	#4989C5
+division	New Zealand	#498AC4
+division	Nelson Marlborough	#4A8BC3
+division	Taranaki	#4A8CC2
+division	Auckland	#4B8DC2
+division	Wellington	#4B8EC1
+division	Whanganui	#4C90C0
+division	Waikato	#4C91C0
+division	Midcentral	#4D92BF
+division	Hawkes Bay	#4D93BE
+division	Northern Territory	#4D94BD
+division	Australia	#4E95BD
+division	South Australia	#4E96BC
+division	Victoria	#4F97BB
+division	Tasmania	#5097BA
+division	Guam	#5098B9
+division	Gambia	#5199B8
+division	Sierra Leone	#529AB7
+division	Guinea	#529BB6
+division	Casablanca	#539BB4
+division	Morocco	#539CB3
+division	Bamako	#549DB2
+division	Mali	#559EB1
+division	Ghana	#559FB0
+division	Togo	#569FAF
+division	Oyo State	#56A0AE
+division	Nigeria	#57A1AD
+division	Tunisia	#58A2AC
+division	Ben Arous	#58A2AB
+division	Bizerte	#59A3AA
+division	Cameroon	#59A4A9
+division	South Africa	#5AA5A8
+division	KwaZulu-Natal	#5BA6A7
+division	Zambia	#5BA6A6
+division	Zimbabwe	#5CA7A5
+division	Egypt	#5DA8A3
+division	Cairo	#5DA8A2
+division	Uganda	#5EA9A1
+division	Kenya	#5FA9A0
+division	Ethiopia	#60AA9F
+division	Somalia	#61AA9E
+division	Portugal	#61AB9C
+division	Asturias	#62AB9B
+division	Andalusia	#63AC9A
+division	Spain	#64AC99
+division	Basque Country	#64AD98
+division	Comunitat Valenciana	#65AD96
+division	Northern Ireland	#66AE95
+division	Scotland	#67AE94
+division	Wales	#68AF93
+division	United Kingdom	#68AF92
+division	England	#69B091
+division	Nouvelle-Aquitaine	#6AB18F
+division	France	#6BB18E
+division	Hauts de France	#6BB28D
+division	Auvergne-Rhône-Alpes	#6CB28C
+division	Grand Est	#6DB38B
+division	Belgium	#6EB38A
+division	Limburg BE	#6FB388
+division	South Holland	#70B487
+division	North Holland	#71B486
+division	Utrecht	#72B485
+division	North Brabant	#73B584
+division	Netherlands	#73B583
+division	Flevoland	#74B582
+division	Friesland	#75B681
+division	Gelderland	#76B67F
+division	Overijssel	#77B67E
+division	Drenthe	#78B77D
+division	Geneva	#79B77C
+division	Vaud	#7AB77B
+division	Neuchâtel	#7BB77A
+division	Fribourg	#7CB879
+division	Jura	#7DB878
+division	Solothurn	#7EB877
+division	Valais	#7FB975
+division	Bern	#80B974
+division	Basel-Stadt	#81B973
+division	Basel-Land	#81BA72
+division	Aargau	#82BA71
+division	Switzerland	#83BA70
+division	Obwalden	#84BA6F
+division	Lucerne	#86BB6E
+division	Nidwalden	#87BB6D
+division	Zug	#88BB6C
+division	Uri	#89BB6B
+division	Schaffhausen	#8ABB6A
+division	Zürich	#8BBB6A
+division	Schwyz	#8CBB69
+division	Ticino	#8DBC68
+division	Glarus	#8EBC67
+division	Thurgau	#8FBC66
+division	Appenzell Ausserrhoden	#90BC65
+division	Sankt Gallen	#91BC64
+division	Graubünden	#92BC63
+division	Denmark	#93BD62
+division	Vaduz	#94BD61
+division	Liechtenstein	#95BD60
+division	Schaan	#96BD5F
+division	Planken	#97BD5E
+division	Eschen	#99BD5E
+division	Gamprin-Bendern	#9ABD5D
+division	Mauren	#9BBE5C
+division	Schellenberg	#9CBE5B
+division	Saarland	#9DBE5A
+division	Rheinland-Pfalz	#9EBE5A
+division	North Rhine Westphalia	#9FBE59
+division	Bremen	#A0BE58
+division	Niedersachsen	#A1BE58
+division	Baden-Wuerttemberg	#A2BE57
+division	Hesse	#A3BE56
+division	Schleswig-Holstein	#A4BE56
+division	Hamburg	#A6BE55
+division	Germany	#A7BE54
+division	Thuringia	#A8BE54
+division	Bavaria	#A9BD53
+division	Saxony-Anhalt	#AABD52
+division	Brandenburg	#ABBD52
+division	Berlin	#ACBD51
+division	Saxony	#ADBD50
+division	Sardinia	#AEBD50
+division	Lombardy	#AFBD4F
+division	Tuscany	#B0BD4E
+division	Italy	#B2BD4E
+division	Lazio	#B3BD4D
+division	Abruzzo	#B4BD4C
+division	Sicily	#B5BD4C
+division	Apulia	#B6BD4B
+division	Malta	#B7BD4B
+division	Vastra Gotaland	#B8BC4B
+division	Stockholm	#B9BC4A
+division	Sweden	#BABC4A
+division	Upper Austria	#BBBC49
+division	Czech Republic	#BCBB49
+division	Lubuskie	#BDBB48
+division	Dolnośląskie	#BEBB48
+division	Wielkopolskie	#BFBB48
+division	Poland	#C0BA47
+division	Slaskie	#C1BA47
+division	Malopolskie	#C2BA46
+division	Swietokrzyskie	#C3BA46
+division	Mazowieckie	#C4BA45
+division	Banska Bystrica	#C5B945
+division	Slovakia	#C6B945
+division	Vranje	#C7B944
+division	Medvedja	#C8B944
+division	Leskovac	#C9B843
+division	Pirot	#CAB843
+division	Raška District	#CBB842
+division	Nis	#CCB742
+division	Zlatibor District	#CCB742
+division	Serbia	#CDB642
+division	Sabac	#CEB641
+division	Srem District	#CFB541
+division	South Banat District	#CFB441
+division	Central Banat District	#D0B441
+division	South Bačka District	#D1B340
+division	North Bačka District	#D2B340
+division	Ferizaj	#D2B240
+division	Pristina	#D3B23F
+division	Mitrovica	#D4B13F
+division	Athens	#D5B03F
+division	Greece	#D6B03F
+division	Romania	#D6AF3E
+division	Harjumaa	#D7AF3E
+division	Estonia	#D8AE3E
+division	Finland	#D9AE3E
+division	Belarus	#D9AD3D
+division	Turkey	#DAAD3D
+division	Moscow Oblast	#DBAC3D
+division	Penza	#DCAB3C
+division	Saratov	#DCAB3C
+division	Samara	#DDAA3C
+division	Russia	#DDA93C
+division	Primorsky	#DEA83C
+division	Argentina	#DEA73B
+division	Uruguay	#DEA63B
+division	Region Metropolitana de Santiago	#DFA53B
+division	Amazonas BR	#DFA43B
+division	Mato Grosso	#E0A33A
+division	Brazil	#E0A23A
+division	Paraná	#E1A13A
+division	Rio de Janeiro	#E1A03A
+division	Peru	#E19F3A
+division	Lambayeque	#E29E39
+division	Loreto	#E29D39
+division	Ecuador	#E39C39
+division	Colombia	#E39B39
+division	Antioquia	#E49A38
+division	Venezuela	#E49938
+division	Guatemala	#E49838
+division	Belize	#E59738
+division	Jamaica	#E59638
+division	Dominican Republic	#E69537
+division	Baja California	#E69437
+division	Sonora	#E69237
+division	Sinaloa	#E69136
+division	Chihuahua	#E68F36
+division	Jalisco	#E68E36
+division	Mexico	#E68C36
+division	Cuba	#E68B35
+division	Hawaii	#E68A35
+division	Alaska	#E68835
+division	Oregon	#E68735
+division	Washington	#E68534
+division	California	#E68434
+division	Nevada	#E68234
+division	Idaho	#E68133
+division	Utah	#E67F33
+division	Arizona	#E67E33
+division	Montana	#E67D33
+division	Wyoming	#E67B32
+division	New Mexico	#E67A32
+division	Colorado	#E67832
+division	North Dakota	#E67732
+division	South Dakota	#E67531
+division	Nebraska	#E67431
+division	Texas	#E67231
+division	USA	#E67030
+division	Kansas	#E56F30
+division	Oklahoma	#E56D30
+division	Minnesota	#E56B2F
+division	Iowa	#E5692F
+division	Louisiana	#E4672F
+division	Arkansas	#E4662E
+division	Missouri	#E4642E
+division	Mississippi	#E3622D
+division	Wisconsin	#E3602D
+division	Illinois	#E35E2D
+division	Alabama	#E35D2C
+division	Tennessee	#E25B2C
+division	Indiana	#E2592C
+division	Kentucky	#E2572B
+division	Michigan	#E2552B
+division	Georgia	#E1542B
+division	Ohio	#E1522A
+division	Florida	#E1502A
+division	South Carolina	#E04E2A
+division	West Virginia	#E04C29
+division	North Carolina	#E04B29
+division	Virginia	#E04929
+division	Pennsylvania	#DF4728
+division	Washington DC	#DF4528
+division	Maryland	#DF4328
+division	Delaware	#DF4127
+division	New Jersey	#DE4027
+division	New York	#DE3E27
+division	Connecticut	#DE3C26
+division	Vermont	#DE3A26
+division	Massachusetts	#DE3826
+division	New Hampshire	#DD3725
+division	Rhode Island	#DD3525
+division	Maine	#DD3325
+division	Puerto Rico	#DD3124
+division	Virgin Islands	#DC2F24
+division	Northern Mariana Islands	#DC2D24
+division	Canada	#DC2C23
+division	Ontario	#DC2A23
+division	Quebec	#DB2823
+
+country	Israel	#5E1D9D
+country	Palestine	#571EA2
+country	Lebanon	#511EA8
+country	Jordan	#4D21AD
+country	Georgia	#4B26B1
+country	Iraq	#482AB5
+country	Armenia	#462FBA
+country	Saudi Arabia	#4333BE
+country	Bahrain	#4138C2
+country	Iran	#403DC5
+country	Uzbekistan	#3F42C7
+country	Kazakhstan	#3F48C9
+country	Pakistan	#3F4ECB
+country	India	#3F53CD
+country	Sri Lanka	#3E59CF
+country	Nepal	#3F5ED0
+country	Bangladesh	#4063CF
+country	Myanmar	#4069CF
+country	Thailand	#416ECE
+country	Malaysia	#4273CE
+country	Singapore	#4378CD
+country	China	#447DCC
+country	Cambodia	#4681C9
+country	Vietnam	#4885C7
+country	Hong Kong	#4989C4
+country	Indonesia	#4B8DC2
+country	Taiwan	#4C91BF
+country	Philippines	#4E95BC
+country	Timor-Leste	#5098B9
+country	South Korea	#539BB5
+country	Japan	#559EB1
+country	New Zealand	#57A1AD
+country	Australia	#59A4A9
+country	Gambia	#5CA7A5
+country	Sierra Leone	#5EA9A1
+country	Guinea	#61AB9D
+country	Morocco	#64AD98
+country	Mali	#67AF94
+country	Ghana	#6AB090
+country	Togo	#6DB28B
+country	Benin	#70B487
+country	Nigeria	#73B583
+country	Tunisia	#77B67F
+country	Cameroon	#7AB77B
+country	South Africa	#7EB877
+country	Zambia	#81BA72
+country	Zimbabwe	#85BA6F
+country	Egypt	#89BB6B
+country	Uganda	#8DBC68
+country	Kenya	#90BC65
+country	Ethiopia	#94BD61
+country	Somalia	#98BD5E
+country	Iceland	#9CBE5B
+country	Portugal	#A0BE58
+country	Spain	#A4BE56
+country	United Kingdom	#A8BD53
+country	France	#ACBD51
+country	Belgium	#B0BD4E
+country	Netherlands	#B4BD4C
+country	Switzerland	#B8BC4B
+country	Denmark	#BCBB49
+country	Liechtenstein	#BFBB47
+country	Germany	#C3BA46
+country	Italy	#C7B944
+country	Malta	#CAB843
+country	Sweden	#CDB642
+country	Austria	#D0B441
+country	Czech Republic	#D3B240
+country	Poland	#D6B03F
+country	Slovakia	#D9AE3E
+country	Serbia	#DBAC3D
+country	Kosovo	#DDA83C
+country	Greece	#DFA53B
+country	Romania	#E0A13A
+country	Estonia	#E29D39
+country	Finland	#E49A38
+country	Belarus	#E59638
+country	Turkey	#E69237
+country	Russia	#E68C36
+country	Argentina	#E68735
+country	Uruguay	#E68234
+country	Chile	#E67C33
+country	Brazil	#E67732
+country	Peru	#E67130
+country	Ecuador	#E56B2F
+country	Colombia	#E4642E
+country	Venezuela	#E35D2D
+country	Guatemala	#E2572B
+country	Belize	#E1502A
+country	Jamaica	#E04929
+country	Dominican Republic	#DF4328
+country	Mexico	#DE3C26
+country	Cuba	#DD3525
+country	USA	#DC2F24
+country	Canada	#DB2823
+
+recency	Older	#447CCD
+recency	One month ago	#5EA9A1
+recency	One week ago	#8ABB6A
+recency	3-7 days ago	#BEBB48
+recency	1-2 days ago	#E29E39
+recency	New	#E2562B
+
+region	Asia	#447CCD
+region	Oceania	#5EA9A1
+region	Africa	#8ABB6A
+region	Europe	#BEBB48
+region	South America	#E29E39
+region	North America	#E2562B
+

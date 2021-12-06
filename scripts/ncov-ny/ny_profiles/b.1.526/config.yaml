@@ -1,0 +1,12 @@
+configfile:
+  - ny_profiles/b.1.526/builds.yaml
+  - ny_profiles/b.1.526/input.yaml
+
+cores: 8
+keep-going: True
+printshellcmds: True
+reason: True
+show-failed-logs: True
+restart-times: 1
+stats: stats.json
+set-threads: tree=4

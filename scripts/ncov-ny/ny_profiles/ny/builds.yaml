@@ -1,0 +1,93 @@
+# Defines next align specs
+genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
+use_nextalign: true
+conda_environment: "workflow/envs/nextstrain.yaml"
+
+# Define custom rules
+custom_rules:
+  - ny_profiles/ny/add_to_builds.smk
+
+inputs:
+  - name: gisaid
+    metadata: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/metadata.tsv.gz"
+    sequences: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/filtered_gisaid.fasta.xz"
+  - ny:
+    metadata: "data/ny_metadata.tsv"
+    sequences: "data/ny_sequences.fasta"
+    # ---------------------- NOTE --------------------------
+    # PR 550 changed the path of intermediate files on
+    # the S3 bucket to include the origin (e.g. _gisaid).
+    # Some of these files may not yet exist!
+    # ------------------------------------------------------
+    # metadata: "s3://nextstrain-ncov-private/metadata_gisaid.tsv.gz"
+    # sequences: "s3://nextstrain-ncov-private/sequences_gisaid.fasta.gz"
+    # aligned: "s3://nextstrain-ncov-private/aligned_gisaid.fasta.xz"
+    # to-exclude: "s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz"
+    # masked: "s3://nextstrain-ncov-private/masked_gisaid.fasta.fasta.xz"
+    # filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+
+# Define custom auspice configuration to enable frequencies.
+files:
+  auspice_config: "ny_profiles/ny/auspice_config.json"
+
+# Define NY builds.
+builds:
+
+  ny_6m:
+    title: "NY-focused SARS-CoV-2 genomic analysis"
+    location: New York City
+    subsampling_scheme: time-window
+    n_sequences_ny_focus_recent: 100
+    n_sequences_usa_context_recent: 100
+    n_sequences_global_context_recent: 100
+    n_sequences_ny_focus_early: 100
+    n_sequences_usa_context_early: 100
+    n_sequences_global_context_early: 100
+
+# Define subsampling scheme for builds. This scheme should include as much
+# local diversity for a given division as possible and contextual samples from
+# the rest of the USA and the world.
+subsampling:
+  time-window:
+    # Subsampling for a given time window
+    ny-focus-recent:
+      # Evenly sample from earliest_date to latest_date for New York, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_ny_focus_recent}"
+      max_date: --max-date {latest_date}
+      min_date: --min-date {earliest_date}
+      query: --query "(country == 'USA' & location == '{location}')"
+    usa-context-recent:
+      # Evenly sample from earliest_date to latest_date for USA, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_usa_context_recent}"
+      max_date: --max-date {latest_date}
+      min_date: --min-date {earliest_date}
+      query: --query "(country == 'USA')"
+    global-context-recent:
+      # Evenly sample from earliest_date to latest_date for world, targeting n_sequences
+      group_by: "region year month"
+      max_sequences: "{n_sequences_global_context_recent}"
+      max_date: --max-date {latest_date}
+      min_date: --min-date {earliest_date}
+      query: --query "(country != 'USA')"
+    ny-focus-early:
+      # Evenly sample up to earliest_date for New York, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_ny_focus_early}"
+      max_date: --max-date {earliest_date}
+      query: --query "(country == 'USA' & location == '{location}')"
+    usa-context-early:
+      # Evenly sample up to earliest_date for USA, targeting n_sequences
+      group_by: "year month"
+      max_sequences: "{n_sequences_usa_context_early}"
+      max_date: --max-date {earliest_date}
+      query: --query "(country == 'USA')"
+    global-context-early:
+      # Evenly sample up to earliest_date for world, targeting n_sequences
+      group_by: "region year month"
+      max_sequences: "{n_sequences_global_context_early}"
+      max_date: --max-date {earliest_date}
+      query: --query "(country != 'USA')"
+
+skip_travel_history_adjustment: True

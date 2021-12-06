@@ -1,0 +1,14 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    poseidon-l1 (AVX512, FMA3, 376 GB RAM)
+Command: iqtree -s LEAN.fasta
+Seed:    73522 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Nov 11 17:08:20 2021
+Kernel:  AVX+FMA - 1 threads (36 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 36 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file LEAN.fasta ... ERROR: File not found LEAN.fasta

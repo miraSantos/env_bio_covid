@@ -1,0 +1,556 @@
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /vortexfs1/home/msantos/.conda/envs/nextstrain
+
+  added / updated specs:
+    - auspice
+    - awscli
+    - git
+    - nextalign
+    - nextstrain-cli
+    - pip
+    - snakemake
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    aioeasywebdav-2.4.0        |py39hf3d152e_1001          18 KB  conda-forge
+    aiohttp-3.7.4.post0        |   py39h3811e60_1         641 KB  conda-forge
+    amply-0.1.4                |             py_0          20 KB  conda-forge
+    appdirs-1.4.4              |     pyh9f0ad1d_0          13 KB  conda-forge
+    async-timeout-3.0.1        |          py_1000          11 KB  conda-forge
+    atk-1.0-2.36.0             |       h3371d22_4         560 KB  conda-forge
+    attmap-0.13.2              |     pyhd8ed1ab_0          13 KB  conda-forge
+    auspice-2.29.1             |       h1b792b2_0        34.3 MB  bioconda
+    awscli-1.22.3              |   py39hf3d152e_0         1.9 MB  conda-forge
+    bcrypt-3.2.0               |   py39h3811e60_2          44 KB  conda-forge
+    boto3-1.20.3               |     pyhd8ed1ab_0          71 KB  conda-forge
+    botocore-1.23.3            |     pyhd8ed1ab_0         5.0 MB  conda-forge
+    brotlipy-0.7.0             |py39h3811e60_1003         342 KB  conda-forge
+    cachetools-4.2.4           |     pyhd8ed1ab_0          12 KB  conda-forge
+    cairo-1.16.0               |    ha00ac49_1009         1.5 MB  conda-forge
+    certifi-2021.10.8          |   py39hf3d152e_1         145 KB  conda-forge
+    chardet-4.0.0              |   py39hf3d152e_2         198 KB  conda-forge
+    coincbc-2.10.5             |       hcee13e7_1         8.0 MB  conda-forge
+    colorama-0.4.3             |             py_0          17 KB  conda-forge
+    configargparse-1.5.3       |     pyhd8ed1ab_0          32 KB  conda-forge
+    connection_pool-0.0.3      |     pyhd3deb0d_0           8 KB  conda-forge
+    cryptography-35.0.0        |   py39h95dcef6_2         1.6 MB  conda-forge
+    curl-7.80.0                |       h2574ce0_0         153 KB  conda-forge
+    cycler-0.11.0              |     pyhd8ed1ab_0          10 KB  conda-forge
+    datrie-0.8.2               |   py39h3811e60_3         157 KB  conda-forge
+    docutils-0.15.2            |   py39hf3d152e_2         740 KB  conda-forge
+    dropbox-11.23.0            |     pyhd8ed1ab_0         938 KB  conda-forge
+    fftw-3.3.10                |nompi_h74d3f13_101         6.4 MB  conda-forge
+    filechunkio-1.8            |             py_2           5 KB  conda-forge
+    filelock-3.3.2             |     pyhd8ed1ab_0          12 KB  conda-forge
+    fsspec-2021.11.0           |     pyhd8ed1ab_0          91 KB  conda-forge
+    ftputil-5.0.1              |     pyhd8ed1ab_0          76 KB  conda-forge
+    gdk-pixbuf-2.42.6          |       h04a7f16_0         609 KB  conda-forge
+    ghostscript-9.54.0         |       h9c3ff4c_1        57.0 MB  conda-forge
+    git-2.33.1                 | pl5321hc30692c_0        13.0 MB  conda-forge
+    gitdb-4.0.9                |     pyhd8ed1ab_0          46 KB  conda-forge
+    gitpython-3.1.24           |     pyhd8ed1ab_0         122 KB  conda-forge
+    google-api-core-2.2.2      |     pyhd8ed1ab_0          61 KB  conda-forge
+    google-api-python-client-2.30.0|     pyhd8ed1ab_0         4.3 MB  conda-forge
+    google-auth-2.3.3          |     pyh6c4a22f_0          83 KB  conda-forge
+    google-auth-httplib2-0.1.0 |     pyhd8ed1ab_0          13 KB  conda-forge
+    google-cloud-core-2.2.1    |     pyh6c4a22f_0          27 KB  conda-forge
+    google-cloud-storage-1.42.3|     pyh6c4a22f_1          73 KB  conda-forge
+    google-crc32c-1.1.2        |   py39hb81f231_2          23 KB  conda-forge
+    google-resumable-media-2.1.0|     pyh6c4a22f_0          41 KB  conda-forge
+    googleapis-common-protos-1.53.0|   py39hf3d152e_1         127 KB  conda-forge
+    graphviz-2.49.3            |       h85b4f2f_0         3.9 MB  conda-forge
+    grpcio-1.41.1              |   py39hff7568b_1         2.3 MB  conda-forge
+    gtk2-2.24.33               |       h539f30e_1         7.3 MB  conda-forge
+    gts-0.7.6                  |       h64030ff_2         411 KB  conda-forge
+    harfbuzz-3.1.1             |       hb4a5f5f_1         2.1 MB  conda-forge
+    httplib2-0.20.2            |     pyhd8ed1ab_1          96 KB  conda-forge
+    icu-69.1                   |       h9c3ff4c_0        13.2 MB  conda-forge
+    imagemagick-7.1.0_13       | pl5321hb118871_0         2.6 MB  conda-forge
+    importlib-metadata-4.8.2   |   py39hf3d152e_0          33 KB  conda-forge
+    importlib_resources-5.4.0  |     pyhd8ed1ab_0          21 KB  conda-forge
+    iniconfig-1.1.1            |     pyh9f0ad1d_0           8 KB  conda-forge
+    jinja2-3.0.3               |     pyhd8ed1ab_0          99 KB  conda-forge
+    jmespath-0.10.0            |     pyh9f0ad1d_0          21 KB  conda-forge
+    jsonschema-4.2.1           |     pyhd8ed1ab_0         118 KB  conda-forge
+    kiwisolver-1.3.2           |   py39h1a9c180_1          80 KB  conda-forge
+    libcrc32c-1.1.2            |       h9c3ff4c_0          20 KB  conda-forge
+    libcurl-7.80.0             |       h2574ce0_0         337 KB  conda-forge
+    libffi-3.4.2               |       h7f98852_5          57 KB  conda-forge
+    libgd-2.3.3                |       h3cfcdeb_1         267 KB  conda-forge
+    libprotobuf-3.19.1         |       h780b84a_0         2.6 MB  conda-forge
+    librsvg-2.52.3             |       hc3c00ef_0         5.2 MB  conda-forge
+    libtool-2.4.6              |    h9c3ff4c_1008         511 KB  conda-forge
+    libuv-1.42.0               |       h7f98852_0         1.0 MB  conda-forge
+    libwebp-1.2.1              |       h3452ae3_0          84 KB  conda-forge
+    libxcb-1.13                |    h7f98852_1004         391 KB  conda-forge
+    libxml2-2.9.12             |       h885dcf4_1         760 KB  conda-forge
+    logmuse-0.2.6              |     pyh8c360ce_0          10 KB  conda-forge
+    matplotlib-base-3.4.3      |   py39h2fa2bec_1         7.3 MB  conda-forge
+    more-itertools-8.11.0      |     pyhd8ed1ab_0          47 KB  conda-forge
+    multidict-5.2.0            |   py39h3811e60_1          64 KB  conda-forge
+    netifaces-0.10.9           |py39h3811e60_1004          17 KB  conda-forge
+    networkx-2.6.3             |     pyhd8ed1ab_1         1.5 MB  conda-forge
+    nextalign-1.4.5            |       h9ee0642_0         1.0 MB  bioconda
+    nextstrain-cli-3.0.3       |             py_0          45 KB  bioconda
+    nodejs-16.12.0             |       h8ca31f7_1        15.3 MB  conda-forge
+    numpy-1.21.4               |   py39hdbf815f_0         6.2 MB  conda-forge
+    oauth2client-4.1.3         |             py_0          66 KB  conda-forge
+    openjpeg-2.4.0             |       hb52868f_1         444 KB  conda-forge
+    pandas-1.3.4               |   py39hde0f152_1        13.0 MB  conda-forge
+    paramiko-2.8.0             |     pyhd8ed1ab_0         136 KB  conda-forge
+    peppy-0.31.2               |     pyhd8ed1ab_0          21 KB  conda-forge
+    perl-5.32.1                | 1_h7f98852_perl5        14.4 MB  conda-forge
+    pillow-8.4.0               |   py39ha612740_0         706 KB  conda-forge
+    pkg-config-0.29.2          |    h36c2ea0_1008         120 KB  conda-forge
+    pluggy-1.0.0               |   py39hf3d152e_2          25 KB  conda-forge
+    prettytable-2.4.0          |     pyhd8ed1ab_0          25 KB  conda-forge
+    protobuf-3.19.1            |   py39he80948d_1         329 KB  conda-forge
+    psutil-5.8.0               |   py39h3811e60_2         343 KB  conda-forge
+    pulp-2.5.1                 |   py39hf3d152e_1         122 KB  conda-forge
+    py-1.11.0                  |     pyh6c4a22f_0          74 KB  conda-forge
+    pyasn1-0.4.8               |             py_0          53 KB  conda-forge
+    pyasn1-modules-0.2.7       |             py_0          60 KB  conda-forge
+    pycparser-2.21             |     pyhd8ed1ab_0         100 KB  conda-forge
+    pygraphviz-1.7             |   py39ha206bd0_1         125 KB  conda-forge
+    pynacl-1.4.0               |   py39h3811e60_3         1.3 MB  conda-forge
+    pyopenssl-21.0.0           |     pyhd8ed1ab_0          48 KB  conda-forge
+    pyparsing-3.0.5            |     pyhd8ed1ab_0          78 KB  conda-forge
+    pyrsistent-0.18.0          |   py39h3811e60_0          90 KB  conda-forge
+    pysftp-0.2.9               |             py_1          15 KB  conda-forge
+    pysocks-1.7.1              |   py39hf3d152e_4          28 KB  conda-forge
+    pytest-6.2.5               |   py39hf3d152e_1         433 KB  conda-forge
+    python-irodsclient-1.0.0   |     pyhd8ed1ab_0         104 KB  conda-forge
+    pytz-2021.3                |     pyhd8ed1ab_0         242 KB  conda-forge
+    pyu2f-0.1.5                |     pyhd8ed1ab_0          31 KB  conda-forge
+    pyyaml-5.4.1               |   py39h3811e60_1         196 KB  conda-forge
+    ratelimiter-1.2.0          |          py_1002          12 KB  conda-forge
+    rsa-4.7.2                  |     pyh44b312d_0          28 KB  conda-forge
+    s3fs-0.4.2                 |             py_0          21 KB  conda-forge
+    s3transfer-0.5.0           |     pyhd8ed1ab_0          55 KB  conda-forge
+    scipy-1.7.2                |   py39hee8e79c_0        22.1 MB  conda-forge
+    setuptools-58.5.3          |   py39hf3d152e_0        1011 KB  conda-forge
+    simplejson-3.17.5          |   py39h3811e60_1         104 KB  conda-forge
+    slacker-0.14.0             |             py_0          15 KB  conda-forge
+    smart_open-5.2.1           |     pyhd8ed1ab_0          43 KB  conda-forge
+    smmap-3.0.5                |     pyh44b312d_0          22 KB  conda-forge
+    snakemake-6.10.0           |       hdfd78af_0           7 KB  bioconda
+    snakemake-minimal-6.10.0   |     pyhdfd78af_0         210 KB  bioconda
+    stone-3.2.1                |     pyhd8ed1ab_0         144 KB  conda-forge
+    stopit-1.1.2               |             py_0          16 KB  conda-forge
+    tabulate-0.8.9             |     pyhd8ed1ab_0          26 KB  conda-forge
+    toml-0.10.2                |     pyhd8ed1ab_0          18 KB  conda-forge
+    toposort-1.7               |     pyhd8ed1ab_0          12 KB  conda-forge
+    typing-extensions-3.10.0.2 |       hd8ed1ab_0           8 KB  conda-forge
+    typing_extensions-3.10.0.2 |     pyha770c72_0          28 KB  conda-forge
+    ubiquerg-0.6.1             |     pyh9f0ad1d_0          15 KB  conda-forge
+    uritemplate-3.0.1          |             py_0          16 KB  conda-forge
+    urllib3-1.26.7             |     pyhd8ed1ab_0         100 KB  conda-forge
+    veracitools-0.1.3          |             py_0           6 KB  conda-forge
+    wrapt-1.13.3               |   py39h3811e60_1          49 KB  conda-forge
+    xmlrunner-1.7.7            |             py_0          11 KB  conda-forge
+    yaml-0.2.5                 |       h516909a_0          82 KB  conda-forge
+    yarl-1.7.2                 |   py39h3811e60_1         138 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       270.2 MB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-1_gnu
+  aioeasywebdav      conda-forge/linux-64::aioeasywebdav-2.4.0-py39hf3d152e_1001
+  aiohttp            conda-forge/linux-64::aiohttp-3.7.4.post0-py39h3811e60_1
+  amply              conda-forge/noarch::amply-0.1.4-py_0
+  appdirs            conda-forge/noarch::appdirs-1.4.4-pyh9f0ad1d_0
+  async-timeout      conda-forge/noarch::async-timeout-3.0.1-py_1000
+  atk-1.0            conda-forge/linux-64::atk-1.0-2.36.0-h3371d22_4
+  attmap             conda-forge/noarch::attmap-0.13.2-pyhd8ed1ab_0
+  attrs              conda-forge/noarch::attrs-21.2.0-pyhd8ed1ab_0
+  auspice            bioconda/linux-64::auspice-2.29.1-h1b792b2_0
+  awscli             conda-forge/linux-64::awscli-1.22.3-py39hf3d152e_0
+  backports          conda-forge/noarch::backports-1.0-py_2
+  backports.functoo~ conda-forge/noarch::backports.functools_lru_cache-1.6.4-pyhd8ed1ab_0
+  bcrypt             conda-forge/linux-64::bcrypt-3.2.0-py39h3811e60_2
+  boto3              conda-forge/noarch::boto3-1.20.3-pyhd8ed1ab_0
+  botocore           conda-forge/noarch::botocore-1.23.3-pyhd8ed1ab_0
+  brotlipy           conda-forge/linux-64::brotlipy-0.7.0-py39h3811e60_1003
+  bzip2              conda-forge/linux-64::bzip2-1.0.8-h7f98852_4
+  c-ares             conda-forge/linux-64::c-ares-1.18.1-h7f98852_0
+  ca-certificates    conda-forge/linux-64::ca-certificates-2021.10.8-ha878542_0
+  cachetools         conda-forge/noarch::cachetools-4.2.4-pyhd8ed1ab_0
+  cairo              conda-forge/linux-64::cairo-1.16.0-ha00ac49_1009
+  certifi            conda-forge/linux-64::certifi-2021.10.8-py39hf3d152e_1
+  cffi               conda-forge/linux-64::cffi-1.15.0-py39h4bc2ebd_0
+  chardet            conda-forge/linux-64::chardet-4.0.0-py39hf3d152e_2
+  coincbc            conda-forge/linux-64::coincbc-2.10.5-hcee13e7_1
+  colorama           conda-forge/noarch::colorama-0.4.3-py_0
+  configargparse     conda-forge/noarch::configargparse-1.5.3-pyhd8ed1ab_0
+  connection_pool    conda-forge/noarch::connection_pool-0.0.3-pyhd3deb0d_0
+  cryptography       conda-forge/linux-64::cryptography-35.0.0-py39h95dcef6_2
+  curl               conda-forge/linux-64::curl-7.80.0-h2574ce0_0
+  cycler             conda-forge/noarch::cycler-0.11.0-pyhd8ed1ab_0
+  datrie             conda-forge/linux-64::datrie-0.8.2-py39h3811e60_3
+  docutils           conda-forge/linux-64::docutils-0.15.2-py39hf3d152e_2
+  dropbox            conda-forge/noarch::dropbox-11.23.0-pyhd8ed1ab_0
+  expat              conda-forge/linux-64::expat-2.4.1-h9c3ff4c_0
+  fftw               conda-forge/linux-64::fftw-3.3.10-nompi_h74d3f13_101
+  filechunkio        conda-forge/noarch::filechunkio-1.8-py_2
+  filelock           conda-forge/noarch::filelock-3.3.2-pyhd8ed1ab_0
+  font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-dejavu-sans-mono-2.37-hab24e00_0
+  font-ttf-inconsol~ conda-forge/noarch::font-ttf-inconsolata-3.000-h77eed37_0
+  font-ttf-source-c~ conda-forge/noarch::font-ttf-source-code-pro-2.038-h77eed37_0
+  font-ttf-ubuntu    conda-forge/noarch::font-ttf-ubuntu-0.83-hab24e00_0
+  fontconfig         conda-forge/linux-64::fontconfig-2.13.1-hba837de_1005
+  fonts-conda-ecosy~ conda-forge/noarch::fonts-conda-ecosystem-1-0
+  fonts-conda-forge  conda-forge/noarch::fonts-conda-forge-1-0
+  freetype           conda-forge/linux-64::freetype-2.10.4-h0708190_1
+  fribidi            conda-forge/linux-64::fribidi-1.0.10-h36c2ea0_0
+  fsspec             conda-forge/noarch::fsspec-2021.11.0-pyhd8ed1ab_0
+  ftputil            conda-forge/noarch::ftputil-5.0.1-pyhd8ed1ab_0
+  gdk-pixbuf         conda-forge/linux-64::gdk-pixbuf-2.42.6-h04a7f16_0
+  gettext            conda-forge/linux-64::gettext-0.19.8.1-h73d1719_1008
+  ghostscript        conda-forge/linux-64::ghostscript-9.54.0-h9c3ff4c_1
+  giflib             conda-forge/linux-64::giflib-5.2.1-h36c2ea0_2
+  git                conda-forge/linux-64::git-2.33.1-pl5321hc30692c_0
+  gitdb              conda-forge/noarch::gitdb-4.0.9-pyhd8ed1ab_0
+  gitpython          conda-forge/noarch::gitpython-3.1.24-pyhd8ed1ab_0
+  google-api-core    conda-forge/noarch::google-api-core-2.2.2-pyhd8ed1ab_0
+  google-api-python~ conda-forge/noarch::google-api-python-client-2.30.0-pyhd8ed1ab_0
+  google-auth        conda-forge/noarch::google-auth-2.3.3-pyh6c4a22f_0
+  google-auth-httpl~ conda-forge/noarch::google-auth-httplib2-0.1.0-pyhd8ed1ab_0
+  google-cloud-core  conda-forge/noarch::google-cloud-core-2.2.1-pyh6c4a22f_0
+  google-cloud-stor~ conda-forge/noarch::google-cloud-storage-1.42.3-pyh6c4a22f_1
+  google-crc32c      conda-forge/linux-64::google-crc32c-1.1.2-py39hb81f231_2
+  google-resumable-~ conda-forge/noarch::google-resumable-media-2.1.0-pyh6c4a22f_0
+  googleapis-common~ conda-forge/linux-64::googleapis-common-protos-1.53.0-py39hf3d152e_1
+  graphite2          conda-forge/linux-64::graphite2-1.3.13-h58526e2_1001
+  graphviz           conda-forge/linux-64::graphviz-2.49.3-h85b4f2f_0
+  grpcio             conda-forge/linux-64::grpcio-1.41.1-py39hff7568b_1
+  gtk2               conda-forge/linux-64::gtk2-2.24.33-h539f30e_1
+  gts                conda-forge/linux-64::gts-0.7.6-h64030ff_2
+  harfbuzz           conda-forge/linux-64::harfbuzz-3.1.1-hb4a5f5f_1
+  httplib2           conda-forge/noarch::httplib2-0.20.2-pyhd8ed1ab_1
+  icu                conda-forge/linux-64::icu-69.1-h9c3ff4c_0
+  idna               conda-forge/noarch::idna-2.10-pyh9f0ad1d_0
+  imagemagick        conda-forge/linux-64::imagemagick-7.1.0_13-pl5321hb118871_0
+  importlib-metadata conda-forge/linux-64::importlib-metadata-4.8.2-py39hf3d152e_0
+  importlib_resourc~ conda-forge/noarch::importlib_resources-5.4.0-pyhd8ed1ab_0
+  iniconfig          conda-forge/noarch::iniconfig-1.1.1-pyh9f0ad1d_0
+  ipython_genutils   conda-forge/noarch::ipython_genutils-0.2.0-py_1
+  jbig               conda-forge/linux-64::jbig-2.1-h7f98852_2003
+  jinja2             conda-forge/noarch::jinja2-3.0.3-pyhd8ed1ab_0
+  jmespath           conda-forge/noarch::jmespath-0.10.0-pyh9f0ad1d_0
+  jpeg               conda-forge/linux-64::jpeg-9d-h36c2ea0_0
+  jsonschema         conda-forge/noarch::jsonschema-4.2.1-pyhd8ed1ab_0
+  jupyter_core       conda-forge/linux-64::jupyter_core-4.9.1-py39hf3d152e_0
+  kiwisolver         conda-forge/linux-64::kiwisolver-1.3.2-py39h1a9c180_1
+  krb5               conda-forge/linux-64::krb5-1.19.2-hcc1bbae_3
+  lcms2              conda-forge/linux-64::lcms2-2.12-hddcbb42_0
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.36.1-hea4e1c9_2
+  lerc               conda-forge/linux-64::lerc-3.0-h9c3ff4c_0
+  libblas            conda-forge/linux-64::libblas-3.9.0-12_linux64_openblas
+  libcblas           conda-forge/linux-64::libcblas-3.9.0-12_linux64_openblas
+  libcrc32c          conda-forge/linux-64::libcrc32c-1.1.2-h9c3ff4c_0
+  libcurl            conda-forge/linux-64::libcurl-7.80.0-h2574ce0_0
+  libdeflate         conda-forge/linux-64::libdeflate-1.8-h7f98852_0
+  libedit            conda-forge/linux-64::libedit-3.1.20191231-he28a2e2_2
+  libev              conda-forge/linux-64::libev-4.33-h516909a_1
+  libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-11.2.0-h1d223b6_11
+  libgd              conda-forge/linux-64::libgd-2.3.3-h3cfcdeb_1
+  libgfortran-ng     conda-forge/linux-64::libgfortran-ng-11.2.0-h69a702a_11
+  libgfortran5       conda-forge/linux-64::libgfortran5-11.2.0-h5c6108e_11
+  libglib            conda-forge/linux-64::libglib-2.70.0-h174f98d_1
+  libgomp            conda-forge/linux-64::libgomp-11.2.0-h1d223b6_11
+  libiconv           conda-forge/linux-64::libiconv-1.16-h516909a_0
+  liblapack          conda-forge/linux-64::liblapack-3.9.0-12_linux64_openblas
+  libnghttp2         conda-forge/linux-64::libnghttp2-1.43.0-h812cca2_1
+  libopenblas        conda-forge/linux-64::libopenblas-0.3.18-pthreads_h8fe5266_0
+  libpng             conda-forge/linux-64::libpng-1.6.37-h21135ba_2
+  libprotobuf        conda-forge/linux-64::libprotobuf-3.19.1-h780b84a_0
+  librsvg            conda-forge/linux-64::librsvg-2.52.3-hc3c00ef_0
+  libsodium          conda-forge/linux-64::libsodium-1.0.18-h36c2ea0_1
+  libssh2            conda-forge/linux-64::libssh2-1.10.0-ha56f1ee_2
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-11.2.0-he4da1e4_11
+  libtiff            conda-forge/linux-64::libtiff-4.3.0-h6f004c6_2
+  libtool            conda-forge/linux-64::libtool-2.4.6-h9c3ff4c_1008
+  libuuid            conda-forge/linux-64::libuuid-2.32.1-h7f98852_1000
+  libuv              conda-forge/linux-64::libuv-1.42.0-h7f98852_0
+  libwebp            conda-forge/linux-64::libwebp-1.2.1-h3452ae3_0
+  libwebp-base       conda-forge/linux-64::libwebp-base-1.2.1-h7f98852_0
+  libxcb             conda-forge/linux-64::libxcb-1.13-h7f98852_1004
+  libxml2            conda-forge/linux-64::libxml2-2.9.12-h885dcf4_1
+  libzlib            conda-forge/linux-64::libzlib-1.2.11-h36c2ea0_1013
+  logmuse            conda-forge/noarch::logmuse-0.2.6-pyh8c360ce_0
+  lz4-c              conda-forge/linux-64::lz4-c-1.9.3-h9c3ff4c_1
+  markupsafe         conda-forge/linux-64::markupsafe-2.0.1-py39h3811e60_1
+  matplotlib-base    conda-forge/linux-64::matplotlib-base-3.4.3-py39h2fa2bec_1
+  more-itertools     conda-forge/noarch::more-itertools-8.11.0-pyhd8ed1ab_0
+  multidict          conda-forge/linux-64::multidict-5.2.0-py39h3811e60_1
+  nbformat           conda-forge/noarch::nbformat-5.1.3-pyhd8ed1ab_0
+  ncurses            conda-forge/linux-64::ncurses-6.2-h58526e2_4
+  netifaces          conda-forge/linux-64::netifaces-0.10.9-py39h3811e60_1004
+  networkx           conda-forge/noarch::networkx-2.6.3-pyhd8ed1ab_1
+  nextalign          bioconda/linux-64::nextalign-1.4.5-h9ee0642_0
+  nextstrain-cli     bioconda/noarch::nextstrain-cli-3.0.3-py_0
+  nodejs             conda-forge/linux-64::nodejs-16.12.0-h8ca31f7_1
+  numpy              conda-forge/linux-64::numpy-1.21.4-py39hdbf815f_0
+  oauth2client       conda-forge/noarch::oauth2client-4.1.3-py_0
+  olefile            conda-forge/noarch::olefile-0.46-pyh9f0ad1d_1
+  openjpeg           conda-forge/linux-64::openjpeg-2.4.0-hb52868f_1
+  openssl            conda-forge/linux-64::openssl-1.1.1l-h7f98852_0
+  packaging          conda-forge/noarch::packaging-21.0-pyhd8ed1ab_0
+  pandas             conda-forge/linux-64::pandas-1.3.4-py39hde0f152_1
+  pango              conda-forge/linux-64::pango-1.48.10-h54213e6_2
+  paramiko           conda-forge/noarch::paramiko-2.8.0-pyhd8ed1ab_0
+  pcre               conda-forge/linux-64::pcre-8.45-h9c3ff4c_0
+  pcre2              conda-forge/linux-64::pcre2-10.37-h032f7d1_0
+  peppy              conda-forge/noarch::peppy-0.31.2-pyhd8ed1ab_0
+  perl               conda-forge/linux-64::perl-5.32.1-1_h7f98852_perl5
+  pillow             conda-forge/linux-64::pillow-8.4.0-py39ha612740_0
+  pip                conda-forge/noarch::pip-21.3.1-pyhd8ed1ab_0
+  pixman             conda-forge/linux-64::pixman-0.40.0-h36c2ea0_0
+  pkg-config         conda-forge/linux-64::pkg-config-0.29.2-h36c2ea0_1008
+  pluggy             conda-forge/linux-64::pluggy-1.0.0-py39hf3d152e_2
+  ply                conda-forge/noarch::ply-3.11-py_1
+  prettytable        conda-forge/noarch::prettytable-2.4.0-pyhd8ed1ab_0
+  protobuf           conda-forge/linux-64::protobuf-3.19.1-py39he80948d_1
+  psutil             conda-forge/linux-64::psutil-5.8.0-py39h3811e60_2
+  pthread-stubs      conda-forge/linux-64::pthread-stubs-0.4-h36c2ea0_1001
+  pulp               conda-forge/linux-64::pulp-2.5.1-py39hf3d152e_1
+  py                 conda-forge/noarch::py-1.11.0-pyh6c4a22f_0
+  pyasn1             conda-forge/noarch::pyasn1-0.4.8-py_0
+  pyasn1-modules     conda-forge/noarch::pyasn1-modules-0.2.7-py_0
+  pycparser          conda-forge/noarch::pycparser-2.21-pyhd8ed1ab_0
+  pygments           conda-forge/noarch::pygments-2.10.0-pyhd8ed1ab_0
+  pygraphviz         conda-forge/linux-64::pygraphviz-1.7-py39ha206bd0_1
+  pynacl             conda-forge/linux-64::pynacl-1.4.0-py39h3811e60_3
+  pyopenssl          conda-forge/noarch::pyopenssl-21.0.0-pyhd8ed1ab_0
+  pyparsing          conda-forge/noarch::pyparsing-3.0.5-pyhd8ed1ab_0
+  pyrsistent         conda-forge/linux-64::pyrsistent-0.18.0-py39h3811e60_0
+  pysftp             conda-forge/noarch::pysftp-0.2.9-py_1
+  pysocks            conda-forge/linux-64::pysocks-1.7.1-py39hf3d152e_4
+  pytest             conda-forge/linux-64::pytest-6.2.5-py39hf3d152e_1
+  python             conda-forge/linux-64::python-3.9.7-hb7a2778_3_cpython
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.2-pyhd8ed1ab_0
+  python-irodsclient conda-forge/noarch::python-irodsclient-1.0.0-pyhd8ed1ab_0
+  python_abi         conda-forge/linux-64::python_abi-3.9-2_cp39
+  pytz               conda-forge/noarch::pytz-2021.3-pyhd8ed1ab_0
+  pyu2f              conda-forge/noarch::pyu2f-0.1.5-pyhd8ed1ab_0
+  pyyaml             conda-forge/linux-64::pyyaml-5.4.1-py39h3811e60_1
+  ratelimiter        conda-forge/noarch::ratelimiter-1.2.0-py_1002
+  readline           conda-forge/linux-64::readline-8.1-h46c0cb4_0
+  requests           conda-forge/noarch::requests-2.25.1-pyhd3deb0d_0
+  rsa                conda-forge/noarch::rsa-4.7.2-pyh44b312d_0
+  s3fs               conda-forge/noarch::s3fs-0.4.2-py_0
+  s3transfer         conda-forge/noarch::s3transfer-0.5.0-pyhd8ed1ab_0
+  scipy              conda-forge/linux-64::scipy-1.7.2-py39hee8e79c_0
+  setuptools         conda-forge/linux-64::setuptools-58.5.3-py39hf3d152e_0
+  simplejson         conda-forge/linux-64::simplejson-3.17.5-py39h3811e60_1
+  six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0
+  slacker            conda-forge/noarch::slacker-0.14.0-py_0
+  smart_open         conda-forge/noarch::smart_open-5.2.1-pyhd8ed1ab_0
+  smmap              conda-forge/noarch::smmap-3.0.5-pyh44b312d_0
+  snakemake          bioconda/noarch::snakemake-6.10.0-hdfd78af_0
+  snakemake-minimal  bioconda/noarch::snakemake-minimal-6.10.0-pyhdfd78af_0
+  sqlite             conda-forge/linux-64::sqlite-3.36.0-h9cd32fc_2
+  stone              conda-forge/noarch::stone-3.2.1-pyhd8ed1ab_0
+  stopit             conda-forge/noarch::stopit-1.1.2-py_0
+  tabulate           conda-forge/noarch::tabulate-0.8.9-pyhd8ed1ab_0
+  tk                 conda-forge/linux-64::tk-8.6.11-h27826a3_1
+  toml               conda-forge/noarch::toml-0.10.2-pyhd8ed1ab_0
+  toposort           conda-forge/noarch::toposort-1.7-pyhd8ed1ab_0
+  tornado            conda-forge/linux-64::tornado-6.1-py39h3811e60_2
+  traitlets          conda-forge/noarch::traitlets-5.1.1-pyhd8ed1ab_0
+  typing-extensions  conda-forge/noarch::typing-extensions-3.10.0.2-hd8ed1ab_0
+  typing_extensions  conda-forge/noarch::typing_extensions-3.10.0.2-pyha770c72_0
+  tzdata             conda-forge/noarch::tzdata-2021e-he74cb21_0
+  ubiquerg           conda-forge/noarch::ubiquerg-0.6.1-pyh9f0ad1d_0
+  uritemplate        conda-forge/noarch::uritemplate-3.0.1-py_0
+  urllib3            conda-forge/noarch::urllib3-1.26.7-pyhd8ed1ab_0
+  veracitools        conda-forge/noarch::veracitools-0.1.3-py_0
+  wcwidth            conda-forge/noarch::wcwidth-0.2.5-pyh9f0ad1d_2
+  wheel              conda-forge/noarch::wheel-0.37.0-pyhd8ed1ab_1
+  wrapt              conda-forge/linux-64::wrapt-1.13.3-py39h3811e60_1
+  xmlrunner          conda-forge/noarch::xmlrunner-1.7.7-py_0
+  xorg-kbproto       conda-forge/linux-64::xorg-kbproto-1.0.7-h7f98852_1002
+  xorg-libice        conda-forge/linux-64::xorg-libice-1.0.10-h7f98852_0
+  xorg-libsm         conda-forge/linux-64::xorg-libsm-1.2.3-hd9c2040_1000
+  xorg-libx11        conda-forge/linux-64::xorg-libx11-1.7.2-h7f98852_0
+  xorg-libxau        conda-forge/linux-64::xorg-libxau-1.0.9-h7f98852_0
+  xorg-libxdmcp      conda-forge/linux-64::xorg-libxdmcp-1.1.3-h7f98852_0
+  xorg-libxext       conda-forge/linux-64::xorg-libxext-1.3.4-h7f98852_1
+  xorg-libxrender    conda-forge/linux-64::xorg-libxrender-0.9.10-h7f98852_1003
+  xorg-libxt         conda-forge/linux-64::xorg-libxt-1.2.1-h7f98852_2
+  xorg-renderproto   conda-forge/linux-64::xorg-renderproto-0.11.1-h7f98852_1002
+  xorg-xextproto     conda-forge/linux-64::xorg-xextproto-7.3.0-h7f98852_1002
+  xorg-xproto        conda-forge/linux-64::xorg-xproto-7.0.31-h7f98852_1007
+  xz                 conda-forge/linux-64::xz-5.2.5-h516909a_1
+  yaml               conda-forge/linux-64::yaml-0.2.5-h516909a_0
+  yarl               conda-forge/linux-64::yarl-1.7.2-py39h3811e60_1
+  zipp               conda-forge/noarch::zipp-3.6.0-pyhd8ed1ab_0
+  zlib               conda-forge/linux-64::zlib-1.2.11-h36c2ea0_1013
+  zstd               conda-forge/linux-64::zstd-1.5.0-ha95c52a_0
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages
+typing-extensions-3. | 8 KB      |            |   0% typing-extensions-3. | 8 KB      | ########## | 100% typing-extensions-3. | 8 KB      | ########## | 100% 
+libwebp-1.2.1        | 84 KB     |            |   0% libwebp-1.2.1        | 84 KB     | ########## | 100% 
+iniconfig-1.1.1      | 8 KB      |            |   0% iniconfig-1.1.1      | 8 KB      | ########## | 100% 
+configargparse-1.5.3 | 32 KB     |            |   0% configargparse-1.5.3 | 32 KB     | ########## | 100% 
+snakemake-minimal-6. | 210 KB    |            |   0% snakemake-minimal-6. | 210 KB    | ########## | 100% snakemake-minimal-6. | 210 KB    | ########## | 100% 
+boto3-1.20.3         | 71 KB     |            |   0% boto3-1.20.3         | 71 KB     | ########## | 100% 
+toml-0.10.2          | 18 KB     |            |   0% toml-0.10.2          | 18 KB     | ########## | 100% 
+toposort-1.7         | 12 KB     |            |   0% toposort-1.7         | 12 KB     | ########## | 100% 
+gitdb-4.0.9          | 46 KB     |            |   0% gitdb-4.0.9          | 46 KB     | ########## | 100% 
+pyasn1-0.4.8         | 53 KB     |            |   0% pyasn1-0.4.8         | 53 KB     | ########## | 100% 
+scipy-1.7.2          | 22.1 MB   |            |   0% scipy-1.7.2          | 22.1 MB   | ###8       |  39% scipy-1.7.2          | 22.1 MB   | ########2  |  82% scipy-1.7.2          | 22.1 MB   | ########## | 100% 
+harfbuzz-3.1.1       | 2.1 MB    |            |   0% harfbuzz-3.1.1       | 2.1 MB    | ########## | 100% harfbuzz-3.1.1       | 2.1 MB    | ########## | 100% 
+importlib-metadata-4 | 33 KB     |            |   0% importlib-metadata-4 | 33 KB     | ########## | 100% 
+fftw-3.3.10          | 6.4 MB    |            |   0% fftw-3.3.10          | 6.4 MB    | ######6    |  67% fftw-3.3.10          | 6.4 MB    | ########## | 100% fftw-3.3.10          | 6.4 MB    | ########## | 100% 
+s3transfer-0.5.0     | 55 KB     |            |   0% s3transfer-0.5.0     | 55 KB     | ########## | 100% 
+certifi-2021.10.8    | 145 KB    |            |   0% certifi-2021.10.8    | 145 KB    | ########## | 100% 
+smart_open-5.2.1     | 43 KB     |            |   0% smart_open-5.2.1     | 43 KB     | ########## | 100% 
+awscli-1.22.3        | 1.9 MB    |            |   0% awscli-1.22.3        | 1.9 MB    | ########## | 100% awscli-1.22.3        | 1.9 MB    | ########## | 100% 
+gdk-pixbuf-2.42.6    | 609 KB    |            |   0% gdk-pixbuf-2.42.6    | 609 KB    | ########## | 100% gdk-pixbuf-2.42.6    | 609 KB    | ########## | 100% 
+jmespath-0.10.0      | 21 KB     |            |   0% jmespath-0.10.0      | 21 KB     | ########## | 100% 
+httplib2-0.20.2      | 96 KB     |            |   0% httplib2-0.20.2      | 96 KB     | ########## | 100% 
+curl-7.80.0          | 153 KB    |            |   0% curl-7.80.0          | 153 KB    | ########## | 100% 
+pyrsistent-0.18.0    | 90 KB     |            |   0% pyrsistent-0.18.0    | 90 KB     | ########## | 100% 
+psutil-5.8.0         | 343 KB    |            |   0% psutil-5.8.0         | 343 KB    | ########## | 100% psutil-5.8.0         | 343 KB    | ########## | 100% 
+nextalign-1.4.5      | 1.0 MB    |            |   0% nextalign-1.4.5      | 1.0 MB    | #######8   |  78% nextalign-1.4.5      | 1.0 MB    | ########## | 100% 
+auspice-2.29.1       | 34.3 MB   |            |   0% auspice-2.29.1       | 34.3 MB   | #2         |  13% auspice-2.29.1       | 34.3 MB   | ###6       |  37% auspice-2.29.1       | 34.3 MB   | #######8   |  79% auspice-2.29.1       | 34.3 MB   | ########## | 100% auspice-2.29.1       | 34.3 MB   | ########## | 100% 
+wrapt-1.13.3         | 49 KB     |            |   0% wrapt-1.13.3         | 49 KB     | ########## | 100% 
+pillow-8.4.0         | 706 KB    |            |   0% pillow-8.4.0         | 706 KB    | #5         |  16% pillow-8.4.0         | 706 KB    | ########## | 100% pillow-8.4.0         | 706 KB    | ########## | 100% 
+datrie-0.8.2         | 157 KB    |            |   0% datrie-0.8.2         | 157 KB    | ########## | 100% 
+libgd-2.3.3          | 267 KB    |            |   0% libgd-2.3.3          | 267 KB    | ########## | 100% libgd-2.3.3          | 267 KB    | ########## | 100% 
+kiwisolver-1.3.2     | 80 KB     |            |   0% kiwisolver-1.3.2     | 80 KB     | ########## | 100% 
+dropbox-11.23.0      | 938 KB    |            |   0% dropbox-11.23.0      | 938 KB    | ########## | 100% dropbox-11.23.0      | 938 KB    | ########## | 100% 
+pyparsing-3.0.5      | 78 KB     |            |   0% pyparsing-3.0.5      | 78 KB     | ########## | 100% 
+filechunkio-1.8      | 5 KB      |            |   0% filechunkio-1.8      | 5 KB      | ########## | 100% 
+pyu2f-0.1.5          | 31 KB     |            |   0% pyu2f-0.1.5          | 31 KB     | ########## | 100% 
+jsonschema-4.2.1     | 118 KB    |            |   0% jsonschema-4.2.1     | 118 KB    | ########## | 100% jsonschema-4.2.1     | 118 KB    | ########## | 100% 
+numpy-1.21.4         | 6.2 MB    |            |   0% numpy-1.21.4         | 6.2 MB    | ######8    |  68% numpy-1.21.4         | 6.2 MB    | ########## | 100% numpy-1.21.4         | 6.2 MB    | ########## | 100% 
+ratelimiter-1.2.0    | 12 KB     |            |   0% ratelimiter-1.2.0    | 12 KB     | ########## | 100% 
+jinja2-3.0.3         | 99 KB     |            |   0% jinja2-3.0.3         | 99 KB     | ########## | 100% 
+google-api-python-cl | 4.3 MB    |            |   0% google-api-python-cl | 4.3 MB    | #######1   |  72% google-api-python-cl | 4.3 MB    | ########## | 100% google-api-python-cl | 4.3 MB    | ########## | 100% 
+urllib3-1.26.7       | 100 KB    |            |   0% urllib3-1.26.7       | 100 KB    | ########## | 100% 
+xmlrunner-1.7.7      | 11 KB     |            |   0% xmlrunner-1.7.7      | 11 KB     | ########## | 100% 
+netifaces-0.10.9     | 17 KB     |            |   0% netifaces-0.10.9     | 17 KB     | ########## | 100% 
+cycler-0.11.0        | 10 KB     |            |   0% cycler-0.11.0        | 10 KB     | ########## | 100% 
+git-2.33.1           | 13.0 MB   |            |   0% git-2.33.1           | 13.0 MB   | ######3    |  63% git-2.33.1           | 13.0 MB   | ########## | 100% git-2.33.1           | 13.0 MB   | ########## | 100% 
+cairo-1.16.0         | 1.5 MB    |            |   0% cairo-1.16.0         | 1.5 MB    | ########## | 100% cairo-1.16.0         | 1.5 MB    | ########## | 100% 
+simplejson-3.17.5    | 104 KB    |            |   0% simplejson-3.17.5    | 104 KB    | ########## | 100% 
+cryptography-35.0.0  | 1.6 MB    |            |   0% cryptography-35.0.0  | 1.6 MB    | ########## | 100% cryptography-35.0.0  | 1.6 MB    | ########## | 100% 
+libtool-2.4.6        | 511 KB    |            |   0% libtool-2.4.6        | 511 KB    | ########## | 100% libtool-2.4.6        | 511 KB    | ########## | 100% 
+google-crc32c-1.1.2  | 23 KB     |            |   0% google-crc32c-1.1.2  | 23 KB     | ########## | 100% 
+peppy-0.31.2         | 21 KB     |            |   0% peppy-0.31.2         | 21 KB     | ########## | 100% 
+google-auth-2.3.3    | 83 KB     |            |   0% google-auth-2.3.3    | 83 KB     | ########## | 100% google-auth-2.3.3    | 83 KB     | ########## | 100% 
+matplotlib-base-3.4. | 7.3 MB    |            |   0% matplotlib-base-3.4. | 7.3 MB    | ########## | 100% matplotlib-base-3.4. | 7.3 MB    | ########## | 100% 
+librsvg-2.52.3       | 5.2 MB    |            |   0% librsvg-2.52.3       | 5.2 MB    | ########## | 100% librsvg-2.52.3       | 5.2 MB    | ########## | 100% 
+yaml-0.2.5           | 82 KB     |            |   0% yaml-0.2.5           | 82 KB     | ########## | 100% 
+pandas-1.3.4         | 13.0 MB   |            |   0% pandas-1.3.4         | 13.0 MB   | #4         |  15% pandas-1.3.4         | 13.0 MB   | ##3        |  23% pandas-1.3.4         | 13.0 MB   | #####1     |  51% pandas-1.3.4         | 13.0 MB   | ########## | 100% pandas-1.3.4         | 13.0 MB   | ########## | 100% 
+libcurl-7.80.0       | 337 KB    |            |   0% libcurl-7.80.0       | 337 KB    | ########## | 100% 
+googleapis-common-pr | 127 KB    |            |   0% googleapis-common-pr | 127 KB    | ########## | 100% googleapis-common-pr | 127 KB    | ########## | 100% 
+more-itertools-8.11. | 47 KB     |            |   0% more-itertools-8.11. | 47 KB     | ########## | 100% 
+perl-5.32.1          | 14.4 MB   |            |   0% perl-5.32.1          | 14.4 MB   | ##8        |  28% perl-5.32.1          | 14.4 MB   | ######5    |  65% perl-5.32.1          | 14.4 MB   | ########## | 100% perl-5.32.1          | 14.4 MB   | ########## | 100% 
+pyyaml-5.4.1         | 196 KB    |            |   0% pyyaml-5.4.1         | 196 KB    | ########## | 100% 
+graphviz-2.49.3      | 3.9 MB    |            |   0% graphviz-2.49.3      | 3.9 MB    | ########## | 100% graphviz-2.49.3      | 3.9 MB    | ########## | 100% 
+py-1.11.0            | 74 KB     |            |   0% py-1.11.0            | 74 KB     | ########## | 100% 
+multidict-5.2.0      | 64 KB     |            |   0% multidict-5.2.0      | 64 KB     | ########## | 100% 
+grpcio-1.41.1        | 2.3 MB    |            |   0% grpcio-1.41.1        | 2.3 MB    | ########## | 100% grpcio-1.41.1        | 2.3 MB    | ########## | 100% 
+pyasn1-modules-0.2.7 | 60 KB     |            |   0% pyasn1-modules-0.2.7 | 60 KB     | ########## | 100% 
+protobuf-3.19.1      | 329 KB    |            |   0% protobuf-3.19.1      | 329 KB    | ########## | 100% protobuf-3.19.1      | 329 KB    | ########## | 100% 
+filelock-3.3.2       | 12 KB     |            |   0% filelock-3.3.2       | 12 KB     | ########## | 100% 
+pulp-2.5.1           | 122 KB    |            |   0% pulp-2.5.1           | 122 KB    | ########## | 100% 
+chardet-4.0.0        | 198 KB    |            |   0% chardet-4.0.0        | 198 KB    | ########## | 100% chardet-4.0.0        | 198 KB    | ########## | 100% 
+appdirs-1.4.4        | 13 KB     |            |   0% appdirs-1.4.4        | 13 KB     | ########## | 100% 
+veracitools-0.1.3    | 6 KB      |            |   0% veracitools-0.1.3    | 6 KB      | ########## | 100% 
+prettytable-2.4.0    | 25 KB     |            |   0% prettytable-2.4.0    | 25 KB     | ########## | 100% 
+amply-0.1.4          | 20 KB     |            |   0% amply-0.1.4          | 20 KB     | ########## | 100% 
+oauth2client-4.1.3   | 66 KB     |            |   0% oauth2client-4.1.3   | 66 KB     | ########## | 100% 
+networkx-2.6.3       | 1.5 MB    |            |   0% networkx-2.6.3       | 1.5 MB    | ########## | 100% networkx-2.6.3       | 1.5 MB    | ########## | 100% 
+stopit-1.1.2         | 16 KB     |            |   0% stopit-1.1.2         | 16 KB     | ########## | 100% 
+openjpeg-2.4.0       | 444 KB    |            |   0% openjpeg-2.4.0       | 444 KB    | ########## | 100% openjpeg-2.4.0       | 444 KB    | ########## | 100% 
+colorama-0.4.3       | 17 KB     |            |   0% colorama-0.4.3       | 17 KB     | ########## | 100% 
+pynacl-1.4.0         | 1.3 MB    |            |   0% pynacl-1.4.0         | 1.3 MB    | ########## | 100% pynacl-1.4.0         | 1.3 MB    | ########## | 100% 
+stone-3.2.1          | 144 KB    |            |   0% stone-3.2.1          | 144 KB    | ########## | 100% 
+nodejs-16.12.0       | 15.3 MB   |            |   0% nodejs-16.12.0       | 15.3 MB   | ####2      |  43% nodejs-16.12.0       | 15.3 MB   | ########## | 100% nodejs-16.12.0       | 15.3 MB   | ########## | 100% 
+nextstrain-cli-3.0.3 | 45 KB     |            |   0% nextstrain-cli-3.0.3 | 45 KB     | ########## | 100% 
+fsspec-2021.11.0     | 91 KB     |            |   0% fsspec-2021.11.0     | 91 KB     | ########## | 100% 
+libxcb-1.13          | 391 KB    |            |   0% libxcb-1.13          | 391 KB    | ########## | 100% libxcb-1.13          | 391 KB    | ########## | 100% 
+coincbc-2.10.5       | 8.0 MB    |            |   0% coincbc-2.10.5       | 8.0 MB    | ########## | 100% coincbc-2.10.5       | 8.0 MB    | ########## | 100% 
+slacker-0.14.0       | 15 KB     |            |   0% slacker-0.14.0       | 15 KB     | ########## | 100% 
+google-cloud-core-2. | 27 KB     |            |   0% google-cloud-core-2. | 27 KB     | ########## | 100% 
+async-timeout-3.0.1  | 11 KB     |            |   0% async-timeout-3.0.1  | 11 KB     | ########## | 100% 
+libcrc32c-1.1.2      | 20 KB     |            |   0% libcrc32c-1.1.2      | 20 KB     | ########## | 100% 
+google-cloud-storage | 73 KB     |            |   0% google-cloud-storage | 73 KB     | ########## | 100% 
+s3fs-0.4.2           | 21 KB     |            |   0% s3fs-0.4.2           | 21 KB     | ########## | 100% s3fs-0.4.2           | 21 KB     | ########## | 100% 
+connection_pool-0.0. | 8 KB      |            |   0% connection_pool-0.0. | 8 KB      | ########## | 100% 
+pycparser-2.21       | 100 KB    |            |   0% pycparser-2.21       | 100 KB    | ########## | 100% pycparser-2.21       | 100 KB    | ########## | 100% 
+pluggy-1.0.0         | 25 KB     |            |   0% pluggy-1.0.0         | 25 KB     | ########## | 100% 
+libuv-1.42.0         | 1.0 MB    |            |   0% libuv-1.42.0         | 1.0 MB    | ########## | 100% libuv-1.42.0         | 1.0 MB    | ########## | 100% 
+attmap-0.13.2        | 13 KB     |            |   0% attmap-0.13.2        | 13 KB     | ########## | 100% 
+smmap-3.0.5          | 22 KB     |            |   0% smmap-3.0.5          | 22 KB     | ########## | 100% 
+typing_extensions-3. | 28 KB     |            |   0% typing_extensions-3. | 28 KB     | ########## | 100% 
+aioeasywebdav-2.4.0  | 18 KB     |            |   0% aioeasywebdav-2.4.0  | 18 KB     | ########## | 100% 
+imagemagick-7.1.0_13 | 2.6 MB    |            |   0% imagemagick-7.1.0_13 | 2.6 MB    | ########## | 100% imagemagick-7.1.0_13 | 2.6 MB    | ########## | 100% 
+snakemake-6.10.0     | 7 KB      |            |   0% snakemake-6.10.0     | 7 KB      | ########## | 100% 
+gtk2-2.24.33         | 7.3 MB    |            |   0% gtk2-2.24.33         | 7.3 MB    | ########## | 100% gtk2-2.24.33         | 7.3 MB    | ########## | 100% 
+rsa-4.7.2            | 28 KB     |            |   0% rsa-4.7.2            | 28 KB     | ########## | 100% 
+google-api-core-2.2. | 61 KB     |            |   0% google-api-core-2.2. | 61 KB     | ########## | 100% 
+cachetools-4.2.4     | 12 KB     |            |   0% cachetools-4.2.4     | 12 KB     | ########## | 100% 
+gts-0.7.6            | 411 KB    |            |   0% gts-0.7.6            | 411 KB    | ########## | 100% 
+botocore-1.23.3      | 5.0 MB    |            |   0% botocore-1.23.3      | 5.0 MB    | ####8      |  49% botocore-1.23.3      | 5.0 MB    | ########## | 100% botocore-1.23.3      | 5.0 MB    | ########## | 100% 
+ghostscript-9.54.0   | 57.0 MB   |            |   0% ghostscript-9.54.0   | 57.0 MB   | ##1        |  22% ghostscript-9.54.0   | 57.0 MB   | #####2     |  53% ghostscript-9.54.0   | 57.0 MB   | #######4   |  75% ghostscript-9.54.0   | 57.0 MB   | #########2 |  92% ghostscript-9.54.0   | 57.0 MB   | ########## | 100% 
+libprotobuf-3.19.1   | 2.6 MB    |            |   0% libprotobuf-3.19.1   | 2.6 MB    | ########## | 100% libprotobuf-3.19.1   | 2.6 MB    | ########## | 100% 
+gitpython-3.1.24     | 122 KB    |            |   0% gitpython-3.1.24     | 122 KB    | ########## | 100% gitpython-3.1.24     | 122 KB    | ########## | 100% 
+aiohttp-3.7.4.post0  | 641 KB    |            |   0% aiohttp-3.7.4.post0  | 641 KB    | ########## | 100% aiohttp-3.7.4.post0  | 641 KB    | ########## | 100% 
+importlib_resources- | 21 KB     |            |   0% importlib_resources- | 21 KB     | ########## | 100% 
+uritemplate-3.0.1    | 16 KB     |            |   0% uritemplate-3.0.1    | 16 KB     | ########## | 100% 
+libxml2-2.9.12       | 760 KB    |            |   0% libxml2-2.9.12       | 760 KB    | ########## | 100% libxml2-2.9.12       | 760 KB    | ########## | 100% 
+brotlipy-0.7.0       | 342 KB    |            |   0% brotlipy-0.7.0       | 342 KB    | ########## | 100% 
+logmuse-0.2.6        | 10 KB     |            |   0% logmuse-0.2.6        | 10 KB     | ########## | 100% 
+pysftp-0.2.9         | 15 KB     |            |   0% pysftp-0.2.9         | 15 KB     | ########## | 100% 
+google-resumable-med | 41 KB     |            |   0% google-resumable-med | 41 KB     | ########## | 100% 
+paramiko-2.8.0       | 136 KB    |            |   0% paramiko-2.8.0       | 136 KB    | ########## | 100% 
+pytz-2021.3          | 242 KB    |            |   0% pytz-2021.3          | 242 KB    | ########## | 100% pytz-2021.3          | 242 KB    | ########## | 100% 
+atk-1.0-2.36.0       | 560 KB    |            |   0% atk-1.0-2.36.0       | 560 KB    | ########## | 100% atk-1.0-2.36.0       | 560 KB    | ########## | 100% 
+libffi-3.4.2         | 57 KB     |            |   0% libffi-3.4.2         | 57 KB     | ########## | 100% 
+pytest-6.2.5         | 433 KB    |            |   0% pytest-6.2.5         | 433 KB    | ########## | 100% pytest-6.2.5         | 433 KB    | ########## | 100% 
+icu-69.1             | 13.2 MB   |            |   0% icu-69.1             | 13.2 MB   | ########## | 100% icu-69.1             | 13.2 MB   | ########## | 100% 
+pysocks-1.7.1        | 28 KB     |            |   0% pysocks-1.7.1        | 28 KB     | ########## | 100% 
+ubiquerg-0.6.1       | 15 KB     |            |   0% ubiquerg-0.6.1       | 15 KB     | ########## | 100% 
+pygraphviz-1.7       | 125 KB    |            |   0% pygraphviz-1.7       | 125 KB    | ########## | 100% 
+python-irodsclient-1 | 104 KB    |            |   0% python-irodsclient-1 | 104 KB    | ########## | 100% 
+yarl-1.7.2           | 138 KB    |            |   0% yarl-1.7.2           | 138 KB    | ########## | 100% 
+pyopenssl-21.0.0     | 48 KB     |            |   0% pyopenssl-21.0.0     | 48 KB     | ########## | 100% 
+pkg-config-0.29.2    | 120 KB    |            |   0% pkg-config-0.29.2    | 120 KB    | ########## | 100% 
+tabulate-0.8.9       | 26 KB     |            |   0% tabulate-0.8.9       | 26 KB     | ########## | 100% 
+docutils-0.15.2      | 740 KB    |            |   0% docutils-0.15.2      | 740 KB    | ########## | 100% docutils-0.15.2      | 740 KB    | ########## | 100% 
+google-auth-httplib2 | 13 KB     |            |   0% google-auth-httplib2 | 13 KB     | ########## | 100% 
+ftputil-5.0.1        | 76 KB     |            |   0% ftputil-5.0.1        | 76 KB     | ########## | 100% 
+bcrypt-3.2.0         | 44 KB     |            |   0% bcrypt-3.2.0         | 44 KB     | ########## | 100% 
+setuptools-58.5.3    | 1011 KB   |            |   0% setuptools-58.5.3    | 1011 KB   | ########## | 100% setuptools-58.5.3    | 1011 KB   | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... 
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate nextstrain
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+

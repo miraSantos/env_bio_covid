@@ -1,0 +1,119 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    poseidon-l1 (AVX512, FMA3, 376 GB RAM)
+Command: iqtree2 -ninit 2 -n 2 -me 0.05 -nt 4 -s results/b.1.526/aligned-delim.fasta -m GTR -ninit 10 -n 4
+Seed:    727663 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Dec  4 20:57:47 2021
+Kernel:  AVX+FMA - 4 threads (36 CPU cores detected)
+
+Reading alignment file results/b.1.526/aligned-delim.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 153 sites contain only gaps or ambiguous characters.
+Alignment has 15 sequences with 29903 columns, 169 distinct patterns
+16 parsimony-informative, 84 singleton sites, 29803 constant sites
+                                                                                                                           Gap/Ambiguity  Composition  p-value
+   1  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_NY-PRL-2021_0408_00M05_DELIM-AEAUBHVCUCTGDZWDHBBP_2021     3.05%    passed     96.98%
+   2  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_NY-NYULH1362_DELIM-AEAUBHVCUCTGDZWDHBBP_2021               1.26%    passed     99.74%
+   3  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_RI-CDC-LC0051942_DELIM-AEAUBHVCUCTGDZWDHBBP_2021           7.10%    passed     89.51%
+   4  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_VA-DCLS-4913_DELIM-AEAUBHVCUCTGDZWDHBBP_2021               5.56%    passed     99.05%
+   5  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_IN-PU-LH000171082_DELIM-AEAUBHVCUCTGDZWDHBBP_2021          2.20%    passed     99.95%
+   6  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_RI-CDCBI-RIDOH_10111_DELIM-AEAUBHVCUCTGDZWDHBBP_2021       0.60%    passed     99.99%
+   7  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_VA-CDC-LC0062497_DELIM-AEAUBHVCUCTGDZWDHBBP_2021           0.66%    passed     99.98%
+   8  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_AntiguaandBarbuda_DELIM-AEAUBHVCUCTGDZWDHBBP_74112_DELIM-AEAUBHVCUCTGDZWDHBBP_2021        4.60%    passed     99.19%
+   9  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_DominicanRepublic_DELIM-AEAUBHVCUCTGDZWDHBBP_Yale-5447_DELIM-AEAUBHVCUCTGDZWDHBBP_2021    0.60%    passed    100.00%
+  10  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_RI-CDCBI-RIDOH_00766_DELIM-AEAUBHVCUCTGDZWDHBBP_2021       2.87%    passed     99.45%
+  11  Wuhan_DELIM-AEAUBHVCUCTGDZWDHBBP_Hu-1_DELIM-AEAUBHVCUCTGDZWDHBBP_2019                                                        0.51%    passed     99.92%
+  12  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_VA-DCLS-5736_DELIM-AEAUBHVCUCTGDZWDHBBP_2021               0.55%    passed     99.98%
+  13  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_Mexico_DELIM-AEAUBHVCUCTGDZWDHBBP_GUA-IBT_IMSS_1839_DELIM-AEAUBHVCUCTGDZWDHBBP_2021       0.55%    passed     99.97%
+  14  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_USA_DELIM-AEAUBHVCUCTGDZWDHBBP_VI-Yale-6060_DELIM-AEAUBHVCUCTGDZWDHBBP_2021               0.60%    passed     99.98%
+  15  hCoV-19_DELIM-AEAUBHVCUCTGDZWDHBBP_DominicanRepublic_DELIM-AEAUBHVCUCTGDZWDHBBP_Yale-5456_DELIM-AEAUBHVCUCTGDZWDHBBP_2021    2.57%    passed     99.97%
+****  TOTAL                                                                                                                        2.22%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -41447.714
+2. Current log-likelihood: -41399.666
+3. Current log-likelihood: -41384.960
+4. Current log-likelihood: -41382.049
+5. Current log-likelihood: -41378.005
+Optimal log-likelihood: -41377.680
+Rate parameters:  A-C: 3.02644  A-G: 20.16135  A-T: 0.00010  C-G: 0.00010  C-T: 51.85167  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.197  T: 0.321
+Parameters optimization took 5 rounds (0.024 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 0.001189 sec (of wall-clock time) 0.004386 sec(of CPU time)
+Computing RapidNJ tree took 0.001552 sec (of wall-clock time) 0.002582 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -41377.805
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 8 parsimony trees... 0.003 second
+Computing log-likelihood of 8 initial trees ... 0.005 seconds
+Current best score: -41377.680
+
+Do NNI search on 2 best initial trees
+BETTER TREE FOUND at iteration 1: -41377.648
+BETTER TREE FOUND at iteration 2: -41377.640
+Finish initializing candidate tree set (12)
+Current best tree score: -41377.640 / CPU time: 0.016
+Number of iterations: 2
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 4 ITERATIONS / Time: 0h:0m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -41377.640
+2. Current log-likelihood: -41377.431
+3. Current log-likelihood: -41377.327
+4. Current log-likelihood: -41376.749
+5. Current log-likelihood: -41376.459
+6. Current log-likelihood: -41376.231
+7. Current log-likelihood: -41376.161
+8. Current log-likelihood: -41375.618
+9. Current log-likelihood: -41372.585
+10. Current log-likelihood: -41368.971
+11. Current log-likelihood: -41368.917
+12. Current log-likelihood: -41368.624
+13. Current log-likelihood: -41368.479
+14. Current log-likelihood: -41367.917
+15. Current log-likelihood: -41367.455
+16. Current log-likelihood: -41367.092
+17. Current log-likelihood: -41366.870
+18. Current log-likelihood: -41365.402
+19. Current log-likelihood: -41365.025
+20. Current log-likelihood: -41364.711
+21. Current log-likelihood: -41364.641
+22. Current log-likelihood: -41364.157
+23. Current log-likelihood: -41363.511
+24. Current log-likelihood: -41363.438
+25. Current log-likelihood: -41363.334
+Optimal log-likelihood: -41363.286
+Rate parameters:  A-C: 0.40198  A-G: 3.75950  A-T: 0.00010  C-G: 0.00010  C-T: 8.89109  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.183  G: 0.197  T: 0.321
+Parameters optimization took 25 rounds (0.067 sec)
+BEST SCORE FOUND : -41363.286
+Total tree length: 0.004
+
+Total number of iterations: 4
+CPU time used for tree search: 0.095 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.024 sec (0h:0m:0s)
+Total CPU time used: 0.477 sec (0h:0m:0s)
+Total wall-clock time used: 0.131 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/b.1.526/aligned-delim.fasta.iqtree
+  Maximum-likelihood tree:       results/b.1.526/aligned-delim.fasta.treefile
+  Likelihood distances:          results/b.1.526/aligned-delim.fasta.mldist
+  Screen log file:               results/b.1.526/aligned-delim.fasta.log
+
+Date and Time: Sat Dec  4 20:57:47 2021

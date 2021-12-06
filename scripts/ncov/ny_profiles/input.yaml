@@ -1,0 +1,10 @@
+inputs:
+  - name: gisaid
+    metadata: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/hcov_north-america/hcov_north-america.tsv"
+    sequences: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/hcov_north-america/hcov_north-america.fasta"
+  - name: ny
+    metadata: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/nyc/gisaid_nyc_metadata.tsv"
+    sequences: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/nyc/gisaid_nyc_metadata.fasta"
+  - name: reference
+    metadata: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv"
+    sequences: "/vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.sequences.fasta"

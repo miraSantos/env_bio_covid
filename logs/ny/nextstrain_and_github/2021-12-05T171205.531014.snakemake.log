@@ -1,0 +1,543 @@
+localrules directive specifies rules that are not present in the Snakefile:
+	upload
+	download
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                                  count    min threads    max threads
+---------------------------------  -------  -------------  -------------
+aa_muts_explicit                         1              1              1
+align                                    1              8              8
+all                                      1              1              1
+ancestral                                1              1              1
+build_align                              1              8              8
+clades                                   1              1              1
+colors                                   1              1              1
+combine_input_metadata                   1              1              1
+combine_samples                          1              1              1
+combine_sequences_for_subsampling        1              1              1
+diagnostic                               1              1              1
+distances                                1              1              1
+exclude_file                             1              1              1
+export                                   1              1              1
+filter                                   1              1              1
+finalize                                 1              1              1
+index_sequences                          1              1              1
+mask                                     1              1              1
+recency                                  1              1              1
+refine                                   1              1              1
+rename_subclades                         1              1              1
+subclades                                1              1              1
+subsample                                6              1              1
+tip_frequencies                          1              1              1
+traits                                   1              1              1
+translate                                1              1              1
+tree                                     1              4              4
+total                                   32              1              8
+
+Select jobs to execute...
+
+[Sun Dec  5 17:14:34 2021]
+Job 21: 
+            Aligning sequences to defaults/reference_seq.fasta
+              - gaps relative to reference are considered real
+            
+Reason: Updated input files: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.sequences.fasta
+
+
+            nextalign                 --jobs=8                 --reference defaults/reference_seq.fasta                 --genemap defaults/annotation.gff                 --genes ORF1a,ORF1b,S,ORF3a,M,N                 --sequences /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.sequences.fasta                 --output-dir results/translations                 --output-basename seqs_reference                 --output-fasta results/aligned_reference.fasta                 --output-insertions results/insertions_reference.tsv > logs/align_reference.txt 2>&1
+            
+[Sun Dec  5 17:14:43 2021]
+Finished job 21.
+1 of 32 steps (3%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:14:45 2021]
+Job 24: 
+        Combining metadata files /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/metadata.tsv.gz data/ny_metadata.tsv /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv -> results/combined_metadata.tsv and adding columns to represent origin
+        
+Reason: Updated input files: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv
+
+
+        python3 scripts/combine_metadata.py --metadata /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/preselected/metadata.tsv.gz data/ny_metadata.tsv /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv --origins gisaid ny reference --output results/combined_metadata.tsv 2>&1 | tee logs/combine_input_metadata.txt
+        
+
+[Sun Dec  5 17:14:45 2021]
+Job 23: Scanning aligned sequences results/aligned_reference.fasta for problematic sequences
+Reason: Updated input files: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv; Input files updated by another job: results/aligned_reference.fasta
+
+
+        python3 scripts/diagnostic.py             --alignment results/aligned_reference.fasta             --metadata /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv             --reference defaults/reference_seq.gb             --mask-from-beginning 100             --mask-from-end 50             --output-flagged results/flagged-sequences_reference.tsv             --output-diagnostics results/sequence-diagnostics_reference.tsv             --output-exclusion-list results/to-exclude_reference.txt 2>&1 | tee logs/diagnostics_reference.txt
+        
+
+[Sun Dec  5 17:14:47 2021]
+Job 20: 
+        Mask bases in alignment results/aligned_reference.fasta
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 13402 24389 24390
+        
+Reason: Input files updated by another job: results/aligned_reference.fasta
+
+
+        python3 scripts/mask-alignment.py             --alignment results/aligned_reference.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 13402 24389 24390             --mask-terminal-gaps             --output results/masked_reference.fasta 2>&1 | tee logs/mask_reference.txt
+        
+[Sun Dec  5 17:15:42 2021]
+Finished job 20.
+2 of 32 steps (6%) done
+[Sun Dec  5 17:18:04 2021]
+Finished job 23.
+3 of 32 steps (9%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:18:04 2021]
+rule exclude_file:
+    input: defaults/exclude.txt, results/to-exclude_reference.txt
+    output: results/exclude_reference.txt
+    jobid: 22
+    benchmark: benchmarks/exclude_file_reference.txt
+    reason: Input files updated by another job: results/to-exclude_reference.txt
+    wildcards: origin=_reference
+    resources: tmpdir=/tmp
+
+
+        cat defaults/exclude.txt results/to-exclude_reference.txt > results/exclude_reference.txt
+        
+[Sun Dec  5 17:18:06 2021]
+Finished job 22.
+4 of 32 steps (12%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:18:07 2021]
+Job 19: 
+        Filtering alignment results/masked_reference.fasta -> results/filtered_reference.fasta
+          - excluding strains in results/exclude_reference.txt
+          - including strains in defaults/include.txt
+          - min length: 27000
+        
+Reason: Updated input files: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv; Input files updated by another job: results/masked_reference.fasta, results/exclude_reference.txt
+
+
+        augur filter             --sequences results/masked_reference.fasta             --metadata /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.metadata.tsv             --include defaults/include.txt             --max-date 2021-12-06             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude results/exclude_reference.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_reference.fasta 2>&1 | tee logs/filtered_reference.txt
+        
+[Sun Dec  5 17:21:09 2021]
+Finished job 19.
+5 of 32 steps (16%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:21:09 2021]
+Job 8: 
+        Combine and deduplicate aligned & filtered FASTAs from multiple origins in preparation for subsampling.
+        
+Reason: Input files updated by another job: results/filtered_reference.fasta
+
+
+        python3 scripts/combine-and-dedup-fastas.py --input results/filtered_gisaid.fasta results/filtered_ny.fasta results/filtered_reference.fasta --output results/combined_sequences_for_subsampling.fasta
+        
+[Sun Dec  5 17:21:24 2021]
+Finished job 24.
+6 of 32 steps (19%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:21:26 2021]
+Job 37: Use metadata on submission date to construct submission recency field
+Reason: Input files updated by another job: results/combined_metadata.tsv
+
+
+        python3 scripts/construct-recency-from-submission-date.py             --metadata results/combined_metadata.tsv             --output results/ny_6m/recency.json 2>&1 | tee logs/recency_ny_6m.txt
+        
+
+[Sun Dec  5 17:21:27 2021]
+Job 41: Constructing colors file
+Reason: Input files updated by another job: results/combined_metadata.tsv
+
+
+        python3 scripts/assign-colors.py             --ordering defaults/color_ordering.tsv             --color-schemes defaults/color_schemes.tsv             --output results/ny_6m/colors.tsv             --metadata results/combined_metadata.tsv 2>&1 | tee logs/colors_ny_6m.txt
+        
+[Sun Dec  5 17:22:07 2021]
+Finished job 8.
+7 of 32 steps (22%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:22:07 2021]
+Job 25: 
+        Index sequence composition for faster filtering.
+        
+Reason: Input files updated by another job: results/combined_sequences_for_subsampling.fasta
+
+
+        augur index             --sequences results/combined_sequences_for_subsampling.fasta             --output results/combined_sequence_index.tsv
+        
+[Sun Dec  5 17:25:15 2021]
+Finished job 25.
+8 of 32 steps (25%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:25:16 2021]
+Job 26: 
+        Subsample all sequences by 'usa-context-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA')"
+         - priority: 
+        
+Reason: Input files updated by another job: results/combined_sequence_index.tsv, results/combined_metadata.tsv, results/combined_sequences_for_subsampling.fasta
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta             --metadata results/combined_metadata.tsv             --sequence-index results/combined_sequence_index.tsv             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA')"                                       --group-by year month                          --subsample-max-sequences 100                          --output results/ny_6m/sample-usa-context-recent.fasta 2>&1 | tee logs/subsample_ny_6m_usa-context-recent.txt
+        
+
+[Sun Dec  5 17:25:16 2021]
+Job 28: 
+        Subsample all sequences by 'ny-focus-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & location == 'New York City')"
+         - priority: 
+        
+Reason: Input files updated by another job: results/combined_sequence_index.tsv, results/combined_metadata.tsv, results/combined_sequences_for_subsampling.fasta
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta             --metadata results/combined_metadata.tsv             --sequence-index results/combined_sequence_index.tsv             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & location == 'New York City')"                                       --group-by year month                          --subsample-max-sequences 100                          --output results/ny_6m/sample-ny-focus-early.fasta 2>&1 | tee logs/subsample_ny_6m_ny-focus-early.txt
+        
+
+[Sun Dec  5 17:25:17 2021]
+Job 30: 
+        Subsample all sequences by 'global-context-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by region year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country != 'USA')"
+         - priority: 
+        
+Reason: Input files updated by another job: results/combined_sequence_index.tsv, results/combined_metadata.tsv, results/combined_sequences_for_subsampling.fasta
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta             --metadata results/combined_metadata.tsv             --sequence-index results/combined_sequence_index.tsv             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country != 'USA')"                                       --group-by region year month                          --subsample-max-sequences 100                          --output results/ny_6m/sample-global-context-early.fasta 2>&1 | tee logs/subsample_ny_6m_global-context-early.txt
+        
+
+[Sun Dec  5 17:25:18 2021]
+Job 7: 
+        Subsample all sequences by 'ny-focus-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & location == 'New York City')"
+         - priority: 
+        
+Reason: Input files updated by another job: results/combined_sequence_index.tsv, results/combined_metadata.tsv, results/combined_sequences_for_subsampling.fasta
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta             --metadata results/combined_metadata.tsv             --sequence-index results/combined_sequence_index.tsv             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & location == 'New York City')"                                       --group-by year month                          --subsample-max-sequences 100                          --output results/ny_6m/sample-ny-focus-recent.fasta 2>&1 | tee logs/subsample_ny_6m_ny-focus-recent.txt
+        
+
+[Sun Dec  5 17:25:19 2021]
+Job 27: 
+        Subsample all sequences by 'global-context-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by region year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country != 'USA')"
+         - priority: 
+        
+Reason: Input files updated by another job: results/combined_sequence_index.tsv, results/combined_metadata.tsv, results/combined_sequences_for_subsampling.fasta
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta             --metadata results/combined_metadata.tsv             --sequence-index results/combined_sequence_index.tsv             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country != 'USA')"                                       --group-by region year month                          --subsample-max-sequences 100                          --output results/ny_6m/sample-global-context-recent.fasta 2>&1 | tee logs/subsample_ny_6m_global-context-recent.txt
+        
+
+[Sun Dec  5 17:25:20 2021]
+Job 29: 
+        Subsample all sequences by 'usa-context-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA')"
+         - priority: 
+        
+Reason: Input files updated by another job: results/combined_sequence_index.tsv, results/combined_metadata.tsv, results/combined_sequences_for_subsampling.fasta
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta             --metadata results/combined_metadata.tsv             --sequence-index results/combined_sequence_index.tsv             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA')"                                       --group-by year month                          --subsample-max-sequences 100                          --output results/ny_6m/sample-usa-context-early.fasta 2>&1 | tee logs/subsample_ny_6m_usa-context-early.txt
+        
+[Sun Dec  5 17:27:43 2021]
+Finished job 37.
+9 of 32 steps (28%) done
+[Sun Dec  5 17:32:22 2021]
+Finished job 30.
+10 of 32 steps (31%) done
+[Sun Dec  5 17:32:23 2021]
+Finished job 27.
+11 of 32 steps (34%) done
+[Sun Dec  5 17:32:24 2021]
+Finished job 29.
+12 of 32 steps (38%) done
+[Sun Dec  5 17:32:26 2021]
+Finished job 28.
+13 of 32 steps (41%) done
+[Sun Dec  5 17:32:27 2021]
+Finished job 7.
+14 of 32 steps (44%) done
+[Sun Dec  5 17:32:28 2021]
+Finished job 26.
+15 of 32 steps (47%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:32:29 2021]
+Job 6: 
+        Combine and deduplicate FASTAs
+        
+Reason: Input files updated by another job: results/ny_6m/sample-usa-context-early.fasta, results/ny_6m/sample-usa-context-recent.fasta, results/ny_6m/sample-ny-focus-recent.fasta, results/ny_6m/sample-global-context-early.fasta, results/ny_6m/sample-ny-focus-early.fasta, results/ny_6m/sample-global-context-recent.fasta
+
+
+        python3 scripts/combine-and-dedup-fastas.py             --input results/ny_6m/sample-ny-focus-recent.fasta results/ny_6m/sample-usa-context-recent.fasta results/ny_6m/sample-global-context-recent.fasta results/ny_6m/sample-ny-focus-early.fasta results/ny_6m/sample-usa-context-early.fasta results/ny_6m/sample-global-context-early.fasta             --output results/ny_6m/subsampled_sequences.fasta 2>&1 | tee logs/subsample_regions_ny_6m.txt
+        
+[Sun Dec  5 17:33:01 2021]
+Finished job 41.
+16 of 32 steps (50%) done
+[Sun Dec  5 17:33:25 2021]
+Finished job 6.
+17 of 32 steps (53%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:33:26 2021]
+Job 5: 
+            Aligning sequences to defaults/reference_seq.fasta
+              - gaps relative to reference are considered real
+            
+Reason: Input files updated by another job: results/ny_6m/subsampled_sequences.fasta
+
+
+            nextalign                 --jobs=8                 --reference defaults/reference_seq.fasta                 --genemap defaults/annotation.gff                 --genes ORF1a,ORF1b,S,ORF3a,M,N                 --sequences results/ny_6m/subsampled_sequences.fasta                 --output-dir results/ny_6m/translations                 --output-basename aligned                 --output-fasta results/ny_6m/aligned.fasta                 --output-insertions results/ny_6m/insertions.tsv > logs/align_ny_6m.txt 2>&1
+            
+[Sun Dec  5 17:33:35 2021]
+Finished job 5.
+18 of 32 steps (56%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:33:35 2021]
+Job 4: Building tree
+Reason: Input files updated by another job: results/ny_6m/aligned.fasta
+
+
+        augur tree             --alignment results/ny_6m/aligned.fasta             --tree-builder-args '-ninit 10 -n 4'             --output results/ny_6m/tree_raw.nwk             --nthreads 4 2>&1 | tee logs/tree_ny_6m.txt
+        
+[Sun Dec  5 17:37:08 2021]
+Finished job 4.
+19 of 32 steps (59%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:37:08 2021]
+Job 3: 
+        Refining tree
+          - estimate timetree
+          - use skyline coalescent timescale
+          - estimate marginal node dates
+        
+Reason: Missing output files: results/ny_6m/branch_lengths.json, results/ny_6m/tree.nwk; Updated input files: ; Input files updated by another job: results/ny_6m/tree_raw.nwk, results/combined_metadata.tsv, results/ny_6m/aligned.fasta
+
+
+        augur refine             --tree results/ny_6m/tree_raw.nwk             --alignment results/ny_6m/aligned.fasta             --metadata results/combined_metadata.tsv             --output-tree results/ny_6m/tree.nwk             --output-node-data results/ny_6m/branch_lengths.json             --root Wuhan/Hu-1/2019             --timetree                          --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent skyline             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_ny_6m.txt
+        
+[Sun Dec  5 17:45:18 2021]
+Finished job 3.
+20 of 32 steps (62%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:45:20 2021]
+Job 42: Estimating censored KDE frequencies for tips
+Reason: Updated input files: ; Input files updated by another job: results/combined_metadata.tsv, results/ny_6m/tree.nwk
+
+
+        augur frequencies             --method kde             --metadata results/combined_metadata.tsv             --tree results/ny_6m/tree.nwk             --min-date 2020.0             --max-date 2021.927397260274             --pivot-interval 1             --pivot-interval-units weeks             --narrow-bandwidth 0.05             --proportion-wide 0.0             --output results/ny_6m/tip-frequencies.json 2>&1 | tee logs/tip_frequencies_ny_6m.txt
+        
+
+[Sun Dec  5 17:45:21 2021]
+Job 38: 
+        Inferring ancestral traits for ['country']
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+Reason: Updated input files: ; Input files updated by another job: results/combined_metadata.tsv, results/ny_6m/tree.nwk
+
+
+        augur traits             --tree results/ny_6m/tree.nwk             --metadata results/combined_metadata.tsv             --output results/ny_6m/traits.json             --columns country             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_ny_6m.txt
+        
+
+[Sun Dec  5 17:45:22 2021]
+Job 31: 
+        Reconstructing ancestral sequences and mutations
+          - inferring ambiguous mutations
+        
+Reason: Updated input files: ; Input files updated by another job: results/ny_6m/aligned.fasta, results/ny_6m/tree.nwk
+
+
+        augur ancestral             --tree results/ny_6m/tree.nwk             --alignment results/ny_6m/aligned.fasta             --output-node-data results/ny_6m/nt_muts.json             --inference joint             --infer-ambiguous 2>&1 | tee logs/ancestral_ny_6m.txt
+        
+
+[Sun Dec  5 17:45:23 2021]
+Job 39: Translating amino acid sequences
+Reason: Updated input files: ; Input files updated by another job: results/ny_6m/translations/aligned.gene.N.fasta, results/ny_6m/translations/aligned.gene.ORF1a.fasta, results/ny_6m/translations/aligned.gene.ORF1b.fasta, results/ny_6m/translations/aligned.gene.S.fasta, results/ny_6m/translations/aligned.gene.M.fasta, results/ny_6m/translations/aligned.gene.ORF3a.fasta, results/ny_6m/tree.nwk
+
+
+        python3 scripts/explicit_translation.py             --tree results/ny_6m/tree.nwk             --translations results/ny_6m/translations/aligned.gene.ORF1a.fasta results/ny_6m/translations/aligned.gene.ORF1b.fasta results/ny_6m/translations/aligned.gene.S.fasta results/ny_6m/translations/aligned.gene.ORF3a.fasta results/ny_6m/translations/aligned.gene.M.fasta results/ny_6m/translations/aligned.gene.N.fasta             --genes ORF1a ORF1b S ORF3a M N             --output results/ny_6m/aa_muts_explicit.json 2>&1 | tee logs/aamuts_ny_6m.txt
+        
+[Sun Dec  5 17:48:22 2021]
+Finished job 39.
+21 of 32 steps (66%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:48:22 2021]
+rule distances:
+    input: results/ny_6m/tree.nwk, results/ny_6m/translations/aligned.gene.S_withInternalNodes.fasta, defaults/distance_maps/S1.json
+    output: results/ny_6m/distances.json
+    jobid: 40
+    reason: Input files updated by another job: results/ny_6m/translations/aligned.gene.S_withInternalNodes.fasta, results/ny_6m/tree.nwk
+    wildcards: build_name=ny_6m
+    resources: tmpdir=/tmp
+
+
+            augur distance                 --tree results/ny_6m/tree.nwk                 --alignment results/ny_6m/translations/aligned.gene.S_withInternalNodes.fasta                 --gene-names S                 --compare-to root                 --attribute-name S1_mutations                 --map defaults/distance_maps/S1.json                 --output results/ny_6m/distances.json
+            
+[Sun Dec  5 17:49:21 2021]
+Finished job 31.
+22 of 32 steps (69%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:49:21 2021]
+Job 32: Translating amino acid sequences
+Reason: Input files updated by another job: results/ny_6m/nt_muts.json, results/ny_6m/tree.nwk
+
+
+        augur translate             --tree results/ny_6m/tree.nwk             --ancestral-sequences results/ny_6m/nt_muts.json             --reference-sequence defaults/reference_seq.gb             --output-node-data results/ny_6m/aa_muts.json 2>&1 | tee logs/translate_ny_6m.txt
+        
+[Sun Dec  5 17:51:38 2021]
+Finished job 40.
+23 of 32 steps (72%) done
+[Sun Dec  5 17:51:42 2021]
+Finished job 38.
+24 of 32 steps (75%) done
+[Sun Dec  5 17:52:00 2021]
+Finished job 42.
+25 of 32 steps (78%) done
+[Sun Dec  5 17:52:41 2021]
+Finished job 32.
+26 of 32 steps (81%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:52:42 2021]
+Job 35: Adding internal clade labels
+Reason: Updated input files: results/ny_6m/clades.tsv; Input files updated by another job: results/ny_6m/aa_muts.json, results/ny_6m/nt_muts.json, results/ny_6m/tree.nwk
+
+
+        augur clades --tree results/ny_6m/tree.nwk             --mutations results/ny_6m/nt_muts.json results/ny_6m/aa_muts.json             --clades results/ny_6m/clades.tsv             --output-node-data results/ny_6m/clades.json 2>&1 | tee logs/clades_ny_6m.txt
+        
+
+[Sun Dec  5 17:52:43 2021]
+Job 34: Adding internal clade labels
+Reason: Input files updated by another job: results/ny_6m/aa_muts.json, results/ny_6m/nt_muts.json, results/ny_6m/tree.nwk
+
+
+        cat defaults/clades.tsv defaults/subclades.tsv > results/ny_6m/temp_subclades.tsv &&         augur clades --tree results/ny_6m/tree.nwk             --mutations results/ny_6m/nt_muts.json results/ny_6m/aa_muts.json             --clades results/ny_6m/temp_subclades.tsv             --output-node-data results/ny_6m/temp_subclades.json 2>&1 | tee logs/subclades_ny_6m.txt
+        
+[Sun Dec  5 17:56:04 2021]
+Finished job 35.
+27 of 32 steps (84%) done
+[Sun Dec  5 17:56:05 2021]
+Finished job 34.
+28 of 32 steps (88%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:56:06 2021]
+rule rename_subclades:
+    input: results/ny_6m/temp_subclades.json
+    output: results/ny_6m/subclades.json
+    jobid: 33
+    benchmark: benchmarks/rename_subclades_ny_6m.txt
+    reason: Input files updated by another job: results/ny_6m/temp_subclades.json
+    wildcards: build_name=ny_6m
+    resources: tmpdir=/tmp
+
+[Sun Dec  5 17:58:58 2021]
+Finished job 33.
+29 of 32 steps (91%) done
+Select jobs to execute...
+
+[Sun Dec  5 17:58:59 2021]
+Job 2: Exporting data files for for auspice
+Reason: Updated input files: ny_profiles/ny/auspice_config.json; Input files updated by another job: results/ny_6m/colors.tsv, results/ny_6m/traits.json, results/ny_6m/recency.json, results/combined_metadata.tsv, results/ny_6m/tree.nwk, results/ny_6m/distances.json, results/ny_6m/branch_lengths.json, results/ny_6m/aa_muts.json, results/ny_6m/subclades.json, results/ny_6m/aa_muts_explicit.json, results/ny_6m/nt_muts.json, results/ny_6m/clades.json
+
+
+        augur export v2             --tree results/ny_6m/tree.nwk             --metadata results/combined_metadata.tsv             --node-data results/ny_6m/branch_lengths.json results/ny_6m/nt_muts.json results/ny_6m/aa_muts.json results/ny_6m/subclades.json results/ny_6m/clades.json results/ny_6m/recency.json results/ny_6m/traits.json results/ny_6m/aa_muts_explicit.json results/ny_6m/distances.json             --auspice-config ny_profiles/ny/auspice_config.json             --include-root-sequence             --colors results/ny_6m/colors.tsv             --lat-longs defaults/lat_longs.tsv             --title 'NY-focused SARS-CoV-2 genomic analysis'             --description defaults/description.md             --output results/ny_6m/ncov_with_accessions.json 2>&1 | tee logs/export_ny_6m.txt
+        
+[Sun Dec  5 18:04:47 2021]
+Finished job 2.
+30 of 32 steps (94%) done
+Select jobs to execute...
+
+[Sun Dec  5 18:04:47 2021]
+Job 1: Remove extraneous colorings for main build and move frequencies
+Reason: Input files updated by another job: results/ny_6m/tip-frequencies.json, results/ny_6m/ncov_with_accessions.json, results/ny_6m/ncov_with_accessions_root-sequence.json
+
+
+        python3 scripts/fix-colorings.py             --input results/ny_6m/ncov_with_accessions.json             --output auspice/ncov_ny_6m.json 2>&1 | tee logs/fix_colorings_ny_6m.txt &&
+        cp results/ny_6m/tip-frequencies.json auspice/ncov_ny_6m_tip-frequencies.json &&
+        cp results/ny_6m/ncov_with_accessions_root-sequence.json auspice/ncov_ny_6m_root-sequence.json
+        
+[Sun Dec  5 18:05:00 2021]
+Finished job 1.
+31 of 32 steps (97%) done
+Select jobs to execute...
+
+[Sun Dec  5 18:05:00 2021]
+localrule all:
+    input: auspice/ncov_ny_6m.json, auspice/ncov_ny_6m_tip-frequencies.json
+    jobid: 0
+    reason: Input files updated by another job: auspice/ncov_ny_6m.json, auspice/ncov_ny_6m_tip-frequencies.json
+    resources: tmpdir=/tmp
+
+[Sun Dec  5 18:05:00 2021]
+Finished job 0.
+32 of 32 steps (100%) done
+Complete log: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov-ny/.snakemake/log/2021-12-05T171205.531014.snakemake.log

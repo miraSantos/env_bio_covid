@@ -1,4 +1,0 @@
-inputs:
-   - name: b_1_526
-     metadata: data/hcov_north-america.tsv
-     sequences: data/hcov_north-america.fasta

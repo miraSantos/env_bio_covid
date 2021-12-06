@@ -1,0 +1,543 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                         count    min threads    max threads
+------------------------  -------  -------------  -------------
+add_branch_labels               1              1              1
+adjust_metadata_regions         1              1              1
+all                             1              1              1
+ancestral                       1              1              1
+build_align                     1              8              8
+calculate_epiweeks              1              1              1
+clades                          1              1              1
+colors                          1              1              1
+combine_input_metadata          1              1              1
+combine_samples                 1              1              1
+distances                       1              1              1
+emerging_lineages               1              1              1
+export                          1              1              1
+finalize                        1              1              1
+include_hcov19_prefix           1              1              1
+logistic_growth                 1              1              1
+mask                            1              1              1
+mutational_fitness              1              1              1
+recency                         1              1              1
+refine                          1              1              1
+rename_emerging_lineages        1              1              1
+sanitize_metadata               3              1              1
+subsample                       6              1              1
+tip_frequencies                 1              1              1
+traits                          1              1              1
+translate                       1              1              1
+tree                            1              4              4
+total                          34              1              8
+
+Select jobs to execute...
+
+[Sun Dec  5 13:08:20 2021]
+rule sanitize_metadata:
+    input: data/gisaid_nyc_metadata.tsv
+    output: results/sanitized_metadata_ny.tsv.xz
+    log: logs/sanitize_metadata_ny.txt
+    jobid: 13
+    benchmark: benchmarks/sanitize_metadata_ny.txt
+    reason: Missing output files: results/sanitized_metadata_ny.tsv.xz
+    wildcards: origin=ny
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        python3 scripts/sanitize_metadata.py             --metadata data/gisaid_nyc_metadata.tsv             --metadata-id-columns strain name 'Virus name'             --database-id-columns 'Accession ID' gisaid_epi_isl genbank_accession             --parse-location-field Location             --rename-fields 'Virus name=strain' Type=type 'Accession ID=gisaid_epi_isl' 'Collection date=date' 'Additional location information=additional_location_information' 'Sequence length=length' Host=host 'Patient age=patient_age' Gender=sex Clade=GISAID_clade 'Pango lineage=pango_lineage' pangolin_lineage=pango_lineage Lineage=pango_lineage 'Pangolin version=pangolin_version' Variant=variant 'AA Substitutions=aa_substitutions' aaSubstitutions=aa_substitutions 'Submission date=date_submitted' 'Is reference?=is_reference' 'Is complete?=is_complete' 'Is high coverage?=is_high_coverage' 'Is low coverage?=is_low_coverage' N-Content=n_content GC-Content=gc_content             --strip-prefixes hCoV-19/ SARS-CoV-2/                          --output results/sanitized_metadata_ny.tsv.xz 2>&1 | tee logs/sanitize_metadata_ny.txt
+        
+
+[Sun Dec  5 13:08:20 2021]
+rule sanitize_metadata:
+    input: data/wuhan_reference.metadata.tsv
+    output: results/sanitized_metadata_reference.tsv.xz
+    log: logs/sanitize_metadata_reference.txt
+    jobid: 14
+    benchmark: benchmarks/sanitize_metadata_reference.txt
+    reason: Missing output files: results/sanitized_metadata_reference.tsv.xz; Updated input files: data/wuhan_reference.metadata.tsv
+    wildcards: origin=reference
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        python3 scripts/sanitize_metadata.py             --metadata data/wuhan_reference.metadata.tsv             --metadata-id-columns strain name 'Virus name'             --database-id-columns 'Accession ID' gisaid_epi_isl genbank_accession             --parse-location-field Location             --rename-fields 'Virus name=strain' Type=type 'Accession ID=gisaid_epi_isl' 'Collection date=date' 'Additional location information=additional_location_information' 'Sequence length=length' Host=host 'Patient age=patient_age' Gender=sex Clade=GISAID_clade 'Pango lineage=pango_lineage' pangolin_lineage=pango_lineage Lineage=pango_lineage 'Pangolin version=pangolin_version' Variant=variant 'AA Substitutions=aa_substitutions' aaSubstitutions=aa_substitutions 'Submission date=date_submitted' 'Is reference?=is_reference' 'Is complete?=is_complete' 'Is high coverage?=is_high_coverage' 'Is low coverage?=is_low_coverage' N-Content=n_content GC-Content=gc_content             --strip-prefixes hCoV-19/ SARS-CoV-2/                          --output results/sanitized_metadata_reference.tsv.xz 2>&1 | tee logs/sanitize_metadata_reference.txt
+        
+
+[Sun Dec  5 13:08:21 2021]
+rule sanitize_metadata:
+    input: data/hcov_north-america.tsv
+    output: results/sanitized_metadata_gisaid.tsv.xz
+    log: logs/sanitize_metadata_gisaid.txt
+    jobid: 10
+    benchmark: benchmarks/sanitize_metadata_gisaid.txt
+    reason: Missing output files: results/sanitized_metadata_gisaid.tsv.xz
+    wildcards: origin=gisaid
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        python3 scripts/sanitize_metadata.py             --metadata data/hcov_north-america.tsv             --metadata-id-columns strain name 'Virus name'             --database-id-columns 'Accession ID' gisaid_epi_isl genbank_accession             --parse-location-field Location             --rename-fields 'Virus name=strain' Type=type 'Accession ID=gisaid_epi_isl' 'Collection date=date' 'Additional location information=additional_location_information' 'Sequence length=length' Host=host 'Patient age=patient_age' Gender=sex Clade=GISAID_clade 'Pango lineage=pango_lineage' pangolin_lineage=pango_lineage Lineage=pango_lineage 'Pangolin version=pangolin_version' Variant=variant 'AA Substitutions=aa_substitutions' aaSubstitutions=aa_substitutions 'Submission date=date_submitted' 'Is reference?=is_reference' 'Is complete?=is_complete' 'Is high coverage?=is_high_coverage' 'Is low coverage?=is_low_coverage' N-Content=n_content GC-Content=gc_content             --strip-prefixes hCoV-19/ SARS-CoV-2/                          --output results/sanitized_metadata_gisaid.tsv.xz 2>&1 | tee logs/sanitize_metadata_gisaid.txt
+        
+[Sun Dec  5 13:12:02 2021]
+Finished job 14.
+1 of 34 steps (3%) done
+[Sun Dec  5 13:12:03 2021]
+Finished job 13.
+2 of 34 steps (6%) done
+[Sun Dec  5 13:12:04 2021]
+Finished job 10.
+3 of 34 steps (9%) done
+Select jobs to execute...
+
+[Sun Dec  5 13:12:04 2021]
+Job 12: 
+        Combining metadata files results/sanitized_metadata_gisaid.tsv.xz results/sanitized_metadata_ny.tsv.xz results/sanitized_metadata_reference.tsv.xz -> results/combined_metadata.tsv.xz and adding columns to represent origin
+        
+Reason: Input files updated by another job: results/sanitized_metadata_gisaid.tsv.xz, results/sanitized_metadata_ny.tsv.xz, results/sanitized_metadata_reference.tsv.xz
+
+
+        python3 scripts/combine_metadata.py --metadata results/sanitized_metadata_gisaid.tsv.xz results/sanitized_metadata_ny.tsv.xz results/sanitized_metadata_reference.tsv.xz --origins gisaid ny reference --output results/combined_metadata.tsv.xz 2>&1 | tee logs/combine_input_metadata.txt
+        
+[Sun Dec  5 13:15:12 2021]
+Finished job 12.
+4 of 34 steps (12%) done
+Select jobs to execute...
+
+[Sun Dec  5 13:15:14 2021]
+Job 18: 
+        Subsample all sequences by 'ny-focus-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-ny-focus-early.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-early.fasta             --output-strains results/ny_6m/sample-ny-focus-early.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-early.txt
+        
+
+[Sun Dec  5 13:15:14 2021]
+Job 16: 
+        Subsample all sequences by 'usa-context-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-usa-context-recent.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-recent.fasta             --output-strains results/ny_6m/sample-usa-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-recent.txt
+        
+
+[Sun Dec  5 13:15:15 2021]
+Job 20: 
+        Subsample all sequences by 'global-context-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by region year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-global-context-early.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-early.fasta             --output-strains results/ny_6m/sample-global-context-early.txt 2>&1 | tee logs/subsample_ny_6m_global-context-early.txt
+        
+
+[Sun Dec  5 13:15:16 2021]
+Job 15: 
+        Subsample all sequences by 'ny-focus-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-ny-focus-recent.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-recent.fasta             --output-strains results/ny_6m/sample-ny-focus-recent.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-recent.txt
+        
+
+[Sun Dec  5 13:15:17 2021]
+Job 17: 
+        Subsample all sequences by 'global-context-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by region year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-global-context-recent.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-recent.fasta             --output-strains results/ny_6m/sample-global-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_global-context-recent.txt
+        
+
+[Sun Dec  5 13:15:18 2021]
+Job 19: 
+        Subsample all sequences by 'usa-context-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-usa-context-early.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-early.fasta             --output-strains results/ny_6m/sample-usa-context-early.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-early.txt
+        
+[Sun Dec  5 13:19:13 2021]
+[Sun Dec  5 13:19:13 2021]
+[Sun Dec  5 13:19:13 2021]
+Error in rule subsample:
+[Sun Dec  5 13:19:13 2021]
+[Sun Dec  5 13:19:13 2021]
+[Sun Dec  5 13:19:13 2021]
+Error in rule subsample:
+Error in rule subsample:
+    jobid: 19
+Error in rule subsample:
+Error in rule subsample:
+Error in rule subsample:
+    jobid: 20
+    jobid: 17
+    output: results/ny_6m/sample-usa-context-early.fasta, results/ny_6m/sample-usa-context-early.txt
+    jobid: 16
+    jobid: 15
+    jobid: 18
+    output: results/ny_6m/sample-global-context-early.fasta, results/ny_6m/sample-global-context-early.txt
+    output: results/ny_6m/sample-global-context-recent.fasta, results/ny_6m/sample-global-context-recent.txt
+    log: logs/subsample_ny_6m_usa-context-early.txt (check log file(s) for error message)
+    output: results/ny_6m/sample-usa-context-recent.fasta, results/ny_6m/sample-usa-context-recent.txt
+    output: results/ny_6m/sample-ny-focus-recent.fasta, results/ny_6m/sample-ny-focus-recent.txt
+    output: results/ny_6m/sample-ny-focus-early.fasta, results/ny_6m/sample-ny-focus-early.txt
+    log: logs/subsample_ny_6m_global-context-early.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_global-context-recent.txt (check log file(s) for error message)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-early.fasta             --output-strains results/ny_6m/sample-usa-context-early.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-early.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    log: logs/subsample_ny_6m_usa-context-recent.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_ny-focus-recent.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_ny-focus-early.txt (check log file(s) for error message)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-early.fasta             --output-strains results/ny_6m/sample-global-context-early.txt 2>&1 | tee logs/subsample_ny_6m_global-context-early.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-recent.fasta             --output-strains results/ny_6m/sample-global-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_global-context-recent.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-recent.fasta             --output-strains results/ny_6m/sample-usa-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-recent.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-recent.fasta             --output-strains results/ny_6m/sample-ny-focus-recent.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-recent.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-early.fasta             --output-strains results/ny_6m/sample-ny-focus-early.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-early.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Logfile logs/subsample_ny_6m_usa-context-early.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_global-context-early.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_global-context-recent.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_usa-context-recent.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_ny-focus-recent.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_ny-focus-early.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Trying to restart job 19.
+Select jobs to execute...
+
+[Sun Dec  5 13:19:13 2021]
+Job 19: 
+        Subsample all sequences by 'usa-context-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-usa-context-early.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-early.fasta             --output-strains results/ny_6m/sample-usa-context-early.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-early.txt
+        
+Trying to restart job 20.
+Trying to restart job 17.
+Trying to restart job 16.
+Trying to restart job 15.
+Trying to restart job 18.
+Select jobs to execute...
+
+[Sun Dec  5 13:19:18 2021]
+Job 18: 
+        Subsample all sequences by 'ny-focus-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-ny-focus-early.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-early.fasta             --output-strains results/ny_6m/sample-ny-focus-early.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-early.txt
+        
+
+[Sun Dec  5 13:19:19 2021]
+Job 16: 
+        Subsample all sequences by 'usa-context-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-usa-context-recent.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-recent.fasta             --output-strains results/ny_6m/sample-usa-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-recent.txt
+        
+
+[Sun Dec  5 13:19:20 2021]
+Job 20: 
+        Subsample all sequences by 'global-context-early' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by region year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: 
+         - max-date: --max-date 2021-06-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-global-context-early.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-early.fasta             --output-strains results/ny_6m/sample-global-context-early.txt 2>&1 | tee logs/subsample_ny_6m_global-context-early.txt
+        
+
+[Sun Dec  5 13:19:21 2021]
+Job 15: 
+        Subsample all sequences by 'ny-focus-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-ny-focus-recent.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-recent.fasta             --output-strains results/ny_6m/sample-ny-focus-recent.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-recent.txt
+        
+
+[Sun Dec  5 13:19:22 2021]
+Job 17: 
+        Subsample all sequences by 'global-context-recent' scheme for build 'ny_6m' with the following parameters:
+
+         - group by: --group-by region year month
+         - sequences per group: 
+         - subsample max sequences: 100
+         - min-date: --min-date 2021-06-05
+         - max-date: --max-date 2021-12-05
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
+         - priority: 
+        
+Reason: Missing output files: results/ny_6m/sample-global-context-recent.txt; Input files updated by another job: results/combined_metadata.tsv.xz
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-recent.fasta             --output-strains results/ny_6m/sample-global-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_global-context-recent.txt
+        
+[Sun Dec  5 13:24:03 2021]
+[Sun Dec  5 13:24:03 2021]
+[Sun Dec  5 13:24:03 2021]
+[Sun Dec  5 13:24:03 2021]
+[Sun Dec  5 13:24:03 2021]
+[Sun Dec  5 13:24:03 2021]
+Error in rule subsample:
+Error in rule subsample:
+Error in rule subsample:
+Error in rule subsample:
+Error in rule subsample:
+Error in rule subsample:
+    jobid: 19
+    jobid: 17
+    jobid: 15
+    jobid: 16
+    jobid: 20
+    jobid: 18
+    output: results/ny_6m/sample-usa-context-early.fasta, results/ny_6m/sample-usa-context-early.txt
+    output: results/ny_6m/sample-global-context-recent.fasta, results/ny_6m/sample-global-context-recent.txt
+    output: results/ny_6m/sample-ny-focus-recent.fasta, results/ny_6m/sample-ny-focus-recent.txt
+    output: results/ny_6m/sample-usa-context-recent.fasta, results/ny_6m/sample-usa-context-recent.txt
+    output: results/ny_6m/sample-global-context-early.fasta, results/ny_6m/sample-global-context-early.txt
+    output: results/ny_6m/sample-ny-focus-early.fasta, results/ny_6m/sample-ny-focus-early.txt
+    log: logs/subsample_ny_6m_usa-context-early.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_global-context-recent.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_ny-focus-recent.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_usa-context-recent.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_global-context-early.txt (check log file(s) for error message)
+    log: logs/subsample_ny_6m_ny-focus-early.txt (check log file(s) for error message)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-early.fasta             --output-strains results/ny_6m/sample-usa-context-early.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-early.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-recent.fasta             --output-strains results/ny_6m/sample-global-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_global-context-recent.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-recent.fasta             --output-strains results/ny_6m/sample-ny-focus-recent.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-recent.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt             --min-date 2021-06-05             --max-date 2021-12-05                                       --query "(country == 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-usa-context-recent.fasta             --output-strains results/ny_6m/sample-usa-context-recent.txt 2>&1 | tee logs/subsample_ny_6m_usa-context-recent.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"                                       --group-by region year month                          100                          --output results/ny_6m/sample-global-context-early.fasta             --output-strains results/ny_6m/sample-global-context-early.txt 2>&1 | tee logs/subsample_ny_6m_global-context-early.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+    shell:
+        
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                          --max-date 2021-06-05                                       --query "(country == 'USA' & location == 'New York City' & purpose_of_sequencing != 'S dropout')"                                       --group-by year month                          100                          --output results/ny_6m/sample-ny-focus-early.fasta             --output-strains results/ny_6m/sample-ny-focus-early.txt 2>&1 | tee logs/subsample_ny_6m_ny-focus-early.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+Logfile logs/subsample_ny_6m_usa-context-early.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_global-context-recent.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_ny-focus-recent.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_usa-context-recent.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_global-context-early.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Logfile logs/subsample_ny_6m_ny-focus-early.txt:
+ERROR: You must specify a number of sequences per group or maximum sequences to subsample.
+
+
+Job failed, going on with independent jobs.
+Job failed, going on with independent jobs.
+Job failed, going on with independent jobs.
+Job failed, going on with independent jobs.
+Job failed, going on with independent jobs.
+Job failed, going on with independent jobs.
+Exiting because a job execution failed. Look above for error message
+Complete log: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/.snakemake/log/2021-12-05T130619.159119.snakemake.log

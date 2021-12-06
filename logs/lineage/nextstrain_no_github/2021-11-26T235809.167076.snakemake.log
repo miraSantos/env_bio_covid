@@ -1,0 +1,478 @@
+Your config specifies 'skip_travel_history_adjustment=True'. This is now always the case, and thus this parameter can be removed.
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                                  count    min threads    max threads
+---------------------------------  -------  -------------  -------------
+add_branch_labels                        1              1              1
+adjust_metadata_regions                  1              1              1
+align                                    1              8              8
+all                                      1              1              1
+ancestral                                1              1              1
+build_align                              1              8              8
+calculate_epiweeks                       1              1              1
+clades                                   1              1              1
+colors                                   1              1              1
+combine_input_metadata                   1              1              1
+combine_samples                          1              1              1
+combine_sequences_for_subsampling        1              1              1
+diagnostic                               1              1              1
+distances                                1              1              1
+emerging_lineages                        1              1              1
+export                                   1              1              1
+filter                                   1              1              1
+finalize                                 1              1              1
+include_hcov19_prefix                    1              1              1
+index_sequences                          1              1              1
+logistic_growth                          1              1              1
+mask                                     1              1              1
+mutational_fitness                       1              1              1
+recency                                  1              1              1
+refine                                   1              1              1
+rename_emerging_lineages                 1              1              1
+sanitize_metadata                        1              1              1
+subsample                                1              1              1
+tip_frequencies                          1              1              1
+traits                                   1              1              1
+translate                                1              1              1
+tree                                     1              8              8
+total                                   32              1              8
+
+Select jobs to execute...
+
+[Fri Nov 26 23:58:16 2021]
+Job 16: 
+        Aligning sequences to defaults/reference_seq.fasta
+            - gaps relative to reference are considered real
+        
+
+
+        python3 scripts/sanitize_sequences.py             --sequences data/wuhan_reference.sequences.fasta             --strip-prefixes hCoV-19/ SARS-CoV-2/             --output /dev/stdout 2> logs/sanitize_sequences_b_1_526_2.txt             | nextalign             --jobs=8             --reference defaults/reference_seq.fasta             --genemap defaults/annotation.gff             --genes ORF1a,ORF1b,S,ORF3a,M,N             --sequences /dev/stdin             --output-dir results/translations             --output-basename seqs_b_1_526_2             --output-fasta results/aligned_b_1_526_2.fasta             --output-insertions results/insertions_b_1_526_2.tsv > logs/align_b_1_526_2.txt 2>&1;
+        xz -2 results/aligned_b_1_526_2.fasta;
+        xz -2 results/translations/seqs_b_1_526_2*.fasta
+        
+[Fri Nov 26 23:58:37 2021]
+Finished job 16.
+1 of 32 steps (3%) done
+Select jobs to execute...
+
+[Fri Nov 26 23:58:37 2021]
+rule sanitize_metadata:
+    input: data/wuhan_reference.metadata.tsv
+    output: results/sanitized_metadata_b_1_526_2.tsv.xz
+    log: logs/sanitize_metadata_b_1_526_2.txt
+    jobid: 17
+    benchmark: benchmarks/sanitize_metadata_b_1_526_2.txt
+    wildcards: origin=b_1_526_2
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        python3 scripts/sanitize_metadata.py             --metadata data/wuhan_reference.metadata.tsv             --metadata-id-columns strain name 'Virus name'             --database-id-columns 'Accession ID' gisaid_epi_isl genbank_accession             --parse-location-field Location             --rename-fields 'Virus name=strain' Type=type 'Accession ID=gisaid_epi_isl' 'Collection date=date' 'Additional location information=additional_location_information' 'Sequence length=length' Host=host 'Patient age=patient_age' Gender=sex Clade=GISAID_clade 'Pango lineage=pango_lineage' pangolin_lineage=pango_lineage Lineage=pango_lineage 'Pangolin version=pangolin_version' Variant=variant 'AA Substitutions=aa_substitutions' aaSubstitutions=aa_substitutions 'Submission date=date_submitted' 'Is reference?=is_reference' 'Is complete?=is_complete' 'Is high coverage?=is_high_coverage' 'Is low coverage?=is_low_coverage' N-Content=n_content GC-Content=gc_content             --strip-prefixes hCoV-19/ SARS-CoV-2/                          --output results/sanitized_metadata_b_1_526_2.tsv.xz 2>&1 | tee logs/sanitize_metadata_b_1_526_2.txt
+        
+[Fri Nov 26 23:58:55 2021]
+Finished job 17.
+2 of 32 steps (6%) done
+Select jobs to execute...
+
+[Fri Nov 26 23:58:56 2021]
+Job 18: Scanning metadata results/sanitized_metadata_b_1_526_2.tsv.xz for problematic sequences. Removing sequences with >20 deviation from the clock and with more than 1.
+
+
+        python3 scripts/diagnostic.py             --metadata results/sanitized_metadata_b_1_526_2.tsv.xz             --clock-filter 20             --rare-mutations 100             --clock-plus-rare 100             --snp-clusters 1             --output-exclusion-list results/to-exclude_b_1_526_2.txt 2>&1 | tee logs/diagnostics_b_1_526_2.txt
+        
+
+[Fri Nov 26 23:58:56 2021]
+Job 20: 
+        Combining metadata files results/sanitized_metadata_b_1_526.tsv.xz results/sanitized_metadata_b_1_526_2.tsv.xz -> results/combined_metadata.tsv.xz and adding columns to represent origin
+        
+
+
+        python3 scripts/combine_metadata.py --metadata results/sanitized_metadata_b_1_526.tsv.xz results/sanitized_metadata_b_1_526_2.tsv.xz --origins b_1_526 b_1_526_2 --output results/combined_metadata.tsv.xz 2>&1 | tee logs/combine_input_metadata.txt
+        
+[Fri Nov 26 23:59:04 2021]
+Finished job 18.
+3 of 32 steps (9%) done
+Select jobs to execute...
+
+[Fri Nov 26 23:59:04 2021]
+Job 15: 
+        Filtering alignment results/aligned_b_1_526_2.fasta.xz -> results/filtered_b_1_526_2.fasta.xz
+          - excluding strains in defaults/exclude.txt results/to-exclude_b_1_526_2.txt
+          - including strains in defaults/include.txt
+          - min length: 27000
+        
+
+
+        augur filter             --sequences results/aligned_b_1_526_2.fasta.xz             --metadata results/sanitized_metadata_b_1_526_2.tsv.xz             --include defaults/include.txt             --max-date 2021-11-27             --min-date 2019.74             --exclude-ambiguous-dates-by any             --exclude defaults/exclude.txt results/to-exclude_b_1_526_2.txt             --exclude-where division='USA'            --min-length 27000             --output results/filtered_b_1_526_2.fasta 2>&1 | tee logs/filtered_b_1_526_2.txt;
+        xz -2 results/filtered_b_1_526_2.fasta
+        
+[Fri Nov 26 23:59:11 2021]
+Finished job 20.
+4 of 32 steps (12%) done
+[Fri Nov 26 23:59:13 2021]
+Finished job 15.
+5 of 32 steps (16%) done
+Select jobs to execute...
+
+[Fri Nov 26 23:59:13 2021]
+Job 10: 
+        Combine and deduplicate aligned & filtered FASTAs from multiple origins in preparation for subsampling.
+        
+
+
+        python3 scripts/sanitize_sequences.py                 --sequences results/filtered_b_1_526.fasta.xz results/filtered_b_1_526_2.fasta.xz                 --strip-prefixes hCoV-19/ SARS-CoV-2/                                  --output /dev/stdout                 | xz -c -2 > results/combined_sequences_for_subsampling.fasta.xz
+        
+[Fri Nov 26 23:59:27 2021]
+Finished job 10.
+6 of 32 steps (19%) done
+Select jobs to execute...
+
+[Fri Nov 26 23:59:27 2021]
+Job 19: 
+        Index sequence composition for faster filtering.
+        
+
+
+        augur index             --sequences results/combined_sequences_for_subsampling.fasta.xz             --output results/combined_sequence_index.tsv.xz 2>&1 | tee logs/index_sequences.txt
+        
+[Fri Nov 26 23:59:43 2021]
+Finished job 19.
+7 of 32 steps (22%) done
+Select jobs to execute...
+
+[Fri Nov 26 23:59:43 2021]
+Job 21: 
+        Subsample all sequences by 'lineage-focus' scheme for build 'b_lineage' with the following parameters:
+
+         - group by: --group-by year month
+         - sequences per group: 
+         - subsample max sequences: --subsample-max-sequences 1000
+         - min-date: 
+         - max-date: 
+         - 
+         - exclude: 
+         - include: 
+         - query: --query "(pango_lineage == 'B.1.526' | pango_lineage == 'B.1.526.1' | pango_lineage == 'B.1.526.2')"
+         - priority: 
+        
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --metadata results/combined_metadata.tsv.xz             --sequence-index results/combined_sequence_index.tsv.xz             --include defaults/include.txt             --exclude defaults/exclude.txt                                                                 --query "(pango_lineage == 'B.1.526' | pango_lineage == 'B.1.526.1' | pango_lineage == 'B.1.526.2')"                                       --group-by year month                          --subsample-max-sequences 1000                          --output results/b_lineage/sample-lineage-focus.fasta             --output-strains results/b_lineage/sample-lineage-focus.txt 2>&1 | tee logs/subsample_b_lineage_lineage-focus.txt
+        
+[Sat Nov 27 00:00:02 2021]
+Finished job 21.
+8 of 32 steps (25%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:00:02 2021]
+Job 9: 
+        Combine and deduplicate FASTAs
+        
+
+
+        augur filter             --sequences results/combined_sequences_for_subsampling.fasta.xz             --sequence-index results/combined_sequence_index.tsv.xz             --metadata results/combined_metadata.tsv.xz             --exclude-all             --include results/b_lineage/sample-lineage-focus.txt             --output-sequences results/b_lineage/b_lineage_subsampled_sequences.fasta.xz             --output-metadata results/b_lineage/b_lineage_subsampled_metadata.tsv.xz 2>&1 | tee logs/subsample_regions_b_lineage.txt
+        
+[Sat Nov 27 00:00:25 2021]
+Finished job 9.
+9 of 32 steps (28%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:00:25 2021]
+Job 8: 
+        Aligning sequences to defaults/reference_seq.fasta
+            - gaps relative to reference are considered real
+        
+
+
+        xz -c -d results/b_lineage/b_lineage_subsampled_sequences.fasta.xz | nextalign             --jobs=8             --reference defaults/reference_seq.fasta             --genemap defaults/annotation.gff             --genes ORF1a,ORF1b,S,ORF3a,M,N             --sequences /dev/stdin             --output-dir results/b_lineage/translations             --output-basename aligned             --output-fasta results/b_lineage/aligned.fasta             --output-insertions results/b_lineage/insertions.tsv > logs/align_b_lineage.txt 2>&1
+        
+[Sat Nov 27 00:00:29 2021]
+Finished job 8.
+10 of 32 steps (31%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:00:29 2021]
+Job 22: 
+        Adjusting metadata for build 'b_lineage'
+        
+
+
+        python3 scripts/adjust_regional_meta.py             --region global             --metadata results/b_lineage/b_lineage_subsampled_metadata.tsv.xz             --output results/b_lineage/metadata_adjusted.tsv.xz 2>&1 | tee logs/adjust_metadata_regions_b_lineage.txt
+        
+
+[Sat Nov 27 00:00:29 2021]
+Job 7: 
+        Mask bases in alignment results/b_lineage/aligned.fasta
+          - masking 100 from beginning
+          - masking 50 from end
+          - masking other sites: 21987 21846
+        
+
+
+        python3 scripts/mask-alignment.py             --alignment results/b_lineage/aligned.fasta             --mask-from-beginning 100             --mask-from-end 50             --mask-sites 21987 21846             --mask-terminal-gaps             --output results/b_lineage/masked.fasta 2> logs/mask_b_lineage.txt
+        
+[Sat Nov 27 00:00:38 2021]
+Finished job 22.
+11 of 32 steps (34%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:00:38 2021]
+Job 29: Use metadata on submission date to construct submission recency field
+
+
+        python3 scripts/construct-recency-from-submission-date.py             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --output results/b_lineage/recency.json 2>&1 | tee logs/recency_b_lineage.txt
+        
+
+[Sat Nov 27 00:00:38 2021]
+rule calculate_epiweeks:
+    input: results/b_lineage/metadata_adjusted.tsv.xz
+    output: results/b_lineage/epiweeks.json
+    log: logs/calculate_epiweeks_b_lineage.txt
+    jobid: 35
+    benchmark: benchmarks/calculate_epiweeks_b_lineage.txt
+    wildcards: build_name=b_lineage
+    resources: tmpdir=/tmp
+
+
+        python3 scripts/calculate_epiweek.py             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --output-node-data results/b_lineage/epiweeks.json 2>&1 | tee logs/calculate_epiweeks_b_lineage.txt
+        
+
+[Sat Nov 27 00:00:38 2021]
+Job 36: Constructing colors file
+
+
+        python3 scripts/assign-colors.py             --ordering defaults/color_ordering.tsv             --color-schemes defaults/color_schemes.tsv             --output results/b_lineage/colors.tsv             --metadata results/b_lineage/metadata_adjusted.tsv.xz 2>&1 | tee logs/colors_b_lineage.txt
+        
+[Sat Nov 27 00:00:44 2021]
+Finished job 36.
+12 of 32 steps (38%) done
+[Sat Nov 27 00:00:47 2021]
+Finished job 7.
+13 of 32 steps (41%) done
+Select jobs to execute...
+[Sat Nov 27 00:00:48 2021]
+Finished job 35.
+14 of 32 steps (44%) done
+[Sat Nov 27 00:00:48 2021]
+Finished job 29.
+15 of 32 steps (47%) done
+
+[Sat Nov 27 00:00:48 2021]
+Job 6: Building tree
+
+
+        augur tree             --alignment results/b_lineage/masked.fasta             --tree-builder-args '-ninit 10 -n 4'             --exclude-sites defaults/sites_ignored_for_tree_topology.txt             --output results/b_lineage/tree_raw.nwk             --nthreads 8 2>&1 | tee logs/tree_b_lineage.txt
+        
+[Sat Nov 27 00:01:47 2021]
+Finished job 6.
+16 of 32 steps (50%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:01:47 2021]
+Job 5: 
+        Refining tree
+          - estimate timetree
+          - use opt coalescent timescale
+          - estimate marginal node dates
+        
+
+
+        augur refine             --tree results/b_lineage/tree_raw.nwk             --alignment results/b_lineage/masked.fasta             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --output-tree results/b_lineage/tree.nwk             --output-node-data results/b_lineage/branch_lengths.json             --root Wuhan/Hu-1/2019             --timetree                          --clock-rate 0.0008             --clock-std-dev 0.0004             --coalescent opt             --date-inference marginal             --divergence-unit mutations             --date-confidence             --no-covariance             --clock-filter-iqd 4 2>&1 | tee logs/refine_b_lineage.txt
+        
+[Sat Nov 27 00:11:37 2021]
+Finished job 5.
+17 of 32 steps (53%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:11:37 2021]
+Job 24: Translating amino acid sequences
+
+
+        python3 scripts/explicit_translation.py             --tree results/b_lineage/tree.nwk             --reference defaults/reference_seq.gb             --translations results/b_lineage/translations/aligned.gene.ORF1a.fasta results/b_lineage/translations/aligned.gene.ORF1b.fasta results/b_lineage/translations/aligned.gene.S.fasta results/b_lineage/translations/aligned.gene.ORF3a.fasta results/b_lineage/translations/aligned.gene.M.fasta results/b_lineage/translations/aligned.gene.N.fasta             --genes ORF1a ORF1b S ORF3a M N             --output results/b_lineage/aa_muts.json 2>&1 | tee logs/aamuts_b_lineage.txt
+        
+
+[Sat Nov 27 00:11:37 2021]
+Job 30: 
+        Inferring ancestral traits for ['division']
+          - increase uncertainty of reconstruction by 2.5 to partially account for sampling bias
+        
+
+
+        augur traits             --tree results/b_lineage/tree.nwk             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --output results/b_lineage/traits.json             --columns division             --confidence             --sampling-bias-correction 2.5 2>&1 | tee logs/traits_b_lineage.txt
+        
+
+[Sat Nov 27 00:11:37 2021]
+Job 32: Estimating censored KDE frequencies for tips
+
+
+        augur frequencies             --method kde             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --tree results/b_lineage/tree.nwk             --min-date 2020.9084699453551             --max-date 2021.9054794520548             --pivot-interval 1             --pivot-interval-units weeks             --narrow-bandwidth 0.05             --proportion-wide 0.0             --output results/b_lineage/tip-frequencies.json 2>&1 | tee logs/tip_frequencies_b_lineage.txt
+        
+
+[Sat Nov 27 00:11:37 2021]
+Job 23: 
+        Reconstructing ancestral sequences and mutations
+          - inferring ambiguous mutations
+        
+
+
+        augur ancestral             --tree results/b_lineage/tree.nwk             --alignment results/b_lineage/aligned.fasta             --output-node-data results/b_lineage/nt_muts.json             --inference joint             --infer-ambiguous 2>&1 | tee logs/ancestral_b_lineage.txt
+        
+[Sat Nov 27 00:11:56 2021]
+Finished job 32.
+18 of 32 steps (56%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:11:56 2021]
+rule logistic_growth:
+    input: results/b_lineage/tree.nwk, results/b_lineage/tip-frequencies.json
+    output: results/b_lineage/logistic_growth.json
+    log: logs/logistic_growth_b_lineage.txt
+    jobid: 31
+    benchmark: benchmarks/logistic_growth_b_lineage.txt
+    wildcards: build_name=b_lineage
+    resources: tmpdir=/tmp, mem_mb=256
+
+
+        python3 scripts/calculate_delta_frequency.py             --tree results/b_lineage/tree.nwk             --frequencies results/b_lineage/tip-frequencies.json             --method logistic             --delta-pivots 6             --min-tips 50             --min-frequency 1e-06             --max-frequency 0.95             --attribute-name logistic_growth             --output results/b_lineage/logistic_growth.json 2>&1 | tee logs/logistic_growth_b_lineage.txt
+        
+[Sat Nov 27 00:12:03 2021]
+Finished job 30.
+19 of 32 steps (59%) done
+[Sat Nov 27 00:12:13 2021]
+Finished job 31.
+20 of 32 steps (62%) done
+[Sat Nov 27 00:12:15 2021]
+Finished job 24.
+21 of 32 steps (66%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:12:15 2021]
+rule mutational_fitness:
+    input: results/b_lineage/tree.nwk, results/b_lineage/translations/aligned.gene.ORF1a_withInternalNodes.fasta, results/b_lineage/translations/aligned.gene.ORF1b_withInternalNodes.fasta, results/b_lineage/translations/aligned.gene.S_withInternalNodes.fasta, results/b_lineage/translations/aligned.gene.ORF3a_withInternalNodes.fasta, results/b_lineage/translations/aligned.gene.M_withInternalNodes.fasta, results/b_lineage/translations/aligned.gene.N_withInternalNodes.fasta, defaults/mutational_fitness_distance_map.json
+    output: results/b_lineage/mutational_fitness.json
+    log: logs/mutational_fitness_b_lineage.txt
+    jobid: 33
+    benchmark: benchmarks/mutational_fitness_b_lineage.txt
+    wildcards: build_name=b_lineage
+    resources: tmpdir=/tmp, mem_mb=2000
+
+
+        augur distance             --tree results/b_lineage/tree.nwk             --alignment results/b_lineage/translations/aligned.gene.ORF1a_withInternalNodes.fasta results/b_lineage/translations/aligned.gene.ORF1b_withInternalNodes.fasta results/b_lineage/translations/aligned.gene.S_withInternalNodes.fasta results/b_lineage/translations/aligned.gene.ORF3a_withInternalNodes.fasta results/b_lineage/translations/aligned.gene.M_withInternalNodes.fasta results/b_lineage/translations/aligned.gene.N_withInternalNodes.fasta             --gene-names ORF1a ORF1b S ORF3a M N             --compare-to root             --attribute-name mutational_fitness             --map defaults/mutational_fitness_distance_map.json             --output results/b_lineage/mutational_fitness.json 2>&1 | tee logs/mutational_fitness_b_lineage.txt
+        
+
+[Sat Nov 27 00:12:15 2021]
+rule distances:
+    input: results/b_lineage/tree.nwk, results/b_lineage/translations/aligned.gene.S_withInternalNodes.fasta, defaults/distance_maps/S1.json
+    output: results/b_lineage/distances.json
+    jobid: 34
+    wildcards: build_name=b_lineage
+    resources: tmpdir=/tmp
+
+
+        augur distance             --tree results/b_lineage/tree.nwk             --alignment results/b_lineage/translations/aligned.gene.S_withInternalNodes.fasta             --gene-names S             --compare-to root             --attribute-name S1_mutations             --map defaults/distance_maps/S1.json             --output results/b_lineage/distances.json
+        
+[Sat Nov 27 00:12:31 2021]
+Finished job 23.
+22 of 32 steps (69%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:12:31 2021]
+Job 27: Adding internal clade labels
+
+
+        augur clades --tree results/b_lineage/tree.nwk             --mutations results/b_lineage/nt_muts.json results/b_lineage/aa_muts.json             --clades results/b_lineage/clades.tsv             --output-node-data results/b_lineage/clades.json 2>&1 | tee logs/clades_b_lineage.txt
+        
+
+[Sat Nov 27 00:12:31 2021]
+Job 26: Adding emerging clade labels
+
+
+        augur clades --tree results/b_lineage/tree.nwk             --mutations results/b_lineage/nt_muts.json results/b_lineage/aa_muts.json             --clades defaults/emerging_lineages.tsv             --output-node-data results/b_lineage/temp_emerging_lineages.json 2>&1 | tee logs/emerging_lineages_b_lineage.txt
+        
+[Sat Nov 27 00:12:34 2021]
+Finished job 34.
+23 of 32 steps (72%) done
+[Sat Nov 27 00:12:36 2021]
+Finished job 33.
+24 of 32 steps (75%) done
+[Sat Nov 27 00:12:51 2021]
+Finished job 27.
+25 of 32 steps (78%) done
+[Sat Nov 27 00:12:51 2021]
+Finished job 26.
+26 of 32 steps (81%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:12:51 2021]
+rule rename_emerging_lineages:
+    input: results/b_lineage/temp_emerging_lineages.json
+    output: results/b_lineage/emerging_lineages.json
+    jobid: 25
+    benchmark: benchmarks/rename_emerging_lineages_b_lineage.txt
+    wildcards: build_name=b_lineage
+    resources: tmpdir=/tmp
+
+[Sat Nov 27 00:13:05 2021]
+Finished job 25.
+27 of 32 steps (84%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:13:05 2021]
+Job 4: Exporting data files for for auspice
+
+
+        augur export v2             --tree results/b_lineage/tree.nwk             --metadata results/b_lineage/metadata_adjusted.tsv.xz             --node-data results/b_lineage/branch_lengths.json results/b_lineage/nt_muts.json results/b_lineage/aa_muts.json results/b_lineage/emerging_lineages.json results/b_lineage/clades.json results/b_lineage/recency.json results/b_lineage/traits.json results/b_lineage/logistic_growth.json results/b_lineage/mutational_fitness.json results/b_lineage/distances.json results/b_lineage/epiweeks.json             --auspice-config b1526_profiles/auspice_config.json             --include-root-sequence             --colors results/b_lineage/colors.tsv             --lat-longs defaults/lat_longs.tsv             --title 'Genomic epidemiology of novel coronavirus - B_Lineage-focused subsampling'             --description defaults/description.md             --output results/b_lineage/ncov_with_accessions.json 2>&1 | tee logs/export_b_lineage.txt
+        
+[Sat Nov 27 00:13:28 2021]
+Finished job 4.
+28 of 32 steps (88%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:13:28 2021]
+Job 3: Adding custom branch labels to the Auspice JSON
+
+
+        python3 ./scripts/add_branch_labels.py             --input results/b_lineage/ncov_with_accessions.json             --emerging-clades results/b_lineage/temp_emerging_lineages.json             --output results/b_lineage/ncov_with_branch_labels.json
+        
+[Sat Nov 27 00:13:34 2021]
+Finished job 3.
+29 of 32 steps (91%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:13:34 2021]
+Job 2: Rename strains to include hCoV-19/ prefix
+
+
+        python3 ./scripts/include_prefix.py             --input-auspice results/b_lineage/ncov_with_branch_labels.json             --input-tip-frequencies results/b_lineage/tip-frequencies.json             --prefix              --output-auspice results/b_lineage/ncov_with_hcov19_prefix.json             --output-tip-frequencies results/b_lineage/tip-frequencies_with_hcov19_prefix.json
+        
+[Sat Nov 27 00:13:36 2021]
+Finished job 2.
+30 of 32 steps (94%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:13:36 2021]
+Job 1: Remove extraneous colorings for main build and move frequencies
+
+
+        python3 scripts/fix-colorings.py             --input results/b_lineage/ncov_with_hcov19_prefix.json             --output auspice/ncov_b_lineage.json 2>&1 | tee logs/fix_colorings_b_lineage.txt &&
+        cp results/b_lineage/tip-frequencies_with_hcov19_prefix.json auspice/ncov_b_lineage_tip-frequencies.json &&
+        cp results/b_lineage/ncov_with_accessions_root-sequence.json auspice/ncov_b_lineage_root-sequence.json
+        
+[Sat Nov 27 00:13:38 2021]
+Finished job 1.
+31 of 32 steps (97%) done
+Select jobs to execute...
+
+[Sat Nov 27 00:13:38 2021]
+localrule all:
+    input: auspice/ncov_b_lineage.json, auspice/ncov_b_lineage_tip-frequencies.json
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Sat Nov 27 00:13:38 2021]
+Finished job 0.
+32 of 32 steps (100%) done
+Complete log: /vortexfs1/omics/env-bio/collaboration/env_bio_covid/ncov/.snakemake/log/2021-11-26T235809.167076.snakemake.log
