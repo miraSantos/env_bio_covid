@@ -25,6 +25,8 @@ The second repository `ncov-ny` is a copy of `ncov` used and specified by the au
 ```
 ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
 ```
+4. Go into a browser of your choice and type `http://localhost:8889` or `http://127.0.0.1:8889`
+5. Select the auspice visualization you want to explore.
 
 ## Running `ncov-ny`
 
@@ -34,3 +36,6 @@ ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
 ```
 ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
 ```
+4. Go into a browser of your choice and type `http://localhost:8889` or `http://127.0.0.1:8889`
+5. Select the auspice visualization you want to explore.
+
