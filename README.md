@@ -59,7 +59,7 @@ The selection of this paper grew out of our broader interest in the community of
 
 ## Original Paper Workflow
 
-![Original Workflow](nextstrain_workflow.png)
+![Original Workflow](images/nextstrain_workflow.png)
 
 
 ## Running Nextstrain pipelines
