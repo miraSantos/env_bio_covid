@@ -48,7 +48,7 @@ The selection of this paper grew out of our broader interest in the community of
             * nextstrain_and_github: Data from ny build
     * results: results from replication without Nextstrain
         * iqtree_out: iqtree log output
-    * scripts
+    * scripts: Nextstrain workflows
         * ncov_ny: Copy of ncov-ny repository for Replication using repo and Nextstrain
         * ncov: Adaptation of ncov template repository for Replication using Nextstrain
 
