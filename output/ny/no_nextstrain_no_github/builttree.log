@@ -2619,3 +2619,71 @@ Alignment was printed to builttree.uniqueseq.phy
 
 For your convenience alignment with unique sequences printed to builttree.uniqueseq.phy
 Creating fast initial parsimony tree by random order stepwise addition...
+196.951 seconds, parsimony score: 4090 (based on 2266 sites)
+
+NOTE: 1048 MB RAM (1 GB) is required!
+Measuring multi-threading efficiency up to 36 CPU cores
+6 trees examined
+Threads: 1 / Time: 45.228 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -222342
+Threads: 2 / Time: 29.703 sec / Speedup: 1.523 / Efficiency: 76% / LogL: -222342
+Threads: 3 / Time: 20.599 sec / Speedup: 2.196 / Efficiency: 73% / LogL: -222342
+Threads: 4 / Time: 16.226 sec / Speedup: 2.787 / Efficiency: 70% / LogL: -222342
+Threads: 5 / Time: 13.575 sec / Speedup: 3.332 / Efficiency: 67% / LogL: -222342
+Threads: 6 / Time: 12.276 sec / Speedup: 3.684 / Efficiency: 61% / LogL: -222342
+Threads: 7 / Time: 11.610 sec / Speedup: 3.895 / Efficiency: 56% / LogL: -222342
+Threads: 8 / Time: 11.115 sec / Speedup: 4.069 / Efficiency: 51% / LogL: -222342
+Threads: 9 / Time: 10.041 sec / Speedup: 4.504 / Efficiency: 50% / LogL: -222342
+Threads: 10 / Time: 9.687 sec / Speedup: 4.669 / Efficiency: 47% / LogL: -222342
+BEST NUMBER OF THREADS: 9
+
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -87338.679
+2. Current log-likelihood: -85118.527
+Optimal log-likelihood: -85118.048
+Rate parameters:  A-C: 0.53312  A-G: 1.74916  A-T: 0.29917  C-G: 0.40745  C-T: 5.41777  G-T: 1.00000
+Base frequencies:  A: 0.298  C: 0.184  G: 0.197  T: 0.321
+Parameters optimization took 2 rounds (47.495 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 20.308113 sec (of wall-clock time) 144.162138 sec(of CPU time)
+Computing RapidNJ tree took 1.538845 sec (of wall-clock time) 7.028957 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -85395.656
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 2 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -84912.458
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 2: -84787.405
+Finish initializing candidate tree set (4)
+Current best tree score: -84787.405 / CPU time: 92.864
+Number of iterations: 2
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:9m:11s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -84787.405
+Optimal log-likelihood: -84787.405
+Rate parameters:  A-C: 0.52171  A-G: 1.82039  A-T: 0.28965  C-G: 0.40308  C-T: 5.57847  G-T: 1.00000
+Base frequencies:  A: 0.298  C: 0.184  G: 0.197  T: 0.321
+Parameters optimization took 1 rounds (5.683 sec)
+BEST SCORE FOUND : -84787.405
+Total tree length: 0.142
+
+Total number of iterations: 2
+CPU time used for tree search: 794.436 sec (0h:13m:14s)
+Wall-clock time used for tree search: 93.054 sec (0h:1m:33s)
+Total CPU time used: 9192.749 sec (2h:33m:12s)
+Total wall-clock time used: 556.908 sec (0h:9m:16s)
+
+Analysis results written to: 
+  IQ-TREE report:                builttree.iqtree
+  Maximum-likelihood tree:       builttree.treefile
+  Likelihood distances:          builttree.mldist
+  Screen log file:               builttree.log
+
+Date and Time: Mon Dec  6 01:04:19 2021

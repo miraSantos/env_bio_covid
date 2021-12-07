@@ -15,12 +15,14 @@ module load anaconda3/2021.05       # Load the python module
 source activate mafft
 
 mafft \
-	--auto \
-	--thread 9 \
+	--auto \ #automatically select appropriate strategy according to data size
+	--thread 9 \ #use 9 threads to run faster
 	 --keeplength \
 	 --addfragments \
-	 /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/nyc/gisaid_nyc_sequences.fasta \
-	 /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.sequences.fasta > /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/mafft_out/aligned_mafft_ncov.fasta 2> /vortexfs1/omics/env-bio/collaboration/env_bio_covid/code/logs_mafft/align_mafft_ncov.txt
+	 /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/nyc/gisaid_nyc_sequences.fasta \ #sequences to align 
+	 /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/reference_genomes/wuhan_hu_1/wuhan_reference.sequences.fasta \ #reference genome
+	> /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/mafft_out/aligned_mafft_ncov.fasta \ #final alignment in fasta form
+	2> /vortexfs1/omics/env-bio/collaboration/env_bio_covid/code/logs_mafft/align_mafft_ncov.txt #txt log output
 
 echo "finished mafft"
  

@@ -27,3 +27,5 @@
 /scripts/ncov/results/new_york/masked.fasta
 /scripts/ncov/data/hcov_north-america.fasta
 /scripts/ncov/data/gisaid_nyc_sequences.fasta
+/logs/ny/no_nextstrain_no_github/log_mafft_1824090.log
+/output/ny/no_nextstrain_no_github/builttree.mldist

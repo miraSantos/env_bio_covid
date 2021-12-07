@@ -1,0 +1,11 @@
+IQ-TREE multicore version 2.1.4-beta COVID-edition for Linux 64-bit built Jun 24 2021
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    pn056 (AVX512, FMA3, 187 GB RAM)
+Command: iqtree -s /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/mafft_iqtree_out/aligned_mafft_ncov_b1526.fasta -m GTR -T AUTO -fast -n 2 -ninit 2 -me 0.05 -alninfo -pre builttree_b1526  #prefix for file names
+Seed:    317612 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Dec  6 14:58:06 2021
+Kernel:  AVX+FMA - auto-detect threads (36 CPU cores detected)
+
+Reading alignment file /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/mafft_iqtree_out/aligned_mafft_ncov_b1526.fasta ... ERROR: Cannot read file /vortexfs1/omics/env-bio/collaboration/env_bio_covid/data/mafft_iqtree_out/aligned_mafft_ncov_b1526.fasta
