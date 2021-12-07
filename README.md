@@ -68,7 +68,7 @@ In the `scripts` directory, there are two Nextstrain workflows: `ncov` and `ncov
 
 The second repository `ncov-ny` is a copy of `ncov` used and specified by the authors of the paper. You can find the original repository from the Bedford lab [here](https://github.com/blab/ncov-ny). We will use `ncov-ny` to refer to in our project as "using both Github repo and Nextstrain" because this is the official GitHub repository associated with the paper, and utilizes the Nextstrain pipeline.
 
-## Running `ncov`
+### Running `ncov`
 
 1. Go into `scripts/ncov` directory. 
 2. Run `nextstrain view auspice/ --port 8889`
@@ -79,10 +79,13 @@ ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
 4. Go into a browser of your choice and type `http://localhost:8889` or `http://127.0.0.1:8889`
 5. Select the auspice visualization you want to explore.
 
-## Running `ncov-ny`
+### Running `ncov-ny`
 
 1. Go into `scripts/ncov-ny` directory.
 The remaining steps are identical to running the `ncov` pipeline above.
+
+## Independent alignment and tree building
+Alignment was performed with MAFFT using the script `scripts/1A_align_mafft.sh` and the phylogenomic tree was built with IQ-TREE using the script `scripts/2A_buildtree_IQTREE.sh`. Visualization was built with i-TOL at this site: https://itol.embl.de/upload.cgi. 
 
 ## Results and Observations
 The Nexstrain project is a powerful toolset, supporting a vibrant community of research, using bioinformatics to understand outbreaks in real-time.
