@@ -12,23 +12,23 @@ The selection of this paper grew out of our broader interest in the community of
 
 ## We embarked on the Replication Project with the following questions in mind:
 
-    How is Bioinformatics adapting to the SARS-CoV-2 threat?
+* How is Bioinformatics adapting to the SARS-CoV-2 threat?
 
-    How are the techniques and technologies discussed in class being deployed in the response to SARS-CoV-2?
+* How are the techniques and technologies discussed in class being deployed in the response to SARS-CoV-2?
 
-    How has the pressure of the SARS-CoV-2 threat influenced research best practices?
+* How has the pressure of the SARS-CoV-2 threat influenced research best practices?
 
-    How are pipelines/workflows/wrappers impacting speed, accessibility and replicability?
+* How are pipelines/workflows/wrappers impacting speed, accessibility and replicability?
 
-    How does Nextstrain (and other philosophically similar approaches) balance its stated mission to "improve outbreak response" with the requirements of Replicability?
+* How does Nextstrain (and other philosophically similar approaches) balance its stated mission to "improve outbreak response" with the requirements of Replicability?
 
 ## Our approach -- 3 pronged replication
 
-    1.    Reproduce directly from the existing project Repository: Nextstrain is setup to function as a rapid deployment system with a standard set of tools packaged together so that they can quickly setup in response to outbreaks.  Our first angle of attack was to attempt exactly that.  Clone, configure run.
+1.    Reproduce directly from the existing project Repository: Nextstrain is setup to function as a rapid deployment system with a standard set of tools packaged together so that they can quickly setup in response to outbreaks.  Our first angle of attack was to attempt exactly that.  Clone, configure run.
 
-    2.    Replicate within the Nexstrain ecosystem of tools:  To better understand how Nextstrain operates under the hood, we simultaneously attempted a replication using the Nextstrain toolset, but using our own data filtered from GISAID.
+2.    Replicate within the Nexstrain ecosystem of tools:  To better understand how Nextstrain operates under the hood, we simultaneously attempted a replication using the Nextstrain toolset, but using our own data filtered from GISAID.
 
-    3.    Replicate without Nextstrain: Lastly, to test our understanding of the Nextstrain toolset and the approach taken by the Bedford lab in their study of *Emergence and expansion of SARS-CoV-2 B.1.526*, we attempted a replication without the use of the Nextstrain toolset.
+3.    Replicate without Nextstrain: Lastly, to test our understanding of the Nextstrain toolset and the approach taken by the Bedford lab in their study of *Emergence and expansion of SARS-CoV-2 B.1.526*, we attempted a replication without the use of the Nextstrain toolset.
 
 ## Repository Structure
 
