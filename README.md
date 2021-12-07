@@ -12,15 +12,15 @@ The selection of this paper grew out of our broader interest in the community of
 
 ## We embarked on the Replication Project with the following questions in mind:
 
-    * How is Bioinformatics adapting to the SARS-CoV-2 threat?
+    How is Bioinformatics adapting to the SARS-CoV-2 threat?
 
-    * How are the techniques and technologies discussed in class being deployed in the response to SARS-CoV-2?
+    How are the techniques and technologies discussed in class being deployed in the response to SARS-CoV-2?
 
-    * How has the pressure of the SARS-CoV-2 threat influenced research best practices?
+    How has the pressure of the SARS-CoV-2 threat influenced research best practices?
 
-    * How are pipelines/workflows/wrappers impacting speed, accessibility and replicability?
+    How are pipelines/workflows/wrappers impacting speed, accessibility and replicability?
 
-    * How does Nextstrain (and other philosophically similar approaches) balance its stated mission to "improve outbreak response" with the requirements of Replicability?
+    How does Nextstrain (and other philosophically similar approaches) balance its stated mission to "improve outbreak response" with the requirements of Replicability?
 
 ## Our approach -- 3 pronged replication
 
