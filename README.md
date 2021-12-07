@@ -1,5 +1,6 @@
 # Final Project: Replicating the bioinformatic analysis of [Emergence and expansion of SARS-CoV-2 B.1.526 after identification in New York](https://bedford.io/papers/annavajhala-ncov-ny-b.1.526/)
 
+
 ## Background
 
 "Phylogenetic reconstruction of amino acid changes (Fig. 2a) was con-ducted using the Nextstrain32 workflow at https://github.com/next-strain/ncov, which aligns sequences against the Wuhan Hu-1 reference using nextalign (https://github.com/nextstrain/nextclade), constructs a maximum-likelihood phylogenetic tree via IQ-TREE33, estimates molecular clock branch lengths via TreeTime34 and reconstructs nucleotide and amino acid changes (also via TreeTime). This workflow was applied to 2,309 SARS-CoV-2 genomes with the 9-bp deletion Δ106–108 in ORF1a-nsp6 along with mutation A20262G, which demarcates the parent clade to lineage B.1.526 alongside 688 global reference viruses. This analysis was conducted on data downloaded35 from GISAID 
@@ -30,6 +31,7 @@ The selection of this paper grew out of our broader interest in the community of
     3.    Replicate without Nextstrain: Lastly, to test our understanding of the Nextstrain toolset and the approach taken by the Bedford lab in their study of *Emergence and expansion of SARS-CoV-2 B.1.526*, we attempted a replication without the use of the Nextstrain toolset.
 
 ## Repository Structure
+
     * code: Custom scripts used to replicate without Nextstrain
        * logs: from replication without Nextstrain
     * data: Downloaded and generated data used as the basis for replication with out the existing NCOV-NY repository
@@ -80,28 +82,31 @@ ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
 The remaining steps are identical to running the `ncov` pipeline above.
 
 ## Results and Observations
-replication - reproduction and rapid response
-“Reproducibility refers to the ability to achieve the same findings as another investigator using extant data from a prior study.”
+The Nexstrain project is a powerful toolset, supporting a vibrant community of research, using bioinformatics to understand outbreaks in real-time.
 
-https://ies.ed.gov/pdf/CompanionGuidelinesReplicationReproducibility.pdf
+### Distributed Documentation
+The usage instructions for the original repository are parsimonious:
+    1. Clone this repository: git clone https://github.com/blab/ncov-ny.git
+    2. cd ncov-ny/
+    3. Modify build definitions, as needed, in ny_profile/ny/builds.yaml.
+    4. Running:  snakemake --profile ny_profiles/ny/
 
-“In general, replication studies involve collecting and analyzing data to determine if the new studies...yield the same findings as a previous study. As such, replication sets a somewhat higher bar than reproducibility and has been described as ‘the ultimate standard by which scientific claims are judged’ (Peng, 2011: 1226)”
+The Nextrain project website is extremely well documented so the authors of this paper likely did not feel it necessary to reproduce that documentation in detail.  This speeds up the research, but creates problems where there is not a single canonical set of static instructions that lives with the project.  The central documentation on the Nextstrain site continues to develop along with the project creating small inconsistencies with specific projects like ncov-ny over time. 
 
-Companion Guidelines on Replication & Reproducibility in Education Research
-A Report from The National Science Foundation, U.S. Department of Education Nov 28, 2018
-https://ies.ed.gov/pdf/CompanionGuidelinesReplicationReproducibility.pdf
+### Modularity, Nesting and Wrapping
+The functional components that make up the Nextstrain pipeline are wrapped up into several layers (6 in some instances) of abstraction.  This allows a user to operate the pipeline without a deep understanding of what is actually happening in each step, speeding up the process and allowing a broader community of researchers to participate and contribute. 
 
-Peng, Roger D. (2011). Reproducible research in computational science. Science, 334(6060): 1226-1227
+As a tradeoff, it can be challenging to work through layer after layer to identify problems or just understand what is actually happening.  Further, if there are defects or even malicious attacks embeded within the software ecosystem, the depth of the hierarchy makes it much harder to identify and the interdependency of the pipeline specific configurations makes it harder to disentangle and replace dependencies.
 
+### Ecosystem Specific Formats and Standards
+The basic ingredients used within the Nextrain pipeline conform to broader standards.  The file types and process steps are familiar.  Digging into the details of how builds are setup within workflows, how input and intermediate data files are stored and how visualizations are configured however, revealed particularities specific to the Nextstrain process.  We found most of these details documented somewhere, but it was never clear whether they were specific to Nextstrain, the ncov template or the ncov-ny project.  The hierarchy of documentation became more difficult to navigate as we dug deeper into nuances of configurations and data formats.
+
+### Distributed Data storage
+For efficiency and to support collaboration, the ncov template process and the ncov-ny project stored input and intermediate data files on aws servers, reading and writing to aws as needed.
+Without access to the same files it was difficult to know if initial data inputs or generated intermediate files matched the original process.
 
 ## Conclusions (workflow management tradeoffs)
+Throughout the Nextrain ecosystem a focus on careful, accessible documentation and standardization is apparent.  There is an underlying urgency however, an emphasis on speed and accessibility rather than long term Replicability.  In many instances within Nextstrain efforts to support reusibility and rapid deployment also improve replicability. In some cases -- described above -- they do not, leading to trade-offs. We believe this to be intentional and in keeping with Nextstrain's' stated goal of improving outbreak response.
 
-The Nextstrain project is impressive and accomplishes its stated goal of improving outbreak response.  It provides a reusable and adaptable template for epidemiological research that dramatically increases response speed.  Reusable and adaptable are not the same as Replicable however, and in some instances create tradeoffs in which the desire for speed reduces Replicability.
-
-Resource Reuse
-
-Rapid deployment
-
-Flexible Collaboration
 
 
