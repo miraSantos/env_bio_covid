@@ -85,7 +85,7 @@ ssh -N -f -L localhost:8889:localhost:8889 USERNAME@poseidon-[l1 or l2].whoi.edu
 The remaining steps are identical to running the `ncov` pipeline above.
 
 ## Independent alignment and tree building
-Alignment was performed with MAFFT using the script `1A_align_mafft.sh` and the phylogenomic tree was built with IQ-TREE using the script `2A_buildtree_IQTREE.sh`. Visualization was built with i-TOL at this site: https://itol.embl.de/upload.cgi. 
+Alignment was performed with MAFFT using the script `1A_align_mafft.sh` and the phylogenomic tree was built with IQ-TREE using the script `2A_buildtree_IQTREE.sh`. Ancenstral trait reconstruction and estimation of molecular clock branch lengths were performed with TreeTime. Visualization was built with auspice at at this site: auspice.us. 
 
 To run the shells scripts, go into `scripts/no_nextstrain_no_github` and the run `sbatch 1A_align_mafft.sh` and `sbatch 2A_buildtree_IQTREE.sh`.
 
